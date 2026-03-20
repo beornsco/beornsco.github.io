@@ -110,11 +110,12 @@ footer strong{color:#fff;display:block;font-size:1rem;margin-bottom:4px}
     <h3>Not sure yet? Start with our free AI Opportunity Discovery Checklist</h3>
     <p>A quick self-assessment to identify your top 3 AI opportunities — no email required to read, but sign up to get the full version delivered to your inbox.</p>
     <div id="mailerlite-form">
-      <form class="ml-block-form" action="https://assets.mailerlite.com/jsonp/2208896/forms/182475280749692921/subscribe" method="post" target="_blank" style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:16px">
-        <input type="email" name="fields[email]" placeholder="Your email address" required style="padding:14px 20px;border:2px solid #E5E7EB;border-radius:8px;font-size:1rem;width:280px;outline:none;transition:border .2s" onfocus="this.style.borderColor='#2962FF'" onblur="this.style.borderColor='#E5E7EB'">
-        <input type="hidden" name="ml-submit" value="1">
+      <form id="checklist-form" style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:16px">
+        <input type="email" id="ml-email" placeholder="Your email address" required style="padding:14px 20px;border:2px solid #E5E7EB;border-radius:8px;font-size:1rem;width:280px;outline:none;transition:border .2s" onfocus="this.style.borderColor='#2962FF'" onblur="this.style.borderColor='#E5E7EB'">
         <button type="submit" class="btn" style="padding:14px 28px;font-size:1rem">Send me the checklist</button>
       </form>
+      <p id="form-success" style="display:none;color:#2962FF;font-weight:600;margin-top:16px;font-style:normal">Check your inbox! Your free checklist is on its way.</p>
+      <p id="form-error" style="display:none;color:#dc2626;font-weight:600;margin-top:16px;font-style:normal">Something went wrong. Please try again.</p>
     </div>
   </div>
 </div>
@@ -146,6 +147,42 @@ if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches){
   const o=new IntersectionObserver(e=>e.forEach(i=>{if(i.isIntersecting){i.target.classList.add('visible');o.unobserve(i.target)}}),{threshold:.15});
   document.querySelectorAll('.fade-in').forEach(el=>o.observe(el));
 }
+
+document.getElementById('checklist-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+  var email = document.getElementById('ml-email').value;
+  var form = this;
+  var btn = form.querySelector('button');
+  btn.textContent = 'Sending...';
+  btn.disabled = true;
+
+  var callbackName = 'ml_cb_' + Date.now();
+  window[callbackName] = function(resp) {
+    document.getElementById('form-success').style.display = 'block';
+    form.style.display = 'none';
+    document.getElementById('form-error').style.display = 'none';
+    delete window[callbackName];
+    var s = document.getElementById('ml-jsonp');
+    if(s) s.remove();
+  };
+
+  var s = document.createElement('script');
+  s.id = 'ml-jsonp';
+  s.src = 'https://assets.mailerlite.com/jsonp/2208896/forms/182475280749692921/subscribe?fields[email]=' + encodeURIComponent(email) + '&ml-submit=1&callback=' + callbackName;
+  s.onerror = function() {
+    document.getElementById('form-error').style.display = 'block';
+    btn.textContent = 'Send me the checklist';
+    btn.disabled = false;
+  };
+  document.body.appendChild(s);
+
+  setTimeout(function() {
+    if(window[callbackName]) {
+      document.getElementById('form-success').style.display = 'block';
+      form.style.display = 'none';
+    }
+  }, 3000);
+});
 </script>
 </body>
 </html>
