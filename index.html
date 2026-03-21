@@ -15,56 +15,40 @@
 :root{--blue:#2962FF;--dark:#23232D;--light:#F7F8FA;--white:#FFFFFF;--gray:#6B7280;--blue-light:#E8EEFF}
 body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--dark);line-height:1.6}
 a{color:var(--blue);text-decoration:none}
-.container{max-width:800px;margin:0 auto;padding:0 24px}
-.container--wide{max-width:1000px}
-.btn{display:inline-block;background:var(--blue);color:#fff;padding:16px 36px;border-radius:8px;font-size:1.1rem;font-weight:600;transition:transform .15s,box-shadow .15s;cursor:pointer;border:none}
+.container{max-width:900px;margin:0 auto;padding:0 24px}
+.btn{display:inline-block;background:var(--blue);color:#fff;padding:16px 36px;border-radius:8px;font-size:1.05rem;font-weight:600;transition:transform .15s,box-shadow .15s;cursor:pointer;border:none}
 .btn:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(41,98,255,.35)}
 
-/* Hero */
-.hero{padding:100px 0 80px;text-align:center;background:linear-gradient(170deg,var(--blue-light) 0%,var(--white) 100%)}
-.hero h1{font-size:clamp(2rem,5vw,3rem);line-height:1.2;margin-bottom:20px;letter-spacing:-.02em}
-.hero p{font-size:1.15rem;color:var(--gray);max-width:600px;margin:0 auto 36px}
+.hero{padding:80px 0 50px;text-align:center;background:linear-gradient(170deg,var(--blue-light) 0%,var(--white) 100%)}
+.hero h1{font-size:clamp(2rem,5vw,2.8rem);line-height:1.2;margin-bottom:16px;letter-spacing:-.02em}
+.hero p{font-size:1.1rem;color:var(--gray);max-width:560px;margin:0 auto}
 
-/* Sections */
-section{padding:72px 0}
-section:nth-child(even){background:var(--light)}
-h2{font-size:1.75rem;margin-bottom:32px;text-align:center;letter-spacing:-.01em}
+section{padding:64px 0}
+section.alt{background:var(--light)}
+h2{font-size:1.6rem;margin-bottom:28px;text-align:center;letter-spacing:-.01em}
 
-/* What's inside */
-.items{list-style:none;display:grid;gap:16px}
-.items li{background:var(--white);border:1px solid #E5E7EB;border-radius:10px;padding:20px 24px;display:flex;gap:14px;align-items:start}
-.items li .icon{flex-shrink:0;width:28px;height:28px;background:var(--blue-light);border-radius:6px;display:flex;align-items:center;justify-content:center;color:var(--blue);font-weight:700;font-size:.85rem}
-.items li strong{display:block;margin-bottom:2px}
-.items li span{color:var(--gray);font-size:.95rem}
-.bonus{border:2px solid var(--blue)!important;background:var(--blue-light)!important}
+.products{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+@media(max-width:700px){.products{grid-template-columns:1fr}}
+.card{background:var(--white);border:2px solid #E5E7EB;border-radius:14px;padding:36px 28px;display:flex;flex-direction:column}
+.card h3{font-size:1.3rem;margin-bottom:4px}
+.card .price{font-size:2.2rem;font-weight:800;color:var(--blue);margin-bottom:2px}
+.card .tagline{color:var(--gray);font-size:.95rem;margin-bottom:16px}
+.card ul{list-style:none;margin-bottom:24px;flex:1}
+.card ul li{padding:5px 0;font-size:.95rem}
+.card ul li::before{content:"✓ ";color:var(--blue);font-weight:700}
+.card .btn{text-align:center;width:100%;margin-bottom:12px}
+.card .learn{text-align:center;font-size:.95rem;font-weight:500}
 
-/* Who it's for */
-.personas{display:grid;gap:20px;max-width:600px;margin:0 auto}
-.personas li{list-style:none;padding:20px 24px;background:var(--white);border-radius:10px;border-left:4px solid var(--blue);font-size:1.05rem}
+.free-section{text-align:center;max-width:600px;margin:0 auto}
+.free-section h2{font-size:1.4rem;margin-bottom:8px}
+.free-section p{color:var(--gray);margin-bottom:24px}
 
-/* Free resource */
-.free-box{background:var(--white);border:2px dashed var(--blue);border-radius:12px;padding:40px;text-align:center;max-width:600px;margin:0 auto}
-.free-box h3{font-size:1.3rem;margin-bottom:12px}
-.free-box p{color:var(--gray);margin-bottom:24px}
-#mailerlite-form{background:var(--light);border-radius:8px;padding:32px;color:var(--gray);font-style:italic}
+.blog-section{text-align:center;padding:48px 0}
+.blog-section a{font-size:1.1rem;font-weight:600}
 
-/* Pricing */
-.price-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px;max-width:960px;margin:0 auto}
-@media(max-width:700px){.price-grid{grid-template-columns:1fr}}
-.price-card{background:var(--white);border:2px solid var(--blue);border-radius:16px;padding:48px 32px;text-align:center}
-.price-card .amount{font-size:3.5rem;font-weight:800;color:var(--blue)}
-.price-card .subtitle{color:var(--gray);margin-bottom:24px;font-size:1.05rem}
-.price-card ul{list-style:none;text-align:left;margin:0 auto 32px;max-width:320px}
-.price-card ul li{padding:6px 0;border-bottom:1px solid #E5E7EB}
-.price-card ul li::before{content:"✓ ";color:var(--blue);font-weight:700}
-.price-card .btn{width:100%;text-align:center}
-
-/* Footer */
-footer{padding:40px 0;text-align:center;color:var(--gray);font-size:.9rem;background:var(--dark);color:#aaa}
+footer{padding:36px 0;text-align:center;color:#aaa;font-size:.9rem;background:var(--dark)}
 footer a{color:#ccc}
-footer strong{color:#fff;display:block;font-size:1rem;margin-bottom:4px}
 
-/* Animations */
 @media(prefers-reduced-motion:no-preference){
   .fade-in{opacity:0;transform:translateY(20px);transition:opacity .5s,transform .5s}
   .fade-in.visible{opacity:1;transform:none}
@@ -75,91 +59,66 @@ footer strong{color:#fff;display:block;font-size:1rem;margin-bottom:4px}
 
 <section class="hero">
 <div class="container">
-  <h1>Stop Guessing Where AI Fits in Your Business</h1>
-  <p>A step-by-step toolkit to find your best AI opportunities, build internal policies, and roll out automation — without hiring consultants or wasting months experimenting.</p>
-  <a href="https://beornsco.lemonsqueezy.com/checkout/buy/5f284d98-ce43-4ad2-986f-f607aa5d1bd2" class="btn">Get the Starter Kit — €27</a>
+  <h1>Practical AI Tools for Real Businesses</h1>
+  <p>No hype. No consultants. Just frameworks and templates that work.</p>
 </div>
 </section>
 
 <section>
 <div class="container">
-  <h2>What's Inside</h2>
-  <ul class="items fade-in">
-    <li><div class="icon">1</div><div><strong>AI Opportunity Assessment</strong><span>Find where AI saves you time and money</span></div></li>
-    <li><div class="icon">2</div><div><strong>Use Case Prioritization Matrix</strong><span>Stop guessing, start ranking</span></div></li>
-    <li><div class="icon">3</div><div><strong>AI Readiness Checklist</strong><span>Know if your team and data are ready</span></div></li>
-    <li><div class="icon">4</div><div><strong>Internal AI Policy Template</strong><span>Protect your business from day one</span></div></li>
-    <li><div class="icon">5</div><div><strong>30/60/90 Day Automation Roadmap</strong><span>A real plan, not just ideas</span></div></li>
-    <li><div class="icon">6</div><div><strong>ROI Calculator</strong><span>Prove the business case with numbers</span></div></li>
-    <li><div class="icon">7</div><div><strong>Executive Summary Template</strong><span>Get buy-in from leadership</span></div></li>
-    <li class="bonus"><div class="icon">★</div><div><strong>BONUS: 25 Concrete AI Use Cases</strong><span>Sorted by department — ready to act on</span></div></li>
-  </ul>
-</div>
-</section>
-
-<section>
-<div class="container">
-  <h2>Who It's For</h2>
-  <ul class="personas fade-in">
-    <li><strong>Business owners</strong> tired of AI hype who want real, applicable tools</li>
-    <li><strong>Ops managers</strong> who need to "do something with AI" but don't know where to start</li>
-    <li><strong>Founders</strong> who want practical frameworks, not another online course</li>
-  </ul>
-</div>
-</section>
-
-<section>
-<div class="container">
-  <div class="free-box fade-in">
-    <h3>Not sure yet? Start with our free AI Opportunity Discovery Checklist</h3>
-    <p>A quick self-assessment to identify your top 3 AI opportunities — no email required to read, but sign up to get the full version delivered to your inbox.</p>
-    <div id="mailerlite-form">
-      <form id="checklist-form" style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:16px">
-        <input type="email" id="ml-email" placeholder="Your email address" required style="padding:14px 20px;border:2px solid #E5E7EB;border-radius:8px;font-size:1rem;width:280px;outline:none;transition:border .2s" onfocus="this.style.borderColor='#2962FF'" onblur="this.style.borderColor='#E5E7EB'">
-        <button type="submit" class="btn" style="padding:14px 28px;font-size:1rem">Send me the checklist</button>
-      </form>
-      <p id="form-success" style="display:none;color:#2962FF;font-weight:600;margin-top:16px;font-style:normal">Check your inbox! Your free checklist is on its way.</p>
-      <p id="form-error" style="display:none;color:#dc2626;font-weight:600;margin-top:16px;font-style:normal">Something went wrong. Please try again.</p>
-    </div>
-  </div>
-</div>
-</section>
-
-<section>
-<div class="container container--wide">
-  <h2>Our Products</h2>
-  <div class="price-grid fade-in">
-    <div class="price-card">
-      <div class="amount">€27</div>
-      <div class="subtitle">One-time purchase. Use it forever.</div>
-      <h3 style="font-size:1.25rem;margin-bottom:16px">AI Adoption Starter Kit</h3>
+  <div class="products fade-in">
+    <div class="card">
+      <h3>AI Adoption Starter Kit</h3>
+      <div class="price">€27</div>
+      <div class="tagline">One-time purchase. Use it forever.</div>
       <ul>
-        <li>7 actionable templates &amp; frameworks</li>
-        <li>ROI calculator spreadsheet</li>
-        <li>25 ready-to-use AI use cases</li>
-        <li>Instant download, use forever</li>
+        <li>AI Opportunity Assessment Framework</li>
+        <li>Use Case Prioritization Matrix</li>
+        <li>Internal AI Policy Template</li>
+        <li>30/60/90 Day Implementation Roadmap</li>
+        <li>ROI Calculator</li>
       </ul>
       <a href="https://beornsco.lemonsqueezy.com/checkout/buy/5f284d98-ce43-4ad2-986f-f607aa5d1bd2" class="btn">Get the Starter Kit — €27</a>
+      <a href="/ai-starter-kit" class="learn">Learn more →</a>
     </div>
-    <div class="price-card">
-      <div class="amount">€19</div>
-      <div class="subtitle">200+ ready-to-use prompts</div>
-      <h3 style="font-size:1.25rem;margin-bottom:16px">AI Prompt Library for Business</h3>
+    <div class="card">
+      <h3>AI Prompt Library</h3>
+      <div class="price">€19</div>
+      <div class="tagline">Copy. Paste. Customize.</div>
       <ul>
+        <li>200+ tested prompts</li>
         <li>10 departments covered</li>
-        <li>Copy-paste with customizable brackets</li>
-        <li>Pro tips for better results</li>
         <li>Works with ChatGPT, Claude &amp; Gemini</li>
+        <li>Customizable [BRACKETS] for your details</li>
+        <li>Pro tips included for every prompt</li>
       </ul>
       <a href="#" class="btn">Get the Prompt Library — €19</a>
+      <a href="/ai-prompt-library" class="learn">Learn more →</a>
     </div>
   </div>
 </div>
 </section>
 
+<section class="alt">
+<div class="container">
+  <div class="free-section fade-in">
+    <h2>Not sure where to start?</h2>
+    <p>Get our free AI Opportunity Checklist — find your top 3 AI opportunities in 10 minutes.</p>
+    <form id="ml-form" style="display:flex;gap:12px;max-width:500px;margin:0 auto;flex-wrap:wrap;justify-content:center">
+      <input type="email" name="fields[email]" placeholder="Your work email" required style="flex:1;min-width:220px;padding:14px 18px;border:2px solid #E5E7EB;border-radius:8px;font-size:1rem;outline:none">
+      <button type="submit" class="btn" style="white-space:nowrap">Get the Free Checklist</button>
+    </form>
+    <p id="ml-msg" style="margin-top:12px;font-weight:600;display:none"></p>
+  </div>
+</div>
+</section>
+
+<div class="blog-section">
+  <a href="/blog/">Read our blog: practical guides on AI for business →</a>
+</div>
+
 <footer>
-  <strong>Beorns Co</strong>
-  <a href="mailto:beornsco@proton.me">beornsco@proton.me</a>
+  © 2026 Beorns Co · <a href="mailto:beornsco@proton.me">beornsco@proton.me</a>
 </footer>
 
 <script>
@@ -167,41 +126,19 @@ if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches){
   const o=new IntersectionObserver(e=>e.forEach(i=>{if(i.isIntersecting){i.target.classList.add('visible');o.unobserve(i.target)}}),{threshold:.15});
   document.querySelectorAll('.fade-in').forEach(el=>o.observe(el));
 }
-
-document.getElementById('checklist-form').addEventListener('submit', function(e) {
-  e.preventDefault();
-  var email = document.getElementById('ml-email').value;
-  var form = this;
-  var btn = form.querySelector('button');
-  btn.textContent = 'Sending...';
-  btn.disabled = true;
-
-  var callbackName = 'ml_cb_' + Date.now();
-  window[callbackName] = function(resp) {
-    document.getElementById('form-success').style.display = 'block';
-    form.style.display = 'none';
-    document.getElementById('form-error').style.display = 'none';
-    delete window[callbackName];
-    var s = document.getElementById('ml-jsonp');
-    if(s) s.remove();
-  };
-
-  var s = document.createElement('script');
-  s.id = 'ml-jsonp';
-  s.src = 'https://assets.mailerlite.com/jsonp/2208896/forms/182475280749692921/subscribe?fields[email]=' + encodeURIComponent(email) + '&ml-submit=1&callback=' + callbackName;
-  s.onerror = function() {
-    document.getElementById('form-error').style.display = 'block';
-    btn.textContent = 'Send me the checklist';
-    btn.disabled = false;
-  };
-  document.body.appendChild(s);
-
-  setTimeout(function() {
-    if(window[callbackName]) {
-      document.getElementById('form-success').style.display = 'block';
-      form.style.display = 'none';
-    }
-  }, 3000);
+document.getElementById('ml-form').addEventListener('submit',function(e){
+e.preventDefault();
+var email=this.querySelector('[name="fields[email]"]').value;
+var cb='ml_'+Date.now();
+window[cb]=function(){
+document.getElementById('ml-msg').style.display='block';
+document.getElementById('ml-msg').style.color='#16a34a';
+document.getElementById('ml-msg').textContent='Check your inbox! Your free checklist is on the way.';
+document.getElementById('ml-form').style.display='none';
+};
+var s=document.createElement('script');
+s.src='https://assets.mailerlite.com/jsonp/2208896/forms/182475280749692921/subscribe?fields[email]='+encodeURIComponent(email)+'&callback='+cb;
+document.body.appendChild(s);
 });
 </script>
 </body>
