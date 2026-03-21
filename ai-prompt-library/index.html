@@ -104,11 +104,23 @@ footer a{color:#ccc}
 </div>
 </section>
 
+<section id="free" style="padding:64px 0;background:linear-gradient(170deg,#E8EEFF 0%,#fff 100%)">
+<div class="container" style="text-align:center">
+  <h2 style="margin-bottom:8px">Not ready to buy? Try 10 prompts free.</h2>
+  <p style="color:var(--gray);max-width:480px;margin:0 auto 28px;font-size:1.05rem">Get our top 10 business prompts — one from each department. No spam, unsubscribe anytime.</p>
+  <form id="pl-form" style="max-width:420px;margin:0 auto;display:flex;gap:10px;flex-wrap:wrap;justify-content:center">
+    <input type="email" id="pl-email" placeholder="Enter your email" required style="flex:1;min-width:220px;padding:14px 18px;border:2px solid #E5E7EB;border-radius:8px;font-size:1rem;outline:none;transition:border-color .2s" onfocus="this.style.borderColor='var(--blue)'" onblur="this.style.borderColor='#E5E7EB'">
+    <button type="submit" class="btn" style="padding:14px 28px;white-space:nowrap">Get Free Prompts</button>
+  </form>
+  <p id="pl-msg" style="margin-top:14px;font-size:.95rem;display:none"></p>
+</div>
+</section>
+
 <section class="alt cta-section">
 <div class="container fade-in">
   <div class="price">€19</div>
-  <div class="sub">One-time purchase.</div>
-  <a href="https://beornsco.lemonsqueezy.com/checkout/buy/1307e119-c2de-4408-8bc7-3a2305ae7d43" class="btn">Get the Prompt Library — €19</a>
+  <div class="sub">One-time purchase. All 200+ prompts, instant download.</div>
+  <a href="https://beornsco.lemonsqueezy.com/checkout/buy/1307e119-c2de-4408-8bc7-3a2305ae7d43" class="btn">Get the Full Prompt Library — €19</a>
 </div>
 </section>
 
@@ -123,6 +135,40 @@ if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches){
   const o=new IntersectionObserver(e=>e.forEach(i=>{if(i.isIntersecting){i.target.classList.add('visible');o.unobserve(i.target)}}),{threshold:.15});
   document.querySelectorAll('.fade-in').forEach(el=>o.observe(el));
 }
+
+// Prompt Library free sampler signup
+(function(){
+  var form=document.getElementById('pl-form'),
+      emailInput=document.getElementById('pl-email'),
+      msg=document.getElementById('pl-msg');
+  if(!form)return;
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var email=emailInput.value.trim();
+    if(!email)return;
+    msg.style.display='block';
+    msg.style.color='var(--gray)';
+    msg.textContent='Sending...';
+    var cb='mlcb'+Date.now();
+    window[cb]=function(r){
+      if(r&&r.success){
+        msg.style.color='#16a34a';
+        msg.textContent='Check your email for your free prompts!';
+        emailInput.value='';
+      }else{
+        msg.style.color='#dc2626';
+        msg.textContent=(r&&r.msg)||'Something went wrong. Try again.';
+      }
+      var s=document.getElementById(cb);
+      if(s)s.parentNode.removeChild(s);
+      try{delete window[cb]}catch(x){}
+    };
+    var s=document.createElement('script');
+    s.id=cb;
+    s.src='https://assets.mailerlite.com/jsonp/2208896/forms/182585906523277296/subscribe?fields[email]='+encodeURIComponent(email)+'&callback='+cb;
+    document.body.appendChild(s);
+  });
+})();
 </script>
 </body>
 </html>
