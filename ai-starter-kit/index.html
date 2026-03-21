@@ -84,6 +84,26 @@ footer a{color:#ccc}
 </div>
 </section>
 
+<section id="free" style="padding:64px 0;background:linear-gradient(170deg,#E8EEFF 0%,#fff 100%)">
+<div class="container" style="text-align:center">
+  <h2 style="margin-bottom:8px">Not sure yet? Start with our free checklist.</h2>
+  <p style="color:var(--gray);max-width:480px;margin:0 auto 28px;font-size:1.05rem">Get the AI Opportunity Discovery Checklist — find your top 3 AI opportunities in 30 minutes. Free, no spam.</p>
+  <form id="sk-form" style="max-width:420px;margin:0 auto;display:flex;gap:10px;flex-wrap:wrap;justify-content:center">
+    <input type="email" id="sk-email" placeholder="Enter your email" required style="flex:1;min-width:220px;padding:14px 18px;border:2px solid #E5E7EB;border-radius:8px;font-size:1rem;outline:none;transition:border-color .2s" onfocus="this.style.borderColor='var(--blue)'" onblur="this.style.borderColor='#E5E7EB'">
+    <button type="submit" class="btn" style="padding:14px 28px;white-space:nowrap">Get Free Checklist</button>
+  </form>
+  <p id="sk-msg" style="margin-top:14px;font-size:.95rem;display:none"></p>
+</div>
+</section>
+
+<section class="alt" style="padding:48px 0">
+<div class="container" style="text-align:center">
+  <p style="color:var(--gray);font-size:.95rem;margin-bottom:12px">Also from Beorns Co</p>
+  <h3 style="margin-bottom:8px"><a href="/ai-prompt-library/" style="font-size:1.2rem">AI Prompt Library for Business — €19</a></h3>
+  <p style="color:var(--gray);font-size:.95rem">200+ ready-to-use prompts for 10 departments. The perfect companion to your Starter Kit.</p>
+</div>
+</section>
+
 <section class="cta-section">
 <div class="container fade-in">
   <div class="price">€27</div>
@@ -103,6 +123,40 @@ if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches){
   const o=new IntersectionObserver(e=>e.forEach(i=>{if(i.isIntersecting){i.target.classList.add('visible');o.unobserve(i.target)}}),{threshold:.15});
   document.querySelectorAll('.fade-in').forEach(el=>o.observe(el));
 }
+
+// Starter Kit free checklist signup
+(function(){
+  var form=document.getElementById('sk-form'),
+      emailInput=document.getElementById('sk-email'),
+      msg=document.getElementById('sk-msg');
+  if(!form)return;
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var email=emailInput.value.trim();
+    if(!email)return;
+    msg.style.display='block';
+    msg.style.color='var(--gray)';
+    msg.textContent='Sending...';
+    var cb='mlcb'+Date.now();
+    window[cb]=function(r){
+      if(r&&r.success){
+        msg.style.color='#16a34a';
+        msg.textContent='Check your email for your free checklist!';
+        emailInput.value='';
+      }else{
+        msg.style.color='#dc2626';
+        msg.textContent=(r&&r.msg)||'Something went wrong. Try again.';
+      }
+      var s=document.getElementById(cb);
+      if(s)s.parentNode.removeChild(s);
+      try{delete window[cb]}catch(x){}
+    };
+    var s=document.createElement('script');
+    s.id=cb;
+    s.src='https://assets.mailerlite.com/jsonp/2208896/forms/182475280749692921/subscribe?fields[email]='+encodeURIComponent(email)+'&callback='+cb;
+    document.body.appendChild(s);
+  });
+})();
 </script>
 </body>
 </html>
