@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Automation Playbook for SMEs — Beorns Co</title>
+<meta name="description" content="12 step-by-step playbooks to automate your business with AI. 207 pages, 50 prompt templates, tool comparison. €39, one-time purchase.">
+<meta property="og:title" content="AI Automation Playbook for SMEs — Beorns Co">
+<meta property="og:description" content="12 step-by-step automation playbooks for non-technical business owners. 207 pages of practical, hands-on guides.">
+<meta property="og:url" content="https://beornsco.github.io/ai-automation-playbook/">
+<meta property="og:type" content="product">
+<link rel="canonical" href="https://beornsco.github.io/ai-automation-playbook/">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--blue:#2962FF;--dark:#23232D;--light:#F7F8FA;--white:#FFFFFF;--gray:#6B7280;--blue-light:#E8EEFF;--green:#059669;--orange:#D97706}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--dark);background:var(--white);line-height:1.6}
+a{color:var(--blue);text-decoration:none}
+.container{max-width:720px;margin:0 auto;padding:0 1.5rem}
+
+/* Nav */
+nav{background:var(--white);border-bottom:1px solid #E5E7EB;padding:1rem 2rem}
+nav .inner{max-width:720px;margin:0 auto;display:flex;justify-content:space-between;align-items:center}
+nav a{font-weight:600}
+
+/* Hero */
+.hero{background:linear-gradient(135deg,#1a1a2e 0%,#16213e 50%,#0f3460 100%);color:var(--white);padding:4rem 1.5rem;text-align:center}
+.hero h1{font-size:2.4rem;margin-bottom:0.5rem;line-height:1.2}
+.hero .subtitle{font-size:1.2rem;opacity:0.9;margin-bottom:1.5rem}
+.hero .price{font-size:2rem;font-weight:700;margin-bottom:0.5rem}
+.hero .price-note{font-size:0.9rem;opacity:0.7;margin-bottom:1.5rem}
+.btn{display:inline-block;background:var(--blue);color:var(--white);padding:14px 36px;border-radius:8px;font-size:1.1rem;font-weight:600;border:none;cursor:pointer;transition:background 0.2s}
+.btn:hover{background:#1e50d4}
+.trust{display:flex;gap:1.5rem;justify-content:center;flex-wrap:wrap;margin-top:1.5rem;font-size:0.9rem;opacity:0.85}
+
+/* Stats */
+.stats{background:var(--blue-light);padding:2rem 1.5rem;text-align:center}
+.stats-grid{max-width:720px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:1rem}
+.stat{padding:1rem}
+.stat .num{font-size:1.8rem;font-weight:700;color:var(--blue)}
+.stat .label{font-size:0.85rem;color:var(--gray)}
+
+/* Sections */
+section{padding:3rem 1.5rem}
+section h2{font-size:1.8rem;margin-bottom:1rem;text-align:center}
+section .lead{text-align:center;color:var(--gray);margin-bottom:2rem;max-width:600px;margin-left:auto;margin-right:auto}
+
+/* Playbooks grid */
+.playbooks{max-width:720px;margin:0 auto}
+.playbook-group{margin-bottom:2rem}
+.playbook-group h3{font-size:1.1rem;color:var(--blue);margin-bottom:0.75rem;padding-bottom:0.5rem;border-bottom:2px solid var(--blue-light)}
+.playbook-item{display:flex;gap:0.75rem;align-items:flex-start;margin-bottom:0.75rem;padding:0.5rem 0}
+.playbook-num{background:var(--blue);color:var(--white);width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:0.8rem;font-weight:700;flex-shrink:0}
+.playbook-info h4{font-size:0.95rem;margin-bottom:0.15rem}
+.playbook-info p{font-size:0.85rem;color:var(--gray)}
+
+/* What's inside */
+.inside-grid{max-width:720px;margin:0 auto;display:grid;grid-template-columns:repeat(2,1fr);gap:1rem}
+.inside-item{background:var(--light);padding:1.25rem;border-radius:8px}
+.inside-item h4{font-size:0.95rem;margin-bottom:0.3rem}
+.inside-item p{font-size:0.85rem;color:var(--gray)}
+
+/* Who */
+.who-list{max-width:600px;margin:0 auto;list-style:none}
+.who-list li{padding:0.5rem 0;padding-left:1.5rem;position:relative;font-size:1rem}
+.who-list li::before{content:"";position:absolute;left:0;top:0.85rem;width:8px;height:8px;background:var(--green);border-radius:50%}
+
+/* FAQ */
+.faq{max-width:600px;margin:0 auto}
+.faq-item{border-bottom:1px solid #E5E7EB;padding:1rem 0}
+.faq-item h4{font-size:1rem;margin-bottom:0.5rem}
+.faq-item p{font-size:0.9rem;color:var(--gray)}
+
+/* CTA */
+.cta-section{background:var(--dark);color:var(--white);text-align:center;padding:3rem 1.5rem}
+.cta-section h2{color:var(--white);margin-bottom:0.5rem}
+.cta-section p{opacity:0.8;margin-bottom:1.5rem}
+
+/* Cross-sell */
+.cross-sell{background:var(--blue-light);padding:2rem 1.5rem;text-align:center}
+.cross-sell h3{font-size:1.2rem;margin-bottom:0.5rem}
+.cross-sell p{color:var(--gray);margin-bottom:1rem;font-size:0.95rem}
+.cross-sell-links{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+.cross-sell-link{background:var(--white);padding:1rem 1.5rem;border-radius:8px;border:1px solid #E5E7EB;font-weight:600}
+
+/* Footer */
+footer{text-align:center;padding:2rem;color:var(--gray);font-size:0.85rem;border-top:1px solid #E5E7EB}
+
+@media(max-width:600px){
+  .hero h1{font-size:1.8rem}
+  .stats-grid{grid-template-columns:repeat(2,1fr)}
+  .inside-grid{grid-template-columns:1fr}
+  .trust{flex-direction:column;align-items:center;gap:0.5rem}
+}
+</style>
+</head>
+<body>
+
+<nav><div class="inner"><a href="https://beornsco.github.io">Beorns Co</a><a href="https://beornsco.github.io/blog/">Blog</a></div></nav>
+
+<!-- Hero -->
+<div class="hero">
+  <div class="container">
+    <h1>AI Automation Playbook<br>for SMEs</h1>
+    <p class="subtitle">12 step-by-step playbooks to automate your business with AI.<br>No coding. No consultants. Just results.</p>
+    <div class="price">€39</div>
+    <div class="price-note">One-time purchase. Instant download. No subscription.</div>
+    <a href="#" class="btn" id="buy-btn">Get the Playbook</a>
+    <div class="trust">
+      <span>Instant PDF download</span>
+      <span>Works with any AI tool</span>
+      <span>207 pages</span>
+      <span>50 prompt templates</span>
+    </div>
+  </div>
+</div>
+
+<!-- Stats -->
+<div class="stats">
+  <div class="stats-grid">
+    <div class="stat"><div class="num">12</div><div class="label">Automation Playbooks</div></div>
+    <div class="stat"><div class="num">50</div><div class="label">Prompt Templates</div></div>
+    <div class="stat"><div class="num">207</div><div class="label">Pages</div></div>
+    <div class="stat"><div class="num">16</div><div class="label">Chapters</div></div>
+  </div>
+</div>
+
+<!-- Problem -->
+<section>
+  <div class="container">
+    <h2>You know AI can help. But where do you start?</h2>
+    <p class="lead">You've tried ChatGPT. Maybe written a few emails with it. But turning that into real, repeatable business automation? That's where most people get stuck.</p>
+    <div style="max-width:600px;margin:0 auto">
+      <p style="margin-bottom:1rem">Most AI guides give you theory. This playbook gives you step-by-step instructions for 12 specific business processes — from customer emails to contract review.</p>
+      <p style="margin-bottom:1rem">Each playbook tells you exactly:</p>
+      <ul style="list-style:none;margin-bottom:1rem">
+        <li style="padding:0.3rem 0;padding-left:1.5rem;position:relative"><span style="position:absolute;left:0">1.</span> What tools you need (free options included)</li>
+        <li style="padding:0.3rem 0;padding-left:1.5rem;position:relative"><span style="position:absolute;left:0">2.</span> How long it takes to implement</li>
+        <li style="padding:0.3rem 0;padding-left:1.5rem;position:relative"><span style="position:absolute;left:0">3.</span> Step-by-step instructions with real prompts</li>
+        <li style="padding:0.3rem 0;padding-left:1.5rem;position:relative"><span style="position:absolute;left:0">4.</span> How much time you'll save</li>
+        <li style="padding:0.3rem 0;padding-left:1.5rem;position:relative"><span style="position:absolute;left:0">5.</span> What can go wrong (and how to avoid it)</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- 12 Playbooks -->
+<section style="background:var(--light)">
+  <div class="container">
+    <h2>12 Automation Playbooks</h2>
+    <p class="lead">Each playbook is a complete guide — from zero to running automation.</p>
+    <div class="playbooks">
+      <div class="playbook-group">
+        <h3>Customer-Facing</h3>
+        <div class="playbook-item"><div class="playbook-num">1</div><div class="playbook-info"><h4>Customer Email Response</h4><p>Draft consistent, professional responses to common inquiries in seconds. Save 3-5 hours/week.</p></div></div>
+        <div class="playbook-item"><div class="playbook-num">2</div><div class="playbook-info"><h4>FAQ & Knowledge Base Builder</h4><p>Turn tribal knowledge into a searchable, AI-powered knowledge base your whole team can use.</p></div></div>
+        <div class="playbook-item"><div class="playbook-num">3</div><div class="playbook-info"><h4>Lead Qualification & Scoring</h4><p>Automatically score and prioritize inbound leads so your sales team focuses on the right prospects.</p></div></div>
+      </div>
+      <div class="playbook-group">
+        <h3>Operations</h3>
+        <div class="playbook-item"><div class="playbook-num">4</div><div class="playbook-info"><h4>Meeting Notes & Action Items</h4><p>Record, transcribe, and extract action items from every meeting automatically.</p></div></div>
+        <div class="playbook-item"><div class="playbook-num">5</div><div class="playbook-info"><h4>Document Processing Pipeline</h4><p>Process invoices, receipts, and contracts into structured data without manual entry.</p></div></div>
+        <div class="playbook-item"><div class="playbook-num">6</div><div class="playbook-info"><h4>SOP Generator</h4><p>Turn verbal explanations and recordings into professional standard operating procedures.</p></div></div>
+      </div>
+      <div class="playbook-group">
+        <h3>Marketing & Sales</h3>
+        <div class="playbook-item"><div class="playbook-num">7</div><div class="playbook-info"><h4>Content Repurposing Engine</h4><p>Turn one piece of content into 10 formats — blog to tweets, LinkedIn posts, emails, and more.</p></div></div>
+        <div class="playbook-item"><div class="playbook-num">8</div><div class="playbook-info"><h4>Social Media Post Generator</h4><p>Generate brand-consistent social media posts at scale with your voice and style.</p></div></div>
+        <div class="playbook-item"><div class="playbook-num">9</div><div class="playbook-info"><h4>Sales Follow-Up Sequences</h4><p>Personalized, AI-drafted follow-up emails that feel human but run on autopilot.</p></div></div>
+      </div>
+      <div class="playbook-group">
+        <h3>Finance & Admin</h3>
+        <div class="playbook-item"><div class="playbook-num">10</div><div class="playbook-info"><h4>Expense Categorization</h4><p>Receipts to categories to reports — automatically. End manual expense tracking.</p></div></div>
+        <div class="playbook-item"><div class="playbook-num">11</div><div class="playbook-info"><h4>Report Generator</h4><p>Turn raw data into executive summaries and visual reports your leadership team will actually read.</p></div></div>
+        <div class="playbook-item"><div class="playbook-num">12</div><div class="playbook-info"><h4>Contract Review Assistant</h4><p>Flag risks, summarize terms, and extract key dates from contracts in minutes instead of hours.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- What's Inside -->
+<section>
+  <div class="container">
+    <h2>What's Inside</h2>
+    <div class="inside-grid">
+      <div class="inside-item"><h4>12 Step-by-Step Playbooks</h4><p>Complete implementation guides with real prompts and templates for each business process.</p></div>
+      <div class="inside-item"><h4>50 Prompt Templates</h4><p>Copy-paste ready prompts with [BRACKETS] for easy customization. Works with ChatGPT, Claude, Gemini.</p></div>
+      <div class="inside-item"><h4>Tool Comparison Matrix</h4><p>Free vs. paid options for every use case. Know exactly what to use and what it costs.</p></div>
+      <div class="inside-item"><h4>Automation Project Tracker</h4><p>Spreadsheet template to track your automation projects, time savings, and ROI.</p></div>
+      <div class="inside-item"><h4>Automation Stack Guide</h4><p>How to connect your tools. Recommended stacks for €0, €50, and €150/month budgets.</p></div>
+      <div class="inside-item"><h4>Measurement Framework</h4><p>KPIs, scorecards, and the improve-or-kill decision framework for every automation.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- Who is this for -->
+<section style="background:var(--light)">
+  <div class="container">
+    <h2>Who This Is For</h2>
+    <ul class="who-list">
+      <li>Business owners who've tried ChatGPT but want to go further</li>
+      <li>Operations managers looking to cut repetitive work</li>
+      <li>Team leads who want their team to use AI consistently</li>
+      <li>Non-technical professionals who want results without coding</li>
+      <li>Anyone spending hours on tasks that could be automated</li>
+    </ul>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section>
+  <div class="container">
+    <h2>Questions</h2>
+    <div class="faq">
+      <div class="faq-item"><h4>What AI tools do I need?</h4><p>Any general AI assistant works — ChatGPT (free or Plus), Claude, Google Gemini, or Microsoft Copilot. Every playbook includes free tool options.</p></div>
+      <div class="faq-item"><h4>Do I need technical skills?</h4><p>No. Every playbook is written for non-technical users. If you can copy and paste, you can use this.</p></div>
+      <div class="faq-item"><h4>How is this different from the AI Starter Kit?</h4><p>The Starter Kit helps you figure out WHERE to use AI (strategy, assessment, policy). This Playbook shows you HOW to automate specific processes step by step. They complement each other perfectly.</p></div>
+      <div class="faq-item"><h4>What format is it in?</h4><p>You get a 207-page PDF plus a ZIP with all chapters as editable Markdown files, prompt templates, tool comparison, and project tracker spreadsheet.</p></div>
+      <div class="faq-item"><h4>Is there a refund policy?</h4><p>Yes — if you're not satisfied, contact us within 30 days for a full refund. No questions asked.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<div class="cta-section">
+  <h2>Stop researching. Start automating.</h2>
+  <p>12 playbooks. 50 templates. Everything you need to automate your business with AI.</p>
+  <a href="#" class="btn" id="buy-btn-bottom">Get the Playbook — €39</a>
+  <div class="trust" style="margin-top:1.5rem;font-size:0.85rem;opacity:0.7;display:flex;gap:1.5rem;justify-content:center;flex-wrap:wrap">
+    <span>Instant download</span>
+    <span>PDF + editable files</span>
+    <span>One-time purchase</span>
+    <span>30-day guarantee</span>
+  </div>
+</div>
+
+<!-- Cross-sell -->
+<div class="cross-sell">
+  <h3>Also from Beorns Co</h3>
+  <p>Complete your AI toolkit</p>
+  <div class="cross-sell-links">
+    <a href="https://beornsco.github.io/ai-starter-kit/" class="cross-sell-link">AI Adoption Starter Kit — €27</a>
+    <a href="https://beornsco.github.io/ai-prompt-library/" class="cross-sell-link">AI Prompt Library — €19</a>
+  </div>
+  <p style="margin-top:1rem;font-size:0.85rem;color:var(--gray)">Use code <strong>BUNDLE</strong> at checkout for €6 off your second product.</p>
+</div>
+
+<footer>
+  <p>&copy; 2026 Beorns Co. All rights reserved. | <a href="mailto:beornsco@proton.me">Contact</a> | <a href="https://beornsco.github.io">Home</a></p>
+</footer>
+
+</body>
+</html>
