@@ -149,6 +149,22 @@ footer a{color:#ccc}
 </div>
 </section>
 
+<section class="alt">
+<div class="container">
+  <div class="free-section fade-in">
+    <h2>🎓 Free 5-Day Email Course</h2>
+    <p style="font-size:1.05rem;margin-bottom:6px"><strong>5 Days to Your First AI Quick Win</strong></p>
+    <p>One lesson per day. Find your best AI opportunity, write your first prompt, build a reusable template, create an AI policy, and calculate your ROI — all in one week.</p>
+    <form id="ml-course-form" style="display:flex;gap:12px;max-width:500px;margin:0 auto;flex-wrap:wrap;justify-content:center">
+      <input type="email" name="fields[email]" placeholder="Your work email" required style="flex:1;min-width:220px;padding:14px 18px;border:2px solid #E5E7EB;border-radius:8px;font-size:1rem;outline:none">
+      <button type="submit" class="btn" style="white-space:nowrap;background:#16a34a">Start the Free Course</button>
+    </form>
+    <p id="ml-course-msg" style="margin-top:12px;font-weight:600;display:none"></p>
+    <p style="color:var(--gray);font-size:.85rem;margin-top:8px">No spam. Unsubscribe anytime. Just 5 practical lessons.</p>
+  </div>
+</div>
+</section>
+
 <div class="blog-section">
   <a href="/blog/">Read our blog: practical guides on AI for business →</a>
 </div>
@@ -181,6 +197,20 @@ document.getElementById('ml-form').style.display='none';
 };
 var s=document.createElement('script');
 s.src='https://assets.mailerlite.com/jsonp/2208896/forms/182475280749692921/subscribe?fields[email]='+encodeURIComponent(email)+'&callback='+cb;
+document.body.appendChild(s);
+});
+document.getElementById('ml-course-form').addEventListener('submit',function(e){
+e.preventDefault();
+var email=this.querySelector('[name="fields[email]"]').value;
+var cb='mlc_'+Date.now();
+window[cb]=function(){
+document.getElementById('ml-course-msg').style.display='block';
+document.getElementById('ml-course-msg').style.color='#16a34a';
+document.getElementById('ml-course-msg').textContent='You\'re in! Check your inbox for Day 1.';
+document.getElementById('ml-course-form').style.display='none';
+};
+var s=document.createElement('script');
+s.src='https://assets.mailerlite.com/jsonp/2208896/forms/182863223702160765/subscribe?fields[email]='+encodeURIComponent(email)+'&callback='+cb;
 document.body.appendChild(s);
 });
 </script>
