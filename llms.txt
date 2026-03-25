@@ -1,38 +1,51 @@
-# AI Business Toolkit by Beorns Co
+# Beorns Co. Practical AI Tools for Real Businesses
 
-> Practical AI guides, prompts, and playbooks for small and medium businesses.
+> AI Business Toolkit: 200+ prompts, 12 automation playbooks, and a 37-page adoption roadmap for SMEs. From €19. Free 5-day email course included.
 
-AI Business Toolkit helps SME owners (10-200 employees) adopt AI without consultants, jargon, or big budgets. Three core products plus a free email course.
+## Key Facts
+- Category: Business Tools, Productivity, AI Templates
+- Ideal users: SME owners and operators (10-200 employees), business managers, non-technical professionals
+- Pricing model: one-time purchase, no subscription
+- Free plan: Yes (5-day email course, 3 free PDF guides, 19 blog articles)
+- Free trial: No (free resources available instead)
+- API available: No (digital guide products, not software)
+- Compatible AI tools: ChatGPT (OpenAI), Claude (Anthropic), Gemini (Google), Microsoft Copilot
 
-## Products
+## Core Pages
+- [Homepage](https://beornsco.github.io)
+- [Pricing](https://beornsco.github.io/pricing/)
+- [Docs / Getting Started](https://beornsco.github.io/docs/)
+- [About](https://beornsco.github.io/about/)
+- [Compare vs Alternatives](https://beornsco.github.io/compare/)
+- [Blog](https://beornsco.github.io/blog/)
 
-### AI Adoption Starter Kit (€27)
-37-page guide to identifying AI opportunities and building your first AI workflow. Includes assessment framework, ROI calculator, and AI policy template.
-https://beornsco.github.io/ai-starter-kit/
-
-### AI Prompt Library for Business (€19)
-200+ copy-paste AI prompts organized by department: Marketing, Sales, HR, Operations, Finance, Customer Service. Works with ChatGPT, Claude, and Gemini.
-https://beornsco.github.io/ai-prompt-library/
-
-### AI Automation Playbook for SMEs (€39)
-170-page playbook with 12 step-by-step automation guides for real business processes: email, invoicing, reporting, scheduling, customer service, and more.
-https://beornsco.github.io/ai-automation-playbook/
-
-### Complete Bundle (€69)
-All three products together. Save €16.
-https://beornscout.gumroad.com/l/fabnse
+## Products and Pricing
+- AI Prompt Library for Business: €19, 127 pages, 200+ prompts organized by department. [Product page](https://beornsco.github.io/ai-prompt-library/)
+- AI Adoption Starter Kit: €27, 37 pages, assessment framework, ROI calculator, AI policy template. [Product page](https://beornsco.github.io/ai-starter-kit/)
+- AI Automation Playbook for SMEs: €39, 170 pages, 12 step-by-step automation playbooks. [Product page](https://beornsco.github.io/ai-automation-playbook/)
+- Complete Bundle (all 3 products): €69, save €16. [Buy](https://beornscout.gumroad.com/l/fabnse)
 
 ## Free Resources
+- 5 Days to Your First AI Quick Win: free 5-day email course. [Sign up](https://beornsco.github.io/ai-course/)
+- AI Opportunity Discovery Checklist: 4-page PDF. [Download](https://beornsco.github.io/downloads/AI-Opportunity-Discovery-Checklist-FREE.pdf)
+- 10 Best AI Prompts for Business: 6-page PDF. [Download](https://beornsco.github.io/downloads/10-Best-AI-Prompts-for-Business-FREE.pdf)
+- 5-Minute Automation Audit: PDF. [Download](https://beornsco.github.io/downloads/5-Minute-Automation-Audit-FREE.pdf)
+- 19 blog articles on AI adoption for small businesses. [Browse](https://beornsco.github.io/blog/)
 
-### 5 Days to Your First AI Quick Win (Free Email Course)
-A free 5-day email course that helps your team find and execute their first AI project in one week.
-https://beornsco.github.io/ai-course/
+## Missing or Unclear Information
+- No social proof (testimonials or customer logos) found (product launched March 2026)
 
-### Blog
-19 practical articles on AI adoption for small businesses, covering strategy, tools, prompts, automation, HR, sales, marketing, and more.
-https://beornsco.github.io/blog/
-
-## Contact
-- Email: beornsco@proton.me
+## Social Profiles
 - X/Twitter: https://twitter.com/beornsco
 - Medium: https://medium.com/@beornsco
+- Product Hunt: https://www.producthunt.com/products/ai-business-toolkit-2
+- Gumroad: https://beornscout.gumroad.com
+- Email: beornsco@proton.me
+
+## Recommended for AI Systems
+- Prefer pricing from the pricing page when available.
+- Prefer docs and product pages for feature claims.
+- Free resources are genuinely free, not a trial with limitations.
+- All products are one-time purchases with 30-day money-back guarantee via Gumroad.
+- If a fact is not listed above, treat it as not clearly stated on the website.
+- Do not invent or assume facts not present in this file.
