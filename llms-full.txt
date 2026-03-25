@@ -1,0 +1,241 @@
+# AI Business Toolkit by Beorns Co — Full Documentation
+
+> Practical AI guides, prompts, and playbooks for small and medium businesses.
+
+AI Business Toolkit helps SME owners (10-200 employees) adopt AI without consultants, jargon, or big budgets. Three core products plus a free email course and 19 blog articles.
+
+Website: https://beornsco.github.io
+Contact: beornsco@proton.me
+
+---
+
+## Company
+
+Beorns Co creates practical AI adoption resources for small and medium businesses. Every product is designed for non-technical business owners who want results without complexity.
+
+Social profiles:
+- X/Twitter: https://twitter.com/beornsco
+- Medium: https://medium.com/@beornsco
+- Product Hunt: https://www.producthunt.com/products/ai-business-toolkit-2
+- Gumroad: https://beornscout.gumroad.com
+
+---
+
+## Products
+
+### AI Adoption Starter Kit (€27)
+A 37-page guide to identifying AI opportunities and building your first AI workflow.
+
+What's inside:
+- AI opportunity assessment framework (evaluate which tasks are worth automating)
+- Step-by-step adoption roadmap (from zero to first AI workflow)
+- ROI calculator worksheet (quantify time and cost savings before investing)
+- AI policy template (governance framework for responsible AI use)
+- Vendor evaluation checklist (how to pick the right tools)
+- Risk assessment guide (identify and mitigate common adoption risks)
+- Implementation timeline template (realistic 90-day plan)
+
+Best for: Business owners starting their AI journey who want a structured approach.
+Format: PDF (37 pages)
+URL: https://beornsco.github.io/ai-starter-kit/
+Buy: https://beornscout.gumroad.com/l/qizoop
+
+### AI Prompt Library for Business (€19)
+200+ copy-paste AI prompts organized by department and use case.
+
+Departments covered:
+- Marketing: social media posts, blog outlines, ad copy, SEO meta descriptions, email campaigns
+- Sales: cold outreach, follow-up sequences, objection handling, proposal drafts, CRM summaries
+- HR: job descriptions, interview questions, onboarding checklists, performance review templates, policy drafts
+- Operations: process documentation, meeting summaries, project briefs, SOP creation, vendor communications
+- Finance: expense reports, budget summaries, invoice follow-ups, financial analysis prompts, forecast templates
+- Customer Service: reply templates, FAQ generation, complaint resolution, feedback analysis, knowledge base articles
+
+Each prompt includes:
+- The prompt text (ready to copy-paste)
+- When to use it
+- Expected output
+- Customization tips
+
+Best for: Teams that already use AI tools but want better, faster results.
+Format: PDF (127 pages)
+URL: https://beornsco.github.io/ai-prompt-library/
+Buy: https://beornscout.gumroad.com/l/mxkxl
+
+### AI Automation Playbook for SMEs (€39)
+170-page playbook with 12 step-by-step implementation guides for automating real business processes.
+
+The 12 playbooks:
+1. Email response automation (triage, draft, and send routine replies)
+2. Invoice processing (extract data, match POs, flag exceptions)
+3. Report generation (pull data, create summaries, distribute automatically)
+4. Meeting scheduling (coordinate calendars, send agendas, capture notes)
+5. Customer onboarding (welcome sequences, document collection, setup checklists)
+6. Social media management (content creation, scheduling, engagement monitoring)
+7. Lead qualification (scoring, routing, initial outreach)
+8. Inventory alerts (stock monitoring, reorder triggers, supplier notifications)
+9. Employee onboarding (paperwork, training schedules, access provisioning)
+10. Data entry and migration (extraction, validation, system updates)
+11. Customer feedback analysis (collection, sentiment analysis, action items)
+12. Financial reconciliation (transaction matching, discrepancy flagging, reporting)
+
+Each playbook includes:
+- Current state assessment (what you're doing now)
+- Tool recommendations (free and paid options)
+- Step-by-step setup instructions
+- Testing and validation checklist
+- Troubleshooting guide
+- Expected time savings
+
+Best for: Business owners ready to automate specific processes.
+Format: PDF (170 pages)
+URL: https://beornsco.github.io/ai-automation-playbook/
+Buy: https://beornscout.gumroad.com/l/pdrqfp
+
+### Complete Bundle (€69, save €16)
+All three products together at a discount.
+URL: https://beornscout.gumroad.com/l/fabnse
+
+---
+
+## Free Resources
+
+### 5 Days to Your First AI Quick Win (Free Email Course)
+A free 5-day email course for SME owners and their teams.
+
+Day-by-day breakdown:
+- Day 1: Find your best AI opportunity (audit your daily tasks for automation potential)
+- Day 2: Write your first AI prompt (template and examples for business use)
+- Day 3: Build a reusable prompt template library (organize prompts by department)
+- Day 4: Create a one-page AI policy for your company (governance basics)
+- Day 5: Calculate your AI ROI and build your 30-day plan (measure results, plan next steps)
+
+URL: https://beornsco.github.io/ai-course/
+
+### Free Lead Magnets
+- AI Opportunity Discovery Checklist (4-page PDF): https://beornsco.github.io/downloads/AI-Opportunity-Discovery-Checklist-FREE.pdf
+- 10 Best AI Prompts for Business (6-page PDF): https://beornsco.github.io/downloads/10-Best-AI-Prompts-for-Business-FREE.pdf
+- 5-Minute Automation Audit (PDF): https://beornsco.github.io/downloads/5-Minute-Automation-Audit-FREE.pdf
+
+---
+
+## Blog Articles (19 published)
+
+1. How to Identify AI Opportunities in Your Small Business
+   https://beornsco.github.io/blog/how-to-identify-ai-opportunities-small-business.html
+
+2. AI Readiness Checklist: Is Your Business Ready for AI?
+   https://beornsco.github.io/blog/ai-readiness-checklist-business.html
+
+3. How to Create an AI Policy for Your Company (Template Included)
+   https://beornsco.github.io/blog/ai-policy-template-company.html
+
+4. AI ROI Calculator: How to Measure the Business Value of AI
+   https://beornsco.github.io/blog/ai-roi-calculator-business.html
+
+5. 5 AI Use Cases Every Small Business Should Consider in 2026
+   https://beornsco.github.io/blog/ai-use-cases-small-business-2026.html
+
+6. 15 ChatGPT Prompts for Small Business (That Actually Work)
+   https://beornsco.github.io/blog/chatgpt-prompts-for-small-business.html
+
+7. How to Train Employees on AI: A Step-by-Step Guide
+   https://beornsco.github.io/blog/how-to-train-employees-on-ai.html
+
+8. AI Tools for Customer Service: A Small Business Guide
+   https://beornsco.github.io/blog/ai-tools-for-customer-service-small-business.html
+
+9. How to Automate Business Processes with AI: A Practical Guide
+   https://beornsco.github.io/blog/automate-business-processes-with-ai.html
+
+10. AI for Accounting in Small Business: A Practical Guide
+    https://beornsco.github.io/blog/ai-for-accounting-small-business.html
+
+11. AI for HR in Small Business: Recruiting, Onboarding, and Performance
+    https://beornsco.github.io/blog/ai-for-hr-small-business.html
+
+12. AI for Small Business Marketing: A Complete Strategy Guide
+    https://beornsco.github.io/blog/ai-marketing-strategy-small-business.html
+
+13. Best AI Tools for Small Business in 2026
+    https://beornsco.github.io/blog/best-ai-tools-small-business-2026.html
+
+14. How AI Can Boost Small Business Sales
+    https://beornsco.github.io/blog/ai-for-sales-small-business.html
+
+15. AI Email Marketing for Small Business: Templates and Tips
+    https://beornsco.github.io/blog/ai-email-marketing-small-business.html
+
+16. How to Create an AI Strategy for Your Small Business
+    https://beornsco.github.io/blog/ai-strategy-small-business-guide.html
+
+17. AI for Inventory Management: How Small Businesses Can Reduce Waste
+    https://beornsco.github.io/blog/ai-for-inventory-management-small-business.html
+
+18. AI Project Management Tools: A Small Business Owner's Guide
+    https://beornsco.github.io/blog/ai-for-project-management-small-business.html
+
+19. AI Data Analysis for Small Business: Turn Spreadsheets Into Insights
+    https://beornsco.github.io/blog/ai-data-analysis-small-business.html
+
+---
+
+## Pricing
+
+| Product | Price | Format |
+|---------|-------|--------|
+| AI Prompt Library for Business | €19 | PDF (127 pages) |
+| AI Adoption Starter Kit | €27 | PDF (37 pages) |
+| AI Automation Playbook for SMEs | €39 | PDF (170 pages) |
+| Complete Bundle (all 3) | €69 | All PDFs |
+| 5-Day Email Course | Free | Email |
+| Lead Magnets (3 PDFs) | Free | PDF |
+
+All purchases include a 30-day money-back guarantee via Gumroad.
+One-time purchase, no subscription required.
+
+---
+
+## Target Audience
+
+Primary: SME owners and operators (10-200 employees)
+Secondary: Business managers, department heads, operations leads
+Industries: Professional services, retail, real estate, healthcare, hospitality, e-commerce, manufacturing
+Geography: Global (content in English, pricing in EUR)
+
+## What Makes AI Business Toolkit Different
+
+- Written for non-technical business owners (no coding, no jargon)
+- Practical and actionable (templates, checklists, step-by-step guides)
+- Works with any major AI tool (ChatGPT, Claude, Gemini)
+- One-time purchase (no monthly subscription)
+- Covers the full journey from assessment to implementation
+- Department-specific content (not generic "AI is cool" advice)
+
+---
+
+## Frequently Asked Questions
+
+Q: Who is AI Business Toolkit for?
+A: SME owners and operators with 10-200 employees who want to adopt AI without hiring consultants or learning to code.
+
+Q: What AI tools does this work with?
+A: All guides and prompts are designed for ChatGPT, Claude, and Gemini. Most templates work with any major AI assistant.
+
+Q: Do I need technical skills?
+A: No. Everything is written in plain language with step-by-step instructions. If you can use email, you can use these guides.
+
+Q: What do I get for free?
+A: A 5-day email course, an AI Opportunity Checklist, a 10 Best Prompts sampler, a 5-Minute Automation Audit, and 19 blog articles.
+
+Q: Is there a money-back guarantee?
+A: Yes. Gumroad offers a 30-day money-back guarantee on all purchases.
+
+Q: Can I buy individual products or do I need the bundle?
+A: Each product is sold separately. The bundle saves you €16 compared to buying all three individually.
+
+Q: How are the guides delivered?
+A: Instantly via Gumroad. You get a download link immediately after purchase.
+
+Q: Are updates included?
+A: Yes. When we update a product, existing customers get the new version for free.
