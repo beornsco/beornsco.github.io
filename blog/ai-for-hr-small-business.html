@@ -302,10 +302,44 @@
             <p>Start with recruiting — it's where most small businesses feel the pain first. Use AI to write the job post, screen the resumes, and prepare for the interview. Once you see how much time that saves, you'll naturally expand to onboarding and performance management.</p>
 
             <p>You didn't start a business to be an HR administrator. AI lets you stop being one.</p>
+        
+    <div style="background:#f0fdf4;border:2px solid #16a34a;border-radius:8px;padding:1.5rem 2rem;margin:2.5rem 0;text-align:center">
+      <h3 style="color:#16a34a;margin:0 0 0.5rem">🎓 Free 5-Day Email Course</h3>
+      <p style="margin-bottom:6px"><strong>5 Days to Your First AI Quick Win</strong></p>
+      <p style="color:#6B7280;margin-bottom:1rem">One lesson per day. Find your best AI opportunity, write your first prompt, build a reusable template, create an AI policy, and calculate your ROI.</p>
+      <form class="ml-course-form" style="display:flex;gap:12px;max-width:500px;margin:0 auto;flex-wrap:wrap;justify-content:center">
+        <input type="email" name="fields[email]" placeholder="Your work email" required style="flex:1;min-width:220px;padding:14px 18px;border:2px solid #E5E7EB;border-radius:8px;font-size:1rem;outline:none">
+        <button type="submit" style="white-space:nowrap;background:#16a34a;color:#fff;padding:14px 24px;border:none;border-radius:8px;font-size:1rem;font-weight:600;cursor:pointer">Start the Free Course</button>
+      </form>
+      <p class="ml-course-msg" style="margin-top:12px;font-weight:600;display:none"></p>
+      <p style="color:#6B7280;font-size:.85rem;margin-top:8px">No spam. Unsubscribe anytime.</p>
+    </div>
+
         </article>
     </div>
     <footer>
         <p>&copy; 2026 Beorns Co. All rights reserved. · <a href="mailto:beornsco@proton.me">Contact</a> · <a href="https://beornsco.github.io">Home</a></p>
     </footer>
+
+<script>
+document.querySelectorAll('.ml-course-form').forEach(function(form){
+form.addEventListener('submit',function(e){
+e.preventDefault();
+var email=this.querySelector('[name="fields[email]"]').value;
+var msg=this.parentElement.querySelector('.ml-course-msg');
+var cb='mlc_'+Date.now();
+window[cb]=function(){
+msg.style.display='block';
+msg.style.color='#16a34a';
+msg.textContent='You\'re in! Check your inbox for Day 1.';
+form.style.display='none';
+};
+var s=document.createElement('script');
+s.src='https://assets.mailerlite.com/jsonp/2208896/forms/182863223702160765/subscribe?fields[email]='+encodeURIComponent(email)+'&callback='+cb;
+document.body.appendChild(s);
+});
+});
+</script>
+
 </body>
 </html>
