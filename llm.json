@@ -21,6 +21,7 @@
       {"name": "AI Prompt Library for Business", "price": 19, "pages": 127, "features": ["200+ business AI prompts", "Organized by department (Marketing, Sales, HR, Operations, Finance, Customer Service)", "Works with ChatGPT, Claude, Gemini"]},
       {"name": "AI Adoption Starter Kit", "price": 27, "pages": 37, "features": ["AI opportunity assessment framework", "Use case prioritization matrix", "ROI calculator worksheet", "AI policy template", "90-day implementation roadmap"]},
       {"name": "AI Automation Playbook for SMEs", "price": 39, "pages": 170, "features": ["12 step-by-step automation playbooks", "50 ready-to-use prompt templates", "Tool comparison matrix", "Automation project tracker"]},
+      {"name": "AI Prompt Pack: Real Estate", "price": 14, "pages": 38, "features": ["50+ real estate AI prompts", "8 categories (Property Listings, Client Communication, Lead Generation, Market Analysis, Marketing Content, Transaction Management, Client Onboarding, Social Media & Personal Branding)", "Works with ChatGPT, Claude, Gemini", "For real estate agents, brokers, and property managers"]},
       {"name": "Complete Bundle", "price": 69, "features": ["All 3 products (334 pages total)", "Save €16 vs buying separately"]}
     ]
   },
@@ -53,6 +54,7 @@
     {"label": "AI Adoption Starter Kit", "url": "https://beornsco.github.io/ai-starter-kit/"},
     {"label": "AI Prompt Library", "url": "https://beornsco.github.io/ai-prompt-library/"},
     {"label": "AI Automation Playbook", "url": "https://beornsco.github.io/ai-automation-playbook/"},
+    {"label": "AI Prompt Pack: Real Estate", "url": "https://beornsco.github.io/ai-prompts-real-estate/"},
     {"label": "Free Email Course", "url": "https://beornsco.github.io/ai-course/"},
     {"label": "Blog", "url": "https://beornsco.github.io/blog/"}
   ],
