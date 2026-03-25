@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>5 Days to Your First AI Quick Win | Free Email Course | Beorns Co</title>
+<meta name="description" content="A free 5-day email course for SME owners. Find your best AI opportunity, write your first prompt, build a template library, create an AI policy, and calculate your ROI.">
+<meta name="keywords" content="AI email course, AI for small business, AI quick win, SME AI adoption, free AI course, business AI prompts, AI policy template, AI ROI calculator">
+<meta property="og:title" content="5 Days to Your First AI Quick Win | Free Email Course">
+<meta property="og:description" content="A free 5-day email course for SME owners. Find your best AI opportunity, write your first prompt, and start seeing results in one week.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://beornsco.github.io/ai-course/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="5 Days to Your First AI Quick Win | Free Email Course">
+<meta name="twitter:description" content="A free 5-day email course for SME owners. Find your best AI opportunity and start seeing results in one week.">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--blue:#2962FF;--dark:#23232D;--light:#F7F8FA;--white:#FFFFFF;--gray:#6B7280;--blue-light:#E8EEFF;--green:#16a34a;--green-bg:#dcfce7}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--dark);line-height:1.6}
+a{color:var(--blue);text-decoration:none}
+.container{max-width:900px;margin:0 auto;padding:0 24px}
+.btn{display:inline-block;background:var(--green);color:#fff;padding:16px 36px;border-radius:8px;font-size:1.05rem;font-weight:600;transition:transform .15s,box-shadow .15s;cursor:pointer;border:none}
+.btn:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(22,163,74,.35)}
+.btn-blue{background:var(--blue)}
+.btn-blue:hover{box-shadow:0 6px 20px rgba(41,98,255,.35)}
+
+/* Hero */
+.hero{padding:80px 0 60px;text-align:center;background:linear-gradient(170deg,var(--blue-light) 0%,var(--white) 100%)}
+.hero .badge{display:inline-block;background:var(--green-bg);color:var(--green);padding:6px 16px;border-radius:20px;font-size:.85rem;font-weight:600;margin-bottom:20px}
+.hero h1{font-size:clamp(2rem,5vw,2.8rem);line-height:1.2;margin-bottom:16px;letter-spacing:-.02em}
+.hero p{font-size:1.15rem;color:var(--gray);max-width:580px;margin:0 auto 28px}
+.hero .social-proof{color:var(--gray);font-size:.95rem;margin-top:16px}
+
+/* Signup form */
+.signup-box{background:var(--white);border:2px solid #E5E7EB;border-radius:14px;padding:32px 28px;max-width:520px;margin:0 auto;text-align:center}
+.signup-box h3{font-size:1.2rem;margin-bottom:16px}
+.signup-form{display:flex;gap:12px;flex-wrap:wrap;justify-content:center}
+.signup-form input[type="email"]{flex:1;min-width:220px;padding:14px 18px;border:2px solid #E5E7EB;border-radius:8px;font-size:1rem;outline:none;transition:border-color .2s}
+.signup-form input[type="email"]:focus{border-color:var(--blue)}
+.signup-note{color:var(--gray);font-size:.85rem;margin-top:10px}
+#ml-msg{margin-top:12px;font-weight:600;display:none}
+
+/* Sections */
+section{padding:64px 0}
+section.alt{background:var(--light)}
+h2{font-size:1.6rem;margin-bottom:12px;text-align:center;letter-spacing:-.01em}
+.section-subtitle{text-align:center;color:var(--gray);font-size:1.05rem;max-width:600px;margin:0 auto 36px}
+
+/* Benefits */
+.benefits{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:36px}
+@media(max-width:700px){.benefits{grid-template-columns:1fr}}
+.benefit{text-align:center;padding:24px 16px}
+.benefit .icon{font-size:2rem;margin-bottom:12px}
+.benefit h3{font-size:1.1rem;margin-bottom:8px}
+.benefit p{color:var(--gray);font-size:.95rem}
+
+/* Day-by-day */
+.days{max-width:640px;margin:0 auto}
+.day{display:flex;gap:20px;padding:24px 0;border-bottom:1px solid #E5E7EB}
+.day:last-child{border-bottom:none}
+.day-num{flex-shrink:0;width:56px;height:56px;background:var(--blue);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:1.1rem}
+.day-content h3{font-size:1.1rem;margin-bottom:4px}
+.day-content p{color:var(--gray);font-size:.95rem}
+
+/* FAQ */
+.faq{max-width:640px;margin:0 auto}
+.faq-item{border-bottom:1px solid #E5E7EB;padding:20px 0}
+.faq-item:last-child{border-bottom:none}
+.faq-q{font-weight:700;font-size:1.05rem;cursor:pointer;display:flex;justify-content:space-between;align-items:center}
+.faq-q::after{content:"+";font-size:1.4rem;color:var(--blue);transition:transform .2s}
+.faq-item.open .faq-q::after{transform:rotate(45deg)}
+.faq-a{color:var(--gray);font-size:.95rem;max-height:0;overflow:hidden;transition:max-height .3s ease,padding .3s ease;padding-top:0}
+.faq-item.open .faq-a{max-height:200px;padding-top:12px}
+
+/* Products cross-sell */
+.products{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+@media(max-width:900px){.products{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.products{grid-template-columns:1fr}}
+.card{background:var(--white);border:2px solid #E5E7EB;border-radius:14px;padding:28px 22px;display:flex;flex-direction:column;text-align:center}
+.card h3{font-size:1.2rem;margin-bottom:4px}
+.card .price{font-size:2rem;font-weight:800;color:var(--blue);margin-bottom:2px}
+.card .tagline{color:var(--gray);font-size:.9rem;margin-bottom:16px}
+.card ul{list-style:none;margin-bottom:20px;flex:1;text-align:left}
+.card ul li{padding:4px 0;font-size:.93rem}
+.card ul li::before{content:"✓ ";color:var(--blue);font-weight:700}
+.card .btn-blue{width:100%;text-align:center;margin-bottom:8px}
+
+/* CTA bottom */
+.cta-bottom{text-align:center;max-width:560px;margin:0 auto}
+
+/* Footer */
+footer{padding:36px 0;text-align:center;color:#aaa;font-size:.9rem;background:var(--dark)}
+footer a{color:#ccc}
+
+/* Animations */
+@media(prefers-reduced-motion:no-preference){
+  .fade-in{opacity:0;transform:translateY(20px);transition:opacity .5s,transform .5s}
+  .fade-in.visible{opacity:1;transform:none}
+}
+</style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3S7D3JJ9JS"></script>
+<script>
+ window.dataLayer = window.dataLayer || [];
+ function gtag(){dataLayer.push(arguments);}
+ gtag('js', new Date());
+ gtag('config', 'G-3S7D3JJ9JS');
+</script>
+</head>
+<body>
+
+<!-- Hero -->
+<section class="hero">
+<div class="container">
+  <div class="badge">✉️ Free 5-Day Email Course</div>
+  <h1>5 Days to Your First AI Quick Win</h1>
+  <p>A free, practical email course for business owners who want to start using AI this week. One lesson per day. No fluff, no theory, just results.</p>
+
+  <div class="signup-box">
+    <h3>Start your first lesson today</h3>
+    <form id="ml-form" class="signup-form">
+      <input type="email" name="fields[email]" placeholder="Your work email" required>
+      <button type="submit" class="btn">Start the Free Course</button>
+    </form>
+    <p id="ml-msg"></p>
+    <p class="signup-note">No spam. Unsubscribe anytime. Just 5 practical lessons.</p>
+  </div>
+
+  <p class="social-proof">Join 100+ business owners already taking the course</p>
+</div>
+</section>
+
+<!-- Benefits -->
+<section>
+<div class="container">
+  <h2>Why take this course?</h2>
+  <p class="section-subtitle">Most AI advice is vague, theoretical, or designed for tech companies. This course is built for real business owners who want real results.</p>
+  <div class="benefits fade-in">
+    <div class="benefit">
+      <div class="icon">⏱️</div>
+      <h3>5 Minutes Per Day</h3>
+      <p>Each lesson takes 5 minutes to read and includes a clear action step you can finish the same day.</p>
+    </div>
+    <div class="benefit">
+      <div class="icon">🎯</div>
+      <h3>Practical, Not Theoretical</h3>
+      <p>Every lesson includes templates, frameworks, or worksheets you can use right away in your business.</p>
+    </div>
+    <div class="benefit">
+      <div class="icon">💰</div>
+      <h3>Completely Free</h3>
+      <p>No credit card. No upsell wall. Just five days of practical AI knowledge delivered to your inbox.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- Day-by-Day Breakdown -->
+<section class="alt">
+<div class="container">
+  <h2>What you will learn</h2>
+  <p class="section-subtitle">Each day builds on the last. By Day 5, you will have a clear AI plan tailored to your business.</p>
+  <div class="days fade-in">
+    <div class="day">
+      <div class="day-num">1</div>
+      <div class="day-content">
+        <h3>Find Your Best AI Opportunity</h3>
+        <p>Audit your daily tasks and identify the one area where AI can save you the most time. You will use our simple scoring framework to pinpoint your biggest quick win.</p>
+      </div>
+    </div>
+    <div class="day">
+      <div class="day-num">2</div>
+      <div class="day-content">
+        <h3>Write Your First AI Prompt</h3>
+        <p>Learn the anatomy of a great prompt with our fill-in-the-blank template. You will write and test your first business prompt in under 10 minutes.</p>
+      </div>
+    </div>
+    <div class="day">
+      <div class="day-num">3</div>
+      <div class="day-content">
+        <h3>Build a Reusable Prompt Library</h3>
+        <p>Turn one good prompt into a system. You will organize your prompts into a simple library you can share with your team and reuse every week.</p>
+      </div>
+    </div>
+    <div class="day">
+      <div class="day-num">4</div>
+      <div class="day-content">
+        <h3>Create a One-Page AI Policy</h3>
+        <p>Every company using AI needs guardrails. You will fill in our one-page AI policy template covering data privacy, approved tools, and usage guidelines.</p>
+      </div>
+    </div>
+    <div class="day">
+      <div class="day-num">5</div>
+      <div class="day-content">
+        <h3>Calculate Your AI ROI and Build Your 30-Day Plan</h3>
+        <p>Measure the time and money you will save. You will use our ROI calculator and map out your next 30 days of AI adoption with a clear action plan.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- Mid-page CTA -->
+<section>
+<div class="container">
+  <div class="cta-bottom fade-in">
+    <h2>Ready to get your first AI quick win?</h2>
+    <p class="section-subtitle" style="margin-bottom:24px">Join 100+ business owners who have already started. Day 1 arrives the moment you sign up.</p>
+    <div class="signup-box" style="border:none;padding:0">
+      <form id="ml-form-mid" class="signup-form">
+        <input type="email" name="fields[email]" placeholder="Your work email" required>
+        <button type="submit" class="btn">Start the Free Course</button>
+      </form>
+      <p id="ml-msg-mid" style="margin-top:12px;font-weight:600;display:none"></p>
+      <p class="signup-note">Free forever. No credit card required.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- FAQ -->
+<section class="alt">
+<div class="container">
+  <h2>Frequently Asked Questions</h2>
+  <div class="faq fade-in">
+    <div class="faq-item">
+      <div class="faq-q">Is this really free?</div>
+      <div class="faq-a">Yes, completely free. No hidden fees, no credit card required. You will receive 5 lessons over 5 days, and that is it.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Who is this course for?</div>
+      <div class="faq-a">Business owners and managers at small to mid-sized companies who want to start using AI but are not sure where to begin. No technical background needed.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">How much time does it take?</div>
+      <div class="faq-a">Each lesson takes about 5 minutes to read. The action steps take another 10 to 15 minutes. You can complete everything during a coffee break.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Which AI tools do I need?</div>
+      <div class="faq-a">Just a free ChatGPT, Claude, or Gemini account. The course works with any AI assistant. No paid subscriptions required.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">What if I miss a day?</div>
+      <div class="faq-a">No problem. The emails stay in your inbox and you can work through them at your own pace. There is no deadline.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Will I get spammed?</div>
+      <div class="faq-a">No. You will receive exactly 5 emails over 5 days. After that, you may get occasional tips (once or twice a month), and you can unsubscribe with one click at any time.</div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- Cross-sell Products -->
+<section>
+<div class="container">
+  <h2>Want to go deeper?</h2>
+  <p class="section-subtitle">After the course, accelerate your AI adoption with our premium toolkits.</p>
+  <div class="products fade-in">
+    <div class="card">
+      <h3>AI Adoption Starter Kit</h3>
+      <div class="price">€27</div>
+      <div class="tagline">Strategy, frameworks, and templates.</div>
+      <ul>
+        <li>AI Opportunity Assessment</li>
+        <li>Use Case Prioritization Matrix</li>
+        <li>Internal AI Policy Template</li>
+        <li>30/60/90 Day Roadmap</li>
+        <li>ROI Calculator</li>
+      </ul>
+      <a href="https://beornsco.github.io/ai-starter-kit/" class="btn btn-blue">Learn More</a>
+    </div>
+    <div class="card">
+      <h3>AI Prompt Library</h3>
+      <div class="price">€19</div>
+      <div class="tagline">200+ tested prompts. Copy, paste, go.</div>
+      <ul>
+        <li>200+ business prompts</li>
+        <li>10 departments covered</li>
+        <li>Works with any AI tool</li>
+        <li>Customizable templates</li>
+        <li>Pro tips included</li>
+      </ul>
+      <a href="https://beornsco.github.io/ai-prompt-library/" class="btn btn-blue">Learn More</a>
+    </div>
+    <div class="card">
+      <h3>AI Automation Playbook</h3>
+      <div class="price">€39</div>
+      <div class="tagline">Stop reading about AI. Start automating.</div>
+      <ul>
+        <li>12 automation playbooks</li>
+        <li>50 prompt templates</li>
+        <li>Tool comparison matrix</li>
+        <li>Project tracker</li>
+        <li>170 pages, no fluff</li>
+      </ul>
+      <a href="https://beornsco.github.io/ai-automation-playbook/" class="btn btn-blue">Learn More</a>
+    </div>
+  </div>
+  <div style="text-align:center;margin-top:32px" class="fade-in">
+    <p style="color:var(--gray);margin-bottom:12px">Or get everything in one bundle and save 19%:</p>
+    <a href="https://beornscout.gumroad.com/l/fabnse" class="btn btn-blue" style="font-size:1.05rem">Get the Complete Bundle, €69 <span style="text-decoration:line-through;opacity:.7;font-weight:400;font-size:.9rem">€85</span></a>
+  </div>
+</div>
+</section>
+
+<!-- Bottom CTA -->
+<section class="alt">
+<div class="container">
+  <div class="cta-bottom fade-in">
+    <h2>Start learning today. It is free.</h2>
+    <p class="section-subtitle" style="margin-bottom:24px">Your first lesson is waiting. Sign up now and check your inbox in 2 minutes.</p>
+    <div class="signup-box" style="border:none;padding:0;background:transparent">
+      <form id="ml-form-bottom" class="signup-form">
+        <input type="email" name="fields[email]" placeholder="Your work email" required>
+        <button type="submit" class="btn">Start the Free Course</button>
+      </form>
+      <p id="ml-msg-bottom" style="margin-top:12px;font-weight:600;display:none"></p>
+      <p class="signup-note">Join 100+ business owners. No spam, ever.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<footer>
+  © 2026 Beorns Co · <a href="mailto:beornsco@proton.me">beornsco@proton.me</a> · <a href="/terms/">Terms</a> · <a href="/privacy/">Privacy</a>
+</footer>
+
+<script>
+// Fade-in animations
+if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+  var o=new IntersectionObserver(function(entries){entries.forEach(function(i){if(i.isIntersecting){i.target.classList.add('visible');o.unobserve(i.target)}})},{threshold:.15});
+  document.querySelectorAll('.fade-in').forEach(function(el){o.observe(el)});
+}
+
+// FAQ accordion
+document.querySelectorAll('.faq-q').forEach(function(q){
+  q.addEventListener('click',function(){
+    var item=this.parentElement;
+    item.classList.toggle('open');
+  });
+});
+
+// MailerLite JSONP signup handler
+function mlSubscribe(formEl,msgEl){
+  formEl.addEventListener('submit',function(e){
+    e.preventDefault();
+    var email=this.querySelector('[name="fields[email]"]').value;
+    var cb='mlc_'+Date.now();
+    window[cb]=function(){
+      msgEl.style.display='block';
+      msgEl.style.color='#16a34a';
+      msgEl.textContent="You're in! Check your inbox for Day 1.";
+      formEl.style.display='none';
+    };
+    var s=document.createElement('script');
+    s.src='https://assets.mailerlite.com/jsonp/2208896/forms/182863223702160765/subscribe?fields[email]='+encodeURIComponent(email)+'&callback='+cb;
+    document.body.appendChild(s);
+  });
+}
+
+mlSubscribe(document.getElementById('ml-form'),document.getElementById('ml-msg'));
+mlSubscribe(document.getElementById('ml-form-mid'),document.getElementById('ml-msg-mid'));
+mlSubscribe(document.getElementById('ml-form-bottom'),document.getElementById('ml-msg-bottom'));
+</script>
+</body>
+</html>
