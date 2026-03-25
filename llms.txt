@@ -1,0 +1,38 @@
+# AI Business Toolkit by Beorns Co
+
+> Practical AI guides, prompts, and playbooks for small and medium businesses.
+
+AI Business Toolkit helps SME owners (10-200 employees) adopt AI without consultants, jargon, or big budgets. Three core products plus a free email course.
+
+## Products
+
+### AI Adoption Starter Kit (€27)
+37-page guide to identifying AI opportunities and building your first AI workflow. Includes assessment framework, ROI calculator, and AI policy template.
+https://beornsco.github.io/ai-starter-kit/
+
+### AI Prompt Library for Business (€19)
+200+ copy-paste AI prompts organized by department: Marketing, Sales, HR, Operations, Finance, Customer Service. Works with ChatGPT, Claude, and Gemini.
+https://beornsco.github.io/ai-prompt-library/
+
+### AI Automation Playbook for SMEs (€39)
+170-page playbook with 12 step-by-step automation guides for real business processes: email, invoicing, reporting, scheduling, customer service, and more.
+https://beornsco.github.io/ai-automation-playbook/
+
+### Complete Bundle (€69)
+All three products together. Save €16.
+https://beornscout.gumroad.com/l/fabnse
+
+## Free Resources
+
+### 5 Days to Your First AI Quick Win (Free Email Course)
+A free 5-day email course that helps your team find and execute their first AI project in one week.
+https://beornsco.github.io/ai-course/
+
+### Blog
+19 practical articles on AI adoption for small businesses, covering strategy, tools, prompts, automation, HR, sales, marketing, and more.
+https://beornsco.github.io/blog/
+
+## Contact
+- Email: beornsco@proton.me
+- X/Twitter: https://twitter.com/beornsco
+- Medium: https://medium.com/@beornsco
