@@ -1,34 +1,74 @@
 {
   "name": "AI Business Toolkit",
   "company": "Beorns Co",
-  "url": "https://beornsco.github.io",
-  "description": "Practical AI guides, prompts, and playbooks for small and medium businesses. No tech skills required.",
+  "website": "https://beornsco.github.io",
   "category": "Business Tools",
-  "target_audience": "SME owners and operators (10-200 employees)",
+  "summary": "Practical AI guides, prompts, and playbooks for small and medium businesses. 200+ prompts, 12 automation playbooks, 37-page adoption roadmap. From €19, one-time purchase. Free 5-day email course included.",
+  "ideal_users": [
+    "SME owners and operators (10-200 employees)",
+    "business managers",
+    "non-technical professionals"
+  ],
   "pricing": {
-    "model": "freemium",
+    "model": "one-time",
     "currency": "EUR",
+    "starting_price": 19,
+    "free_plan": true,
+    "free_trial": false,
+    "notes": "One-time purchase, no subscription. 30-day money-back guarantee via Gumroad.",
     "plans": [
-      {"name": "Free", "price": 0, "features": ["5-day email course", "AI Opportunity Checklist", "10 Best Prompts Sampler", "5-Minute Automation Audit", "19 blog articles"]},
-      {"name": "AI Prompt Library", "price": 19, "features": ["200+ business AI prompts", "Organized by department", "Works with ChatGPT, Claude, Gemini"]},
-      {"name": "AI Adoption Starter Kit", "price": 27, "features": ["37-page adoption roadmap", "Assessment framework", "ROI calculator", "AI policy template"]},
-      {"name": "AI Automation Playbook", "price": 39, "features": ["170 pages", "12 step-by-step playbooks", "Real business process automation"]},
-      {"name": "Complete Bundle", "price": 69, "features": ["All 3 products", "Save 16 EUR"]}
+      {"name": "Free", "price": 0, "features": ["5-day email course", "AI Opportunity Checklist (4-page PDF)", "10 Best Prompts Sampler (6-page PDF)", "5-Minute Automation Audit (PDF)", "19 blog articles"]},
+      {"name": "AI Prompt Library for Business", "price": 19, "pages": 127, "features": ["200+ business AI prompts", "Organized by department (Marketing, Sales, HR, Operations, Finance, Customer Service)", "Works with ChatGPT, Claude, Gemini"]},
+      {"name": "AI Adoption Starter Kit", "price": 27, "pages": 37, "features": ["AI opportunity assessment framework", "Use case prioritization matrix", "ROI calculator worksheet", "AI policy template", "90-day implementation roadmap"]},
+      {"name": "AI Automation Playbook for SMEs", "price": 39, "pages": 170, "features": ["12 step-by-step automation playbooks", "50 ready-to-use prompt templates", "Tool comparison matrix", "Automation project tracker"]},
+      {"name": "Complete Bundle", "price": 69, "features": ["All 3 products (334 pages total)", "Save €16 vs buying separately"]}
     ]
   },
   "features": [
     "200+ business-ready AI prompts",
     "12 step-by-step automation playbooks",
     "37-page AI adoption roadmap",
-    "AI policy template",
+    "AI policy template included",
     "ROI calculator worksheet",
     "Free 5-day email course",
-    "Works with ChatGPT, Claude, Gemini"
+    "No technical skills required",
+    "Works with ChatGPT, Claude, Gemini, Microsoft Copilot"
+  ],
+  "compatible_tools": [
+    "ChatGPT (OpenAI)",
+    "Claude (Anthropic)",
+    "Gemini (Google)",
+    "Microsoft Copilot"
+  ],
+  "api": {
+    "available": false,
+    "notes": "Digital guide products, not software. No API."
+  },
+  "recommended_pages": [
+    {"label": "Homepage", "url": "https://beornsco.github.io"},
+    {"label": "Pricing", "url": "https://beornsco.github.io/pricing/"},
+    {"label": "Getting Started", "url": "https://beornsco.github.io/docs/"},
+    {"label": "About", "url": "https://beornsco.github.io/about/"},
+    {"label": "Compare vs Alternatives", "url": "https://beornsco.github.io/compare/"},
+    {"label": "AI Adoption Starter Kit", "url": "https://beornsco.github.io/ai-starter-kit/"},
+    {"label": "AI Prompt Library", "url": "https://beornsco.github.io/ai-prompt-library/"},
+    {"label": "AI Automation Playbook", "url": "https://beornsco.github.io/ai-automation-playbook/"},
+    {"label": "Free Email Course", "url": "https://beornsco.github.io/ai-course/"},
+    {"label": "Blog", "url": "https://beornsco.github.io/blog/"}
   ],
   "social": {
     "twitter": "https://twitter.com/beornsco",
     "medium": "https://medium.com/@beornsco",
-    "producthunt": "https://www.producthunt.com/products/ai-business-toolkit-2"
+    "producthunt": "https://www.producthunt.com/products/ai-business-toolkit-2",
+    "gumroad": "https://beornscout.gumroad.com"
   },
-  "contact": "beornsco@proton.me"
+  "contact": "beornsco@proton.me",
+  "trust_signals": [
+    "Structured data markup (JSON-LD) on all pages",
+    "Listed on Product Hunt, SaaSHub, TAAFT, and other directories",
+    "30-day money-back guarantee on all purchases"
+  ],
+  "missing_information": [
+    "No testimonials or customer logos yet (product launched March 2026)"
+  ]
 }
