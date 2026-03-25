@@ -30,13 +30,19 @@ h2{font-size:1.5rem;margin-bottom:20px;letter-spacing:-.01em}
 .cta-section{text-align:center;padding:72px 0}
 .cta-section .price{font-size:3rem;font-weight:800;color:var(--blue);margin-bottom:4px}
 .cta-section .sub{color:var(--gray);margin-bottom:28px;font-size:1.05rem}
-.back{display:block;text-align:center;padding:24px 0;font-weight:500}
-footer{padding:36px 0;text-align:center;color:#aaa;font-size:.9rem;background:var(--dark)}
-footer a{color:#ccc}
+
 @media(prefers-reduced-motion:no-preference){
   .fade-in{opacity:0;transform:translateY(20px);transition:opacity .5s,transform .5s}
   .fade-in.visible{opacity:1;transform:none}
 }
+nav{background:var(--white);border-bottom:1px solid #E5E7EB;padding:12px 0}
+nav .nav-inner{max-width:900px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px}
+nav .brand{font-weight:700;font-size:1.1rem;color:var(--dark)}
+nav .nav-links{display:flex;gap:20px;font-size:.95rem}
+nav .nav-links a{color:var(--gray);font-weight:500}
+nav .nav-links a:hover{color:var(--blue)}
+footer{padding:36px 0;text-align:center;color:#aaa;font-size:.9rem;background:var(--dark)}
+footer a{color:#ccc}
 </style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3S7D3JJ9JS"></script>
@@ -48,6 +54,23 @@ footer a{color:#ccc}
 </script>
 </head>
 <body>
+<nav>
+<div class="nav-inner">
+  <a href="/" class="brand">Beorns Co</a>
+  <div class="nav-links">
+    <a href="/ai-starter-kit/">Starter Kit</a>
+    <a href="/ai-prompt-library/">Prompts</a>
+    <a href="/ai-automation-playbook/">Playbook</a>
+    <a href="/ai-course/">Free Course</a>
+    <a href="/pricing/">Pricing</a>
+    <a href="/compare/">Compare</a>
+    <a href="/docs/">Docs</a>
+    <a href="/about/">About</a>
+    <a href="/blog/">Blog</a>
+  </div>
+</div>
+</nav>
+
 
 <section class="hero">
 <div class="container">
@@ -126,7 +149,7 @@ footer a{color:#ccc}
 <a href="/" class="back">← Back to all products</a>
 
 <footer>
-  © 2026 Beorns Co · <a href="mailto:beornsco@proton.me">beornsco@proton.me</a>
+  &copy; 2026 Beorns Co &middot; <a href="mailto:beornsco@proton.me">beornsco@proton.me</a> &middot; <a href="/terms/">Terms</a> &middot; <a href="/privacy/">Privacy</a> &middot; <a href="https://twitter.com/beornsco" target="_blank" rel="noopener">X/Twitter</a> &middot; <a href="https://medium.com/@beornsco" target="_blank" rel="noopener">Medium</a>
 </footer>
 
 <script>
