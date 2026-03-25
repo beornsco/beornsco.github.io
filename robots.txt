@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://beornsco.github.io/sitemap.xml

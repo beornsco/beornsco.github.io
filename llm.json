@@ -1,0 +1,34 @@
+{
+  "name": "AI Business Toolkit",
+  "company": "Beorns Co",
+  "url": "https://beornsco.github.io",
+  "description": "Practical AI guides, prompts, and playbooks for small and medium businesses. No tech skills required.",
+  "category": "Business Tools",
+  "target_audience": "SME owners and operators (10-200 employees)",
+  "pricing": {
+    "model": "freemium",
+    "currency": "EUR",
+    "plans": [
+      {"name": "Free", "price": 0, "features": ["5-day email course", "AI Opportunity Checklist", "10 Best Prompts Sampler", "5-Minute Automation Audit", "19 blog articles"]},
+      {"name": "AI Prompt Library", "price": 19, "features": ["200+ business AI prompts", "Organized by department", "Works with ChatGPT, Claude, Gemini"]},
+      {"name": "AI Adoption Starter Kit", "price": 27, "features": ["37-page adoption roadmap", "Assessment framework", "ROI calculator", "AI policy template"]},
+      {"name": "AI Automation Playbook", "price": 39, "features": ["170 pages", "12 step-by-step playbooks", "Real business process automation"]},
+      {"name": "Complete Bundle", "price": 69, "features": ["All 3 products", "Save 16 EUR"]}
+    ]
+  },
+  "features": [
+    "200+ business-ready AI prompts",
+    "12 step-by-step automation playbooks",
+    "37-page AI adoption roadmap",
+    "AI policy template",
+    "ROI calculator worksheet",
+    "Free 5-day email course",
+    "Works with ChatGPT, Claude, Gemini"
+  ],
+  "social": {
+    "twitter": "https://twitter.com/beornsco",
+    "medium": "https://medium.com/@beornsco",
+    "producthunt": "https://www.producthunt.com/products/ai-business-toolkit-2"
+  },
+  "contact": "beornsco@proton.me"
+}
