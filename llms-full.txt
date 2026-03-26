@@ -92,7 +92,7 @@ Format: PDF (170 pages)
 URL: https://beornsco.github.io/ai-automation-playbook/
 Buy: https://beornscout.gumroad.com/l/pdrqfp
 
-### Complete Bundle (€69, save €16)
+### Core Bundle (€69, save €16)
 All three products together at a discount.
 URL: https://beornscout.gumroad.com/l/fabnse
 
@@ -211,7 +211,7 @@ URL: https://beornsco.github.io/ai-course/
 | AI Prompt Library for Business | €19 | PDF (127 pages) |
 | AI Adoption Starter Kit | €27 | PDF (37 pages) |
 | AI Automation Playbook for SMEs | €39 | PDF (170 pages) |
-| Complete Bundle (all 3) | €69 | All PDFs |
+| Core Bundle (all 3) | €69 | All PDFs |
 | 5-Day Email Course | Free | Email |
 | Lead Magnets (3 PDFs) | Free | PDF |
 
