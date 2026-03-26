@@ -2,7 +2,7 @@
 
 > Practical AI guides, prompts, and playbooks for small and medium businesses.
 
-AI Business Toolkit helps SME owners (10-200 employees) adopt AI without consultants, jargon, or big budgets. Three core products plus a free email course and 19 blog articles.
+AI Business Toolkit helps SME owners (10-200 employees) adopt AI without consultants, jargon, or big budgets. Four core products, industry-specific prompt packs, a free email course, and 19 blog articles.
 
 Website: https://beornsco.github.io
 Contact: beornsco@proton.me
@@ -95,6 +95,30 @@ Buy: https://beornscout.gumroad.com/l/pdrqfp
 ### Complete Bundle (€69, save €16)
 All three products together at a discount.
 URL: https://beornscout.gumroad.com/l/fabnse
+
+### AI Prompt Pack: Real Estate (€14)
+50+ AI prompts built specifically for real estate professionals.
+
+Categories covered:
+1. Property Listings & Descriptions (write compelling listings, highlight features, neighborhood descriptions)
+2. Client Communication (follow-up emails, showing confirmations, offer updates, negotiation messages)
+3. Lead Generation & Ad Copy (social media posts, ad copy, open house invitations, referral requests)
+4. Market Analysis & Reports (neighborhood comparisons, price trend summaries, investment analysis)
+5. Marketing Content (blog posts, newsletter content, social media captions, video scripts)
+6. Transaction Management (closing checklists, document summaries, timeline updates)
+7. Client Onboarding (buyer questionnaires, seller prep guides, expectation-setting emails)
+8. Social Media & Personal Branding (bio writing, testimonial requests, just-sold posts, market updates)
+
+Each prompt includes:
+- The prompt text (ready to copy-paste with [BRACKETS] for customization)
+- When to use it
+- Expected output
+- Pro tip for better results
+
+Best for: Real estate agents, brokers, and property managers.
+Format: PDF (38 pages)
+URL: https://beornsco.github.io/ai-prompts-real-estate/
+Buy: https://beornscout.gumroad.com/l/rqikln
 
 ---
 
