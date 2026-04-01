@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Prompt Pack for Restaurants | 50 Ready-to-Use Prompts | Beorns Co</title>
+<meta name="description" content="50 AI prompts for restaurant owners, cafe operators and food businesses. Menus, reviews, social posts, staff messages — copy, paste, done. EUR14.">
+<link rel="canonical" href="https://beornsco.github.io/ai-restaurant-prompts/">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--blue:#2962FF;--orange:#FF6B35;--dark:#23232D;--light:#F7F8FA;--white:#FFFFFF;--gray:#6B7280;--blue-light:#E8EEFF}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--dark);line-height:1.6}
+a{color:var(--blue);text-decoration:none}
+.container{max-width:760px;margin:0 auto;padding:0 24px}
+.btn{display:inline-block;background:var(--orange);color:#fff;padding:16px 36px;border-radius:8px;font-size:1.05rem;font-weight:600;transition:transform .15s,box-shadow .15s;cursor:pointer;border:none}
+.btn:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(255,107,53,.35)}
+.hero{padding:80px 0 50px;text-align:center;background:linear-gradient(170deg,var(--blue-light) 0%,var(--white) 100%)}
+.hero h1{font-size:clamp(1.8rem,5vw,2.6rem);line-height:1.2;margin-bottom:16px;letter-spacing:-.02em}
+.hero p{font-size:1.1rem;color:var(--gray);max-width:540px;margin:0 auto 32px}
+section{padding:64px 0}
+section.alt{background:var(--light)}
+h2{font-size:1.5rem;margin-bottom:20px;letter-spacing:-.01em}
+.items{list-style:none;display:grid;gap:14px;margin-top:8px}
+.items li{background:var(--white);border:1px solid #E5E7EB;border-radius:10px;padding:18px 22px}
+.items li strong{display:block;margin-bottom:2px}
+.items li span{color:var(--gray);font-size:.95rem}
+.pain-list{list-style:none;display:grid;gap:12px;margin-top:8px}
+.pain-list li{padding:14px 18px;background:var(--white);border-radius:10px;border-left:4px solid var(--orange);font-size:1rem;color:var(--dark)}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:24px;margin-top:16px}
+.step{text-align:center;padding:28px 20px;background:var(--white);border-radius:12px;border:1px solid #E5E7EB}
+.step .num{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;background:var(--blue);color:#fff;border-radius:50%;font-weight:700;font-size:1.1rem;margin-bottom:12px}
+.step h3{font-size:1rem;margin-bottom:6px}
+.step p{font-size:.9rem;color:var(--gray)}
+.callout{background:linear-gradient(135deg,#E8EEFF,#fff);border:2px solid var(--blue);border-radius:12px;padding:28px 32px;text-align:center;margin-top:0}
+.callout p{font-size:1.05rem;color:var(--dark);margin:0}
+.callout strong{color:var(--blue)}
+.cta-section{text-align:center;padding:72px 0;background:linear-gradient(170deg,#FFF3EE 0%,var(--white) 100%)}
+.cta-section .price{font-size:3rem;font-weight:800;color:var(--orange);margin-bottom:4px}
+.cta-section .sub{color:var(--gray);margin-bottom:28px;font-size:1.05rem}
+.faq-list{display:grid;gap:16px;margin-top:8px}
+.faq-item{background:var(--white);border:1px solid #E5E7EB;border-radius:10px;padding:20px 24px}
+.faq-item h3{font-size:1rem;font-weight:600;margin-bottom:8px;color:var(--dark)}
+.faq-item p{color:var(--gray);font-size:.95rem}
+@media(prefers-reduced-motion:no-preference){
+  .fade-in{opacity:0;transform:translateY(20px);transition:opacity .5s,transform .5s}
+  .fade-in.visible{opacity:1;transform:none}
+}
+nav{background:var(--white);border-bottom:1px solid #E5E7EB;padding:0;position:sticky;top:0;z-index:100}
+nav .nav-inner{max-width:900px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;height:56px}
+nav .brand{font-weight:700;font-size:1.1rem;color:var(--dark);white-space:nowrap}
+nav .nav-links{display:flex;gap:6px;font-size:.88rem}
+nav .nav-links a{color:var(--gray);font-weight:500;padding:6px 10px;border-radius:6px;transition:background .15s,color .15s;white-space:nowrap}
+nav .nav-links a:hover{color:var(--blue);background:var(--blue-light)}
+nav .hamburger{display:none;background:none;border:none;cursor:pointer;padding:8px;margin-right:-8px}
+nav .hamburger span{display:block;width:22px;height:2px;background:var(--dark);margin:5px 0;border-radius:2px;transition:transform .2s,opacity .2s}
+@media(max-width:768px){
+nav .nav-links{display:none;position:absolute;top:56px;left:0;right:0;background:var(--white);flex-direction:column;padding:8px 0;border-bottom:1px solid #E5E7EB;box-shadow:0 8px 24px rgba(0,0,0,.08);gap:0}
+nav .nav-links.open{display:flex}
+nav .nav-links a{padding:12px 24px;font-size:.95rem;border-radius:0}
+nav .nav-links a:hover{background:var(--light)}
+nav .hamburger{display:block}
+nav .hamburger.open span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}
+nav .hamburger.open span:nth-child(2){opacity:0}
+nav .hamburger.open span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
+}
+footer{padding:36px 0;text-align:center;color:#aaa;font-size:.9rem;background:var(--dark)}
+footer a{color:#ccc}
+</style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3S7D3JJ9JS"></script>
+<script>
+ window.dataLayer = window.dataLayer || [];
+ function gtag(){dataLayer.push(arguments);}
+ gtag('js', new Date());
+ gtag('config', 'G-3S7D3JJ9JS');
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "AI Prompt Pack for Restaurants",
+  "description": "50 ready-to-use AI prompts for restaurant owners, cafe operators and food businesses. Covers menus, reviews, social media, customer communications, reservations, staff, suppliers, marketing, delivery and WhatsApp scripts.",
+  "url": "https://beornsco.github.io/ai-restaurant-prompts/",
+  "brand": {"@type": "Brand", "name": "Beorns Co"},
+  "offers": {
+    "@type": "Offer",
+    "price": "14.00",
+    "priceCurrency": "EUR",
+    "availability": "https://schema.org/InStock",
+    "seller": {"@type": "Organization", "name": "Beorns Co"}
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do I need a paid ChatGPT subscription to use these prompts?",
+      "acceptedAnswer": {"@type": "Answer", "text": "No. All 50 prompts work with the free version of ChatGPT (GPT-3.5). You can also use them with Claude, Gemini, or any other AI assistant."}
+    },
+    {
+      "@type": "Question",
+      "name": "How quickly can I use these prompts?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Instantly. You copy a prompt, fill in the [BRACKETS] with your specific details, and paste it into ChatGPT. Most outputs are ready in under 60 seconds."}
+    },
+    {
+      "@type": "Question",
+      "name": "Are these prompts suitable for cafes and food trucks, not just restaurants?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Yes. The prompts are written to work for any food business — restaurants, cafes, bistros, food trucks, catering companies, and bakeries."}
+    },
+    {
+      "@type": "Question",
+      "name": "Can I use these prompts to respond to negative TripAdvisor reviews?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Absolutely. There is a full section dedicated to reviews — negative responses, thank-you replies, and prompts to encourage happy customers to leave reviews."}
+    },
+    {
+      "@type": "Question",
+      "name": "Is there a refund policy?",
+      "acceptedAnswer": {"@type": "Answer", "text": "Yes. All Beorns Co products come with a 30-day money-back guarantee via Gumroad. If it's not useful, just ask for a refund."}
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<nav>
+<div class="nav-inner">
+  <a href="https://beornsco.github.io" class="brand">Beorns Co</a>
+  <button class="hamburger" onclick="this.classList.toggle('open');document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="nav-links">
+    <a href="/ai-starter-kit/">Starter Kit</a>
+    <a href="/ai-prompt-library/">Prompts</a>
+    <a href="/ai-automation-playbook/">Playbook</a>
+    <a href="/ai-prompts-real-estate/">Real Estate</a>
+    <a href="/ai-prompts-ecommerce/">E-commerce</a>
+    <a href="/ai-trades-prompts/">Trades</a>
+    <a href="/ai-course/">Free Course</a>
+    <a href="/pricing/">Pricing</a>
+    <a href="/blog/">Blog</a>
+  </div>
+</div>
+</nav>
+
+<section class="hero">
+<div class="container">
+  <h1>50 AI Prompts Built for Restaurant &amp; Food Business Owners</h1>
+  <p>Handle menus, reviews, social posts, and customer messages in minutes — so you can focus on running your restaurant.</p>
+  <a href="PLACEHOLDER_GUMROAD_URL" class="btn">Get the Pack — €14</a>
+</div>
+</section>
+
+<section class="alt">
+<div class="container fade-in">
+  <h2 style="text-align:center">Sound familiar?</h2>
+  <ul class="pain-list">
+    <li>You're staring at a blank screen trying to write today's specials — again</li>
+    <li>A customer left a bad TripAdvisor review and you don't know what to say</li>
+    <li>You know you should be posting on Instagram but never have time or ideas</li>
+    <li>Chasing suppliers for quotes is eating up your mornings</li>
+    <li>You need to hire a chef and have no idea how to write a job ad</li>
+  </ul>
+</div>
+</section>
+
+<section>
+<div class="container">
+  <h2>How It Works</h2>
+  <div class="steps fade-in">
+    <div class="step">
+      <div class="num">1</div>
+      <h3>Copy the prompt</h3>
+      <p>Pick any prompt from the pack that fits your task right now.</p>
+    </div>
+    <div class="step">
+      <div class="num">2</div>
+      <h3>Fill [BRACKETS]</h3>
+      <p>Replace the placeholders with your restaurant name, dish, situation.</p>
+    </div>
+    <div class="step">
+      <div class="num">3</div>
+      <h3>Get your result</h3>
+      <p>Paste into ChatGPT and get a polished, ready-to-use output in seconds.</p>
+    </div>
+  </div>
+  <div class="callout" style="margin-top:32px">
+    <p>✅ <strong>Works with free ChatGPT.</strong> No paid subscription needed. Also works with Claude, Gemini, and Microsoft Copilot.</p>
+  </div>
+</div>
+</section>
+
+<section class="alt">
+<div class="container fade-in">
+  <h2>What's Inside — 10 Categories, 50 Prompts</h2>
+  <ul class="items">
+    <li><strong>1. Menus &amp; Specials</strong><span>Write daily specials, seasonal menus, dish descriptions, allergen notices, and tasting menu copy</span></li>
+    <li><strong>2. Reviews</strong><span>Respond to negative TripAdvisor/Google reviews, thank positive reviewers, and encourage repeat customers to share feedback</span></li>
+    <li><strong>3. Social Media</strong><span>Instagram captions, Facebook posts, story ideas, hashtag suggestions, and weekly content plans</span></li>
+    <li><strong>4. Customer Communications</strong><span>Booking confirmations, apology messages, allergy queries, complaint handling, and loyalty messages</span></li>
+    <li><strong>5. Reservations &amp; Events</strong><span>Private dining enquiries, event proposals, Christmas party packages, and group booking follow-ups</span></li>
+    <li><strong>6. Staff &amp; Team</strong><span>Job ads for chefs and front-of-house, shift reminders, onboarding messages, and team announcements</span></li>
+    <li><strong>7. Supplier &amp; Admin</strong><span>Quote requests, order confirmations, complaint letters to suppliers, and invoice chasers</span></li>
+    <li><strong>8. Marketing</strong><span>Email newsletters, Google Business updates, loyalty programme copy, and promotional flyer text</span></li>
+    <li><strong>9. Delivery &amp; Takeaway</strong><span>Deliveroo/Uber Eats menu descriptions, packaging inserts, delivery delay messages, and upsell prompts</span></li>
+    <li><strong>10. Bonus: WhatsApp Scripts</strong><span>5 ready-to-send WhatsApp message templates for bookings, reminders, specials, and review requests</span></li>
+  </ul>
+</div>
+</section>
+
+<section class="cta-section">
+<div class="container fade-in">
+  <div class="price">€14</div>
+  <div class="sub">One-time purchase. Instant download. Use forever.</div>
+  <a href="PLACEHOLDER_GUMROAD_URL" class="btn">Get the Restaurant Prompt Pack — €14</a>
+  <p style="color:var(--gray);font-size:.9rem;margin-top:16px">30-day money-back guarantee. Works with free ChatGPT.</p>
+</div>
+</section>
+
+<section class="alt">
+<div class="container fade-in">
+  <h2>Frequently Asked Questions</h2>
+  <div class="faq-list">
+    <div class="faq-item">
+      <h3>Do I need a paid ChatGPT subscription to use these prompts?</h3>
+      <p>No. All 50 prompts work with the free version of ChatGPT. You can also use them with Claude, Gemini, or any other AI assistant you prefer.</p>
+    </div>
+    <div class="faq-item">
+      <h3>How quickly can I use these prompts?</h3>
+      <p>Instantly. Copy a prompt, fill in the [BRACKETS] with your details, paste into ChatGPT. Most outputs are ready in under 60 seconds.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Are these suitable for cafes and food trucks, not just restaurants?</h3>
+      <p>Yes. The prompts work for any food business — restaurants, cafes, bistros, food trucks, catering companies, and bakeries.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Can I use these to respond to negative TripAdvisor reviews?</h3>
+      <p>Absolutely. There's a full section on reviews with prompts for negative responses, thank-you replies, and encouraging happy customers to leave reviews.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Is there a refund policy?</h3>
+      <p>Yes. All Beorns Co products include a 30-day money-back guarantee via Gumroad. If it's not useful, just ask for a refund — no questions asked.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<footer>
+  &copy; 2026 <a href="https://beornsco.github.io">Beorns Co</a> &middot; <a href="mailto:beornsco@proton.me">beornsco@proton.me</a> &middot; <a href="/terms/">Terms</a> &middot; <a href="/privacy/">Privacy</a> &middot; <a href="https://twitter.com/beornsco" target="_blank" rel="noopener">X/Twitter</a>
+</footer>
+
+<script>
+if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+  const o=new IntersectionObserver(e=>e.forEach(i=>{if(i.isIntersecting){i.target.classList.add('visible');o.unobserve(i.target)}}),{threshold:.15});
+  document.querySelectorAll('.fade-in').forEach(el=>o.observe(el));
+}
+</script>
+</body>
+</html>
