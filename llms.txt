@@ -25,6 +25,7 @@
 - AI Automation Playbook for SMEs: €39, 170 pages, 12 step-by-step automation playbooks. [Product page](https://beornsco.github.io/ai-automation-playbook/)
 - AI Prompt Pack: Real Estate: €14, 38 pages, 50+ AI prompts for real estate agents, brokers, and property managers. 8 categories: Property Listings, Client Communication, Lead Generation, Market Analysis, Marketing Content, Transaction Management, Client Onboarding, Social Media & Personal Branding. [Product page](https://beornsco.github.io/ai-prompts-real-estate/)
 - AI Prompt Pack: E-commerce and Retail: €14, 41 pages, 50+ AI prompts for online store owners. 8 categories: Product Descriptions, SEO Titles and Meta Descriptions, Ad Copy, Email Flows, Customer Support, Social Media, Pricing and Promos, Upsell and Cross-sell. [Product page](https://beornsco.github.io/ai-prompts-ecommerce/)
+- AI Prompt Pack: Tradespeople & Local Service Businesses: €14, 54 AI prompts for plumbers, electricians, cleaners, landscapers, salons, and other owner-operated local service businesses. 9 categories: Quoting & Estimating, Invoicing & Payment Chasing, Customer Communication, Handling Complaints, Google & Facebook Reviews, Social Media Posts, Hiring & Team, Admin & Compliance (GDPR-aware), Bonus SMS & WhatsApp Scripts. Works with free ChatGPT. [Product page](https://beornsco.github.io/ai-trades-prompts/)
 - Core Bundle (all 3 products): €69, save €16. [Buy](https://beornscout.gumroad.com/l/fabnse)
 
 ## Free Resources
