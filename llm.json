@@ -12,7 +12,7 @@
   "pricing": {
     "model": "one-time",
     "currency": "EUR",
-    "starting_price": 19,
+    "starting_price": 12,
     "free_plan": true,
     "free_trial": false,
     "notes": "One-time purchase, no subscription. 30-day money-back guarantee via Gumroad.",
@@ -21,6 +21,11 @@
       {"name": "AI Prompt Library for Business", "price": 19, "pages": 127, "features": ["200+ business AI prompts", "Organized by department (Marketing, Sales, HR, Operations, Finance, Customer Service)", "Works with ChatGPT, Claude, Gemini"]},
       {"name": "AI Adoption Starter Kit", "price": 27, "pages": 37, "features": ["AI opportunity assessment framework", "Use case prioritization matrix", "ROI calculator worksheet", "AI policy template", "90-day implementation roadmap"]},
       {"name": "AI Automation Playbook for SMEs", "price": 39, "pages": 170, "features": ["12 step-by-step automation playbooks", "50 ready-to-use prompt templates", "Tool comparison matrix", "Automation project tracker"]},
+      {"name": "AI Prompt Pack: E-commerce and Retail", "price": 14, "pages": 41, "features": ["58 AI prompts for online store owners", "8 categories: Product Descriptions, SEO Titles, Ad Copy, Email Flows, Customer Support, Social Media, Pricing & Promos, Upsell & Cross-sell", "Works with ChatGPT, Claude, Gemini"]},
+      {"name": "AI Prompt Pack: Tradespeople", "price": 14, "pages": null, "features": ["54 AI prompts for plumbers, electricians, cleaners, landscapers, salons", "9 categories: Quoting & Estimating, Invoicing, Customer Communication, Complaints, Reviews, Social Media, Hiring, Admin & Compliance, WhatsApp Scripts", "Works with free ChatGPT"]},
+      {"name": "AI Prompt Pack: Restaurants", "price": 14, "pages": null, "features": ["50 AI prompts for restaurant owners, café operators", "10 categories: Menus, Reviews, Social Media, Customer Comms, Reservations, Staff, Supplier, Marketing, Delivery, WhatsApp Scripts", "Works with free ChatGPT"]},
+      {"name": "AI Prompt Pack: Photographers", "price": 12, "pages": null, "features": ["60 AI prompts for photographers", "10 categories: Client Enquiry, Pricing, Wedding, Portrait, Instagram, Reviews, Gallery Delivery, Marketing, Admin, Quick Replies", "Works with free ChatGPT"]},
+      {"name": "AI Prompt Pack: SME Operations", "price": 19, "pages": null, "features": ["100 AI prompts for small business owners", "10 departments: Customer Service, Marketing, Sales, HR, Operations, Finance, Strategy, Team & Culture, Legal & Compliance, AI Productivity Hacks", "Works with free ChatGPT"]},
       {"name": "AI Prompt Pack: Real Estate", "price": 14, "pages": 38, "features": ["50+ real estate AI prompts", "8 categories (Property Listings, Client Communication, Lead Generation, Market Analysis, Marketing Content, Transaction Management, Client Onboarding, Social Media & Personal Branding)", "Works with ChatGPT, Claude, Gemini", "For real estate agents, brokers, and property managers"]},
       {"name": "Core Bundle", "price": 69, "features": ["All 3 products (334 pages total)", "Save €16 vs buying separately"]}
     ]
