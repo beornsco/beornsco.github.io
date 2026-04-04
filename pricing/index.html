@@ -3,27 +3,29 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pricing | AI Business Toolkit | Beorns Co</title>
-<meta name="description" content="AI Business Toolkit pricing: AI Prompt Library €19, AI Adoption Starter Kit €27, AI Automation Playbook €39, Core Bundle €69. One-time purchase, no subscription.">
-<meta property="og:title" content="Pricing | AI Business Toolkit | Beorns Co">
-<meta property="og:description" content="AI Business Toolkit pricing: AI Prompt Library €19, AI Adoption Starter Kit €27, AI Automation Playbook €39, Core Bundle €69. One-time purchase, no subscription.">
+<title>Pricing | Practical AI Tools for Every Business | Beorns Co</title>
+<meta name="description" content="10+ practical AI tools for business — from €12. One-time purchase, no subscription. Prompt packs, starter kits, automation playbooks for SMEs and niche businesses.">
+<meta property="og:title" content="Pricing | Practical AI Tools for Every Business | Beorns Co">
+<meta property="og:description" content="10+ practical AI tools for business — from €12. One-time purchase, no subscription.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://beornsco.github.io/pricing/">
 <meta name="twitter:card" content="summary">
 <link rel="canonical" href="https://beornsco.github.io/pricing/">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-:root{--blue:#2962FF;--dark:#23232D;--light:#F7F8FA;--white:#FFFFFF;--gray:#6B7280;--blue-light:#E8EEFF}
+:root{--blue:#2962FF;--orange:#FF6B35;--dark:#23232D;--light:#F7F8FA;--white:#FFFFFF;--gray:#6B7280;--blue-light:#E8EEFF}
 body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--dark);line-height:1.6}
 a{color:var(--blue);text-decoration:none}
-.container{max-width:900px;margin:0 auto;padding:0 24px}
-.btn{display:inline-block;background:var(--blue);color:#fff;padding:16px 36px;border-radius:8px;font-size:1.05rem;font-weight:600;transition:transform .15s,box-shadow .15s;cursor:pointer;border:none}
+.container{max-width:960px;margin:0 auto;padding:0 24px}
+.btn{display:inline-block;background:var(--blue);color:#fff;padding:14px 30px;border-radius:8px;font-size:1rem;font-weight:600;transition:transform .15s,box-shadow .15s;cursor:pointer;border:none;text-align:center}
 .btn:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(41,98,255,.35)}
-.btn-outline{display:inline-block;background:transparent;color:var(--blue);padding:12px 28px;border-radius:8px;font-size:.95rem;font-weight:600;border:2px solid var(--blue);transition:background .15s,color .15s}
+.btn-outline{display:inline-block;background:transparent;color:var(--blue);padding:10px 22px;border-radius:8px;font-size:.92rem;font-weight:600;border:2px solid var(--blue);transition:background .15s,color .15s}
 .btn-outline:hover{background:var(--blue);color:#fff}
+.btn-green{background:#16a34a}
+.btn-green:hover{box-shadow:0 6px 20px rgba(22,163,74,.35) !important}
 
 nav{background:var(--white);border-bottom:1px solid #E5E7EB;padding:0;position:sticky;top:0;z-index:100}
-nav .nav-inner{max-width:900px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;height:56px}
+nav .nav-inner{max-width:960px;margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;height:56px}
 nav .brand{font-weight:700;font-size:1.1rem;color:var(--dark);white-space:nowrap}
 nav .nav-links{display:flex;gap:6px;font-size:.88rem}
 nav .nav-links a{color:var(--gray);font-weight:500;padding:6px 10px;border-radius:6px;transition:background .15s,color .15s;white-space:nowrap}
@@ -42,113 +44,80 @@ nav .hamburger.open span:nth-child(3){transform:rotate(-45deg) translate(5px,-5p
 }
 
 .hero{padding:80px 0 50px;text-align:center;background:linear-gradient(170deg,var(--blue-light) 0%,var(--white) 100%)}
-.hero h1{font-size:clamp(2rem,5vw,2.8rem);line-height:1.2;margin-bottom:16px;letter-spacing:-.02em}
+.hero h1{font-size:clamp(1.8rem,5vw,2.6rem);line-height:1.2;margin-bottom:16px;letter-spacing:-.02em}
 .hero p{font-size:1.1rem;color:var(--gray);max-width:620px;margin:0 auto}
 
 section{padding:64px 0}
 section.alt{background:var(--light)}
-h2{font-size:1.6rem;margin-bottom:28px;text-align:center;letter-spacing:-.01em}
+.section-header{text-align:center;margin-bottom:36px}
+.section-header h2{font-size:1.55rem;letter-spacing:-.01em;margin-bottom:8px}
+.section-header p{color:var(--gray);font-size:1rem;max-width:580px;margin:0 auto}
 
-.pricing-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-bottom:24px}
-@media(max-width:600px){.pricing-grid{grid-template-columns:1fr}}
+/* Core SME Toolkit grid */
+.core-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+@media(max-width:640px){.core-grid{grid-template-columns:1fr}}
 
-.card{background:var(--white);border:2px solid #E5E7EB;border-radius:14px;padding:28px 22px;display:flex;flex-direction:column}
+/* Niche packs grid */
+.niche-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+@media(max-width:860px){.niche-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.niche-grid{grid-template-columns:1fr}}
+
+.card{background:var(--white);border:2px solid #E5E7EB;border-radius:14px;padding:26px 20px;display:flex;flex-direction:column}
 .card.featured{border-color:var(--blue);box-shadow:0 8px 30px rgba(41,98,255,.15);position:relative}
 .card.featured::before{content:"Best Value";position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:var(--blue);color:#fff;padding:4px 16px;border-radius:20px;font-size:.8rem;font-weight:700;white-space:nowrap}
-.card.free{border-color:#16a34a;background:linear-gradient(170deg,#f0fdf4 0%,var(--white) 100%)}
-.card h3{font-size:1.3rem;margin-bottom:4px}
-.card .price{font-size:2.2rem;font-weight:800;color:var(--blue);margin-bottom:2px}
+.card.free-card{border-color:#16a34a;background:linear-gradient(170deg,#f0fdf4 0%,var(--white) 100%)}
+.card h3{font-size:1.2rem;margin-bottom:4px;line-height:1.3}
+.card .price{font-size:2rem;font-weight:800;color:var(--blue);margin-bottom:2px}
 .card .price.free-price{color:#16a34a}
-.card .tagline{color:var(--gray);font-size:.95rem;margin-bottom:16px}
-.card ul{list-style:none;margin-bottom:24px;flex:1}
-.card ul li{padding:5px 0;font-size:.95rem}
+.card .tagline{color:var(--gray);font-size:.9rem;margin-bottom:14px}
+.card ul{list-style:none;margin-bottom:20px;flex:1}
+.card ul li{padding:4px 0;font-size:.92rem}
 .card ul li::before{content:"✓ ";color:var(--blue);font-weight:700}
-.card.free ul li::before{color:#16a34a}
-.card .btn{text-align:center;width:100%;margin-bottom:12px}
-.card .btn.btn-green{background:#16a34a}
-.card .btn.btn-green:hover{box-shadow:0 6px 20px rgba(22,163,74,.35)}
-.card .learn{text-align:center;font-size:.95rem;font-weight:500}
+.card.free-card ul li::before{color:#16a34a}
+.card .btn{width:100%;margin-bottom:10px}
+.card .learn{text-align:center;font-size:.92rem;font-weight:500;color:var(--blue)}
 
-.comparison-table{width:100%;border-collapse:collapse;margin-top:16px}
-.comparison-table th,.comparison-table td{padding:12px 16px;text-align:left;border-bottom:1px solid #E5E7EB;font-size:.95rem}
-.comparison-table th{background:var(--dark);color:#fff;font-weight:600}
-.comparison-table td:first-child{font-weight:500}
-.comparison-table tr:last-child td{border-bottom:none}
-.comparison-table .check{color:var(--blue);font-weight:700;text-align:center}
-.comparison-table .dash{color:#ccc;text-align:center}
-@media(max-width:600px){
-  .comparison-table{font-size:.85rem}
-  .comparison-table th,.comparison-table td{padding:8px 6px}
-}
+/* Niche card variant — slightly more compact */
+.card.niche{padding:20px 18px}
+.card.niche h3{font-size:1.05rem}
+.card.niche .price{font-size:1.7rem}
+.card.niche ul li{font-size:.88rem}
+.card.niche .btn{padding:11px 20px;font-size:.92rem}
 
-.includes-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;max-width:600px;margin:0 auto}
-@media(max-width:600px){.includes-grid{grid-template-columns:1fr}}
+.includes-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;max-width:640px;margin:0 auto}
+@media(max-width:560px){.includes-grid{grid-template-columns:1fr}}
 .includes-item{display:flex;align-items:flex-start;gap:10px}
 .includes-item .icon{font-size:1.3rem;flex-shrink:0}
-.includes-item p{font-size:.95rem}
+.includes-item p{font-size:.93rem}
 .includes-item strong{display:block;margin-bottom:2px}
 
 footer{padding:36px 0;text-align:center;color:#aaa;font-size:.9rem;background:var(--dark)}
 footer a{color:#ccc}
-
-.table-wrap{overflow-x:auto}
 </style>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  "name": "Pricing | AI Business Toolkit",
-  "description": "AI Business Toolkit pricing: AI Prompt Library €19, AI Adoption Starter Kit €27, AI Automation Playbook €39, Core Bundle €69.",
+  "name": "Pricing | Practical AI Tools for Every Business | Beorns Co",
+  "description": "10+ practical AI tools for business — from €12. One-time purchase, no subscription.",
   "url": "https://beornsco.github.io/pricing/",
   "mainEntity": {
     "@type": "Product",
-    "name": "AI Business Toolkit",
-    "description": "Practical AI guides, prompts, and playbooks for small and medium businesses. 334 pages, 200+ prompts, 12 automation playbooks.",
-    "brand": {
-      "@type": "Organization",
-      "name": "Beorns Co"
-    },
+    "name": "Beorns Co AI Toolkit",
+    "description": "Practical AI guides, prompts, and playbooks for small and medium businesses.",
+    "brand": {"@type": "Organization", "name": "Beorns Co"},
     "offers": [
-      {
-        "@type": "Offer",
-        "name": "AI Prompt Library",
-        "price": "19",
-        "priceCurrency": "EUR",
-        "url": "https://beornscout.gumroad.com/l/mxkxl",
-        "availability": "https://schema.org/InStock"
-      },
-      {
-        "@type": "Offer",
-        "name": "AI Adoption Starter Kit",
-        "price": "27",
-        "priceCurrency": "EUR",
-        "url": "https://beornscout.gumroad.com/l/qizoop",
-        "availability": "https://schema.org/InStock"
-      },
-      {
-        "@type": "Offer",
-        "name": "AI Automation Playbook",
-        "price": "39",
-        "priceCurrency": "EUR",
-        "url": "https://beornscout.gumroad.com/l/pdrqfp",
-        "availability": "https://schema.org/InStock"
-      },
-      {
-        "@type": "Offer",
-        "name": "AI Prompt Pack: Real Estate",
-        "price": "14",
-        "priceCurrency": "EUR",
-        "url": "https://beornscout.gumroad.com/l/rqikln",
-        "availability": "https://schema.org/InStock"
-      },
-      {
-        "@type": "Offer",
-        "name": "Core Bundle",
-        "price": "69",
-        "priceCurrency": "EUR",
-        "url": "https://beornscout.gumroad.com/l/fabnse",
-        "availability": "https://schema.org/InStock"
-      }
+      {"@type":"Offer","name":"AI Adoption Starter Kit","price":"27","priceCurrency":"EUR","url":"https://beornscout.gumroad.com/l/qizoop","availability":"https://schema.org/InStock"},
+      {"@type":"Offer","name":"200+ Copy-Paste ChatGPT Prompts for Business","price":"19","priceCurrency":"EUR","url":"https://beornscout.gumroad.com/l/mxkxl","availability":"https://schema.org/InStock"},
+      {"@type":"Offer","name":"AI Automation Playbook","price":"39","priceCurrency":"EUR","url":"https://beornscout.gumroad.com/l/pdrqfp","availability":"https://schema.org/InStock"},
+      {"@type":"Offer","name":"Complete AI Business Bundle","price":"69","priceCurrency":"EUR","url":"https://beornscout.gumroad.com/l/fabnse","availability":"https://schema.org/InStock"},
+      {"@type":"Offer","name":"54 AI Prompts for Tradespeople","price":"14","priceCurrency":"EUR","url":"https://beornscout.gumroad.com/l/ecyiix","availability":"https://schema.org/InStock"},
+      {"@type":"Offer","name":"50 AI Prompts for Restaurant Owners","price":"14","priceCurrency":"EUR","url":"https://beornscout.gumroad.com/l/ycezih","availability":"https://schema.org/InStock"},
+      {"@type":"Offer","name":"60 AI Prompts for Photographers","price":"12","priceCurrency":"EUR","url":"https://beornscout.gumroad.com/l/oaihbj","availability":"https://schema.org/InStock"},
+      {"@type":"Offer","name":"100 AI Prompts for Small Business Owners","price":"19","priceCurrency":"EUR","url":"https://beornscout.gumroad.com/l/zcxlr","availability":"https://schema.org/InStock"},
+      {"@type":"Offer","name":"AI Prompt Pack: Real Estate","price":"14","priceCurrency":"EUR","url":"https://beornscout.gumroad.com/l/rqikln","availability":"https://schema.org/InStock"},
+      {"@type":"Offer","name":"AI Prompt Pack: E-commerce & Retail","price":"14","priceCurrency":"EUR","url":"https://beornscout.gumroad.com/l/pamij","availability":"https://schema.org/InStock"},
+      {"@type":"Offer","name":"10 Free AI Prompts for Business","price":"0","priceCurrency":"EUR","url":"https://beornsco.github.io/","availability":"https://schema.org/InStock"}
     ]
   }
 }
@@ -188,48 +157,20 @@ footer a{color:#ccc}
 
 <section class="hero">
 <div class="container">
-  <h1>Simple Pricing. One-Time Purchase. No Subscription.</h1>
-  <p>334 pages of guides, 200+ prompts, 12 automation playbooks. Pay once, use forever. 30-day money-back guarantee.</p>
+  <h1>Practical AI Tools for Every Business — Clear Pricing</h1>
+  <p>10+ products from €12. One-time purchase, no subscription. Pay once, use forever. 30-day money-back guarantee.</p>
 </div>
 </section>
 
+<!-- SECTION A: Core SME Toolkit -->
 <section>
 <div class="container">
-
-  <!-- Free Tier -->
-  <div class="pricing-grid" style="grid-template-columns:1fr;max-width:480px;margin:0 auto 32px">
-    <div class="card free">
-      <h3>Free Resources</h3>
-      <div class="price free-price">€0</div>
-      <div class="tagline">Start here. No credit card needed.</div>
-      <ul>
-        <li>5-day email course (Your First AI Quick Win)</li>
-        <li>AI Opportunity Checklist</li>
-        <li>10 Best Prompts sampler</li>
-        <li>5-Minute Automation Audit</li>
-        <li>19 blog articles on AI adoption</li>
-      </ul>
-      <a href="/ai-course/" class="btn btn-green">Start Free</a>
-    </div>
+  <div class="section-header">
+    <h2>Core SME Toolkit</h2>
+    <p>Strategy, prompts, and automation — everything a small business needs to adopt AI confidently.</p>
   </div>
 
-  <!-- Paid Products -->
-  <div class="pricing-grid">
-
-    <div class="card">
-      <h3>AI Prompt Library</h3>
-      <div class="price">€19</div>
-      <div class="tagline">127 pages. Copy, paste, customize.</div>
-      <ul>
-        <li>200+ tested prompts</li>
-        <li>10 departments covered</li>
-        <li>Works with ChatGPT, Claude, Gemini, Microsoft Copilot, and any AI assistant</li>
-        <li>Customizable [BRACKETS] for your details</li>
-        <li>Pro tips for every prompt</li>
-      </ul>
-      <a href="https://beornscout.gumroad.com/l/mxkxl" class="btn">Get Prompt Library</a>
-      <a href="/ai-prompt-library/" class="learn">Learn more &#8594;</a>
-    </div>
+  <div class="core-grid">
 
     <div class="card">
       <h3>AI Adoption Starter Kit</h3>
@@ -237,28 +178,24 @@ footer a{color:#ccc}
       <div class="tagline">37 pages. Your AI adoption roadmap.</div>
       <ul>
         <li>AI Opportunity Assessment Framework</li>
-        <li>Use Case Prioritization Matrix</li>
-        <li>Internal AI Policy Template</li>
         <li>30/60/90-Day Implementation Roadmap</li>
-        <li>ROI Calculator</li>
+        <li>Internal AI Policy Template + ROI Calculator</li>
       </ul>
-      <a href="https://beornscout.gumroad.com/l/qizoop" class="btn">Get Starter Kit</a>
-      <a href="/ai-starter-kit/" class="learn">Learn more &#8594;</a>
+      <a href="https://beornscout.gumroad.com/l/qizoop" class="btn">Buy — €27</a>
+      <a href="/ai-starter-kit/" class="learn">Details &#8594;</a>
     </div>
 
     <div class="card">
-      <h3>AI Prompt Pack: Real Estate</h3>
-      <div class="price">&#8364;14</div>
-      <div class="tagline">38 pages. Built for real estate professionals.</div>
+      <h3>200+ Copy-Paste ChatGPT Prompts for Business</h3>
+      <div class="price">€19</div>
+      <div class="tagline">127 pages. Copy, paste, customize.</div>
       <ul>
-        <li>50+ real estate AI prompts</li>
-        <li>8 categories (listings, leads, market analysis, more)</li>
-        <li>Works with ChatGPT, Claude, Gemini, Microsoft Copilot, and any AI assistant</li>
+        <li>200+ tested prompts across 10 departments</li>
+        <li>Works with ChatGPT, Claude, Gemini &amp; more</li>
         <li>Customizable [BRACKETS] for your details</li>
-        <li>Pro tips for every prompt</li>
       </ul>
-      <a href="https://beornscout.gumroad.com/l/rqikln" class="btn">Get Prompt Pack</a>
-      <a href="/ai-prompts-real-estate/" class="learn">Learn more &#8594;</a>
+      <a href="https://beornscout.gumroad.com/l/mxkxl" class="btn">Buy — €19</a>
+      <a href="/ai-prompt-library/" class="learn">Details &#8594;</a>
     </div>
 
     <div class="card">
@@ -268,178 +205,168 @@ footer a{color:#ccc}
       <ul>
         <li>12 step-by-step automation playbooks</li>
         <li>50 ready-to-use prompt templates</li>
-        <li>Tool comparison matrix (free + paid)</li>
-        <li>Automation project tracker</li>
-        <li>170 pages, no fluff</li>
+        <li>Tool comparison matrix (free + paid tools)</li>
       </ul>
-      <a href="https://beornscout.gumroad.com/l/pdrqfp" class="btn">Get Playbook</a>
-      <a href="/ai-automation-playbook/" class="learn">Learn more &#8594;</a>
+      <a href="https://beornscout.gumroad.com/l/pdrqfp" class="btn">Buy — €39</a>
+      <a href="/ai-automation-playbook/" class="learn">Details &#8594;</a>
     </div>
 
     <div class="card featured">
-      <h3>Core Bundle</h3>
+      <h3>Complete AI Business Bundle</h3>
       <div class="price">€69</div>
       <div class="tagline">
         <span style="text-decoration:line-through;color:var(--gray)">€85</span>
-        <span style="background:#dcfce7;color:#16a34a;padding:2px 10px;border-radius:20px;font-size:.8rem;font-weight:600;margin-left:6px">Save €16 (19%)</span>
+        <span style="background:#dcfce7;color:#16a34a;padding:2px 10px;border-radius:20px;font-size:.8rem;font-weight:600;margin-left:6px">Save €16</span>
       </div>
       <ul>
-        <li>All 3 products included</li>
-        <li>334 pages total</li>
-        <li>200+ prompts</li>
-        <li>12 automation playbooks</li>
-        <li>Strategy + Prompts + Automation</li>
+        <li>Starter Kit + Prompt Library + Automation Playbook</li>
+        <li>334 pages total — strategy, prompts, automation</li>
+        <li>Everything you need from day one</li>
       </ul>
-      <a href="https://beornscout.gumroad.com/l/fabnse" class="btn">Get the Bundle</a>
+      <a href="https://beornscout.gumroad.com/l/fabnse" class="btn">Get the Bundle — €69</a>
+      <a href="/" class="learn">Details &#8594;</a>
     </div>
 
+  </div>
+</div>
+</section>
+
+<!-- SECTION B: Niche Prompt Packs -->
+<section class="alt">
+<div class="container">
+  <div class="section-header">
+    <h2>Niche Prompt Packs</h2>
+    <p>Industry-specific AI prompts built for your business type. From €12.</p>
+  </div>
+
+  <div class="niche-grid">
+
+    <div class="card niche">
+      <h3>54 AI Prompts for Tradespeople</h3>
+      <div class="price">€14</div>
+      <div class="tagline">Quotes, client comms, scheduling.</div>
+      <ul>
+        <li>54 trade-specific prompts</li>
+        <li>Covers quoting, client follow-up &amp; more</li>
+        <li>Works with any AI assistant</li>
+      </ul>
+      <a href="https://beornscout.gumroad.com/l/ecyiix" class="btn">Buy — €14</a>
+      <a href="/ai-trades-prompts/" class="learn">Details &#8594;</a>
+    </div>
+
+    <div class="card niche">
+      <h3>50 AI Prompts for Restaurant Owners</h3>
+      <div class="price">€14</div>
+      <div class="tagline">Menus, reviews, staff, marketing.</div>
+      <ul>
+        <li>50 restaurant-specific prompts</li>
+        <li>Menu descriptions, review replies, social posts</li>
+        <li>Works with any AI assistant</li>
+      </ul>
+      <a href="https://beornscout.gumroad.com/l/ycezih" class="btn">Buy — €14</a>
+      <a href="/ai-restaurant-prompts/" class="learn">Details &#8594;</a>
+    </div>
+
+    <div class="card niche">
+      <h3>60 AI Prompts for Photographers</h3>
+      <div class="price">€12</div>
+      <div class="tagline">Client emails, captions, proposals.</div>
+      <ul>
+        <li>60 photography-specific prompts</li>
+        <li>Booking, contracts, social captions</li>
+        <li>Works with any AI assistant</li>
+      </ul>
+      <a href="https://beornscout.gumroad.com/l/oaihbj" class="btn">Buy — €12</a>
+      <a href="/ai-photographer-prompts/" class="learn">Details &#8594;</a>
+    </div>
+
+    <div class="card niche">
+      <h3>100 AI Prompts for Small Business Owners</h3>
+      <div class="price">€19</div>
+      <div class="tagline">Marketing, ops, HR, finance — all covered.</div>
+      <ul>
+        <li>100 prompts across all business functions</li>
+        <li>The widest coverage for general SMEs</li>
+        <li>Works with any AI assistant</li>
+      </ul>
+      <a href="https://beornscout.gumroad.com/l/zcxlr" class="btn">Buy — €19</a>
+      <a href="/ai-sme-ops-prompts/" class="learn">Details &#8594;</a>
+    </div>
+
+    <div class="card niche">
+      <h3>AI Prompt Pack: Real Estate</h3>
+      <div class="price">€14</div>
+      <div class="tagline">Listings, leads, market analysis.</div>
+      <ul>
+        <li>50+ real estate AI prompts</li>
+        <li>8 categories: listings, leads, market analysis</li>
+        <li>Works with any AI assistant</li>
+      </ul>
+      <a href="https://beornscout.gumroad.com/l/rqikln" class="btn">Buy — €14</a>
+      <a href="/ai-prompts-real-estate/" class="learn">Details &#8594;</a>
+    </div>
+
+    <div class="card niche">
+      <h3>AI Prompt Pack: E-commerce &amp; Retail</h3>
+      <div class="price">€14</div>
+      <div class="tagline">Product copy, ads, customer service.</div>
+      <ul>
+        <li>Prompts for product listings &amp; descriptions</li>
+        <li>Ad copy, email flows, review responses</li>
+        <li>Works with any AI assistant</li>
+      </ul>
+      <a href="https://beornscout.gumroad.com/l/pamij" class="btn">Buy — €14</a>
+      <a href="/ai-prompts-ecommerce/" class="learn">Details &#8594;</a>
+    </div>
+
+  </div>
+</div>
+</section>
+
+<!-- SECTION C: Free -->
+<section>
+<div class="container">
+  <div class="section-header">
+    <h2>Start for Free</h2>
+    <p>No credit card. No commitment. Try AI for your business today.</p>
+  </div>
+
+  <div style="max-width:460px;margin:0 auto">
+    <div class="card free-card">
+      <h3>10 Free AI Prompts for Business</h3>
+      <div class="price free-price">Free</div>
+      <div class="tagline">A taster from our full prompt library.</div>
+      <ul>
+        <li>10 ready-to-use business prompts</li>
+        <li>Covers marketing, ops &amp; customer service</li>
+        <li>5-day email course included</li>
+        <li>AI Opportunity Checklist bonus</li>
+      </ul>
+      <a href="/ai-course/" class="btn btn-green">Get Free Prompts</a>
+    </div>
   </div>
 </div>
 </section>
 
 <section class="alt">
 <div class="container">
-  <h2>Feature Comparison</h2>
-  <div class="table-wrap">
-  <table class="comparison-table">
-    <thead>
-      <tr>
-        <th>Feature</th>
-        <th>Prompt Library (€19)</th>
-        <th>Starter Kit (€27)</th>
-        <th>Playbook (€39)</th>
-        <th>Bundle (€69)</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>200+ AI prompts</td>
-        <td class="check">✓</td>
-        <td class="dash">-</td>
-        <td class="dash">-</td>
-        <td class="check">✓</td>
-      </tr>
-      <tr>
-        <td>10 department coverage</td>
-        <td class="check">✓</td>
-        <td class="dash">-</td>
-        <td class="dash">-</td>
-        <td class="check">✓</td>
-      </tr>
-      <tr>
-        <td>Customizable [BRACKETS]</td>
-        <td class="check">✓</td>
-        <td class="dash">-</td>
-        <td class="dash">-</td>
-        <td class="check">✓</td>
-      </tr>
-      <tr>
-        <td>AI Opportunity Assessment</td>
-        <td class="dash">-</td>
-        <td class="check">✓</td>
-        <td class="dash">-</td>
-        <td class="check">✓</td>
-      </tr>
-      <tr>
-        <td>Prioritization Matrix</td>
-        <td class="dash">-</td>
-        <td class="check">✓</td>
-        <td class="dash">-</td>
-        <td class="check">✓</td>
-      </tr>
-      <tr>
-        <td>AI Policy Template</td>
-        <td class="dash">-</td>
-        <td class="check">✓</td>
-        <td class="dash">-</td>
-        <td class="check">✓</td>
-      </tr>
-      <tr>
-        <td>90-Day Roadmap</td>
-        <td class="dash">-</td>
-        <td class="check">✓</td>
-        <td class="dash">-</td>
-        <td class="check">✓</td>
-      </tr>
-      <tr>
-        <td>ROI Calculator</td>
-        <td class="dash">-</td>
-        <td class="check">✓</td>
-        <td class="dash">-</td>
-        <td class="check">✓</td>
-      </tr>
-      <tr>
-        <td>12 Automation Playbooks</td>
-        <td class="dash">-</td>
-        <td class="dash">-</td>
-        <td class="check">✓</td>
-        <td class="check">✓</td>
-      </tr>
-      <tr>
-        <td>50 Prompt Templates</td>
-        <td class="dash">-</td>
-        <td class="dash">-</td>
-        <td class="check">✓</td>
-        <td class="check">✓</td>
-      </tr>
-      <tr>
-        <td>Tool Comparison Matrix</td>
-        <td class="dash">-</td>
-        <td class="dash">-</td>
-        <td class="check">✓</td>
-        <td class="check">✓</td>
-      </tr>
-      <tr>
-        <td>Project Tracker</td>
-        <td class="dash">-</td>
-        <td class="dash">-</td>
-        <td class="check">✓</td>
-        <td class="check">✓</td>
-      </tr>
-      <tr>
-        <td>Pages</td>
-        <td style="text-align:center">127</td>
-        <td style="text-align:center">37</td>
-        <td style="text-align:center">170</td>
-        <td style="text-align:center">334</td>
-      </tr>
-    </tbody>
-  </table>
-  </div>
-</div>
-</section>
-
-<section>
-<div class="container">
-  <h2>All Purchases Include</h2>
+  <h2 style="text-align:center;margin-bottom:28px">All Purchases Include</h2>
   <div class="includes-grid">
     <div class="includes-item">
       <div class="icon">⬇️</div>
-      <div>
-        <p><strong>Instant Download</strong>
-        Get your files immediately after purchase. PDF format, works on any device.</p>
-      </div>
+      <div><p><strong>Instant Download</strong>Get your files immediately after purchase. PDF format, works on any device.</p></div>
     </div>
     <div class="includes-item">
       <div class="icon">🛡️</div>
-      <div>
-        <p><strong>30-Day Money-Back Guarantee</strong>
-        Not satisfied? Get a full refund through Gumroad. No questions asked.</p>
-      </div>
+      <div><p><strong>30-Day Money-Back Guarantee</strong>Not satisfied? Full refund through Gumroad. No questions asked.</p></div>
     </div>
     <div class="includes-item">
       <div class="icon">🔄</div>
-      <div>
-        <p><strong>Free Updates</strong>
-        When we update a product, you get the new version at no extra cost.</p>
-      </div>
+      <div><p><strong>Free Updates</strong>When we update a product, you get the new version at no extra cost.</p></div>
     </div>
     <div class="includes-item">
       <div class="icon">👥</div>
-      <div>
-        <p><strong>Team Use Allowed</strong>
-        Share with your team. One purchase covers your entire organization.</p>
-      </div>
+      <div><p><strong>Team Use Allowed</strong>Share with your team. One purchase covers your entire organisation.</p></div>
     </div>
   </div>
 </div>
