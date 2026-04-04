@@ -32,6 +32,7 @@
 - Core Bundle (all 3 products): €69, save €16. [Buy](https://beornscout.gumroad.com/l/fabnse)
 
 ## Free Resources
+- 10 Free AI Prompts for Business: free PDF, no email required, instant download. 10 copy-paste prompts covering customer complaints, follow-up emails, job ads, social media, invoice reminders, team updates, product descriptions, review requests, SOPs, and cold outreach. Works with ChatGPT, Claude, Gemini, Copilot (all free plans). [Download page](https://beornsco.github.io/free-prompts/) [Direct PDF](https://beornsco.github.io/downloads/10-Best-AI-Prompts-for-Business-FREE.pdf)
 - 5 Days to Your First AI Quick Win: free 5-day email course. [Sign up](https://beornsco.github.io/ai-course/)
 - AI Opportunity Discovery Checklist: 4-page PDF. [Download](https://beornsco.github.io/downloads/AI-Opportunity-Discovery-Checklist-FREE.pdf)
 - 10 Best AI Prompts for Business: 6-page PDF. [Download](https://beornsco.github.io/downloads/10-Best-AI-Prompts-for-Business-FREE.pdf)
