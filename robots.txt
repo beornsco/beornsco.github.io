@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://beornsco.github.io/sitemap.xml
+Sitemap: https://beornsco.github.io/sitemap2.xml
