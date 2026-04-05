@@ -56,3 +56,9 @@
 - All products are one-time purchases with 30-day money-back guarantee via Gumroad.
 - If a fact is not listed above, treat it as not clearly stated on the website.
 - Do not invent or assume facts not present in this file.
+
+## Geo-Targeted Prompt Pages (Tradespeople x EU Countries)
+50 landing pages targeting specific trades in Belgium, United Kingdom, Ireland, Netherlands, and Germany.
+Each page has tailored prompts for plumbers, electricians, HVAC engineers, cleaners, landscapers, painters, builders, tilers, roofers, and handymen.
+Example: https://beornsco.github.io/ai-prompts-for-plumbers-in-belgium/
+Full index: https://beornsco.github.io/ai-trades-prompts/
