@@ -55,317 +55,67 @@ nav .hamburger.open span:nth-child(3){transform:rotate(-45deg) translate(5px,-5p
 footer{padding:36px 0;text-align:center;color:#aaa;font-size:.9rem;background:var(--dark)}
 footer a{color:#ccc}
 
-.nav-dropdown { position: relative; display: inline-block; }
-.nav-dropdown-content { display: none; position: absolute; top: 100%; left: 0; background: #fff; border: 1px solid #E5E7EB; border-radius: 8px; min-width: 220px; box-shadow: 0 4px 12px rgba(0,0,0,.1); z-index: 200; padding: 8px 0; }
-.nav-dropdown:hover .nav-dropdown-content { display: block; }
-.nav-dropdown-content a { display: block; padding: 8px 16px; color: #374151; font-size: .87rem; white-space: nowrap; }
-.nav-dropdown-content a:hover { background: #F3F4F6; color: #2962FF; }
-.nav-dropdown-section { padding: 6px 16px 4px; font-size: .75rem; font-weight: 700; color: #9CA3AF; text-transform: uppercase; letter-spacing: .05em; }
-.nav-dropdown-divider { border: none; border-top: 1px solid #E5E7EB; margin: 6px 0; }
-</style>
+/* Desktop dropdown - hover */
+@media(min-width:769px){
+  .nav-dropdown { position: relative; display: inline-block; }
+  .nav-dropdown-content { display: none; position: absolute; top: 100%; left: 0; background: #fff; border: 1px solid #E5E7EB; border-radius: 8px; min-width: 220px; box-shadow: 0 4px 12px rgba(0,0,0,.1); z-index: 200; padding: 8px 0; }
+  .nav-dropdown:hover .nav-dropdown-content { display: block; }
+  .nav-dropdown-content a { display: block; padding: 8px 16px; color: #374151; font-size: .87rem; white-space: nowrap; }
+  .nav-dropdown-content a:hover { background: #F3F4F6; color: #2962FF; }
+  .nav-dropdown-section { padding: 6px 16px 4px; font-size: .75rem; font-weight: 700; color: #9CA3AF; text-transform: uppercase; letter-spacing: .05em; }
+  .nav-dropdown-divider { border: none; border-top: 1px solid #E5E7EB; margin: 6px 0; }
+}
+
+/* Mobile dropdown - click/tap */
+@media(max-width:768px){
+  .nav-dropdown-content { display: none; background: #f9fafb; padding: 4px 0 4px 16px; }
+  .nav-dropdown-content.open { display: block; }
+  .nav-dropdown-content a { display: block; padding: 10px 16px; color: #374151; font-size: .9rem; }
+  .nav-dropdown-section { padding: 6px 16px 2px; font-size: .72rem; font-weight: 700; color: #9CA3AF; text-transform: uppercase; }
+  .nav-dropdown-divider { border: none; border-top: 1px solid #E5E7EB; margin: 4px 0; }
+  .nav-dropdown > a::after { content: " ▾"; font-size: .7rem; }
+  .nav-dropdown.open > a::after { content: " ▴"; font-size: .7rem; }
+}</style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3S7D3JJ9JS"></script>
-<script>
- window.dataLayer = window.dataLayer || [];
- function gtag(){dataLayer.push(arguments);}
- gtag('js', new Date());
- gtag('config', 'G-3S7D3JJ9JS');
-</script>
-</head>
-<body>
-    <nav>
-  <div class="nav-inner">
-    <a href="/" class="brand">Beorns Co</a>
-    <button class="hamburger" id="nav-hamburger" aria-label="Open menu">
-      <span></span><span></span><span></span>
-    </button>
-    <div class="nav-links" id="nav-links">
-      <div class="nav-dropdown">
-        <a href="/pricing/" style="display:flex;align-items:center;gap:4px;">Products <span style="font-size:.7rem;">&#9660;</span></a>
-        <div class="nav-dropdown-content">
-          <div class="nav-dropdown-section">Core SME Toolkit</div>
-          <a href="/ai-starter-kit/">AI Adoption Starter Kit</a>
-          <a href="/ai-prompt-library/">200+ ChatGPT Prompts</a>
-          <a href="/ai-automation-playbook/">AI Automation Playbook</a>
-          <hr class="nav-dropdown-divider">
-          <div class="nav-dropdown-section">Niche Prompt Packs</div>
-          <a href="/ai-trades-prompts/">Tradespeople</a>
-          <a href="/ai-restaurant-prompts/">Restaurant Owners</a>
-          <a href="/ai-photographer-prompts/">Photographers</a>
-          <a href="/ai-sme-ops-prompts/">Small Business (100 prompts)</a>
-          <a href="/ai-prompts-real-estate/">Real Estate</a>
-          <a href="/ai-prompts-ecommerce/">E-commerce and Retail</a>
-        </div>
-      </div>
-      <a href="/free-prompts/">Free Prompts</a>
-      <a href="/pricing/">Pricing</a>
-      <a href="/compare/">Compare</a>
-      <a href="/blog/">Blog</a>
-    </div>
-  </div>
-</nav>
-    <div class="container">
-        <article>
-            <h1>How to Train Employees on AI: A Step-by-Step Guide for Small Business</h1>
-            <div class="meta">March 2026 · 10 min read</div>
-
-            <p>You've decided your business needs to use AI. Maybe you've been experimenting with ChatGPT yourself, or you've read enough about productivity gains to know you can't ignore it. Good.</p>
-
-            <p>Now comes the hard part: getting your team on board.</p>
-
-            <p>This isn't a technology problem. The tools are easy. The hard part is human, resistance to change, fear of replacement, unclear expectations, and the gap between "AI can do amazing things" and "I don't know what to type into this box."</p>
-
-            <p>This guide gives you a concrete, week-by-week plan for training your employees on AI. It's designed for small businesses (5-50 people) without a dedicated IT or training department. No consultants. No six-month programs. Just practical steps that work.</p>
-
-            <h2>Before You Start: Set the Right Foundation</h2>
-
-            <h3>Address the Fear First</h3>
-
-            <p>Let's be honest: your employees are probably worried. "Am I being replaced?" is the first thought that crosses most people's minds when their boss says "we're bringing in AI."</p>
-
-            <p>Address this directly. In a team meeting, not in an email. Say something like:</p>
-
-            <blockquote>"We're adopting AI tools to help you work faster on the repetitive stuff, not to replace anyone. The goal is to free up your time for the work that actually needs a human brain, the stuff you're good at. Nobody's job is at risk because of this."</blockquote>
-
-            <p>If that's true, say it clearly. If roles <em>will</em> change, be honest about that too. Trust is the foundation for everything that follows.</p>
-
-            <h3>Define What "Using AI" Means at Your Company</h3>
-
-            <p>AI is vague. Your employees need specifics:</p>
-
-            <ul>
-                <li><strong>Which tools are we using?</strong> (ChatGPT, Claude, Copilot, specific industry tools?)</li>
-                <li><strong>For which tasks?</strong> (Drafting emails? Analyzing data? Customer responses?)</li>
-                <li><strong>What's off-limits?</strong> (Confidential data? Final customer communications without review?)</li>
-                <li><strong>Who's responsible for checking AI output?</strong> (Always the person who requested it.)</li>
-            </ul>
-
-            <p>Write this down. A one-page AI usage policy beats weeks of confusion and "I didn't know we couldn't do that" moments.</p>
-
-            <h2>The 4-Week Training Plan</h2>
-
-            <h3>Week 1: Foundations. Everyone Gets Hands-On</h3>
-
-            <p><strong>Goal:</strong> Every employee uses an AI tool at least once for a real work task.</p>
-
-            <p><strong>Day 1-2: Introduction session (60 minutes)</strong></p>
-            <ul>
-                <li>Show the team what AI can do with a live demo using real examples from your business</li>
-                <li>Let everyone log in and try a basic prompt: "Summarize this email" or "Draft a reply to this customer question"</li>
-                <li>Share the AI usage policy</li>
-            </ul>
-
-            <p><strong>Day 3-5: Daily challenges</strong></p>
-            <p>Give each person one specific task to try with AI each day:</p>
-            <ul>
-                <li>Monday: Use AI to draft an email you'd normally write from scratch</li>
-                <li>Tuesday: Ask AI to summarize a document or meeting notes</li>
-                <li>Wednesday: Use AI to brainstorm ideas for a current project</li>
-                <li>Thursday: Ask AI to help with a task you find tedious</li>
-                <li>Friday: Share what worked and what didn't with the team</li>
-            </ul>
-
-            <p>The Friday share-out is critical. It normalizes using AI, surfaces good use cases, and builds momentum.</p>
-
-            <h3>Week 2: Prompt Skills. Getting Better Output</h3>
-
-            <p><strong>Goal:</strong> Employees understand how to write prompts that get useful results.</p>
-
-            <p>The biggest frustration new AI users have isn't the tool, it's the output. They type "write me a marketing email" and get generic slop. Then they conclude "AI doesn't work for us."</p>
-
-            <p>The fix is teaching three prompt principles:</p>
-
-            <ol>
-                <li><strong>Context:</strong> Tell the AI who you are, who you're writing for, and what the situation is</li>
-                <li><strong>Specificity:</strong> The more specific your request, the better the output. "Write a 100-word follow-up email to a client who missed their payment deadline, keeping the tone firm but professional" beats "write a payment reminder"</li>
-                <li><strong>Iteration:</strong> The first output is a draft, not the answer. "Make it shorter," "Change the tone to be more casual," "Add a specific example about [X]", teach people to refine, not restart</li>
-            </ol>
-
-            <p><strong>Practical exercise:</strong> Give everyone the same task (e.g., "write a response to this customer complaint"). Have them write their prompt, generate the output, and share. Compare results. The person with the best output explains their prompt. Everyone learns from the comparison.</p>
-
-            <div class="cta-box">
-                <h3>Jumpstart Your Team's AI Training</h3>
-                <p>The AI Starter Kit for Small Business includes a complete training framework, usage policy template, prompt guides, and ROI tracking tools, everything you need to get your team productive with AI in weeks, not months.</p>
-                <a href="https://beornsco.github.io/ai-starter-kit/">Get the AI Starter Kit →</a>
-            </div>
-
-            <h3>Week 3: Department-Specific Use Cases</h3>
-
-            <p><strong>Goal:</strong> Each person or team has 3-5 AI workflows specific to their role.</p>
-
-            <p>Generic AI training only gets you so far. The real value comes when people discover how AI fits into <em>their</em> daily work.</p>
-
-            <p>This week, work with each department or role to identify their top repetitive tasks and build specific prompts for them:</p>
-
-            <p><strong>Sales/Account Management:</strong></p>
-            <ul>
-                <li>Drafting follow-up emails after meetings</li>
-                <li>Preparing meeting briefs from CRM notes</li>
-                <li>Writing proposals from templates</li>
-                <li>Summarizing customer history before calls</li>
-            </ul>
-
-            <p><strong>Marketing:</strong></p>
-            <ul>
-                <li>Writing social media posts</li>
-                <li>Creating email newsletter content</li>
-                <li>Generating ad copy variations</li>
-                <li>Analyzing competitor messaging</li>
-            </ul>
-
-            <p><strong>Operations/Admin:</strong></p>
-            <ul>
-                <li>Writing meeting summaries and action items</li>
-                <li>Creating standard operating procedures</li>
-                <li>Drafting internal communications</li>
-                <li>Organizing and categorizing information</li>
-            </ul>
-
-            <p><strong>Finance/Accounting:</strong></p>
-            <ul>
-                <li>Explaining financial reports in plain language</li>
-                <li>Drafting collection emails</li>
-                <li>Summarizing contract terms</li>
-                <li>Creating budget narratives from spreadsheet data</li>
-            </ul>
-
-            <p>For each use case, create a saved prompt template the team can reuse. Build a shared document or folder where these live.</p>
-
-            <h3>Week 4: Integration and Habits</h3>
-
-            <p><strong>Goal:</strong> AI becomes a natural part of the daily workflow, not a separate activity.</p>
-
-            <p>The biggest risk after training isn't that people can't use AI, it's that they forget to. Old habits are strong. When you're busy, you default to the way you've always done things.</p>
-
-            <p>This week is about building habits:</p>
-
-            <ul>
-                <li><strong>Set a "try AI first" rule for specific tasks.</strong> Before writing any email over 100 words, try drafting it with AI first. Before creating any document from scratch, ask AI for a first draft.</li>
-                <li><strong>Track time savings.</strong> Have each person note how much time AI saved them this week. Even rough estimates work. Nothing motivates continued use like seeing "I saved 3 hours this week."</li>
-                <li><strong>Identify your AI champions.</strong> By now, one or two people on your team will be enthusiastic. Empower them. Make them the go-to for prompt help and new use cases.</li>
-                <li><strong>Schedule a monthly check-in.</strong> AI tools evolve fast. Set a recurring 30-minute meeting to share new use cases, update prompts, and discuss what's working.</li>
-            </ul>
-
-            <h2>Common Mistakes That Derail AI Training</h2>
-
-            <h3>Mistake 1: Training Everyone at Once on Everything</h3>
-
-            <p>Start with one team or one use case. Get it working. Then expand. Trying to roll out AI across the entire company in one go creates chaos, support overload, and the impression that "this doesn't work."</p>
-
-            <h3>Mistake 2: No Clear Policy on Confidential Data</h3>
-
-            <p>Employees will paste customer data, financial information, and internal documents into AI tools. Have a clear policy <em>before</em> training starts: what can be shared with which tools? Are you using the business/enterprise tier that doesn't train on your data? This isn't paranoia, it's basic risk management.</p>
-
-            <h3>Mistake 3: Expecting Perfection</h3>
-
-            <p>AI output needs review. Always. If your team thinks AI should produce perfect final drafts, they'll be disappointed and quit using it. Set the expectation that AI gives you a 70-80% draft. Your job is the last 20%. That's still dramatically faster than starting from zero.</p>
-
-            <h3>Mistake 4: No Follow-Up After Training</h3>
-
-            <p>Training without follow-up has a half-life of about two weeks. After the initial excitement fades, people drift back to old habits unless you actively reinforce the new ones. Monthly check-ins, shared wins, and updated prompt libraries keep momentum going.</p>
-
-            <h3>Mistake 5: Making It Optional Without Making It Valuable</h3>
-
-            <p>If AI training feels like homework, something extra on top of an already full workload, people won't engage. The frame should be: "This will make your job easier, starting this week." Show, don't tell. The best conversion happens when someone saves an hour on something they used to hate doing.</p>
-
-            <h2>Measuring Success</h2>
-
-            <p>After your 4-week program, track these metrics:</p>
-
-            <ul>
-                <li><strong>Adoption rate:</strong> What percentage of your team uses AI at least once a week? Target: 80%+ by month two.</li>
-                <li><strong>Time saved:</strong> Self-reported hours saved per person per week. Even 2-3 hours is significant.</li>
-                <li><strong>Quality impact:</strong> Are outputs (emails, documents, proposals) improving? Ask team leads.</li>
-                <li><strong>New use cases:</strong> Are people finding new ways to use AI beyond the initial training? This is the best sign of real adoption.</li>
-                <li><strong>Confidence level:</strong> Quick survey. "How confident are you using AI tools for your job?" on a 1-5 scale. Track over time.</li>
-            </ul>
-
-            <p>Don't obsess over precise measurement. The goal is directional: are things getting better? Are people using the tools? Is work getting done faster?</p>
-
-            <h2>Scaling Beyond the Basics</h2>
-
-            <p>Once your team is comfortable with general AI tools, the next steps are:</p>
-
-            <ol>
-                <li><strong>Custom GPTs or saved prompt libraries:</strong> Build specialized assistants for your most common tasks. A "Customer Response Assistant" with your brand voice and FAQ pre-loaded. A "Proposal Writer" with your template and pricing baked in.</li>
-                <li><strong>Tool integrations:</strong> Connect AI to your existing tools. CRM, email, project management. Most major platforms now have AI features built in.</li>
-                <li><strong>Process automation:</strong> Move from "AI assists a human" to "AI handles the task with human review." This is where the real time savings compound.</li>
-            </ol>
-
-            <p>But don't rush to this stage. Get the basics right first. A team that confidently uses AI for everyday tasks is far more valuable than a team with fancy automations nobody trusts.</p>
-
-            <div class="cta-box">
-                <h3>Get Your Team AI-Ready This Month</h3>
-                <p>The AI Starter Kit includes everything in this guide, plus templates, prompt libraries, policy documents, and a facilitator guide so you can run the training yourself.</p>
-                <a href="https://beornsco.github.io/ai-starter-kit/">Get the AI Starter Kit →</a>
-            </div>
-
-            <h2>The Bottom Line</h2>
-
-            <p>Training your team on AI isn't about technology. It's about reducing fear, building skills gradually, making it relevant to each person's actual job, and then reinforcing the habits until they stick.</p>
-
-            <p>Four weeks. That's all it takes to go from "nobody uses AI" to "the team uses AI daily and wonders how they worked without it."</p>
-
-            <p>Start with the fear conversation. Move to hands-on practice. Build role-specific workflows. Reinforce with tracking and check-ins.</p>
-
-            <p>The companies that will thrive aren't the ones with the fanciest AI tools. They're the ones whose people actually know how to use them.</p>
-        
-    <div style="background:#f0fdf4;border:2px solid #16a34a;border-radius:8px;padding:1.5rem 2rem;margin:2.5rem 0;text-align:center">
-      <h3 style="color:#16a34a;margin:0 0 0.5rem">🎓 Free 5-Day Email Course</h3>
-      <p style="margin-bottom:6px"><strong>5 Days to Your First AI Quick Win</strong></p>
-      <p style="color:#6B7280;margin-bottom:1rem">One lesson per day. Find your best AI opportunity, write your first prompt, build a reusable template, create an AI policy, and calculate your ROI.</p>
-      <form class="ml-course-form" style="display:flex;gap:12px;max-width:500px;margin:0 auto;flex-wrap:wrap;justify-content:center">
-        <input type="email" name="fields[email]" placeholder="Your work email" required style="flex:1;min-width:220px;padding:14px 18px;border:2px solid #E5E7EB;border-radius:8px;font-size:1rem;outline:none">
-        <button type="submit" style="white-space:nowrap;background:#16a34a;color:#fff;padding:14px 24px;border:none;border-radius:8px;font-size:1rem;font-weight:600;cursor:pointer">Start the Free Course</button>
-      </form>
-      <p class="ml-course-msg" style="margin-top:12px;font-weight:600;display:none"></p>
-      <p style="color:#6B7280;font-size:.85rem;margin-top:8px">No spam. Unsubscribe anytime.</p>
-    </div>
-
-        
-<div class="cta-block" style="background:linear-gradient(135deg,#2962FF,#1a47cc);color:white;padding:32px;border-radius:12px;margin:40px 0;text-align:center;">
-  <h3 style="color:white;margin-bottom:8px">Ready to save 5 hours a week?</h3>
-  <p style="color:rgba(255,255,255,0.85);margin-bottom:20px">Start with proven business prompts for marketing, operations, and customer communication. Copy, paste, and adapt.</p>
-  <a href="/ai-prompt-library/" style="background:white;color:#2962FF;padding:14px 28px;border-radius:8px;font-weight:700;text-decoration:none;display:inline-block">Get the Prompts</a>
-  <a href="/free-prompts/" style="color:rgba(255,255,255,0.85);padding:14px 20px;display:inline-block;text-decoration:underline">Or start free</a>
-</div>
-
-</article>
-    </div>
-    <footer>
-  © 2026 Beorns Co · <a href="/terms/">Terms</a> · <a href="/privacy/">Privacy</a> · <a href="https://twitter.com/beornsco" target="_blank" rel="noopener">X/Twitter</a> · <a href="https://medium.com/@beornsco" target="_blank" rel="noopener">Medium</a> · <a href="https://beornsco.lemonsqueezy.com" target="_blank" rel="noopener">Lemon Squeezy Store</a>
-</footer>
-
-<script>
-document.querySelectorAll('.ml-course-form').forEach(function(form){
-form.addEventListener('submit',function(e){
-e.preventDefault();
-var email=this.querySelector('[name="fields[email]"]').value;
-var msg=this.parentElement.querySelector('.ml-course-msg');
-var cb='mlc_'+Date.now();
-window[cb]=function(){
-msg.style.display='block';
-msg.style.color='#16a34a';
-msg.textContent='You\'re in! Check your inbox for Day 1.';
-form.style.display='none';
-};
-var s=document.createElement('script');
-s.src='https://assets.mailerlite.com/jsonp/2208896/forms/182863223702160765/subscribe?fields[email]='+encodeURIComponent(email)+'&callback='+cb;
-document.body.appendChild(s);
-});
-});
-</script>
-
 <script>
 (function(){
   var btn = document.getElementById('nav-hamburger');
   var links = document.getElementById('nav-links');
+  var dropdownTrigger = document.querySelector('.nav-dropdown > a');
+  var dropdownContent = document.querySelector('.nav-dropdown-content');
+  var dropdown = document.querySelector('.nav-dropdown');
+
+  // Hamburger toggle
   if(btn && links){
-    btn.addEventListener('click', function(){
+    btn.addEventListener('click', function(e){
+      e.stopPropagation();
       btn.classList.toggle('open');
       links.classList.toggle('open');
     });
   }
+
+  // Mobile: Products dropdown toggle (prevent nav close)
+  if(dropdownTrigger && dropdownContent){
+    dropdownTrigger.addEventListener('click', function(e){
+      if(window.innerWidth <= 768){
+        e.preventDefault();
+        e.stopPropagation();
+        dropdown.classList.toggle('open');
+        dropdownContent.classList.toggle('open');
+      }
+    });
+  }
+
+  // Close nav when clicking outside
+  document.addEventListener('click', function(e){
+    if(links && !links.contains(e.target) && btn && !btn.contains(e.target)){
+      links.classList.remove('open');
+      btn.classList.remove('open');
+      if(dropdown) dropdown.classList.remove('open');
+      if(dropdownContent) dropdownContent.classList.remove('open');
+    }
+  });
 })();
 </script>
 </body>

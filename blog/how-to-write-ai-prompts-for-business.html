@@ -38,338 +38,66 @@
         footer { text-align: center; padding: 2rem 1.5rem; color: #6B7280; font-size: 0.85rem; border-top: 1px solid #E5E7EB; margin-top: 2rem; }
         footer a { color: #2962FF; text-decoration: none; }
 
-.nav-dropdown { position: relative; display: inline-block; }
-.nav-dropdown-content { display: none; position: absolute; top: 100%; left: 0; background: #fff; border: 1px solid #E5E7EB; border-radius: 8px; min-width: 220px; box-shadow: 0 4px 12px rgba(0,0,0,.1); z-index: 200; padding: 8px 0; }
-.nav-dropdown:hover .nav-dropdown-content { display: block; }
-.nav-dropdown-content a { display: block; padding: 8px 16px; color: #374151; font-size: .87rem; white-space: nowrap; }
-.nav-dropdown-content a:hover { background: #F3F4F6; color: #2962FF; }
-.nav-dropdown-section { padding: 6px 16px 4px; font-size: .75rem; font-weight: 700; color: #9CA3AF; text-transform: uppercase; letter-spacing: .05em; }
-.nav-dropdown-divider { border: none; border-top: 1px solid #E5E7EB; margin: 6px 0; }
-</style>
+/* Desktop dropdown - hover */
+@media(min-width:769px){
+  .nav-dropdown { position: relative; display: inline-block; }
+  .nav-dropdown-content { display: none; position: absolute; top: 100%; left: 0; background: #fff; border: 1px solid #E5E7EB; border-radius: 8px; min-width: 220px; box-shadow: 0 4px 12px rgba(0,0,0,.1); z-index: 200; padding: 8px 0; }
+  .nav-dropdown:hover .nav-dropdown-content { display: block; }
+  .nav-dropdown-content a { display: block; padding: 8px 16px; color: #374151; font-size: .87rem; white-space: nowrap; }
+  .nav-dropdown-content a:hover { background: #F3F4F6; color: #2962FF; }
+  .nav-dropdown-section { padding: 6px 16px 4px; font-size: .75rem; font-weight: 700; color: #9CA3AF; text-transform: uppercase; letter-spacing: .05em; }
+  .nav-dropdown-divider { border: none; border-top: 1px solid #E5E7EB; margin: 6px 0; }
+}
+
+/* Mobile dropdown - click/tap */
+@media(max-width:768px){
+  .nav-dropdown-content { display: none; background: #f9fafb; padding: 4px 0 4px 16px; }
+  .nav-dropdown-content.open { display: block; }
+  .nav-dropdown-content a { display: block; padding: 10px 16px; color: #374151; font-size: .9rem; }
+  .nav-dropdown-section { padding: 6px 16px 2px; font-size: .72rem; font-weight: 700; color: #9CA3AF; text-transform: uppercase; }
+  .nav-dropdown-divider { border: none; border-top: 1px solid #E5E7EB; margin: 4px 0; }
+  .nav-dropdown > a::after { content: " ▾"; font-size: .7rem; }
+  .nav-dropdown.open > a::after { content: " ▴"; font-size: .7rem; }
+}</style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3S7D3JJ9JS"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);} 
-  gtag('js', new Date());
-  gtag('config', 'G-3S7D3JJ9JS');
-</script>
-</head>
-<body>
-    <nav>
-  <div class="nav-inner">
-    <a href="/" class="brand">Beorns Co</a>
-    <button class="hamburger" id="nav-hamburger" aria-label="Open menu">
-      <span></span><span></span><span></span>
-    </button>
-    <div class="nav-links" id="nav-links">
-      <div class="nav-dropdown">
-        <a href="/pricing/" style="display:flex;align-items:center;gap:4px;">Products <span style="font-size:.7rem;">&#9660;</span></a>
-        <div class="nav-dropdown-content">
-          <div class="nav-dropdown-section">Core SME Toolkit</div>
-          <a href="/ai-starter-kit/">AI Adoption Starter Kit</a>
-          <a href="/ai-prompt-library/">200+ ChatGPT Prompts</a>
-          <a href="/ai-automation-playbook/">AI Automation Playbook</a>
-          <hr class="nav-dropdown-divider">
-          <div class="nav-dropdown-section">Niche Prompt Packs</div>
-          <a href="/ai-trades-prompts/">Tradespeople</a>
-          <a href="/ai-restaurant-prompts/">Restaurant Owners</a>
-          <a href="/ai-photographer-prompts/">Photographers</a>
-          <a href="/ai-sme-ops-prompts/">Small Business (100 prompts)</a>
-          <a href="/ai-prompts-real-estate/">Real Estate</a>
-          <a href="/ai-prompts-ecommerce/">E-commerce and Retail</a>
-        </div>
-      </div>
-      <a href="/free-prompts/">Free Prompts</a>
-      <a href="/pricing/">Pricing</a>
-      <a href="/compare/">Compare</a>
-      <a href="/blog/">Blog</a>
-    </div>
-  </div>
-</nav>
-    <div class="container">
-        <article>
-            <h1>How to Write AI Prompts for Business (With Examples)</h1>
-            <div class="meta">March 2026 · 11 min read</div>
-
-            <p>You've tried ChatGPT. You typed something vague. You got something vague back. And you concluded AI isn't that useful.</p>
-
-            <p>Here's the thing: <strong>the quality of your prompt determines the quality of your output.</strong> It's not the tool that's the problem - it's the instruction.</p>
-
-            <p>This guide will teach you how to write AI prompts that produce genuinely useful business outputs. No "prompt engineering" jargon. Just a practical framework you can use immediately.</p>
-
-            <h2>Why Most Business Prompts Fail</h2>
-
-            <p>The number one reason AI gives mediocre results: <strong>vague inputs produce vague outputs.</strong></p>
-
-            <p>Here's what most people type:</p>
-
-            <pre>Write me a marketing email.</pre>
-
-            <p>Here's what they should type:</p>
-
-            <pre>Write a 150-word email to existing customers (small business owners in manufacturing) announcing our new inventory management feature. Tone: professional but warm. Include: one key benefit (saves 3 hours/week on stock counts), a 15% early-bird discount valid until April 15, and a clear call-to-action to book a demo. Subject line included.</pre>
-
-            <p>The difference is night and day. The first prompt gives AI nothing to work with. The second gives it everything it needs to produce a usable first draft.</p>
-
-            <h2>The CRAFT Framework for Business Prompts</h2>
-
-            <p>Use this five-element framework every time you write a business prompt:</p>
-
-            <h3>C - Context</h3>
-            <p>Tell AI who you are and what situation you're in. This sets the stage.</p>
-            <ul>
-                <li>"I run a 15-person accounting firm..."</li>
-                <li>"We're a B2B SaaS company selling to mid-market..."</li>
-                <li>"I'm the operations manager at a logistics company..."</li>
-            </ul>
-
-            <h3>R - Role</h3>
-            <p>Tell AI what role to play. This shapes the tone, vocabulary, and perspective.</p>
-            <ul>
-                <li>"Act as an experienced marketing copywriter..."</li>
-                <li>"You are an HR consultant specializing in small business..."</li>
-                <li>"Respond as a senior business analyst..."</li>
-            </ul>
-
-            <h3>A - Action</h3>
-            <p>Be specific about what you want AI to do. Verbs matter.</p>
-            <ul>
-                <li>"Write..." / "Summarize..." / "Analyze..." / "Compare..."</li>
-                <li>"Create a bullet-point list of..." / "Draft a 200-word..."</li>
-                <li>"Identify the top 5 risks in..." / "Rewrite this to be more..."</li>
-            </ul>
-
-            <h3>F - Format</h3>
-            <p>Specify the output format. Otherwise AI guesses - and guesses wrong.</p>
-            <ul>
-                <li>"Use bullet points, not paragraphs"</li>
-                <li>"Format as a table with columns: Task, Time Saved, Tool Required"</li>
-                <li>"Keep it under 200 words"</li>
-                <li>"Use headers for each section"</li>
-            </ul>
-
-            <h3>T - Target</h3>
-            <p>Define who the output is for. This changes everything about tone and complexity.</p>
-            <ul>
-                <li>"The audience is non-technical business owners"</li>
-                <li>"This will be read by C-level executives"</li>
-                <li>"Written for new employees on their first day"</li>
-            </ul>
-
-            <h2>10 Business Prompt Examples (Copy-Paste Ready)</h2>
-
-            <p>Here are real prompts for common business tasks. Copy them, change the words in brackets, and use them immediately.</p>
-
-            <h3>1. Customer Email Response</h3>
-            <pre>Act as a professional customer service representative for [your company]. A customer emailed complaining about [issue]. Write a 100-150 word response that: acknowledges their frustration, explains what happened, offers [specific resolution], and ends with a warm closing. Tone: empathetic but professional. Do not be overly apologetic.</pre>
-
-            <h3>2. Meeting Summary</h3>
-            <pre>Summarize the following meeting transcript into a structured format:
-- Key decisions made (bullet points)
-- Action items (with owner and deadline for each)
-- Open questions requiring follow-up
-- Next meeting date/agenda items
-
-Keep it concise - no more than one page. Use clear, direct language.
-
-Transcript:
-[paste transcript here]</pre>
-
-            <h3>3. Job Description</h3>
-            <pre>Write a job description for a [job title] at a [company size] [industry] company. Include: a compelling 2-sentence opening (not generic), 5-7 key responsibilities, 4-5 required qualifications, 2-3 nice-to-haves, and a brief section on what we offer. Tone: professional but human - avoid corporate buzzwords like "synergy" or "rockstar." Location: [city/remote]. Salary range: [range].</pre>
-
-            <h3>4. Proposal Draft</h3>
-            <pre>Draft a business proposal for [service/product] to [client company]. Include:
-- Executive summary (3 sentences)
-- Problem statement (what they're struggling with: [describe])
-- Our proposed solution (what we'll deliver: [describe])
-- Timeline (estimated: [X weeks/months])
-- Investment ([price range])
-- Why us (2-3 differentiators: [list them])
-
-Tone: confident but not arrogant. Length: 1-2 pages. Format: use headers and bullet points for scannability.</pre>
-
-            <h3>5. Social Media Content</h3>
-            <pre>Create 5 LinkedIn posts for [company] about [topic]. Each post should:
-- Start with a hook (question or bold statement)
-- Be 100-150 words
-- End with a question to encourage engagement
-- Include 3-5 relevant hashtags
-
-Our target audience: [describe]. Our brand voice: [professional/casual/authoritative]. Avoid: generic motivational quotes, emoji overuse, obvious self-promotion.</pre>
-
-            <h3>6. Weekly Report</h3>
-            <pre>Using the data below, write a weekly status report for [department/project]. Structure:
-- Summary (3 bullet points: what went well, what didn't, what's next)
-- Key metrics vs targets (format as table)
-- Blockers and risks (with proposed mitigations)
-- Priorities for next week
-
-Audience: senior management. Keep it to one page. Be direct - flag problems clearly, don't bury them.
-
-Data:
-[paste raw data/notes here]</pre>
-
-            <h3>7. Competitor Analysis</h3>
-            <pre>Analyze [competitor name] based on the information I'll provide. Create a comparison table with columns: Feature, Us, Them, Advantage (Us/Them/Tie). After the table, write 3 bullet points on their key strengths and 3 on their key weaknesses relative to our offering.
-
-Our product: [brief description]
-Our pricing: [pricing]
-Our key differentiators: [list]
-
-Their information:
-[paste competitor info, website copy, or product details]</pre>
-
-            <h3>8. Process Documentation</h3>
-            <pre>Document the following business process as a step-by-step guide that a new employee could follow on their first day:
-
-Process name: [name]
-Purpose: [why we do this]
-Frequency: [daily/weekly/monthly]
-
-Steps (I'll describe roughly, you formalize):
-[describe the process in your own words, even informally]
-
-Format each step as: Step number, action (starting with a verb), expected outcome, and any tips or common mistakes. Include a "Prerequisites" section at the top and a "Troubleshooting" section at the bottom.</pre>
-
-            <h3>9. Financial Summary</h3>
-            <pre>Analyze the following financial data and create a summary for [audience: board/management/team]. Include:
-- Revenue trend (up/down/flat, percentage change)
-- Top 3 expense categories and whether they're growing
-- Cash flow status
-- 2-3 key insights or concerns
-- One recommended action
-
-Use plain language - avoid accounting jargon. Format: bullet points with one summary paragraph at the top.
-
-Data:
-[paste financial data]</pre>
-
-            <h3>10. Training Material</h3>
-            <pre>Create a training document for [topic] aimed at [audience - e.g., new customer service reps]. Structure:
-- Learning objectives (3-4 bullet points)
-- Key concepts (explained simply, with examples)
-- Step-by-step procedures for [specific task]
-- Common mistakes and how to avoid them
-- Quick reference cheat sheet (fit on one page)
-
-Tone: friendly and encouraging, not condescending. Use real-world examples from [industry]. Length: 3-5 pages.</pre>
-
-            <div class="cta-box">
-                <h3>Want 200+ Ready-Made Business Prompts?</h3>
-                <p>Our AI Prompt Library has copy-paste templates for marketing, operations, HR, finance, customer service, and more - organized by department and use case.</p>
-                <a href="https://beornsco.github.io/ai-prompt-library/">Get the Prompt Library →</a>
-            </div>
-
-            <h2>5 Rules for Better Business Prompts</h2>
-
-            <h3>Rule 1: Be Specific About Length</h3>
-            <p>Without a length constraint, AI defaults to long. Always specify: "under 200 words," "3-5 bullet points," "one page maximum." Your colleagues will thank you when they don't get a 2,000-word email draft they have to cut down.</p>
-
-            <h3>Rule 2: Give Examples of What You Want</h3>
-            <p>If you have a previous email, report, or document that matches the style you want, paste it in and say: "Match this tone and format." AI is excellent at pattern-matching. Show, don't just tell.</p>
-
-            <h3>Rule 3: Tell AI What NOT to Do</h3>
-            <p>Negative constraints are surprisingly powerful:</p>
-            <ul>
-                <li>"Do not use buzzwords like synergy, leverage, or disrupt"</li>
-                <li>"Avoid passive voice"</li>
-                <li>"Do not start with 'In today's fast-paced world'"</li>
-                <li>"No bullet points longer than one sentence"</li>
-            </ul>
-
-            <h3>Rule 4: Iterate, Don't Start Over</h3>
-            <p>Your first output won't be perfect. That's fine. Instead of rewriting the entire prompt, give feedback:</p>
-            <ul>
-                <li>"Good structure, but make the tone more casual"</li>
-                <li>"Shorten each bullet point to one line"</li>
-                <li>"The third paragraph is too vague - add specific numbers"</li>
-                <li>"Rewrite the opening to be more direct"</li>
-            </ul>
-            <p>Two rounds of iteration usually gets you to 90% quality. That last 10% is your human polish.</p>
-
-            <h3>Rule 5: Build a Template Library</h3>
-            <p>The biggest time saver isn't writing better prompts - it's <strong>not writing prompts at all.</strong> Once you have a prompt that works for a recurring task, save it as a template. Next time, you just fill in the blanks.</p>
-
-            <p>A team of 10 people each saving 5 minutes per task, 3 tasks per day, 5 days a week = <strong>12.5 hours per week recovered.</strong> That's a part-time employee's worth of time - from templates alone.</p>
-
-            <h2>Common Mistakes to Avoid</h2>
-
-            <h3>Mistake 1: Treating AI Like a Search Engine</h3>
-            <p>"What are the best marketing strategies?" is a search query, not a prompt. Instead: "Given our company [description], budget [amount], and target audience [description], recommend 5 marketing strategies ranked by expected ROI. For each, include: estimated cost, time to implement, and expected results within 90 days."</p>
-
-            <h3>Mistake 2: Not Providing Enough Context</h3>
-            <p>AI doesn't know your company, your industry norms, your brand voice, or your audience. Every piece of context you provide makes the output more relevant. It takes 30 extra seconds to add context. It saves 10 minutes of editing a generic output.</p>
-
-            <h3>Mistake 3: Expecting Perfection on the First Try</h3>
-            <p>AI produces first drafts, not final drafts. Plan for one round of iteration (feedback to AI) and one round of human editing. This "AI draft → AI refine → human polish" workflow is faster than writing from scratch, even with the extra steps.</p>
-
-            <h3>Mistake 4: Using AI for the Wrong Tasks</h3>
-            <p>AI excels at structured, pattern-based tasks: emails, summaries, reports, documentation, analysis of provided data. It struggles with tasks requiring real-time information, deep domain expertise, creative strategy, or sensitive interpersonal judgment. Know the boundaries.</p>
-
-            <h2>Getting Your Team to Use Prompts</h2>
-
-            <p>The single biggest barrier to AI adoption isn't the technology - it's the blank text box. People stare at ChatGPT and don't know what to type.</p>
-
-            <p><strong>The fix: give them templates.</strong> Don't train people on "prompt engineering." Give them a shared folder with 20-30 prompt templates for their most common tasks. Each template has clear instructions: copy it, fill in the brackets, paste it, review the output.</p>
-
-            <p>That's your entire AI training program. Seriously. When the barrier is "copy, paste, fill in blanks," adoption skyrockets.</p>
-
-            <div class="cta-box">
-                <h3>Skip the Template-Building Phase</h3>
-                <p>Our AI Prompt Library includes 200+ tested prompt templates across 10 business departments. Copy-paste ready, organized by use case.</p>
-                <a href="https://beornsco.github.io/ai-prompt-library/">Get the Prompt Library →</a>
-            </div>
-
-            <h2>Quick Reference: The CRAFT Checklist</h2>
-
-            <p>Before sending any business prompt, check these five elements:</p>
-
-            <ol>
-                <li><strong>Context</strong> - Did I explain my situation and company?</li>
-                <li><strong>Role</strong> - Did I tell AI what perspective to take?</li>
-                <li><strong>Action</strong> - Did I use a specific verb (write, analyze, compare)?</li>
-                <li><strong>Format</strong> - Did I specify length, structure, and style?</li>
-                <li><strong>Target</strong> - Did I define who will read this output?</li>
-            </ol>
-
-            <p>If you hit all five, you'll get a usable first draft 80% of the time. The other 20% needs one round of refinement. Either way, you're saving hours compared to starting from a blank page.</p>
-
-            <h2>What to Do Next</h2>
-
-            <ol>
-                <li><strong>Pick one recurring task</strong> you do this week (email, report, document)</li>
-                <li><strong>Write a CRAFT prompt</strong> for it using the framework above</li>
-                <li><strong>Test it three times</strong> with slightly different inputs</li>
-                <li><strong>Refine until the output is consistently 80%+ quality</strong></li>
-                <li><strong>Save it as a template</strong> and share it with your team</li>
-            </ol>
-
-            <p>One good template, used daily, saves more time than mastering every AI trick in the book. Start small, start today.</p>
-
-        
-<div class="cta-block" style="background:linear-gradient(135deg,#2962FF,#1a47cc);color:white;padding:32px;border-radius:12px;margin:40px 0;text-align:center;">
-  <h3 style="color:white;margin-bottom:8px">Ready to save 5 hours a week?</h3>
-  <p style="color:rgba(255,255,255,0.85);margin-bottom:20px">Start with proven business prompts for marketing, operations, and customer communication. Copy, paste, and adapt.</p>
-  <a href="/ai-prompt-library/" style="background:white;color:#2962FF;padding:14px 28px;border-radius:8px;font-weight:700;text-decoration:none;display:inline-block">Get the Prompts</a>
-  <a href="/free-prompts/" style="color:rgba(255,255,255,0.85);padding:14px 20px;display:inline-block;text-decoration:underline">Or start free</a>
-</div>
-
-</article>
-    </div>
-    <footer>
-  © 2026 Beorns Co · <a href="/terms/">Terms</a> · <a href="/privacy/">Privacy</a> · <a href="https://twitter.com/beornsco" target="_blank" rel="noopener">X/Twitter</a> · <a href="https://medium.com/@beornsco" target="_blank" rel="noopener">Medium</a> · <a href="https://beornsco.lemonsqueezy.com" target="_blank" rel="noopener">Lemon Squeezy Store</a>
-</footer>
 <script>
 (function(){
   var btn = document.getElementById('nav-hamburger');
   var links = document.getElementById('nav-links');
+  var dropdownTrigger = document.querySelector('.nav-dropdown > a');
+  var dropdownContent = document.querySelector('.nav-dropdown-content');
+  var dropdown = document.querySelector('.nav-dropdown');
+
+  // Hamburger toggle
   if(btn && links){
-    btn.addEventListener('click', function(){
+    btn.addEventListener('click', function(e){
+      e.stopPropagation();
       btn.classList.toggle('open');
       links.classList.toggle('open');
     });
   }
+
+  // Mobile: Products dropdown toggle (prevent nav close)
+  if(dropdownTrigger && dropdownContent){
+    dropdownTrigger.addEventListener('click', function(e){
+      if(window.innerWidth <= 768){
+        e.preventDefault();
+        e.stopPropagation();
+        dropdown.classList.toggle('open');
+        dropdownContent.classList.toggle('open');
+      }
+    });
+  }
+
+  // Close nav when clicking outside
+  document.addEventListener('click', function(e){
+    if(links && !links.contains(e.target) && btn && !btn.contains(e.target)){
+      links.classList.remove('open');
+      btn.classList.remove('open');
+      if(dropdown) dropdown.classList.remove('open');
+      if(dropdownContent) dropdownContent.classList.remove('open');
+    }
+  });
 })();
 </script>
 </body>

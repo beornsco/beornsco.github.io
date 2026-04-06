@@ -52,184 +52,67 @@ nav .hamburger.open span:nth-child(3){transform:rotate(-45deg) translate(5px,-5p
 footer{padding:36px 0;text-align:center;color:#aaa;font-size:.9rem;background:var(--dark)}
 footer a{color:#ccc}
 
-.nav-dropdown { position: relative; display: inline-block; }
-.nav-dropdown-content { display: none; position: absolute; top: 100%; left: 0; background: #fff; border: 1px solid #E5E7EB; border-radius: 8px; min-width: 220px; box-shadow: 0 4px 12px rgba(0,0,0,.1); z-index: 200; padding: 8px 0; }
-.nav-dropdown:hover .nav-dropdown-content { display: block; }
-.nav-dropdown-content a { display: block; padding: 8px 16px; color: #374151; font-size: .87rem; white-space: nowrap; }
-.nav-dropdown-content a:hover { background: #F3F4F6; color: #2962FF; }
-.nav-dropdown-section { padding: 6px 16px 4px; font-size: .75rem; font-weight: 700; color: #9CA3AF; text-transform: uppercase; letter-spacing: .05em; }
-.nav-dropdown-divider { border: none; border-top: 1px solid #E5E7EB; margin: 6px 0; }
-</style>
+/* Desktop dropdown - hover */
+@media(min-width:769px){
+  .nav-dropdown { position: relative; display: inline-block; }
+  .nav-dropdown-content { display: none; position: absolute; top: 100%; left: 0; background: #fff; border: 1px solid #E5E7EB; border-radius: 8px; min-width: 220px; box-shadow: 0 4px 12px rgba(0,0,0,.1); z-index: 200; padding: 8px 0; }
+  .nav-dropdown:hover .nav-dropdown-content { display: block; }
+  .nav-dropdown-content a { display: block; padding: 8px 16px; color: #374151; font-size: .87rem; white-space: nowrap; }
+  .nav-dropdown-content a:hover { background: #F3F4F6; color: #2962FF; }
+  .nav-dropdown-section { padding: 6px 16px 4px; font-size: .75rem; font-weight: 700; color: #9CA3AF; text-transform: uppercase; letter-spacing: .05em; }
+  .nav-dropdown-divider { border: none; border-top: 1px solid #E5E7EB; margin: 6px 0; }
+}
+
+/* Mobile dropdown - click/tap */
+@media(max-width:768px){
+  .nav-dropdown-content { display: none; background: #f9fafb; padding: 4px 0 4px 16px; }
+  .nav-dropdown-content.open { display: block; }
+  .nav-dropdown-content a { display: block; padding: 10px 16px; color: #374151; font-size: .9rem; }
+  .nav-dropdown-section { padding: 6px 16px 2px; font-size: .72rem; font-weight: 700; color: #9CA3AF; text-transform: uppercase; }
+  .nav-dropdown-divider { border: none; border-top: 1px solid #E5E7EB; margin: 4px 0; }
+  .nav-dropdown > a::after { content: " ▾"; font-size: .7rem; }
+  .nav-dropdown.open > a::after { content: " ▴"; font-size: .7rem; }
+}</style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3S7D3JJ9JS"></script>
-<script>
- window.dataLayer = window.dataLayer || [];
- function gtag(){dataLayer.push(arguments);}
- gtag('js', new Date());
- gtag('config', 'G-3S7D3JJ9JS');
-</script>
-</head>
-<body>
-    <nav>
-  <div class="nav-inner">
-    <a href="/" class="brand">Beorns Co</a>
-    <button class="hamburger" id="nav-hamburger" aria-label="Open menu">
-      <span></span><span></span><span></span>
-    </button>
-    <div class="nav-links" id="nav-links">
-      <div class="nav-dropdown">
-        <a href="/pricing/" style="display:flex;align-items:center;gap:4px;">Products <span style="font-size:.7rem;">&#9660;</span></a>
-        <div class="nav-dropdown-content">
-          <div class="nav-dropdown-section">Core SME Toolkit</div>
-          <a href="/ai-starter-kit/">AI Adoption Starter Kit</a>
-          <a href="/ai-prompt-library/">200+ ChatGPT Prompts</a>
-          <a href="/ai-automation-playbook/">AI Automation Playbook</a>
-          <hr class="nav-dropdown-divider">
-          <div class="nav-dropdown-section">Niche Prompt Packs</div>
-          <a href="/ai-trades-prompts/">Tradespeople</a>
-          <a href="/ai-restaurant-prompts/">Restaurant Owners</a>
-          <a href="/ai-photographer-prompts/">Photographers</a>
-          <a href="/ai-sme-ops-prompts/">Small Business (100 prompts)</a>
-          <a href="/ai-prompts-real-estate/">Real Estate</a>
-          <a href="/ai-prompts-ecommerce/">E-commerce and Retail</a>
-        </div>
-      </div>
-      <a href="/free-prompts/">Free Prompts</a>
-      <a href="/pricing/">Pricing</a>
-      <a href="/compare/">Compare</a>
-      <a href="/blog/">Blog</a>
-    </div>
-  </div>
-</nav>
-    <div class="container">
-        <article>
-            <h1>How Plumbers, Electricians, and Tradespeople Are Using AI to Save 5 Hours a Week</h1>
-            <div class="meta">April 2026 · 8 min read</div>
-
-            <p>Nobody sold a boiler by writing a better email. Nobody won a commercial electrical contract by having great Instagram captions. Tradespeople succeed by showing up, doing quality work, and being reliable.</p>
-
-            <p>But here's the problem: the admin that surrounds the actual work is eating your business alive.</p>
-
-            <p>Quotes that go cold because nobody followed up. Job reports that take an hour to write at 9pm when you're exhausted. Google reviews sitting unanswered for six weeks because you couldn't find the words. Social media accounts that haven't been updated since 2023. Customer complaints you responded to badly because you were tired and irritated.</p>
-
-            <p>None of this is the job. All of it affects whether you win the next one.</p>
-
-            <p>This is where AI, specifically ChatGPT, is quietly becoming the secret weapon of the more organised tradespeople. Not the tech-obsessed ones. Not the ones with marketing consultants. The ones who are just tired of spending 8 hours a week on paperwork that doesn't require their skills.</p>
-
-            <p>The average time saving: 4-6 hours per week. At a cost of EUR 40-50/hour for a sole trader, that's EUR 8,000-15,000 of recovered time every year. For free tools. No coding. No consultants.</p>
-
-            <p>This article covers the five highest-impact areas where tradespeople are using AI right now, with real prompts you can copy and use this afternoon.</p>
-
-            <h2>1. Quote Follow-Ups: Close 20-30% More Jobs With One Message</h2>
-
-            <p>Most tradespeople send a quote and never follow up. If you are local, we have <a href="/ai-prompts-for-plumbers-in-belgium/">54 prompts built specifically for Belgian plumbers</a>. It feels awkward. You don't want to seem desperate. So you wait, and the job goes to whoever called back first.</p>
-
-            <p>Here's the reality: 20-30% of cold quotes close with a single polite nudge. The customer wasn't ignoring you, they were busy. A brief, professional follow-up at the right moment is all it takes. AI removes every bit of awkwardness from writing that message.</p>
-
-            <p>Copy this prompt directly into ChatGPT:</p>
-
-            <div class="prompt-box">"Write a friendly follow-up message for a customer who received a quote 5 days ago for [bathroom renovation]. Under 80 words. Not pushy. Mention the quote is still valid for 2 weeks."</div>
-
-            <p>You get a ready-to-send message in seconds. Swap in your job type, adjust the timeline, and hit send. Do this for every open quote and you will close jobs you would have otherwise lost.</p>
-
-            <p>The time saving per follow-up: about 10 minutes of awkward drafting replaced by 30 seconds of copying. Do it five times a week and that's almost an hour back.</p>
-
-            <h2>2. Job Reports and Completion Summaries: 2 Minutes Instead of 30</h2>
-
-            <p>End-of-job documentation is a legal necessity and the task most tradespeople dread most. Writing it up at the end of a long day is slow, painful, and easy to get wrong when you're tired.</p>
-
-            <p>AI handles this in seconds. You give it your rough notes, the kind of scrawled shorthand you'd write for yourself, and it turns them into a clean, professional customer file entry.</p>
-
-            <div class="prompt-box">"Summarise this job for the customer file: [paste rough notes]. Professional tone. Include: work completed, materials used, any recommendations. Under 150 words."</div>
-
-            <p>Paste in whatever you wrote on-site. The AI formats it properly, uses professional language, and keeps it concise. What used to take 30 minutes now takes 2. Over a week of five jobs, that's two hours of your evening back.</p>
-
-            <p>Over time, you build a library of consistent job records. That matters for warranty disputes, insurance claims, and customer trust.</p>
-
-            <h2>3. Google Reviews and Reputation: 90 Seconds, Huge Trust Signal</h2>
-
-            <p>86% of customers read reviews before hiring a tradesperson. Most tradespeople know this. Most still leave reviews unanswered for weeks because they don't know what to say, especially when the review is negative.</p>
-
-            <p>Responding to every review, including the bad ones, is one of the most powerful trust signals you can send. It shows prospective customers that you're professional, accountable, and actually running your business.</p>
-
-            <p>For negative reviews especially, tone matters enormously. Too defensive and you look unprofessional. Too apologetic and you look incompetent. This prompt hits the right note every time:</p>
-
-            <div class="prompt-box">"Write a calm, professional response to this 2-star Google review. Acknowledge the concern, explain what we will do differently, invite them to contact us directly. Under 100 words. Review: [paste]"</div>
-
-            <p>90 seconds to draft something that could turn a public embarrassment into a demonstration of professionalism. The people reading that response are your next customers.</p>
-
-            <h2>4. Social Media Without the Cringe: Once a Week, Done</h2>
-
-            <p>A local social media presence builds familiarity and trust. For ready-made examples, see our <a href="/ai-prompts-for-electricians-in-united-kingdom/">AI prompts for electricians in the United Kingdom</a>. When someone in your area needs a plumber or electrician, they hire someone they recognise. Regular posts keep you visible.</p>
-
-            <p>The main barrier isn't time, it's the blank page. Most tradespeople sit down to write a post and have no idea what to say. The result is either nothing, or something that sounds forced and salesy.</p>
-
-            <p>AI solves the blank page problem completely:</p>
-
-            <div class="prompt-box">"Write a brief Facebook post about completing a commercial HVAC installation. Highlight professionalism. Under 100 words. Not salesy."</div>
-
-            <p>You get a natural, readable post in seconds. Pair it with a photo from the job and you have content that looks authentic because the facts are real. Do this once a week, 52 posts a year, and your profile looks active and professional with minimal effort.</p>
-
-            <p>Rotate the prompt: boiler service, bathroom refit, rewire, emergency callout. Each job becomes content.</p>
-
-            <h2>5. Customer Communication Templates: Build Once, Reuse Forever</h2>
-
-            <p>Booking confirmations, appointment reminders, delay notices, complaint responses: these messages follow the same patterns every time. Heating specialists can use our <a href="/ai-prompts-for-hvac-engineers-in-netherlands/">AI prompts for HVAC engineers in the Netherlands</a> to speed this up. Most tradespeople write them from scratch each time, which is slow and inconsistent.</p>
-
-            <p>The better approach is to build a small library of AI-generated templates once, then reuse them with minor adjustments. Ask ChatGPT to write templates for your most common communications:</p>
-
-            <ul>
-                <li>Booking confirmation with job date and arrival window</li>
-                <li>Delay notice when a job is running late</li>
-                <li>Parts delay update for customers waiting on materials</li>
-                <li>Completion confirmation with any follow-up recommendations</li>
-                <li>Response to a customer complaint</li>
-            </ul>
-
-            <p>You write these templates once. From that point on, every customer interaction is consistent, professional, and fast. Consistency in communication is a competitive advantage. Most of your competitors are winging it every time.</p>
-
-            <p>Customers who receive clear, timely communication are more likely to leave good reviews, refer you to others, and rehire you for the next job. The template library pays for itself many times over.</p>
-
-            <h2>The Bigger Picture: What 5 Hours a Week Actually Means</h2>
-
-            <p>Five hours a week is 250 hours a year. At EUR 45/hour that's over EUR 11,000 in recovered time, not counting the jobs you close from better follow-ups or the referrals you earn from better communication.</p>
-
-            <p>None of this requires technical knowledge. ChatGPT is free to use. The prompts above take 30 seconds to copy and customise. The only thing between you and those hours back is the first time you try it.</p>
-
-            <p>Start with whichever section matches your biggest pain point this week. Follow-ups if you have open quotes sitting cold. Job reports if you hate the end-of-day paperwork. Reviews if you have unanswered feedback on Google.</p>
-
-            <p>Pick one. Use it today. The rest follows naturally.</p>
-
-            <div class="cta-box">
-                <h3>54 Prompts Built for Tradespeople</h3>
-                <p>If you want to skip the trial and error, there are 54 prompts built specifically for tradespeople, plumbers, electricians, builders, HVAC engineers, and general contractors. Ready to copy and use, no prompt engineering required.</p>
-                <p>Each prompt is labelled by use case, includes guidance on what to fill in, and is tested to produce professional output on the first try.</p>
-                <a href="https://beornsco.github.io/ai-trades-prompts/">Get the Full Prompt Pack</a>
-            </div>
-
-        
-<div class="cta-block" style="background:linear-gradient(135deg,#2962FF,#1a47cc);color:white;padding:32px;border-radius:12px;margin:40px 0;text-align:center;">
-  <h3 style="color:white;margin-bottom:8px">Ready to save 5 hours a week?</h3>
-  <p style="color:rgba(255,255,255,0.85);margin-bottom:20px">Get 54 AI prompts for tradespeople: quotes, invoices, review replies, and customer updates in minutes.</p>
-  <a href="/ai-trades-prompts/" style="background:white;color:#2962FF;padding:14px 28px;border-radius:8px;font-weight:700;text-decoration:none;display:inline-block">Get the Prompts</a>
-  <a href="/free-prompts/" style="color:rgba(255,255,255,0.85);padding:14px 20px;display:inline-block;text-decoration:underline">Or start free</a>
-</div>
-
-</article>
-    </div>
-    <footer>
-  © 2026 Beorns Co · <a href="/terms/">Terms</a> · <a href="/privacy/">Privacy</a> · <a href="https://twitter.com/beornsco" target="_blank" rel="noopener">X/Twitter</a> · <a href="https://medium.com/@beornsco" target="_blank" rel="noopener">Medium</a> · <a href="https://beornsco.lemonsqueezy.com" target="_blank" rel="noopener">Lemon Squeezy Store</a>
-</footer>
 <script>
 (function(){
   var btn = document.getElementById('nav-hamburger');
   var links = document.getElementById('nav-links');
+  var dropdownTrigger = document.querySelector('.nav-dropdown > a');
+  var dropdownContent = document.querySelector('.nav-dropdown-content');
+  var dropdown = document.querySelector('.nav-dropdown');
+
+  // Hamburger toggle
   if(btn && links){
-    btn.addEventListener('click', function(){
+    btn.addEventListener('click', function(e){
+      e.stopPropagation();
       btn.classList.toggle('open');
       links.classList.toggle('open');
     });
   }
+
+  // Mobile: Products dropdown toggle (prevent nav close)
+  if(dropdownTrigger && dropdownContent){
+    dropdownTrigger.addEventListener('click', function(e){
+      if(window.innerWidth <= 768){
+        e.preventDefault();
+        e.stopPropagation();
+        dropdown.classList.toggle('open');
+        dropdownContent.classList.toggle('open');
+      }
+    });
+  }
+
+  // Close nav when clicking outside
+  document.addEventListener('click', function(e){
+    if(links && !links.contains(e.target) && btn && !btn.contains(e.target)){
+      links.classList.remove('open');
+      btn.classList.remove('open');
+      if(dropdown) dropdown.classList.remove('open');
+      if(dropdownContent) dropdownContent.classList.remove('open');
+    }
+  });
 })();
 </script>
 </body>

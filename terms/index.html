@@ -45,140 +45,67 @@ nav .hamburger.open span:nth-child(3){transform:rotate(-45deg) translate(5px,-5p
 footer{padding:36px 0;text-align:center;color:#aaa;font-size:.9rem;background:var(--dark)}
 footer a{color:#ccc}
 
-.nav-dropdown { position: relative; display: inline-block; }
-.nav-dropdown-content { display: none; position: absolute; top: 100%; left: 0; background: #fff; border: 1px solid #E5E7EB; border-radius: 8px; min-width: 220px; box-shadow: 0 4px 12px rgba(0,0,0,.1); z-index: 200; padding: 8px 0; }
-.nav-dropdown:hover .nav-dropdown-content { display: block; }
-.nav-dropdown-content a { display: block; padding: 8px 16px; color: #374151; font-size: .87rem; white-space: nowrap; }
-.nav-dropdown-content a:hover { background: #F3F4F6; color: #2962FF; }
-.nav-dropdown-section { padding: 6px 16px 4px; font-size: .75rem; font-weight: 700; color: #9CA3AF; text-transform: uppercase; letter-spacing: .05em; }
-.nav-dropdown-divider { border: none; border-top: 1px solid #E5E7EB; margin: 6px 0; }
-</style>
+/* Desktop dropdown - hover */
+@media(min-width:769px){
+  .nav-dropdown { position: relative; display: inline-block; }
+  .nav-dropdown-content { display: none; position: absolute; top: 100%; left: 0; background: #fff; border: 1px solid #E5E7EB; border-radius: 8px; min-width: 220px; box-shadow: 0 4px 12px rgba(0,0,0,.1); z-index: 200; padding: 8px 0; }
+  .nav-dropdown:hover .nav-dropdown-content { display: block; }
+  .nav-dropdown-content a { display: block; padding: 8px 16px; color: #374151; font-size: .87rem; white-space: nowrap; }
+  .nav-dropdown-content a:hover { background: #F3F4F6; color: #2962FF; }
+  .nav-dropdown-section { padding: 6px 16px 4px; font-size: .75rem; font-weight: 700; color: #9CA3AF; text-transform: uppercase; letter-spacing: .05em; }
+  .nav-dropdown-divider { border: none; border-top: 1px solid #E5E7EB; margin: 6px 0; }
+}
+
+/* Mobile dropdown - click/tap */
+@media(max-width:768px){
+  .nav-dropdown-content { display: none; background: #f9fafb; padding: 4px 0 4px 16px; }
+  .nav-dropdown-content.open { display: block; }
+  .nav-dropdown-content a { display: block; padding: 10px 16px; color: #374151; font-size: .9rem; }
+  .nav-dropdown-section { padding: 6px 16px 2px; font-size: .72rem; font-weight: 700; color: #9CA3AF; text-transform: uppercase; }
+  .nav-dropdown-divider { border: none; border-top: 1px solid #E5E7EB; margin: 4px 0; }
+  .nav-dropdown > a::after { content: " ▾"; font-size: .7rem; }
+  .nav-dropdown.open > a::after { content: " ▴"; font-size: .7rem; }
+}</style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3S7D3JJ9JS"></script>
-<script>
- window.dataLayer = window.dataLayer || [];
- function gtag(){dataLayer.push(arguments);}
- gtag('js', new Date());
- gtag('config', 'G-3S7D3JJ9JS');
-</script>
-</head>
-<body>
-<nav>
-  <div class="nav-inner">
-    <a href="/" class="brand">Beorns Co</a>
-    <button class="hamburger" id="nav-hamburger" aria-label="Open menu">
-      <span></span><span></span><span></span>
-    </button>
-    <div class="nav-links" id="nav-links">
-      <div class="nav-dropdown">
-        <a href="/pricing/" style="display:flex;align-items:center;gap:4px;">Products <span style="font-size:.7rem;">&#9660;</span></a>
-        <div class="nav-dropdown-content">
-          <div class="nav-dropdown-section">Core SME Toolkit</div>
-          <a href="/ai-starter-kit/">AI Adoption Starter Kit</a>
-          <a href="/ai-prompt-library/">200+ ChatGPT Prompts</a>
-          <a href="/ai-automation-playbook/">AI Automation Playbook</a>
-          <hr class="nav-dropdown-divider">
-          <div class="nav-dropdown-section">Niche Prompt Packs</div>
-          <a href="/ai-trades-prompts/">Tradespeople</a>
-          <a href="/ai-restaurant-prompts/">Restaurant Owners</a>
-          <a href="/ai-photographer-prompts/">Photographers</a>
-          <a href="/ai-sme-ops-prompts/">Small Business (100 prompts)</a>
-          <a href="/ai-prompts-real-estate/">Real Estate</a>
-          <a href="/ai-prompts-ecommerce/">E-commerce and Retail</a>
-        </div>
-      </div>
-      <a href="/free-prompts/">Free Prompts</a>
-      <a href="/pricing/">Pricing</a>
-      <a href="/compare/">Compare</a>
-      <a href="/blog/">Blog</a>
-    </div>
-  </div>
-</nav>
-
-<div class="page-header">
-<div class="container">
-  <h1>Terms &amp; Conditions</h1>
-  <p>Last updated: March 2026</p>
-</div>
-</div>
-
-<div class="content">
-<div class="container">
-
-<h2>1. About These Terms</h2>
-<p>These Terms and Conditions ("Terms") govern your use of the website beornsco.github.io and all digital products sold by Beorns Co ("we", "us", "our"). By purchasing or downloading any of our products, you agree to these Terms in full. If you do not agree, please do not use our website or purchase our products.</p>
-
-<h2>2. What We Sell</h2>
-<p>Beorns Co sells digital products, including PDF guides, templates, and toolkits related to AI adoption for businesses. All products are delivered electronically as instant downloads. Prices are listed in euros (€) and range from €19 to €69.</p>
-<p>We reserve the right to update product content, pricing, or availability at any time without prior notice.</p>
-
-<h2>3. Purchases and Payment</h2>
-<p>All purchases are processed through Gumroad, a third party payment platform. By completing a purchase, you also agree to <a href="https://gumroad.com/terms" target="_blank" rel="noopener">Gumroad's Terms of Service</a>. Beorns Co does not directly handle or store your payment information.</p>
-<p>Upon successful payment, you will receive immediate access to your purchased product(s) via download link.</p>
-
-<h2>4. Refund Policy</h2>
-<p>Because our products are digital goods delivered instantly upon purchase, all sales are final. Under EU Directive 2011/83/EU, the right of withdrawal does not apply to the supply of digital content that is not supplied on a tangible medium once delivery has begun with the consumer's prior express consent and acknowledgment that the right of withdrawal is thereby lost.</p>
-<p>By completing your purchase, you expressly consent to immediate delivery and acknowledge that you waive your right of withdrawal.</p>
-<p>If you experience a technical issue that prevents you from accessing your purchase (for example, a corrupted file or broken download link), please contact us at <a href="mailto:beornsco@proton.me">beornsco@proton.me</a> and we will resolve it promptly.</p>
-
-<h2>5. Intellectual Property</h2>
-<p>All content, designs, text, graphics, and materials in our products and on our website are the intellectual property of Beorns Co, unless otherwise stated. When you purchase a product, you receive a personal, non exclusive, non transferable license to use that product for your own business or personal purposes.</p>
-<p>You may not:</p>
-<ul>
-  <li>Resell, redistribute, or share purchased products with others</li>
-  <li>Claim authorship or ownership of our materials</li>
-  <li>Upload our products to file sharing platforms or public repositories</li>
-  <li>Use our products to create a competing product or service</li>
-</ul>
-<p>You may use and adapt our templates and frameworks within your own organization. That is exactly what they are designed for.</p>
-
-<h2>6. Acceptable Use</h2>
-<p>When using our website and products, you agree not to:</p>
-<ul>
-  <li>Use our products for any unlawful purpose</li>
-  <li>Attempt to gain unauthorized access to our systems or website</li>
-  <li>Interfere with or disrupt the operation of our website</li>
-  <li>Misrepresent your identity or affiliation when contacting us</li>
-  <li>Use automated tools to scrape or copy website content</li>
-</ul>
-
-<h2>7. Limitation of Liability</h2>
-<p>Our products are educational and informational resources. They are not professional consulting, legal, or financial advice. Results will vary depending on how you implement the material.</p>
-<p>To the maximum extent permitted by law, Beorns Co shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from your use of our products or website. Our total liability for any claim related to a purchase shall not exceed the amount you paid for that specific product.</p>
-
-<h2>8. Third Party Services</h2>
-<p>Our website and business rely on third party services including Gumroad (payments), MailerLite (email), and GitHub Pages (hosting). We are not responsible for the availability, performance, or policies of these services. We encourage you to review their respective terms and privacy policies.</p>
-
-<h2>9. Changes to These Terms</h2>
-<p>We may update these Terms from time to time. Changes will be posted on this page with a revised "Last updated" date. Continued use of our website or products after changes are posted constitutes your acceptance of the updated Terms.</p>
-
-<h2>10. Governing Law</h2>
-<p>These Terms are governed by and construed in accordance with the laws of Belgium. Any disputes arising from these Terms or your use of our products shall be subject to the exclusive jurisdiction of the courts of Belgium.</p>
-<p>If you are a consumer within the European Union, you also have the right to submit a complaint via the <a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener">EU Online Dispute Resolution platform</a>.</p>
-
-<h2>11. Contact</h2>
-<p>If you have any questions about these Terms, contact us at:</p>
-<p><strong>Beorns Co</strong><br>
-Email: <a href="mailto:beornsco@proton.me">beornsco@proton.me</a><br>
-Website: <a href="https://beornsco.github.io">beornsco.github.io</a></p>
-
-</div>
-</div>
-
-<footer>
-  © 2026 Beorns Co · <a href="/terms/">Terms</a> · <a href="/privacy/">Privacy</a> · <a href="https://twitter.com/beornsco" target="_blank" rel="noopener">X/Twitter</a> · <a href="https://medium.com/@beornsco" target="_blank" rel="noopener">Medium</a> · <a href="https://beornsco.lemonsqueezy.com" target="_blank" rel="noopener">Lemon Squeezy Store</a>
-</footer>
-
 <script>
 (function(){
   var btn = document.getElementById('nav-hamburger');
   var links = document.getElementById('nav-links');
+  var dropdownTrigger = document.querySelector('.nav-dropdown > a');
+  var dropdownContent = document.querySelector('.nav-dropdown-content');
+  var dropdown = document.querySelector('.nav-dropdown');
+
+  // Hamburger toggle
   if(btn && links){
-    btn.addEventListener('click', function(){
+    btn.addEventListener('click', function(e){
+      e.stopPropagation();
       btn.classList.toggle('open');
       links.classList.toggle('open');
     });
   }
+
+  // Mobile: Products dropdown toggle (prevent nav close)
+  if(dropdownTrigger && dropdownContent){
+    dropdownTrigger.addEventListener('click', function(e){
+      if(window.innerWidth <= 768){
+        e.preventDefault();
+        e.stopPropagation();
+        dropdown.classList.toggle('open');
+        dropdownContent.classList.toggle('open');
+      }
+    });
+  }
+
+  // Close nav when clicking outside
+  document.addEventListener('click', function(e){
+    if(links && !links.contains(e.target) && btn && !btn.contains(e.target)){
+      links.classList.remove('open');
+      btn.classList.remove('open');
+      if(dropdown) dropdown.classList.remove('open');
+      if(dropdownContent) dropdownContent.classList.remove('open');
+    }
+  });
 })();
 </script>
 </body>

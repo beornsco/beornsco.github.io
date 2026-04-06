@@ -110,246 +110,67 @@ nav .hamburger.open span:nth-child(3){transform:rotate(-45deg) translate(5px,-5p
 footer{padding:36px 0;text-align:center;color:#aaa;font-size:.9rem;background:var(--dark)}
 footer a{color:#ccc}
 
-.nav-dropdown { position: relative; display: inline-block; }
-.nav-dropdown-content { display: none; position: absolute; top: 100%; left: 0; background: #fff; border: 1px solid #E5E7EB; border-radius: 8px; min-width: 220px; box-shadow: 0 4px 12px rgba(0,0,0,.1); z-index: 200; padding: 8px 0; }
-.nav-dropdown:hover .nav-dropdown-content { display: block; }
-.nav-dropdown-content a { display: block; padding: 8px 16px; color: #374151; font-size: .87rem; white-space: nowrap; }
-.nav-dropdown-content a:hover { background: #F3F4F6; color: #2962FF; }
-.nav-dropdown-section { padding: 6px 16px 4px; font-size: .75rem; font-weight: 700; color: #9CA3AF; text-transform: uppercase; letter-spacing: .05em; }
-.nav-dropdown-divider { border: none; border-top: 1px solid #E5E7EB; margin: 6px 0; }
-</style>
+/* Desktop dropdown - hover */
+@media(min-width:769px){
+  .nav-dropdown { position: relative; display: inline-block; }
+  .nav-dropdown-content { display: none; position: absolute; top: 100%; left: 0; background: #fff; border: 1px solid #E5E7EB; border-radius: 8px; min-width: 220px; box-shadow: 0 4px 12px rgba(0,0,0,.1); z-index: 200; padding: 8px 0; }
+  .nav-dropdown:hover .nav-dropdown-content { display: block; }
+  .nav-dropdown-content a { display: block; padding: 8px 16px; color: #374151; font-size: .87rem; white-space: nowrap; }
+  .nav-dropdown-content a:hover { background: #F3F4F6; color: #2962FF; }
+  .nav-dropdown-section { padding: 6px 16px 4px; font-size: .75rem; font-weight: 700; color: #9CA3AF; text-transform: uppercase; letter-spacing: .05em; }
+  .nav-dropdown-divider { border: none; border-top: 1px solid #E5E7EB; margin: 6px 0; }
+}
+
+/* Mobile dropdown - click/tap */
+@media(max-width:768px){
+  .nav-dropdown-content { display: none; background: #f9fafb; padding: 4px 0 4px 16px; }
+  .nav-dropdown-content.open { display: block; }
+  .nav-dropdown-content a { display: block; padding: 10px 16px; color: #374151; font-size: .9rem; }
+  .nav-dropdown-section { padding: 6px 16px 2px; font-size: .72rem; font-weight: 700; color: #9CA3AF; text-transform: uppercase; }
+  .nav-dropdown-divider { border: none; border-top: 1px solid #E5E7EB; margin: 4px 0; }
+  .nav-dropdown > a::after { content: " ▾"; font-size: .7rem; }
+  .nav-dropdown.open > a::after { content: " ▴"; font-size: .7rem; }
+}</style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3S7D3JJ9JS"></script>
-<script>
- window.dataLayer = window.dataLayer || [];
- function gtag(){dataLayer.push(arguments);}
- gtag('js', new Date());
- gtag('config', 'G-3S7D3JJ9JS');
-</script>
-</head>
-<body>
-
-<nav>
-  <div class="nav-inner">
-    <a href="/" class="brand">Beorns Co</a>
-    <button class="hamburger" id="nav-hamburger" aria-label="Open menu">
-      <span></span><span></span><span></span>
-    </button>
-    <div class="nav-links" id="nav-links">
-      <div class="nav-dropdown">
-        <a href="/pricing/" style="display:flex;align-items:center;gap:4px;">Products <span style="font-size:.7rem;">&#9660;</span></a>
-        <div class="nav-dropdown-content">
-          <div class="nav-dropdown-section">Core SME Toolkit</div>
-          <a href="/ai-starter-kit/">AI Adoption Starter Kit</a>
-          <a href="/ai-prompt-library/">200+ ChatGPT Prompts</a>
-          <a href="/ai-automation-playbook/">AI Automation Playbook</a>
-          <hr class="nav-dropdown-divider">
-          <div class="nav-dropdown-section">Niche Prompt Packs</div>
-          <a href="/ai-trades-prompts/">Tradespeople</a>
-          <a href="/ai-restaurant-prompts/">Restaurant Owners</a>
-          <a href="/ai-photographer-prompts/">Photographers</a>
-          <a href="/ai-sme-ops-prompts/">Small Business (100 prompts)</a>
-          <a href="/ai-prompts-real-estate/">Real Estate</a>
-          <a href="/ai-prompts-ecommerce/">E-commerce and Retail</a>
-        </div>
-      </div>
-      <a href="/free-prompts/">Free Prompts</a>
-      <a href="/pricing/">Pricing</a>
-      <a href="/compare/">Compare</a>
-      <a href="/blog/">Blog</a>
-    </div>
-  </div>
-</nav>
-
-<!-- Hero -->
-<div class="hero">
-  <div class="container">
-    <h1>AI Automation Playbook<br>for SMEs</h1>
-    <p class="subtitle">12 step-by-step playbooks to automate your business with AI.<br>No coding. No consultants. Just results.</p>
-    <div class="price">€39</div>
-    <div class="price-note">One-time purchase. Instant download. No subscription.</div>
-    <a href="https://beornscout.gumroad.com/l/pdrqfp" class="btn" id="buy-btn">Get the Playbook</a>
-    <div class="trust">
-      <span>Instant PDF download</span>
-      <span>Works with ChatGPT, Copilot, Claude &amp; any AI assistant</span>
-      <span>170 pages</span>
-      <span>50 prompt templates</span>
-    </div>
-  </div>
-</div>
-
-<!-- Stats -->
-<div class="stats">
-  <div class="stats-grid">
-    <div class="stat"><div class="num">12</div><div class="label">Automation Playbooks</div></div>
-    <div class="stat"><div class="num">50</div><div class="label">Prompt Templates</div></div>
-    <div class="stat"><div class="num">207</div><div class="label">Pages</div></div>
-    <div class="stat"><div class="num">16</div><div class="label">Chapters</div></div>
-  </div>
-</div>
-
-<!-- Problem -->
-<section>
-  <div class="container">
-    <h2>You know AI can help. But where do you start?</h2>
-    <p class="lead">You've tried ChatGPT. Maybe written a few emails with it. But turning that into real, repeatable business automation? That's where most people get stuck.</p>
-    <div style="max-width:600px;margin:0 auto">
-      <p style="margin-bottom:1rem">Most AI guides give you theory. This playbook gives you step-by-step instructions for 12 specific business processes, from customer emails to contract review.</p>
-      <p style="margin-bottom:1rem">Each playbook tells you exactly:</p>
-      <ul style="list-style:none;margin-bottom:1rem">
-        <li style="padding:0.3rem 0;padding-left:1.5rem;position:relative"><span style="position:absolute;left:0">1.</span> What tools you need (free options included)</li>
-        <li style="padding:0.3rem 0;padding-left:1.5rem;position:relative"><span style="position:absolute;left:0">2.</span> How long it takes to implement</li>
-        <li style="padding:0.3rem 0;padding-left:1.5rem;position:relative"><span style="position:absolute;left:0">3.</span> Step-by-step instructions with real prompts</li>
-        <li style="padding:0.3rem 0;padding-left:1.5rem;position:relative"><span style="position:absolute;left:0">4.</span> How much time you'll save</li>
-        <li style="padding:0.3rem 0;padding-left:1.5rem;position:relative"><span style="position:absolute;left:0">5.</span> What can go wrong (and how to avoid it)</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<!-- 12 Playbooks -->
-<section style="background:var(--light)">
-  <div class="container">
-    <h2>12 Automation Playbooks</h2>
-    <p class="lead">Each playbook is a complete guide, from zero to running automation.</p>
-    <div class="playbooks">
-      <div class="playbook-group">
-        <h3>Customer-Facing</h3>
-        <div class="playbook-item"><div class="playbook-num">1</div><div class="playbook-info"><h4>Customer Email Response</h4><p>Draft consistent, professional responses to common inquiries in seconds. Save 3-5 hours/week.</p></div></div>
-        <div class="playbook-item"><div class="playbook-num">2</div><div class="playbook-info"><h4>FAQ & Knowledge Base Builder</h4><p>Turn tribal knowledge into a searchable, AI-powered knowledge base your whole team can use.</p></div></div>
-        <div class="playbook-item"><div class="playbook-num">3</div><div class="playbook-info"><h4>Lead Qualification & Scoring</h4><p>Automatically score and prioritize inbound leads so your sales team focuses on the right prospects.</p></div></div>
-      </div>
-      <div class="playbook-group">
-        <h3>Operations</h3>
-        <div class="playbook-item"><div class="playbook-num">4</div><div class="playbook-info"><h4>Meeting Notes & Action Items</h4><p>Record, transcribe, and extract action items from every meeting automatically.</p></div></div>
-        <div class="playbook-item"><div class="playbook-num">5</div><div class="playbook-info"><h4>Document Processing Pipeline</h4><p>Process invoices, receipts, and contracts into structured data without manual entry.</p></div></div>
-        <div class="playbook-item"><div class="playbook-num">6</div><div class="playbook-info"><h4>SOP Generator</h4><p>Turn verbal explanations and recordings into professional standard operating procedures.</p></div></div>
-      </div>
-      <div class="playbook-group">
-        <h3>Marketing & Sales</h3>
-        <div class="playbook-item"><div class="playbook-num">7</div><div class="playbook-info"><h4>Content Repurposing Engine</h4><p>Turn one piece of content into 10 formats, blog to tweets, LinkedIn posts, emails, and more.</p></div></div>
-        <div class="playbook-item"><div class="playbook-num">8</div><div class="playbook-info"><h4>Social Media Post Generator</h4><p>Generate brand-consistent social media posts at scale with your voice and style.</p></div></div>
-        <div class="playbook-item"><div class="playbook-num">9</div><div class="playbook-info"><h4>Sales Follow-Up Sequences</h4><p>Personalized, AI-drafted follow-up emails that feel human but run on autopilot.</p></div></div>
-      </div>
-      <div class="playbook-group">
-        <h3>Finance & Admin</h3>
-        <div class="playbook-item"><div class="playbook-num">10</div><div class="playbook-info"><h4>Expense Categorization</h4><p>Receipts to categories to reports, automatically. End manual expense tracking.</p></div></div>
-        <div class="playbook-item"><div class="playbook-num">11</div><div class="playbook-info"><h4>Report Generator</h4><p>Turn raw data into executive summaries and visual reports your leadership team will actually read.</p></div></div>
-        <div class="playbook-item"><div class="playbook-num">12</div><div class="playbook-info"><h4>Contract Review Assistant</h4><p>Flag risks, summarize terms, and extract key dates from contracts in minutes instead of hours.</p></div></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- What's Inside -->
-<section>
-  <div class="container">
-    <h2>What's Inside</h2>
-    <div class="inside-grid">
-      <div class="inside-item"><h4>12 Step-by-Step Playbooks</h4><p>Complete implementation guides with real prompts and templates for each business process.</p></div>
-      <div class="inside-item"><h4>50 Prompt Templates</h4><p>Copy-paste ready prompts with [BRACKETS] for easy customization. Works with ChatGPT, Claude, Gemini, Microsoft Copilot &amp; any AI assistant.</p></div>
-      <div class="inside-item"><h4>Tool Comparison Matrix</h4><p>Free vs. paid options for every use case. Know exactly what to use and what it costs.</p></div>
-      <div class="inside-item"><h4>Automation Project Tracker</h4><p>Spreadsheet template to track your automation projects, time savings, and ROI.</p></div>
-      <div class="inside-item"><h4>Automation Stack Guide</h4><p>How to connect your tools. Recommended stacks for €0, €50, and €150/month budgets.</p></div>
-      <div class="inside-item"><h4>Measurement Framework</h4><p>KPIs, scorecards, and the improve-or-kill decision framework for every automation.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- Who is this for -->
-<section style="background:var(--light)">
-  <div class="container">
-    <h2>Who This Is For</h2>
-    <ul class="who-list">
-      <li>Business owners who've tried ChatGPT but want to go further</li>
-      <li>Operations managers looking to cut repetitive work</li>
-      <li>Team leads who want their team to use AI consistently</li>
-      <li>Non-technical professionals who want results without coding</li>
-      <li>Anyone spending hours on tasks that could be automated</li>
-    </ul>
-  </div>
-</section>
-
-<!-- FAQ -->
-<section>
-  <div class="container">
-    <h2>Questions</h2>
-    <div class="faq">
-      <div class="faq-item"><h4>What AI tools do I need?</h4><p>Any general AI assistant works. ChatGPT (free or Plus), Claude, Google Gemini, or Microsoft Copilot. Every playbook includes free tool options.</p></div>
-      <div class="faq-item"><h4>Do I need technical skills?</h4><p>No. Every playbook is written for non-technical users. If you can copy and paste, you can use this.</p></div>
-      <div class="faq-item"><h4>How is this different from the AI Starter Kit?</h4><p>The Starter Kit helps you figure out WHERE to use AI (strategy, assessment, policy). This Playbook shows you HOW to automate specific processes step by step. They complement each other perfectly.</p></div>
-      <div class="faq-item"><h4>What format is it in?</h4><p>You get a 170-page PDF plus a ZIP with all chapters as editable Markdown files, prompt templates, tool comparison, and project tracker spreadsheet.</p></div>
-      <div class="faq-item"><h4>Is there a refund policy?</h4><p>Yes, if you're not satisfied, contact us within 30 days for a full refund. No questions asked.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- Free Lead Magnet -->
-<section class="alt" style="background:linear-gradient(135deg,#1e40af 0%,#3b82f6 100%);color:#fff">
-  <div class="container" style="text-align:center;max-width:640px;margin:0 auto;padding:3rem 1.5rem">
-    <h2 style="color:#fff;margin-bottom:0.5rem">Not ready to buy? Start free.</h2>
-    <p style="color:rgba(255,255,255,0.85);font-size:1.05rem;margin-bottom:1.5rem">Get <strong>"The 5-Minute Automation Audit"</strong>, a self-assessment worksheet + one complete playbook chapter. Find your first AI quick win today.</p>
-    <form id="audit-form" style="display:flex;gap:10px;max-width:440px;margin:0 auto;flex-wrap:wrap;justify-content:center">
-      <input type="email" id="audit-email" placeholder="Your email address" required style="flex:1;min-width:220px;padding:14px 16px;border:2px solid rgba(255,255,255,0.3);border-radius:8px;font-size:1rem;background:rgba(255,255,255,0.15);color:#fff;outline:none">
-      <button type="submit" style="padding:14px 28px;background:#fff;color:#1e40af;border:none;border-radius:8px;font-weight:700;font-size:1rem;cursor:pointer;white-space:nowrap">Get the Free Audit →</button>
-    </form>
-    <p id="audit-thanks" style="display:none;color:#bbf7d0;font-weight:600;margin-top:1rem">Check your inbox, the audit is on its way!</p>
-    <p style="font-size:0.8rem;color:rgba(255,255,255,0.6);margin-top:0.75rem">Free PDF. No spam. Unsubscribe anytime.</p>
-  </div>
-</section>
-<script>
-document.getElementById('audit-form').addEventListener('submit',function(e){
-  e.preventDefault();
-  var email=document.getElementById('audit-email').value;
-  var cb='ml_'+Date.now();
-  window[cb]=function(){
-    document.getElementById('audit-form').style.display='none';
-    document.getElementById('audit-thanks').style.display='block';
-  };
-  var s=document.createElement('script');
-  s.src='https://assets.mailerlite.com/jsonp/2208896/forms/182760124463449833/subscribe?fields[email]='+encodeURIComponent(email)+'&callback='+cb;
-  document.body.appendChild(s);
-});
-</script>
-
-<!-- CTA -->
-<div class="cta-section">
-  <h2>Stop researching. Start automating.</h2>
-  <p>12 playbooks. 50 templates. Everything you need to automate your business with AI.</p>
-  <a href="https://beornscout.gumroad.com/l/pdrqfp" class="btn" id="buy-btn-bottom">Get the Playbook, €39</a>
-  <div class="trust" style="margin-top:1.5rem;font-size:0.85rem;opacity:0.7;display:flex;gap:1.5rem;justify-content:center;flex-wrap:wrap">
-    <span>Instant download</span>
-    <span>PDF + editable files</span>
-    <span>One-time purchase</span>
-    <span>30-day guarantee</span>
-  </div>
-</div>
-
-<!-- Cross-sell -->
-<div class="cross-sell">
-  <h3>Also from Beorns Co</h3>
-  <p>Complete your AI toolkit</p>
-  <div class="cross-sell-links">
-    <a href="https://beornsco.github.io/ai-starter-kit/" class="cross-sell-link">AI Adoption Starter Kit, €27</a>
-    <a href="https://beornsco.github.io/ai-prompt-library/" class="cross-sell-link">AI Prompt Library, €19</a>
-  </div>
-  <p style="margin-top:1rem;font-size:0.85rem;color:var(--gray)">Or get everything: <a href="https://beornscout.gumroad.com/l/fabnse" style="color:var(--blue);font-weight:600">Core Bundle, €69 (save €16)</a></p>
-</div>
-
-<footer>
-  © 2026 Beorns Co · <a href="/terms/">Terms</a> · <a href="/privacy/">Privacy</a> · <a href="https://twitter.com/beornsco" target="_blank" rel="noopener">X/Twitter</a> · <a href="https://medium.com/@beornsco" target="_blank" rel="noopener">Medium</a> · <a href="https://beornsco.lemonsqueezy.com" target="_blank" rel="noopener">Lemon Squeezy Store</a>
-</footer>
-
 <script>
 (function(){
   var btn = document.getElementById('nav-hamburger');
   var links = document.getElementById('nav-links');
+  var dropdownTrigger = document.querySelector('.nav-dropdown > a');
+  var dropdownContent = document.querySelector('.nav-dropdown-content');
+  var dropdown = document.querySelector('.nav-dropdown');
+
+  // Hamburger toggle
   if(btn && links){
-    btn.addEventListener('click', function(){
+    btn.addEventListener('click', function(e){
+      e.stopPropagation();
       btn.classList.toggle('open');
       links.classList.toggle('open');
     });
   }
+
+  // Mobile: Products dropdown toggle (prevent nav close)
+  if(dropdownTrigger && dropdownContent){
+    dropdownTrigger.addEventListener('click', function(e){
+      if(window.innerWidth <= 768){
+        e.preventDefault();
+        e.stopPropagation();
+        dropdown.classList.toggle('open');
+        dropdownContent.classList.toggle('open');
+      }
+    });
+  }
+
+  // Close nav when clicking outside
+  document.addEventListener('click', function(e){
+    if(links && !links.contains(e.target) && btn && !btn.contains(e.target)){
+      links.classList.remove('open');
+      btn.classList.remove('open');
+      if(dropdown) dropdown.classList.remove('open');
+      if(dropdownContent) dropdownContent.classList.remove('open');
+    }
+  });
 })();
 </script>
 </body>

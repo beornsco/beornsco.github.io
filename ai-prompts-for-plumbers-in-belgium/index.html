@@ -64,318 +64,68 @@ footer{padding:36px 0;text-align:center;color:#aaa;font-size:.9rem;background:va
 footer a{color:#ccc}
 @media(prefers-reduced-motion:no-preference){.fade-in{opacity:0;transform:translateY(16px);transition:opacity .5s,transform .5s}.fade-in.visible{opacity:1;transform:none}}
 
-.nav-dropdown { position: relative; display: inline-block; }
-.nav-dropdown-content { display: none; position: absolute; top: 100%; left: 0; background: #fff; border: 1px solid #E5E7EB; border-radius: 8px; min-width: 220px; box-shadow: 0 4px 12px rgba(0,0,0,.1); z-index: 200; padding: 8px 0; }
-.nav-dropdown:hover .nav-dropdown-content { display: block; }
-.nav-dropdown-content a { display: block; padding: 8px 16px; color: #374151; font-size: .87rem; white-space: nowrap; }
-.nav-dropdown-content a:hover { background: #F3F4F6; color: #2962FF; }
-.nav-dropdown-section { padding: 6px 16px 4px; font-size: .75rem; font-weight: 700; color: #9CA3AF; text-transform: uppercase; letter-spacing: .05em; }
-.nav-dropdown-divider { border: none; border-top: 1px solid #E5E7EB; margin: 6px 0; }
-</style>
+/* Desktop dropdown - hover */
+@media(min-width:769px){
+  .nav-dropdown { position: relative; display: inline-block; }
+  .nav-dropdown-content { display: none; position: absolute; top: 100%; left: 0; background: #fff; border: 1px solid #E5E7EB; border-radius: 8px; min-width: 220px; box-shadow: 0 4px 12px rgba(0,0,0,.1); z-index: 200; padding: 8px 0; }
+  .nav-dropdown:hover .nav-dropdown-content { display: block; }
+  .nav-dropdown-content a { display: block; padding: 8px 16px; color: #374151; font-size: .87rem; white-space: nowrap; }
+  .nav-dropdown-content a:hover { background: #F3F4F6; color: #2962FF; }
+  .nav-dropdown-section { padding: 6px 16px 4px; font-size: .75rem; font-weight: 700; color: #9CA3AF; text-transform: uppercase; letter-spacing: .05em; }
+  .nav-dropdown-divider { border: none; border-top: 1px solid #E5E7EB; margin: 6px 0; }
+}
+
+/* Mobile dropdown - click/tap */
+@media(max-width:768px){
+  .nav-dropdown-content { display: none; background: #f9fafb; padding: 4px 0 4px 16px; }
+  .nav-dropdown-content.open { display: block; }
+  .nav-dropdown-content a { display: block; padding: 10px 16px; color: #374151; font-size: .9rem; }
+  .nav-dropdown-section { padding: 6px 16px 2px; font-size: .72rem; font-weight: 700; color: #9CA3AF; text-transform: uppercase; }
+  .nav-dropdown-divider { border: none; border-top: 1px solid #E5E7EB; margin: 4px 0; }
+  .nav-dropdown > a::after { content: " ▾"; font-size: .7rem; }
+  .nav-dropdown.open > a::after { content: " ▴"; font-size: .7rem; }
+}</style>
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3S7D3JJ9JS"></script>
 <script>
- window.dataLayer = window.dataLayer || [];
- function gtag(){dataLayer.push(arguments);}
- gtag('js', new Date());
- gtag('config', 'G-3S7D3JJ9JS');
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Do these prompts work in Dutch and French?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Each prompt either specifies the language or includes a placeholder for you to choose. ChatGPT handles Dutch, French, and German well, so you can generate client communications in the right language without translating manually."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do I need to include BTW in prompts?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The prompts are written to remind you to include BTW details. For most renovation work on properties older than 10 years, the reduced 6% BTW rate applies. Always confirm with your accountant, and specify the rate in the prompt."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can AI help me with Confederatie Bouw membership documents?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "AI can help draft professional communications and reference your membership, but the official registration and documentation still go through Confederatie Bouw directly. Think of AI as your drafting assistant, not a registration service."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What AI tool should I use with these prompts?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "ChatGPT (free version) works fine for all of these. You can also use Claude or Microsoft Copilot. None of them require a paid plan for basic prompt use."
-      }
-    }
-  ]
-}
-</script>
-</head>
-<body>
-
-<nav>
-  <div class="nav-inner">
-    <a href="/" class="brand">Beorns Co</a>
-    <button class="hamburger" id="nav-hamburger" aria-label="Open menu">
-      <span></span><span></span><span></span>
-    </button>
-    <div class="nav-links" id="nav-links">
-      <div class="nav-dropdown">
-        <a href="/pricing/" style="display:flex;align-items:center;gap:4px;">Products <span style="font-size:.7rem;">&#9660;</span></a>
-        <div class="nav-dropdown-content">
-          <div class="nav-dropdown-section">Core SME Toolkit</div>
-          <a href="/ai-starter-kit/">AI Adoption Starter Kit</a>
-          <a href="/ai-prompt-library/">200+ ChatGPT Prompts</a>
-          <a href="/ai-automation-playbook/">AI Automation Playbook</a>
-          <hr class="nav-dropdown-divider">
-          <div class="nav-dropdown-section">Niche Prompt Packs</div>
-          <a href="/ai-trades-prompts/">Tradespeople</a>
-          <a href="/ai-restaurant-prompts/">Restaurant Owners</a>
-          <a href="/ai-photographer-prompts/">Photographers</a>
-          <a href="/ai-sme-ops-prompts/">Small Business (100 prompts)</a>
-          <a href="/ai-prompts-real-estate/">Real Estate</a>
-          <a href="/ai-prompts-ecommerce/">E-commerce and Retail</a>
-        </div>
-      </div>
-      <a href="/free-prompts/">Free Prompts</a>
-      <a href="/pricing/">Pricing</a>
-      <a href="/compare/">Compare</a>
-      <a href="/blog/">Blog</a>
-    </div>
-  </div>
-</nav>
-
-<!-- HERO -->
-<section class="hero">
-<div class="container">
-  <div class="badge">Belgium · Plumbers</div>
-  <h1>AI Prompts for <span>Plumbers in Belgium</span> (2026 Guide)</h1>
-  <p>Running a plumbing business in Belgium means juggling more than pipes and fittings. You're writing quotes in Dutch for a client in Ghent, then switching to French for someone in Brussels who found you on Google and wants an urgent response about a bathroom renovation. Meanwhile, the BTW percentage needs to be on every single document, and you still haven't followed up on that boiler installation quote from three weeks ago.</p>
-  <a href="/ai-trades-prompts/" class="btn">Get the Full Prompt Pack</a>
-</div>
-</section>
-
-<!-- INTRO -->
-<section class="alt">
-<div class="container fade-in">
-  <div class="section-label">Overview</div>
-  <p>Running a plumbing business in Belgium means juggling more than pipes and fittings. You're writing quotes in Dutch for a client in Ghent, then switching to French for someone in Brussels who found you on Google and wants an urgent response about a bathroom renovation. Meanwhile, the BTW percentage needs to be on every single document, and you still haven't followed up on that boiler installation quote from three weeks ago.</p><p>AI tools like ChatGPT handle exactly these kinds of admin headaches. You give it a quick description of the job, and it drafts the email, quote intro, or follow-up message in seconds. This guide gives you the prompts that actually work for the Belgian plumbing market.</p>
-</div>
-</section>
-
-<!-- WHY -->
-<section>
-<div class="container fade-in">
-  <div class="section-label">Why It Matters</div>
-  <h2>Why Belgian Plumbers Are Turning to AI</h2>
-  <p>The Belgian market has its own friction points. Labor costs are among the highest in Europe, which means clients scrutinise quotes carefully and often ask for breakdowns. If you're operating across the language border, a quote that arrives in the wrong language can cost you the job before the client even reads the price.</p><p>Then there's the administration: BTW/TVA compliance, Confederatie Bouw paperwork, and the growing demand for heat pump installations that come with their own EPBD documentation trail. Most solo plumbers spend 6 to 10 hours a week on admin that AI could draft in minutes. These prompts don't replace your expertise. They just remove the blank-page problem so you can send professional responses fast.</p>
-</div>
-</section>
-
-<!-- PROMPTS -->
-<section class="alt">
-<div class="container fade-in">
-  <div class="section-label">Ready-to-Use Prompts</div>
-  <h2>Copy, Paste, Send</h2>
-  <p class="section-sub">Fill in the [brackets] with your details, paste into ChatGPT (free version works), and review the output before sending.</p>
-  
-    <div class="prompt-box">
-      <div class="prompt-label">Multilingual Quote Email (Dutch)</div>
-      <div class="prompt-text">Write a professional Dutch-language email to a client in Belgium confirming a plumbing quote for [describe the job, e.g. bathroom renovation including new shower unit and toilet]. Include:
-- A clear total price of [amount] EUR excl. BTW (21%)
-- Estimated duration: [X days]
-- What is and isn't included
-- A polite request to confirm by [date]
-Keep the tone professional but friendly. Sign off as [your name / company name].</div>
-    </div>
-    <div class="prompt-box">
-      <div class="prompt-label">French Quote Follow-Up</div>
-      <div class="prompt-text">Write a short follow-up email in French to a client in [city, Belgium] who hasn't responded to a plumbing quote I sent [X days] ago. The quote was for [brief description of job]. 
-Be polite, not pushy. Mention that my availability for this period is limited. Ask if they have any questions or need anything clarified. Sign off professionally as [name].</div>
-    </div>
-    <div class="prompt-box">
-      <div class="prompt-label">Emergency Call-Out Response</div>
-      <div class="prompt-text">Write a WhatsApp-style text message to a client in Belgium who has reported a burst pipe and needs emergency plumbing help. Let them know:
-- I can arrive within [X hours]
-- Emergency call-out rate is [amount] EUR excl. BTW
-- They should turn off the mains water stopcock immediately (briefly explain where it usually is)
-- I'll call them 30 minutes before arrival
-Keep it short, clear and reassuring.</div>
-    </div>
-    <div class="prompt-box">
-      <div class="prompt-label">Heat Pump Installation Enquiry Reply</div>
-      <div class="prompt-text">Write a professional email reply in [Dutch/French] to a client in Belgium enquiring about replacing their gas boiler with a heat pump. Cover:
-- That I'm certified for heat pump installations
-- Brief explanation of the process (site survey first, then quote)
-- Mention of available federal and regional premiums (e.g. MyRenovation/MijnVerbouwPremie in Flanders or equivalent)
-- Ask them to book a site visit at [link or phone number]
-Tone: informative and helpful, not salesy.</div>
-    </div>
-    <div class="prompt-box">
-      <div class="prompt-label">5-Star Review Request</div>
-      <div class="prompt-text">Write a short, natural-sounding WhatsApp message to send to a client in Belgium after completing a plumbing job. Thank them for their business and ask if they'd be willing to leave a review on [Google / platform]. Include a direct link placeholder [REVIEW LINK]. 
-Don't sound robotic. Keep it under 60 words.</div>
-    </div>
-</div>
-</section>
-
-<!-- USE CASES -->
-<section>
-<div class="container fade-in">
-  <div class="section-label">Real Use Cases</div>
-  <h2>How Plumbers Use These in Practice</h2>
-  
-    <div class="use-case">
-      <div class="uc-label">The Brussels Bilingual Situation</div>
-      <p style="margin:0;color:#374151;font-size:.96rem">A plumber in Ixelles gets an enquiry in French about a leaking radiator, but the client mentions they prefer Dutch documents. Instead of rewriting the quote manually, they paste the job details into ChatGPT with a prompt asking for a Dutch quote email with BTW included. Done in 90 seconds.</p>
-    </div>
-    <div class="use-case">
-      <div class="uc-label">The Forgotten Follow-Up</div>
-      <p style="margin:0;color:#374151;font-size:.96rem">A bathroom renovation quote sent to a Ghent client three weeks ago went cold. The plumber uses the follow-up prompt, adjusts one line about availability, and sends it. The client replies the same afternoon to confirm.</p>
-    </div>
-    <div class="use-case">
-      <div class="uc-label">The EPBD Paper Trail</div>
-      <p style="margin:0;color:#374151;font-size:.96rem">A client in Leuven wants documentation confirming the heat pump installation meets energy certificate requirements. The plumber uses AI to draft a professional technical summary from their install notes, which the energy auditor can reference.</p>
-    </div>
-    <div class="use-case">
-      <div class="uc-label">The After-Hours Emergency</div>
-      <p style="margin:0;color:#374151;font-size:.96rem">At 21:00 on a Thursday, a client messages about a burst pipe under the kitchen sink. The plumber sends the emergency WhatsApp prompt response in 30 seconds, giving clear instructions and an arrival estimate, instead of fumbling for the right words while grabbing tools.</p>
-    </div>
-</div>
-</section>
-
-<!-- LOCAL -->
-<section class="alt">
-<div class="container fade-in">
-  <div class="section-label">Local Considerations</div>
-  <h2>What to Know About This Market</h2>
-  <p>Belgium's plumbing market has a few specifics worth knowing when using these prompts:</p>
-<ul style="margin:12px 0 12px 20px;color:#374151">
-<li style="margin-bottom:8px"><strong>Language:</strong> Always confirm the client's preference before sending documents. Many clients in Brussels switch between Dutch and French mid-conversation. Having AI draft both versions takes seconds.</li>
-<li style="margin-bottom:8px"><strong>BTW/TVA:</strong> All quotes must show the BTW rate (21% standard, 6% for renovation works on older properties). Mention this clearly in every quote email.</li>
-<li style="margin-bottom:8px"><strong>Confederatie Bouw:</strong> If you're a member, reference it in client communications. It builds credibility, especially with first-time callers.</li>
-<li style="margin-bottom:8px"><strong>Heat pump premiums:</strong> Regional incentives vary (Flanders, Wallonia, Brussels-Capital all have different schemes). Use AI to draft the summary but verify current amounts at mijnverbouwpremie.be or equivalent.</li>
-</ul>
-</div>
-</section>
-
-<!-- OTHER COUNTRIES -->
-<section>
-<div class="container fade-in">
-  <div class="section-label">Also Available For</div>
-  <h2>AI Prompts for Plumbers in Other Countries</h2>
-  <p>These prompts are adapted for each country's language, regulations, and market conditions.</p>
-  <div class="country-links">
-    <a href="/ai-prompts-for-plumbers-in-united-kingdom/">AI Prompts for Plumbers in the United Kingdom</a>
-<a href="/ai-prompts-for-plumbers-in-ireland/">AI Prompts for Plumbers in Ireland</a>
-<a href="/ai-prompts-for-plumbers-in-netherlands/">AI Prompts for Plumbers in the Netherlands</a>
-<a href="/ai-prompts-for-plumbers-in-germany/">AI Prompts for Plumbers in Germany</a>
-
-  </div>
-</div>
-</section>
-
-<!-- RELATED -->
-<section class="alt">
-<div class="container fade-in">
-  <div class="section-label">Explore More</div>
-  <h2>Related AI Prompt Guides</h2>
-  <div class="related-grid">
-    
-    <div class="related-card">
-      <a href="/ai-prompts-for-electricians-in-united-kingdom/">AI Prompts for Electricians in the UK</a>
-      <span>Practical prompts for EV charger installs, EICR certs, and client comms</span>
-    </div>
-    <div class="related-card">
-      <a href="/ai-prompts-for-hvac-engineers-in-ireland/">AI Prompts for HVAC Engineers in Ireland</a>
-      <span>Heat pump grants, SEAI paperwork, and seasonal demand</span>
-    </div>
-    <div class="related-card">
-      <a href="/ai-prompts-for-painters-in-belgium/">AI Prompts for Painters in Belgium</a>
-      <span>Bilingual client comms, VOC compliance, and project follow-ups</span>
-    </div>
-    <div class="related-card">
-      <a href="/ai-trades-prompts/">Full AI Prompt Pack for Tradespeople</a>
-      <span>54 prompts covering the full business admin stack</span>
-    </div>
-  </div>
-</div>
-</section>
-
-<!-- EXPAND TOOLKIT CTA -->
-<section style="background:var(--blue);padding:64px 0;text-align:center">
-<div class="container">
-  <h2 style="color:#fff;margin-bottom:12px">Want 54 Prompts Covering Your Full Business Admin?</h2>
-  <p style="color:rgba(255,255,255,.85);font-size:1.05rem;margin-bottom:28px;max-width:500px;margin-left:auto;margin-right:auto">The full AI Prompt Pack for Tradespeople covers quoting, invoicing, customer complaints, reviews, hiring, and more. One-time purchase. Instant download.</p>
-  <a href="/ai-trades-prompts/" class="btn" style="background:#fff;color:var(--blue);margin-right:12px">See the Full Pack</a>
-  <a href="/free-prompts/" class="btn" style="background:transparent;border:2px solid rgba(255,255,255,.6);color:#fff">Try Free Prompts</a>
-</div>
-</section>
-
-<!-- FAQ -->
-<section>
-<div class="container fade-in">
-  <div class="section-label">FAQ</div>
-  <h2>Common Questions</h2>
-  
-    <div class="faq-item">
-      <strong>Do these prompts work in Dutch and French?</strong>
-      <p>Yes. Each prompt either specifies the language or includes a placeholder for you to choose. ChatGPT handles Dutch, French, and German well, so you can generate client communications in the right language without translating manually.</p>
-    </div>
-    <div class="faq-item">
-      <strong>Do I need to include BTW in prompts?</strong>
-      <p>The prompts are written to remind you to include BTW details. For most renovation work on properties older than 10 years, the reduced 6% BTW rate applies. Always confirm with your accountant, and specify the rate in the prompt.</p>
-    </div>
-    <div class="faq-item">
-      <strong>Can AI help me with Confederatie Bouw membership documents?</strong>
-      <p>AI can help draft professional communications and reference your membership, but the official registration and documentation still go through Confederatie Bouw directly. Think of AI as your drafting assistant, not a registration service.</p>
-    </div>
-    <div class="faq-item">
-      <strong>What AI tool should I use with these prompts?</strong>
-      <p>ChatGPT (free version) works fine for all of these. You can also use Claude or Microsoft Copilot. None of them require a paid plan for basic prompt use.</p>
-    </div>
-</div>
-</section>
-
-<!-- CONCLUSION -->
-<section class="alt">
-<div class="container fade-in">
-  <h2>Getting Started</h2>
-  <p>If you're a plumber in Belgium spending hours each week on emails, quotes, and follow-ups, AI isn't a gadget. It's a practical time-saver that works with whatever tools you already use. If you also handle cross-trade callouts, the <a href="/ai-prompts-for-electricians-in-united-kingdom/">electrician prompts for the UK</a> show a similar communication style. Copy a prompt, paste it into ChatGPT, fill in the brackets, and send. That's the whole workflow. You can test the process first with <a href="/free-prompts/">10 free starter prompts</a>.</p>
-</div>
-</section>
-
-<footer>
-  © 2026 Beorns Co · <a href="/terms/">Terms</a> · <a href="/privacy/">Privacy</a> · <a href="https://twitter.com/beornsco" target="_blank" rel="noopener">X/Twitter</a> · <a href="https://medium.com/@beornsco" target="_blank" rel="noopener">Medium</a> · <a href="https://beornsco.lemonsqueezy.com" target="_blank" rel="noopener">Lemon Squeezy Store</a>
-</footer>
-<script>
-const observer = new IntersectionObserver(els => els.forEach(e => {
-  if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}
-}),{threshold:.12});
-document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
-</script>
-
-<script>
 (function(){
   var btn = document.getElementById('nav-hamburger');
   var links = document.getElementById('nav-links');
+  var dropdownTrigger = document.querySelector('.nav-dropdown > a');
+  var dropdownContent = document.querySelector('.nav-dropdown-content');
+  var dropdown = document.querySelector('.nav-dropdown');
+
+  // Hamburger toggle
   if(btn && links){
-    btn.addEventListener('click', function(){
+    btn.addEventListener('click', function(e){
+      e.stopPropagation();
       btn.classList.toggle('open');
       links.classList.toggle('open');
     });
   }
+
+  // Mobile: Products dropdown toggle (prevent nav close)
+  if(dropdownTrigger && dropdownContent){
+    dropdownTrigger.addEventListener('click', function(e){
+      if(window.innerWidth <= 768){
+        e.preventDefault();
+        e.stopPropagation();
+        dropdown.classList.toggle('open');
+        dropdownContent.classList.toggle('open');
+      }
+    });
+  }
+
+  // Close nav when clicking outside
+  document.addEventListener('click', function(e){
+    if(links && !links.contains(e.target) && btn && !btn.contains(e.target)){
+      links.classList.remove('open');
+      btn.classList.remove('open');
+      if(dropdown) dropdown.classList.remove('open');
+      if(dropdownContent) dropdownContent.classList.remove('open');
+    }
+  });
 })();
 </script>
 </body>

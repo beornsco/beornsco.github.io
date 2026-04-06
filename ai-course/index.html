@@ -117,320 +117,67 @@ nav .hamburger.open span:nth-child(3){transform:rotate(-45deg) translate(5px,-5p
 footer{padding:36px 0;text-align:center;color:#aaa;font-size:.9rem;background:var(--dark)}
 footer a{color:#ccc}
 
-.nav-dropdown { position: relative; display: inline-block; }
-.nav-dropdown-content { display: none; position: absolute; top: 100%; left: 0; background: #fff; border: 1px solid #E5E7EB; border-radius: 8px; min-width: 220px; box-shadow: 0 4px 12px rgba(0,0,0,.1); z-index: 200; padding: 8px 0; }
-.nav-dropdown:hover .nav-dropdown-content { display: block; }
-.nav-dropdown-content a { display: block; padding: 8px 16px; color: #374151; font-size: .87rem; white-space: nowrap; }
-.nav-dropdown-content a:hover { background: #F3F4F6; color: #2962FF; }
-.nav-dropdown-section { padding: 6px 16px 4px; font-size: .75rem; font-weight: 700; color: #9CA3AF; text-transform: uppercase; letter-spacing: .05em; }
-.nav-dropdown-divider { border: none; border-top: 1px solid #E5E7EB; margin: 6px 0; }
-</style>
+/* Desktop dropdown - hover */
+@media(min-width:769px){
+  .nav-dropdown { position: relative; display: inline-block; }
+  .nav-dropdown-content { display: none; position: absolute; top: 100%; left: 0; background: #fff; border: 1px solid #E5E7EB; border-radius: 8px; min-width: 220px; box-shadow: 0 4px 12px rgba(0,0,0,.1); z-index: 200; padding: 8px 0; }
+  .nav-dropdown:hover .nav-dropdown-content { display: block; }
+  .nav-dropdown-content a { display: block; padding: 8px 16px; color: #374151; font-size: .87rem; white-space: nowrap; }
+  .nav-dropdown-content a:hover { background: #F3F4F6; color: #2962FF; }
+  .nav-dropdown-section { padding: 6px 16px 4px; font-size: .75rem; font-weight: 700; color: #9CA3AF; text-transform: uppercase; letter-spacing: .05em; }
+  .nav-dropdown-divider { border: none; border-top: 1px solid #E5E7EB; margin: 6px 0; }
+}
+
+/* Mobile dropdown - click/tap */
+@media(max-width:768px){
+  .nav-dropdown-content { display: none; background: #f9fafb; padding: 4px 0 4px 16px; }
+  .nav-dropdown-content.open { display: block; }
+  .nav-dropdown-content a { display: block; padding: 10px 16px; color: #374151; font-size: .9rem; }
+  .nav-dropdown-section { padding: 6px 16px 2px; font-size: .72rem; font-weight: 700; color: #9CA3AF; text-transform: uppercase; }
+  .nav-dropdown-divider { border: none; border-top: 1px solid #E5E7EB; margin: 4px 0; }
+  .nav-dropdown > a::after { content: " ▾"; font-size: .7rem; }
+  .nav-dropdown.open > a::after { content: " ▴"; font-size: .7rem; }
+}</style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3S7D3JJ9JS"></script>
-<script>
- window.dataLayer = window.dataLayer || [];
- function gtag(){dataLayer.push(arguments);}
- gtag('js', new Date());
- gtag('config', 'G-3S7D3JJ9JS');
-</script>
-</head>
-<body>
-<nav>
-  <div class="nav-inner">
-    <a href="/" class="brand">Beorns Co</a>
-    <button class="hamburger" id="nav-hamburger" aria-label="Open menu">
-      <span></span><span></span><span></span>
-    </button>
-    <div class="nav-links" id="nav-links">
-      <div class="nav-dropdown">
-        <a href="/pricing/" style="display:flex;align-items:center;gap:4px;">Products <span style="font-size:.7rem;">&#9660;</span></a>
-        <div class="nav-dropdown-content">
-          <div class="nav-dropdown-section">Core SME Toolkit</div>
-          <a href="/ai-starter-kit/">AI Adoption Starter Kit</a>
-          <a href="/ai-prompt-library/">200+ ChatGPT Prompts</a>
-          <a href="/ai-automation-playbook/">AI Automation Playbook</a>
-          <hr class="nav-dropdown-divider">
-          <div class="nav-dropdown-section">Niche Prompt Packs</div>
-          <a href="/ai-trades-prompts/">Tradespeople</a>
-          <a href="/ai-restaurant-prompts/">Restaurant Owners</a>
-          <a href="/ai-photographer-prompts/">Photographers</a>
-          <a href="/ai-sme-ops-prompts/">Small Business (100 prompts)</a>
-          <a href="/ai-prompts-real-estate/">Real Estate</a>
-          <a href="/ai-prompts-ecommerce/">E-commerce and Retail</a>
-        </div>
-      </div>
-      <a href="/free-prompts/">Free Prompts</a>
-      <a href="/pricing/">Pricing</a>
-      <a href="/compare/">Compare</a>
-      <a href="/blog/">Blog</a>
-    </div>
-  </div>
-</nav>
-
-<!-- Hero -->
-<section class="hero">
-<div class="container">
-  <div class="badge">✉️ Free 5-Day Email Course</div>
-  <h1>5 Days to Your First AI Quick Win</h1>
-  <p>A free, practical email course for business owners who want to start using AI this week. One lesson per day. No fluff, no theory, just results.</p>
-
-  <div class="signup-box">
-    <h3>Start your first lesson today</h3>
-    <form id="ml-form" class="signup-form">
-      <input type="email" name="fields[email]" placeholder="Your work email" required>
-      <button type="submit" class="btn">Start the Free Course</button>
-    </form>
-    <p id="ml-msg"></p>
-    <p class="signup-note">No spam. Unsubscribe anytime. Just 5 practical lessons.</p>
-  </div>
-
-  <p class="social-proof">Join 100+ business owners already taking the course</p>
-</div>
-</section>
-
-<!-- Benefits -->
-<section>
-<div class="container">
-  <h2>Why take this course?</h2>
-  <p class="section-subtitle">Most AI advice is vague, theoretical, or designed for tech companies. This course is built for real business owners who want real results.</p>
-  <div class="benefits fade-in">
-    <div class="benefit">
-      <div class="icon">⏱️</div>
-      <h3>5 Minutes Per Day</h3>
-      <p>Each lesson takes 5 minutes to read and includes a clear action step you can finish the same day.</p>
-    </div>
-    <div class="benefit">
-      <div class="icon">🎯</div>
-      <h3>Practical, Not Theoretical</h3>
-      <p>Every lesson includes templates, frameworks, or worksheets you can use right away in your business.</p>
-    </div>
-    <div class="benefit">
-      <div class="icon">💰</div>
-      <h3>Completely Free</h3>
-      <p>No credit card. No upsell wall. Just five days of practical AI knowledge delivered to your inbox.</p>
-    </div>
-  </div>
-</div>
-</section>
-
-<!-- Day-by-Day Breakdown -->
-<section class="alt">
-<div class="container">
-  <h2>What you will learn</h2>
-  <p class="section-subtitle">Each day builds on the last. By Day 5, you will have a clear AI plan tailored to your business.</p>
-  <div class="days fade-in">
-    <div class="day">
-      <div class="day-num">1</div>
-      <div class="day-content">
-        <h3>Find Your Best AI Opportunity</h3>
-        <p>Audit your daily tasks and identify the one area where AI can save you the most time. You will use our simple scoring framework to pinpoint your biggest quick win.</p>
-      </div>
-    </div>
-    <div class="day">
-      <div class="day-num">2</div>
-      <div class="day-content">
-        <h3>Write Your First AI Prompt</h3>
-        <p>Learn the anatomy of a great prompt with our fill-in-the-blank template. You will write and test your first business prompt in under 10 minutes.</p>
-      </div>
-    </div>
-    <div class="day">
-      <div class="day-num">3</div>
-      <div class="day-content">
-        <h3>Build a Reusable Prompt Library</h3>
-        <p>Turn one good prompt into a system. You will organize your prompts into a simple library you can share with your team and reuse every week.</p>
-      </div>
-    </div>
-    <div class="day">
-      <div class="day-num">4</div>
-      <div class="day-content">
-        <h3>Create a One-Page AI Policy</h3>
-        <p>Every company using AI needs guardrails. You will fill in our one-page AI policy template covering data privacy, approved tools, and usage guidelines.</p>
-      </div>
-    </div>
-    <div class="day">
-      <div class="day-num">5</div>
-      <div class="day-content">
-        <h3>Calculate Your AI ROI and Build Your 30-Day Plan</h3>
-        <p>Measure the time and money you will save. You will use our ROI calculator and map out your next 30 days of AI adoption with a clear action plan.</p>
-      </div>
-    </div>
-  </div>
-</div>
-</section>
-
-<!-- Mid-page CTA -->
-<section>
-<div class="container">
-  <div class="cta-bottom fade-in">
-    <h2>Ready to get your first AI quick win?</h2>
-    <p class="section-subtitle" style="margin-bottom:24px">Join 100+ business owners who have already started. Day 1 arrives the moment you sign up.</p>
-    <div class="signup-box" style="border:none;padding:0">
-      <form id="ml-form-mid" class="signup-form">
-        <input type="email" name="fields[email]" placeholder="Your work email" required>
-        <button type="submit" class="btn">Start the Free Course</button>
-      </form>
-      <p id="ml-msg-mid" style="margin-top:12px;font-weight:600;display:none"></p>
-      <p class="signup-note">Free forever. No credit card required.</p>
-    </div>
-  </div>
-</div>
-</section>
-
-<!-- FAQ -->
-<section class="alt">
-<div class="container">
-  <h2>Frequently Asked Questions</h2>
-  <div class="faq fade-in">
-    <div class="faq-item">
-      <div class="faq-q">Is this really free?</div>
-      <div class="faq-a">Yes, completely free. No hidden fees, no credit card required. You will receive 5 lessons over 5 days, and that is it.</div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-q">Who is this course for?</div>
-      <div class="faq-a">Business owners and managers at small to mid-sized companies who want to start using AI but are not sure where to begin. No technical background needed.</div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-q">How much time does it take?</div>
-      <div class="faq-a">Each lesson takes about 5 minutes to read. The action steps take another 10 to 15 minutes. You can complete everything during a coffee break.</div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-q">Which AI tools do I need?</div>
-      <div class="faq-a">Just a free ChatGPT, Claude, or Gemini account. The course works with any AI assistant. No paid subscriptions required.</div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-q">What if I miss a day?</div>
-      <div class="faq-a">No problem. The emails stay in your inbox and you can work through them at your own pace. There is no deadline.</div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-q">Will I get spammed?</div>
-      <div class="faq-a">No. You will receive exactly 5 emails over 5 days. After that, you may get occasional tips (once or twice a month), and you can unsubscribe with one click at any time.</div>
-    </div>
-  </div>
-</div>
-</section>
-
-<!-- Cross-sell Products -->
-<section>
-<div class="container">
-  <h2>Want to go deeper?</h2>
-  <p class="section-subtitle">After the course, accelerate your AI adoption with our premium toolkits.</p>
-  <div class="products fade-in">
-    <div class="card">
-      <h3>AI Adoption Starter Kit</h3>
-      <div class="price">€27</div>
-      <div class="tagline">Strategy, frameworks, and templates.</div>
-      <ul>
-        <li>AI Opportunity Assessment</li>
-        <li>Use Case Prioritization Matrix</li>
-        <li>Internal AI Policy Template</li>
-        <li>30/60/90 Day Roadmap</li>
-        <li>ROI Calculator</li>
-      </ul>
-      <a href="https://beornsco.github.io/ai-starter-kit/" class="btn btn-blue">Learn More</a>
-    </div>
-    <div class="card">
-      <h3>AI Prompt Library</h3>
-      <div class="price">€19</div>
-      <div class="tagline">200+ tested prompts. Copy, paste, go.</div>
-      <ul>
-        <li>200+ business prompts</li>
-        <li>10 departments covered</li>
-        <li>Works with ChatGPT, Copilot, Claude &amp; any AI assistant</li>
-        <li>Customizable templates</li>
-        <li>Pro tips included</li>
-      </ul>
-      <a href="https://beornsco.github.io/ai-prompt-library/" class="btn btn-blue">Learn More</a>
-    </div>
-    <div class="card">
-      <h3>AI Automation Playbook</h3>
-      <div class="price">€39</div>
-      <div class="tagline">Stop reading about AI. Start automating.</div>
-      <ul>
-        <li>12 automation playbooks</li>
-        <li>50 prompt templates</li>
-        <li>Tool comparison matrix</li>
-        <li>Project tracker</li>
-        <li>170 pages, no fluff</li>
-      </ul>
-      <a href="https://beornsco.github.io/ai-automation-playbook/" class="btn btn-blue">Learn More</a>
-    </div>
-  </div>
-  <div style="text-align:center;margin-top:32px" class="fade-in">
-    <p style="color:var(--gray);margin-bottom:12px">Or get everything in one bundle and save 19%:</p>
-    <a href="https://beornscout.gumroad.com/l/fabnse" class="btn btn-blue" style="font-size:1.05rem">Get the Core Bundle, €69 <span style="text-decoration:line-through;opacity:.7;font-weight:400;font-size:.9rem">€85</span></a>
-  </div>
-</div>
-</section>
-
-<!-- Bottom CTA -->
-<section class="alt">
-<div class="container">
-  <div class="cta-bottom fade-in">
-    <h2>Start learning today. It is free.</h2>
-    <p class="section-subtitle" style="margin-bottom:24px">Your first lesson is waiting. Sign up now and check your inbox in 2 minutes.</p>
-    <div class="signup-box" style="border:none;padding:0;background:transparent">
-      <form id="ml-form-bottom" class="signup-form">
-        <input type="email" name="fields[email]" placeholder="Your work email" required>
-        <button type="submit" class="btn">Start the Free Course</button>
-      </form>
-      <p id="ml-msg-bottom" style="margin-top:12px;font-weight:600;display:none"></p>
-      <p class="signup-note">Join 100+ business owners. No spam, ever.</p>
-    </div>
-  </div>
-</div>
-</section>
-
-<footer>
-  © 2026 Beorns Co · <a href="/terms/">Terms</a> · <a href="/privacy/">Privacy</a> · <a href="https://twitter.com/beornsco" target="_blank" rel="noopener">X/Twitter</a> · <a href="https://medium.com/@beornsco" target="_blank" rel="noopener">Medium</a> · <a href="https://beornsco.lemonsqueezy.com" target="_blank" rel="noopener">Lemon Squeezy Store</a>
-</footer>
-
-<script>
-// Fade-in animations
-if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches){
-  var o=new IntersectionObserver(function(entries){entries.forEach(function(i){if(i.isIntersecting){i.target.classList.add('visible');o.unobserve(i.target)}})},{threshold:.15});
-  document.querySelectorAll('.fade-in').forEach(function(el){o.observe(el)});
-}
-
-// FAQ accordion
-document.querySelectorAll('.faq-q').forEach(function(q){
-  q.addEventListener('click',function(){
-    var item=this.parentElement;
-    item.classList.toggle('open');
-  });
-});
-
-// MailerLite JSONP signup handler
-function mlSubscribe(formEl,msgEl){
-  formEl.addEventListener('submit',function(e){
-    e.preventDefault();
-    var email=this.querySelector('[name="fields[email]"]').value;
-    var cb='mlc_'+Date.now();
-    window[cb]=function(){
-      msgEl.style.display='block';
-      msgEl.style.color='#16a34a';
-      msgEl.textContent="You're in! Check your inbox for Day 1.";
-      formEl.style.display='none';
-    };
-    var s=document.createElement('script');
-    s.src='https://assets.mailerlite.com/jsonp/2208896/forms/182863223702160765/subscribe?fields[email]='+encodeURIComponent(email)+'&callback='+cb;
-    document.body.appendChild(s);
-  });
-}
-
-mlSubscribe(document.getElementById('ml-form'),document.getElementById('ml-msg'));
-mlSubscribe(document.getElementById('ml-form-mid'),document.getElementById('ml-msg-mid'));
-mlSubscribe(document.getElementById('ml-form-bottom'),document.getElementById('ml-msg-bottom'));
-</script>
 <script>
 (function(){
   var btn = document.getElementById('nav-hamburger');
   var links = document.getElementById('nav-links');
+  var dropdownTrigger = document.querySelector('.nav-dropdown > a');
+  var dropdownContent = document.querySelector('.nav-dropdown-content');
+  var dropdown = document.querySelector('.nav-dropdown');
+
+  // Hamburger toggle
   if(btn && links){
-    btn.addEventListener('click', function(){
+    btn.addEventListener('click', function(e){
+      e.stopPropagation();
       btn.classList.toggle('open');
       links.classList.toggle('open');
     });
   }
+
+  // Mobile: Products dropdown toggle (prevent nav close)
+  if(dropdownTrigger && dropdownContent){
+    dropdownTrigger.addEventListener('click', function(e){
+      if(window.innerWidth <= 768){
+        e.preventDefault();
+        e.stopPropagation();
+        dropdown.classList.toggle('open');
+        dropdownContent.classList.toggle('open');
+      }
+    });
+  }
+
+  // Close nav when clicking outside
+  document.addEventListener('click', function(e){
+    if(links && !links.contains(e.target) && btn && !btn.contains(e.target)){
+      links.classList.remove('open');
+      btn.classList.remove('open');
+      if(dropdown) dropdown.classList.remove('open');
+      if(dropdownContent) dropdownContent.classList.remove('open');
+    }
+  });
 })();
 </script>
 </body>

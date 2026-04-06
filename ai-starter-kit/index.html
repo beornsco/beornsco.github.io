@@ -57,186 +57,67 @@ nav .hamburger.open span:nth-child(3){transform:rotate(-45deg) translate(5px,-5p
 footer{padding:36px 0;text-align:center;color:#aaa;font-size:.9rem;background:var(--dark)}
 footer a{color:#ccc}
 
-.nav-dropdown { position: relative; display: inline-block; }
-.nav-dropdown-content { display: none; position: absolute; top: 100%; left: 0; background: #fff; border: 1px solid #E5E7EB; border-radius: 8px; min-width: 220px; box-shadow: 0 4px 12px rgba(0,0,0,.1); z-index: 200; padding: 8px 0; }
-.nav-dropdown:hover .nav-dropdown-content { display: block; }
-.nav-dropdown-content a { display: block; padding: 8px 16px; color: #374151; font-size: .87rem; white-space: nowrap; }
-.nav-dropdown-content a:hover { background: #F3F4F6; color: #2962FF; }
-.nav-dropdown-section { padding: 6px 16px 4px; font-size: .75rem; font-weight: 700; color: #9CA3AF; text-transform: uppercase; letter-spacing: .05em; }
-.nav-dropdown-divider { border: none; border-top: 1px solid #E5E7EB; margin: 6px 0; }
-</style>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-3S7D3JJ9JS"></script>
-<script>
- window.dataLayer = window.dataLayer || [];
- function gtag(){dataLayer.push(arguments);}
- gtag('js', new Date());
- gtag('config', 'G-3S7D3JJ9JS');
-</script>
-</head>
-<body>
-<nav>
-  <div class="nav-inner">
-    <a href="/" class="brand">Beorns Co</a>
-    <button class="hamburger" id="nav-hamburger" aria-label="Open menu">
-      <span></span><span></span><span></span>
-    </button>
-    <div class="nav-links" id="nav-links">
-      <div class="nav-dropdown">
-        <a href="/pricing/" style="display:flex;align-items:center;gap:4px;">Products <span style="font-size:.7rem;">&#9660;</span></a>
-        <div class="nav-dropdown-content">
-          <div class="nav-dropdown-section">Core SME Toolkit</div>
-          <a href="/ai-starter-kit/">AI Adoption Starter Kit</a>
-          <a href="/ai-prompt-library/">200+ ChatGPT Prompts</a>
-          <a href="/ai-automation-playbook/">AI Automation Playbook</a>
-          <hr class="nav-dropdown-divider">
-          <div class="nav-dropdown-section">Niche Prompt Packs</div>
-          <a href="/ai-trades-prompts/">Tradespeople</a>
-          <a href="/ai-restaurant-prompts/">Restaurant Owners</a>
-          <a href="/ai-photographer-prompts/">Photographers</a>
-          <a href="/ai-sme-ops-prompts/">Small Business (100 prompts)</a>
-          <a href="/ai-prompts-real-estate/">Real Estate</a>
-          <a href="/ai-prompts-ecommerce/">E-commerce and Retail</a>
-        </div>
-      </div>
-      <a href="/free-prompts/">Free Prompts</a>
-      <a href="/pricing/">Pricing</a>
-      <a href="/compare/">Compare</a>
-      <a href="/blog/">Blog</a>
-    </div>
-  </div>
-</nav>
-
-<section class="hero">
-<div class="container">
-  <h1>AI Adoption Starter Kit for SMEs</h1>
-  <p>Stop guessing where AI fits in your business.</p>
-  <a href="https://beornscout.gumroad.com/l/qizoop" class="btn">Get the Starter Kit, €27</a>
-</div>
-</section>
-
-<section class="alt">
-<div class="container problem fade-in">
-  <h2 style="text-align:center">You know AI could help your business. But where do you start?</h2>
-  <p>Most SMEs waste months researching, or spend thousands on consultants, when what they actually need is a structured framework to find the right opportunities and act on them.</p>
-  <p>The AI Adoption Starter Kit gives you everything you need to go from "we should do something with AI" to a concrete, funded plan, in days, not months.</p>
-</div>
-</section>
-
-<section>
-<div class="container">
-  <h2>What's Inside</h2>
-  <ul class="items fade-in">
-    <li><strong>AI Opportunity Assessment Framework</strong><span>Find where AI saves the most time and money in your business</span></li>
-    <li><strong>Prioritization Matrix</strong><span>Rank opportunities by impact and feasibility, stop chasing shiny objects</span></li>
-    <li><strong>AI Readiness Checklist</strong><span>Know if your team and data are ready before investing a cent</span></li>
-    <li><strong>AI Policy Template</strong><span>Protect your business, your data, and your clients from day one</span></li>
-    <li><strong>30/60/90 Day Implementation Roadmap</strong><span>A real plan with milestones, not theory</span></li>
-    <li><strong>ROI Calculator</strong><span>Prove the business case with actual numbers</span></li>
-    <li><strong>Executive Summary Template</strong><span>Get leadership buy-in with a professional, ready-made document</span></li>
-    <li><strong>25 AI Use Cases by Department</strong><span>Real examples across sales, marketing, ops, HR, and finance</span></li>
-  </ul>
-</div>
-</section>
-
-<section class="alt">
-<div class="container">
-  <h2>Who It's For</h2>
-  <ul class="personas fade-in">
-    <li><strong>SME owners and founders</strong> thinking about AI but unsure where to begin</li>
-    <li><strong>Operations managers</strong> tasked with "doing something with AI" and needing a plan</li>
-    <li><strong>Team leads</strong> who want to propose AI initiatives with a solid business case</li>
-  </ul>
-</div>
-</section>
-
-<section id="free" style="padding:64px 0;background:linear-gradient(170deg,#E8EEFF 0%,#fff 100%)">
-<div class="container" style="text-align:center">
-  <h2 style="margin-bottom:8px">Not sure yet? Start with our free checklist.</h2>
-  <p style="color:var(--gray);max-width:480px;margin:0 auto 28px;font-size:1.05rem">Get the AI Opportunity Discovery Checklist, find your top 3 AI opportunities in 30 minutes. Free, no spam.</p>
-  <form id="sk-form" style="max-width:420px;margin:0 auto;display:flex;gap:10px;flex-wrap:wrap;justify-content:center">
-    <input type="email" id="sk-email" placeholder="Enter your email" required style="flex:1;min-width:220px;padding:14px 18px;border:2px solid #E5E7EB;border-radius:8px;font-size:1rem;outline:none;transition:border-color .2s" onfocus="this.style.borderColor='var(--blue)'" onblur="this.style.borderColor='#E5E7EB'">
-    <button type="submit" class="btn" style="padding:14px 28px;white-space:nowrap">Get Free Checklist</button>
-  </form>
-  <p id="sk-msg" style="margin-top:14px;font-size:.95rem;display:none"></p>
-</div>
-</section>
-
-<section class="alt" style="padding:48px 0">
-<div class="container" style="text-align:center">
-  <p style="color:var(--gray);font-size:.95rem;margin-bottom:16px">Also from Beorns Co</p>
-  <div style="display:flex;gap:20px;justify-content:center;flex-wrap:wrap;margin-bottom:20px">
-    <div style="max-width:280px"><h4 style="margin-bottom:4px"><a href="/ai-prompt-library/">AI Prompt Library, €19</a></h4><p style="color:var(--gray);font-size:.85rem">200+ ready-to-use prompts for 10 departments.</p></div>
-    <div style="max-width:280px"><h4 style="margin-bottom:4px"><a href="/ai-automation-playbook/">AI Automation Playbook, €39</a></h4><p style="color:var(--gray);font-size:.85rem">12 step-by-step playbooks to automate your business.</p></div>
-  </div>
-  <p style="font-size:.9rem;color:var(--gray)">Or get everything: <a href="https://beornscout.gumroad.com/l/fabnse" style="color:var(--blue);font-weight:600">Core Bundle, €69 (save €16)</a></p>
-</div>
-</section>
-
-<section class="cta-section">
-<div class="container fade-in">
-  <div class="price">€27</div>
-  <div class="sub">One-time purchase. Use it forever.</div>
-  <a href="https://beornscout.gumroad.com/l/qizoop" class="btn">Get the Starter Kit, €27</a>
-</div>
-</section>
-
-<a href="/" class="back">← Back to all products</a>
-
-<footer>
-  © 2026 Beorns Co · <a href="/terms/">Terms</a> · <a href="/privacy/">Privacy</a> · <a href="https://twitter.com/beornsco" target="_blank" rel="noopener">X/Twitter</a> · <a href="https://medium.com/@beornsco" target="_blank" rel="noopener">Medium</a> · <a href="https://beornsco.lemonsqueezy.com" target="_blank" rel="noopener">Lemon Squeezy Store</a>
-</footer>
-
-<script>
-if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches){
-  const o=new IntersectionObserver(e=>e.forEach(i=>{if(i.isIntersecting){i.target.classList.add('visible');o.unobserve(i.target)}}),{threshold:.15});
-  document.querySelectorAll('.fade-in').forEach(el=>o.observe(el));
+/* Desktop dropdown - hover */
+@media(min-width:769px){
+  .nav-dropdown { position: relative; display: inline-block; }
+  .nav-dropdown-content { display: none; position: absolute; top: 100%; left: 0; background: #fff; border: 1px solid #E5E7EB; border-radius: 8px; min-width: 220px; box-shadow: 0 4px 12px rgba(0,0,0,.1); z-index: 200; padding: 8px 0; }
+  .nav-dropdown:hover .nav-dropdown-content { display: block; }
+  .nav-dropdown-content a { display: block; padding: 8px 16px; color: #374151; font-size: .87rem; white-space: nowrap; }
+  .nav-dropdown-content a:hover { background: #F3F4F6; color: #2962FF; }
+  .nav-dropdown-section { padding: 6px 16px 4px; font-size: .75rem; font-weight: 700; color: #9CA3AF; text-transform: uppercase; letter-spacing: .05em; }
+  .nav-dropdown-divider { border: none; border-top: 1px solid #E5E7EB; margin: 6px 0; }
 }
 
-// Starter Kit free checklist signup
-(function(){
-  var form=document.getElementById('sk-form'),
-      emailInput=document.getElementById('sk-email'),
-      msg=document.getElementById('sk-msg');
-  if(!form)return;
-  form.addEventListener('submit',function(e){
-    e.preventDefault();
-    var email=emailInput.value.trim();
-    if(!email)return;
-    msg.style.display='block';
-    msg.style.color='var(--gray)';
-    msg.textContent='Sending...';
-    var cb='mlcb'+Date.now();
-    window[cb]=function(r){
-      if(r&&r.success){
-        msg.style.color='#16a34a';
-        msg.textContent='Check your email for your free checklist!';
-        emailInput.value='';
-      }else{
-        msg.style.color='#dc2626';
-        msg.textContent=(r&&r.msg)||'Something went wrong. Try again.';
-      }
-      var s=document.getElementById(cb);
-      if(s)s.parentNode.removeChild(s);
-      try{delete window[cb]}catch(x){}
-    };
-    var s=document.createElement('script');
-    s.id=cb;
-    s.src='https://assets.mailerlite.com/jsonp/2208896/forms/182475280749692921/subscribe?fields[email]='+encodeURIComponent(email)+'&callback='+cb;
-    document.body.appendChild(s);
-  });
-})();
-</script>
+/* Mobile dropdown - click/tap */
+@media(max-width:768px){
+  .nav-dropdown-content { display: none; background: #f9fafb; padding: 4px 0 4px 16px; }
+  .nav-dropdown-content.open { display: block; }
+  .nav-dropdown-content a { display: block; padding: 10px 16px; color: #374151; font-size: .9rem; }
+  .nav-dropdown-section { padding: 6px 16px 2px; font-size: .72rem; font-weight: 700; color: #9CA3AF; text-transform: uppercase; }
+  .nav-dropdown-divider { border: none; border-top: 1px solid #E5E7EB; margin: 4px 0; }
+  .nav-dropdown > a::after { content: " ▾"; font-size: .7rem; }
+  .nav-dropdown.open > a::after { content: " ▴"; font-size: .7rem; }
+}</style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3S7D3JJ9JS"></script>
 <script>
 (function(){
   var btn = document.getElementById('nav-hamburger');
   var links = document.getElementById('nav-links');
+  var dropdownTrigger = document.querySelector('.nav-dropdown > a');
+  var dropdownContent = document.querySelector('.nav-dropdown-content');
+  var dropdown = document.querySelector('.nav-dropdown');
+
+  // Hamburger toggle
   if(btn && links){
-    btn.addEventListener('click', function(){
+    btn.addEventListener('click', function(e){
+      e.stopPropagation();
       btn.classList.toggle('open');
       links.classList.toggle('open');
     });
   }
+
+  // Mobile: Products dropdown toggle (prevent nav close)
+  if(dropdownTrigger && dropdownContent){
+    dropdownTrigger.addEventListener('click', function(e){
+      if(window.innerWidth <= 768){
+        e.preventDefault();
+        e.stopPropagation();
+        dropdown.classList.toggle('open');
+        dropdownContent.classList.toggle('open');
+      }
+    });
+  }
+
+  // Close nav when clicking outside
+  document.addEventListener('click', function(e){
+    if(links && !links.contains(e.target) && btn && !btn.contains(e.target)){
+      links.classList.remove('open');
+      btn.classList.remove('open');
+      if(dropdown) dropdown.classList.remove('open');
+      if(dropdownContent) dropdownContent.classList.remove('open');
+    }
+  });
 })();
 </script>
 </body>

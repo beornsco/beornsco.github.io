@@ -36,354 +36,66 @@
         footer { text-align: center; padding: 2rem 1.5rem; color: #6B7280; font-size: 0.85rem; border-top: 1px solid #E5E7EB; margin-top: 2rem; }
         footer a { color: #2962FF; text-decoration: none; }
 
-.nav-dropdown { position: relative; display: inline-block; }
-.nav-dropdown-content { display: none; position: absolute; top: 100%; left: 0; background: #fff; border: 1px solid #E5E7EB; border-radius: 8px; min-width: 220px; box-shadow: 0 4px 12px rgba(0,0,0,.1); z-index: 200; padding: 8px 0; }
-.nav-dropdown:hover .nav-dropdown-content { display: block; }
-.nav-dropdown-content a { display: block; padding: 8px 16px; color: #374151; font-size: .87rem; white-space: nowrap; }
-.nav-dropdown-content a:hover { background: #F3F4F6; color: #2962FF; }
-.nav-dropdown-section { padding: 6px 16px 4px; font-size: .75rem; font-weight: 700; color: #9CA3AF; text-transform: uppercase; letter-spacing: .05em; }
-.nav-dropdown-divider { border: none; border-top: 1px solid #E5E7EB; margin: 6px 0; }
-</style>
+/* Desktop dropdown - hover */
+@media(min-width:769px){
+  .nav-dropdown { position: relative; display: inline-block; }
+  .nav-dropdown-content { display: none; position: absolute; top: 100%; left: 0; background: #fff; border: 1px solid #E5E7EB; border-radius: 8px; min-width: 220px; box-shadow: 0 4px 12px rgba(0,0,0,.1); z-index: 200; padding: 8px 0; }
+  .nav-dropdown:hover .nav-dropdown-content { display: block; }
+  .nav-dropdown-content a { display: block; padding: 8px 16px; color: #374151; font-size: .87rem; white-space: nowrap; }
+  .nav-dropdown-content a:hover { background: #F3F4F6; color: #2962FF; }
+  .nav-dropdown-section { padding: 6px 16px 4px; font-size: .75rem; font-weight: 700; color: #9CA3AF; text-transform: uppercase; letter-spacing: .05em; }
+  .nav-dropdown-divider { border: none; border-top: 1px solid #E5E7EB; margin: 6px 0; }
+}
+
+/* Mobile dropdown - click/tap */
+@media(max-width:768px){
+  .nav-dropdown-content { display: none; background: #f9fafb; padding: 4px 0 4px 16px; }
+  .nav-dropdown-content.open { display: block; }
+  .nav-dropdown-content a { display: block; padding: 10px 16px; color: #374151; font-size: .9rem; }
+  .nav-dropdown-section { padding: 6px 16px 2px; font-size: .72rem; font-weight: 700; color: #9CA3AF; text-transform: uppercase; }
+  .nav-dropdown-divider { border: none; border-top: 1px solid #E5E7EB; margin: 4px 0; }
+  .nav-dropdown > a::after { content: " ▾"; font-size: .7rem; }
+  .nav-dropdown.open > a::after { content: " ▴"; font-size: .7rem; }
+}</style>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3S7D3JJ9JS"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);} 
-  gtag('js', new Date());
-  gtag('config', 'G-3S7D3JJ9JS');
-</script>
-</head>
-<body>
-    <nav>
-  <div class="nav-inner">
-    <a href="/" class="brand">Beorns Co</a>
-    <button class="hamburger" id="nav-hamburger" aria-label="Open menu">
-      <span></span><span></span><span></span>
-    </button>
-    <div class="nav-links" id="nav-links">
-      <div class="nav-dropdown">
-        <a href="/pricing/" style="display:flex;align-items:center;gap:4px;">Products <span style="font-size:.7rem;">&#9660;</span></a>
-        <div class="nav-dropdown-content">
-          <div class="nav-dropdown-section">Core SME Toolkit</div>
-          <a href="/ai-starter-kit/">AI Adoption Starter Kit</a>
-          <a href="/ai-prompt-library/">200+ ChatGPT Prompts</a>
-          <a href="/ai-automation-playbook/">AI Automation Playbook</a>
-          <hr class="nav-dropdown-divider">
-          <div class="nav-dropdown-section">Niche Prompt Packs</div>
-          <a href="/ai-trades-prompts/">Tradespeople</a>
-          <a href="/ai-restaurant-prompts/">Restaurant Owners</a>
-          <a href="/ai-photographer-prompts/">Photographers</a>
-          <a href="/ai-sme-ops-prompts/">Small Business (100 prompts)</a>
-          <a href="/ai-prompts-real-estate/">Real Estate</a>
-          <a href="/ai-prompts-ecommerce/">E-commerce and Retail</a>
-        </div>
-      </div>
-      <a href="/free-prompts/">Free Prompts</a>
-      <a href="/pricing/">Pricing</a>
-      <a href="/compare/">Compare</a>
-      <a href="/blog/">Blog</a>
-    </div>
-  </div>
-</nav>
-    <div class="container">
-        <article>
-            <h1>AI Marketing for Small Business: A Complete Guide</h1>
-            <div class="meta">March 2026 · 14 min read</div>
-
-            <p>Marketing is the function that makes or breaks a small business, and it's the one most owners are least equipped to handle. You started a business because you're great at your craft - plumbing, consulting, baking, software - not because you love writing Instagram captions and analyzing click-through rates.</p>
-
-            <p>AI doesn't make you a marketing expert. But it does something almost as valuable: it lets you execute like one. The gap between a small business owner's marketing and a professional marketer's output has shrunk dramatically in the last two years. AI handles the execution. You provide the business knowledge.</p>
-
-            <p>This guide covers every major marketing channel - content, social media, email, SEO, paid ads, and analytics - and shows you where AI tools deliver real results right now.</p>
-
-            <h2>AI for Content Marketing</h2>
-
-            <p>Content marketing is the backbone of digital marketing for small businesses. Blog posts, articles, guides, case studies - they drive organic traffic, build authority, and generate leads while you sleep. The problem? Creating consistent, quality content takes enormous time.</p>
-
-            <h3>Blog Posts and Articles</h3>
-
-            <p>AI writing tools have gotten remarkably good at generating first drafts. Not publish-ready masterpieces, but solid starting points that cut your writing time by 50-70%.</p>
-
-            <p><strong>The right way to use AI for blog content:</strong></p>
-            <ul>
-                <li>Use AI to research keywords and suggest topics your audience is searching for</li>
-                <li>Generate outlines based on competing content (what's ranking, what's missing)</li>
-                <li>Draft sections with your specific expertise and examples woven in</li>
-                <li>Edit aggressively - cut the filler, add your voice, include real examples from your business</li>
-                <li>Use AI to optimize the final piece for SEO (meta descriptions, headers, internal links)</li>
-            </ul>
-
-            <p><strong>The wrong way:</strong> Generating entire articles and publishing them untouched. Google's algorithms are sophisticated enough to detect low-value AI content, and your readers will notice the lack of real expertise. AI-generated content without human editing reads like a Wikipedia article - accurate but lifeless.</p>
-
-            <p><strong>Tools:</strong></p>
-            <ul>
-                <li><strong>ChatGPT / Claude:</strong> Best for drafting, brainstorming, and editing. Use the paid versions for longer, more nuanced output. $20/month.</li>
-                <li><strong>Jasper:</strong> Purpose-built for marketing content. Templates for blog posts, ads, emails, and social. From $49/month.</li>
-                <li><strong>Surfer SEO:</strong> Combines AI writing with real-time SEO optimization. Tells you exactly which keywords to include and how many times. From $89/month.</li>
-                <li><strong>Frase:</strong> Research-focused. Analyzes top-ranking content for your keywords and generates optimized briefs. From $15/month.</li>
-            </ul>
-
-            <h3>Case Studies and Testimonials</h3>
-
-            <p>Case studies are the highest-converting content type for service businesses, but writing them is painful. AI simplifies the process:</p>
-            <ul>
-                <li>Send your client a short questionnaire (AI can generate the questions)</li>
-                <li>Feed their responses into AI to generate a structured case study: challenge, solution, results</li>
-                <li>AI formats it into a compelling narrative with pull quotes and statistics</li>
-                <li>You review, get client approval, publish</li>
-            </ul>
-
-            <p>What used to take 4-6 hours per case study now takes 1-2 hours, including client coordination.</p>
-
-            <h2>AI for Social Media Marketing</h2>
-
-            <p>Social media is where most small businesses waste the most time for the least return. Not because social media doesn't work, but because they're posting randomly without strategy.</p>
-
-            <h3>Content Creation and Scheduling</h3>
-
-            <p>AI transforms social media from a daily scramble into a batch process:</p>
-            <ul>
-                <li><strong>Content calendars:</strong> Give AI your business type, audience, and goals. It generates a month of post ideas with captions, hashtags, and optimal posting times.</li>
-                <li><strong>Repurposing:</strong> Turn one blog post into 10 social media posts. AI extracts key points, statistics, and quotes and formats them for different platforms.</li>
-                <li><strong>Platform adaptation:</strong> Rewrite the same message for LinkedIn (professional), Instagram (visual/casual), X (punchy/short), and Facebook (community-focused). Each platform has different norms and AI knows them.</li>
-                <li><strong>Image suggestions:</strong> AI can describe what images to pair with each post, or generate images directly with tools like Midjourney, DALL-E, or Canva's AI.</li>
-            </ul>
-
-            <p><strong>Tools:</strong></p>
-            <ul>
-                <li><strong>Buffer:</strong> Now includes AI assistant for caption generation and post optimization. From $6/month per channel.</li>
-                <li><strong>Hootsuite:</strong> AI-powered content suggestions and optimal timing. From $99/month.</li>
-                <li><strong>Canva:</strong> AI-powered design tool. Magic Write for captions, Magic Design for graphics. Generates on-brand social images in seconds. Free tier available.</li>
-                <li><strong>Later:</strong> Visual-first scheduling with AI caption suggestions. Strong for Instagram-focused businesses. From $25/month.</li>
-            </ul>
-
-            <h3>Engagement and Community Management</h3>
-
-            <p>Responding to comments, DMs, and reviews is critical but time-consuming. AI helps by:</p>
-            <ul>
-                <li>Drafting responses to common questions and comments</li>
-                <li>Flagging negative comments or reviews that need immediate human attention</li>
-                <li>Generating personalized responses that don't sound robotic</li>
-                <li>Monitoring brand mentions across platforms</li>
-            </ul>
-
-            <blockquote>Never let AI respond to complaints or negative reviews autonomously. Those need a human touch. Use AI to draft, but always review before sending.</blockquote>
-
-            <div class="cta-box">
-                <h3>Get Ready-to-Use Marketing Prompts</h3>
-                <p>Our AI Prompt Library includes 100+ marketing prompts - social media calendars, email sequences, ad copy, SEO content briefs, and more. Copy, paste, customize, publish.</p>
-                <a href="https://beornsco.github.io/ai-prompt-library/">Get the Prompt Library →</a>
-            </div>
-
-            <h2>AI for Email Marketing</h2>
-
-            <p>Email remains the highest-ROI marketing channel for small businesses - $36 returned for every $1 spent, according to Litmus. AI makes email marketing both easier and more effective.</p>
-
-            <h3>Writing Email Campaigns</h3>
-
-            <p>AI excels at email copywriting. Subject lines, body copy, calls to action - these are formulaic enough that AI produces strong first drafts:</p>
-            <ul>
-                <li><strong>Subject lines:</strong> AI can generate 20 variants in seconds. A/B test the best two. Tools like CoSchedule's Subject Line Tester add AI scoring.</li>
-                <li><strong>Welcome sequences:</strong> New subscriber signs up → AI generates a 5-email welcome series introducing your business, sharing your best content, and making an offer.</li>
-                <li><strong>Promotional emails:</strong> Describe your offer and audience. AI generates copy that you customize with specifics.</li>
-                <li><strong>Re-engagement:</strong> "We miss you" campaigns for inactive subscribers. AI personalizes based on their past activity.</li>
-            </ul>
-
-            <h3>Segmentation and Personalization</h3>
-
-            <p>This is where AI truly outperforms human marketers at scale. Instead of sending the same email to everyone, AI can:</p>
-            <ul>
-                <li>Segment your list based on behavior (what they clicked, what they bought, how often they open)</li>
-                <li>Personalize content beyond "Hi {first_name}" - recommending products based on purchase history, adjusting messaging based on engagement level</li>
-                <li>Predict the optimal send time for each subscriber</li>
-                <li>Identify subscribers likely to churn and trigger retention campaigns</li>
-            </ul>
-
-            <p><strong>Tools:</strong></p>
-            <ul>
-                <li><strong>Mailchimp:</strong> AI-powered subject line helper, send time optimization, and content suggestions. Free up to 500 contacts.</li>
-                <li><strong>MailerLite:</strong> Clean, affordable email marketing with AI writing assistant. Free up to 1,000 subscribers.</li>
-                <li><strong>Kit (ConvertKit):</strong> Built for creators and small businesses. AI subject line generator and sequence builder. From $25/month.</li>
-                <li><strong>ActiveCampaign:</strong> Advanced automation with predictive sending and AI-powered content. From $29/month.</li>
-            </ul>
-
-            <h2>AI for SEO</h2>
-
-            <p>Search engine optimization is the long game - it takes months to see results, but those results compound. AI accelerates every part of the SEO process.</p>
-
-            <h3>Keyword Research</h3>
-
-            <p>Traditional keyword research means digging through tools like Ahrefs or SEMrush, analyzing search volume and competition, and building a content plan. AI shortens this dramatically:</p>
-            <ul>
-                <li>Describe your business and ideal customer. AI suggests 50-100 keyword opportunities ranked by relevance and difficulty.</li>
-                <li>AI identifies "content gaps" - topics your competitors cover that you don't.</li>
-                <li>Long-tail keyword generation: AI produces variations and question-based keywords you'd never think of.</li>
-                <li>Search intent analysis: AI categorizes keywords by intent (informational, commercial, transactional) so you create the right content type.</li>
-            </ul>
-
-            <h3>On-Page Optimization</h3>
-
-            <p>For every page on your website, AI can:</p>
-            <ul>
-                <li>Write or improve title tags and meta descriptions</li>
-                <li>Suggest header structure for better readability and SEO</li>
-                <li>Identify missing keywords and suggest natural placements</li>
-                <li>Generate schema markup (structured data) that helps search engines understand your content</li>
-                <li>Create internal linking suggestions to keep visitors on your site longer</li>
-            </ul>
-
-            <h3>Local SEO</h3>
-
-            <p>For businesses that serve a local area, AI helps with:</p>
-            <ul>
-                <li>Generating location-specific content ("Best plumber in [city]" pages that actually have useful content, like our <a href="/ai-prompts-for-plumbers-in-germany/">AI prompts for plumbers in Germany</a>)</li>
-                <li>Writing Google Business Profile descriptions optimized for local search</li>
-                <li>Responding to Google reviews (drafting responses you review and post)</li>
-                <li>Creating locally relevant blog content that attracts nearby searchers</li>
-            </ul>
-
-            <h2>AI for Paid Advertising</h2>
-
-            <p>Small businesses waste more money on poorly executed ads than on almost anything else. AI helps you spend smarter.</p>
-
-            <h3>Ad Copy</h3>
-
-            <p>Writing effective ad copy is a specialized skill. AI has absorbed millions of high-performing ads and can generate copy that follows proven formulas:</p>
-            <ul>
-                <li>Google Ads headlines and descriptions (within character limits)</li>
-                <li>Facebook/Instagram ad copy with different angles (pain point, benefit, social proof, urgency)</li>
-                <li>Multiple variants for A/B testing - AI generates 10 versions, you test the best 3</li>
-                <li>Ad copy matched to different audience segments</li>
-            </ul>
-
-            <h3>Audience Targeting</h3>
-
-            <p>Meta (Facebook/Instagram) and Google Ads both use AI heavily in their targeting:</p>
-            <ul>
-                <li><strong>Advantage+ (Meta):</strong> AI finds your best audience automatically based on your conversion data. Often outperforms manual targeting for small businesses.</li>
-                <li><strong>Performance Max (Google):</strong> AI-driven campaigns that run across Search, Display, YouTube, and Gmail. You provide creative assets, Google's AI finds the best placements.</li>
-                <li><strong>Lookalike/Similar audiences:</strong> Upload your customer list, AI finds people who look like your best customers.</li>
-            </ul>
-
-            <p><strong>Honest take:</strong> The AI-driven ad platforms (Advantage+, Performance Max) work surprisingly well for small businesses because they optimize based on actual conversions, not your guess about who your customer is. The catch is you need enough conversion data - at least 50-100 conversions per month - for the AI to learn effectively. Below that threshold, manual targeting often works better.</p>
-
-            <h3>Budget Optimization</h3>
-
-            <p>AI can dynamically allocate budget across campaigns, ad sets, and platforms based on performance. Instead of spending $500/month on Facebook ads regardless of results, AI-driven tools shift budget to wherever the cost-per-acquisition is lowest.</p>
-
-            <p>Google and Meta do this natively. Third-party tools like AdEspresso and Madgicx add more sophisticated optimization on top.</p>
-
-            <h2>AI for Marketing Analytics</h2>
-
-            <p>Data without insight is just noise. Most small businesses have Google Analytics installed but have no idea what the data means. AI changes this.</p>
-
-            <h3>Natural Language Analytics</h3>
-
-            <p>Instead of navigating complex dashboards, ask questions in plain English:</p>
-            <ul>
-                <li>"Where is my website traffic coming from this month?"</li>
-                <li>"Which blog post generated the most leads?"</li>
-                <li>"How did my Facebook ads perform compared to last month?"</li>
-                <li>"What's my cost per acquisition across all channels?"</li>
-            </ul>
-
-            <p>Google Analytics 4 has basic AI insights built in. For more powerful analysis, export your data and use ChatGPT or a tool like Polymer to get conversational analytics.</p>
-
-            <h3>Predictive Analytics</h3>
-
-            <p>AI can forecast marketing outcomes based on historical data:</p>
-            <ul>
-                <li>Predict next month's traffic based on current trends</li>
-                <li>Estimate the ROI of increasing ad spend by 20%</li>
-                <li>Identify which leads are most likely to convert</li>
-                <li>Forecast seasonal demand patterns</li>
-            </ul>
-
-            <h2>Building Your AI Marketing Stack</h2>
-
-            <p>You don't need 15 tools. Here's what a lean, effective AI marketing stack looks like for a small business:</p>
-
-            <h3>Budget: $0-50/month</h3>
-            <ul>
-                <li><strong>ChatGPT Plus ($20/month):</strong> Content writing, email copy, social media posts, strategy brainstorming</li>
-                <li><strong>Canva Free:</strong> Social media graphics, simple video, presentations</li>
-                <li><strong>MailerLite Free:</strong> Email marketing for up to 1,000 subscribers</li>
-                <li><strong>Buffer Free:</strong> Schedule posts to 3 social channels</li>
-                <li><strong>Google Analytics + Search Console:</strong> Free website analytics and SEO data</li>
-            </ul>
-
-            <h3>Budget: $50-200/month</h3>
-            <ul>
-                <li>Everything above, plus:</li>
-                <li><strong>Canva Pro ($13/month):</strong> Brand kit, background remover, more AI features</li>
-                <li><strong>Surfer SEO or Frase ($15-89/month):</strong> SEO content optimization</li>
-                <li><strong>MailerLite or Kit paid tier ($25/month):</strong> Advanced automation and segmentation</li>
-                <li><strong>Buffer or Later paid ($25/month):</strong> More channels, analytics, team features</li>
-            </ul>
-
-            <h3>Budget: $200-500/month</h3>
-            <ul>
-                <li>Everything above, plus:</li>
-                <li><strong>Jasper ($49/month):</strong> Dedicated marketing AI with templates and brand voice</li>
-                <li><strong>SEMrush or Ahrefs ($129/month):</strong> Full SEO suite with AI-powered insights</li>
-                <li><strong>ActiveCampaign ($29/month):</strong> Advanced email marketing automation</li>
-                <li><strong>Hootsuite ($99/month):</strong> Enterprise-grade social media management</li>
-            </ul>
-
-            <h2>Common Mistakes to Avoid</h2>
-
-            <h3>1. Publishing AI Content Without Editing</h3>
-            <p>AI-generated content is a starting point, not a finished product. Unedited AI content sounds generic, contains no original insights, and won't rank well. Always add your expertise, voice, and real examples.</p>
-
-            <h3>2. Automating Everything</h3>
-            <p>Some marketing needs to feel human. Customer complaints, sensitive topics, community conversations. Automate the production, keep the relationships human.</p>
-
-            <h3>3. Ignoring Brand Voice</h3>
-            <p>AI defaults to a generic professional tone. If your brand is casual, edgy, or playful, you need to train your AI tools with brand guidelines and examples of your voice. Most AI tools now let you define a brand voice - use this feature.</p>
-
-            <h3>4. Chasing Every Channel</h3>
-            <p>AI makes it easy to produce content for 8 platforms. That doesn't mean you should. Focus on 2-3 channels where your audience actually spends time. AI helps you do more on fewer channels - not the same mediocre content on every channel.</p>
-
-            <h3>5. Expecting Instant Results</h3>
-            <p>AI accelerates marketing execution, not marketing timelines. SEO still takes 3-6 months. Email lists still grow over time. Paid ads still need testing. AI makes the work faster, but the results timeline stays the same.</p>
-
-            <div class="cta-box">
-                <h3>Launch Your AI Marketing Strategy</h3>
-                <p>The AI Adoption Starter Kit includes marketing templates, channel strategies, and implementation guides to help you build a marketing system that runs on AI - without the learning curve.</p>
-                <a href="https://beornsco.github.io/ai-starter-kit/">Get the AI Starter Kit →</a>
-            </div>
-
-            <h2>The Bottom Line</h2>
-
-            <p>AI is the great equalizer in marketing. A one-person business can now produce content, run ads, send email campaigns, and analyze results at a level that used to require a full marketing team. Not the same quality as a seasoned CMO with a $500K budget - but 80% of the way there at 10% of the cost.</p>
-
-            <p>The businesses that win aren't the ones using the most AI tools. They're the ones using AI to do the work while focusing their human time on what AI can't do: understanding their customers deeply, building real relationships, and making strategic decisions about where to compete.</p>
-
-            <p>Start with content. Write one blog post with AI assistance this week. Repurpose it into social media posts. Send it to your email list. See how much time you saved, how the quality compares, and where you want to improve. Then expand from there.</p>
-
-            <p>Marketing doesn't have to be the thing you're bad at. With AI, it can be the thing you're surprisingly good at - or at least the thing that no longer keeps you up at night.</p>
-        
-<div class="cta-block" style="background:linear-gradient(135deg,#2962FF,#1a47cc);color:white;padding:32px;border-radius:12px;margin:40px 0;text-align:center;">
-  <h3 style="color:white;margin-bottom:8px">Ready to save 5 hours a week?</h3>
-  <p style="color:rgba(255,255,255,0.85);margin-bottom:20px">Get 54 AI prompts for tradespeople: quotes, invoices, review replies, and customer updates in minutes.</p>
-  <a href="/ai-trades-prompts/" style="background:white;color:#2962FF;padding:14px 28px;border-radius:8px;font-weight:700;text-decoration:none;display:inline-block">Get the Prompts</a>
-  <a href="/free-prompts/" style="color:rgba(255,255,255,0.85);padding:14px 20px;display:inline-block;text-decoration:underline">Or start free</a>
-</div>
-
-</article>
-    </div>
-    <footer>
-  © 2026 Beorns Co · <a href="/terms/">Terms</a> · <a href="/privacy/">Privacy</a> · <a href="https://twitter.com/beornsco" target="_blank" rel="noopener">X/Twitter</a> · <a href="https://medium.com/@beornsco" target="_blank" rel="noopener">Medium</a> · <a href="https://beornsco.lemonsqueezy.com" target="_blank" rel="noopener">Lemon Squeezy Store</a>
-</footer>
 <script>
 (function(){
   var btn = document.getElementById('nav-hamburger');
   var links = document.getElementById('nav-links');
+  var dropdownTrigger = document.querySelector('.nav-dropdown > a');
+  var dropdownContent = document.querySelector('.nav-dropdown-content');
+  var dropdown = document.querySelector('.nav-dropdown');
+
+  // Hamburger toggle
   if(btn && links){
-    btn.addEventListener('click', function(){
+    btn.addEventListener('click', function(e){
+      e.stopPropagation();
       btn.classList.toggle('open');
       links.classList.toggle('open');
     });
   }
+
+  // Mobile: Products dropdown toggle (prevent nav close)
+  if(dropdownTrigger && dropdownContent){
+    dropdownTrigger.addEventListener('click', function(e){
+      if(window.innerWidth <= 768){
+        e.preventDefault();
+        e.stopPropagation();
+        dropdown.classList.toggle('open');
+        dropdownContent.classList.toggle('open');
+      }
+    });
+  }
+
+  // Close nav when clicking outside
+  document.addEventListener('click', function(e){
+    if(links && !links.contains(e.target) && btn && !btn.contains(e.target)){
+      links.classList.remove('open');
+      btn.classList.remove('open');
+      if(dropdown) dropdown.classList.remove('open');
+      if(dropdownContent) dropdownContent.classList.remove('open');
+    }
+  });
 })();
 </script>
 </body>

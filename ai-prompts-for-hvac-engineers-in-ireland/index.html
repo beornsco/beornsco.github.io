@@ -64,324 +64,68 @@ footer{padding:36px 0;text-align:center;color:#aaa;font-size:.9rem;background:va
 footer a{color:#ccc}
 @media(prefers-reduced-motion:no-preference){.fade-in{opacity:0;transform:translateY(16px);transition:opacity .5s,transform .5s}.fade-in.visible{opacity:1;transform:none}}
 
-.nav-dropdown { position: relative; display: inline-block; }
-.nav-dropdown-content { display: none; position: absolute; top: 100%; left: 0; background: #fff; border: 1px solid #E5E7EB; border-radius: 8px; min-width: 220px; box-shadow: 0 4px 12px rgba(0,0,0,.1); z-index: 200; padding: 8px 0; }
-.nav-dropdown:hover .nav-dropdown-content { display: block; }
-.nav-dropdown-content a { display: block; padding: 8px 16px; color: #374151; font-size: .87rem; white-space: nowrap; }
-.nav-dropdown-content a:hover { background: #F3F4F6; color: #2962FF; }
-.nav-dropdown-section { padding: 6px 16px 4px; font-size: .75rem; font-weight: 700; color: #9CA3AF; text-transform: uppercase; letter-spacing: .05em; }
-.nav-dropdown-divider { border: none; border-top: 1px solid #E5E7EB; margin: 6px 0; }
-</style>
+/* Desktop dropdown - hover */
+@media(min-width:769px){
+  .nav-dropdown { position: relative; display: inline-block; }
+  .nav-dropdown-content { display: none; position: absolute; top: 100%; left: 0; background: #fff; border: 1px solid #E5E7EB; border-radius: 8px; min-width: 220px; box-shadow: 0 4px 12px rgba(0,0,0,.1); z-index: 200; padding: 8px 0; }
+  .nav-dropdown:hover .nav-dropdown-content { display: block; }
+  .nav-dropdown-content a { display: block; padding: 8px 16px; color: #374151; font-size: .87rem; white-space: nowrap; }
+  .nav-dropdown-content a:hover { background: #F3F4F6; color: #2962FF; }
+  .nav-dropdown-section { padding: 6px 16px 4px; font-size: .75rem; font-weight: 700; color: #9CA3AF; text-transform: uppercase; letter-spacing: .05em; }
+  .nav-dropdown-divider { border: none; border-top: 1px solid #E5E7EB; margin: 6px 0; }
+}
+
+/* Mobile dropdown - click/tap */
+@media(max-width:768px){
+  .nav-dropdown-content { display: none; background: #f9fafb; padding: 4px 0 4px 16px; }
+  .nav-dropdown-content.open { display: block; }
+  .nav-dropdown-content a { display: block; padding: 10px 16px; color: #374151; font-size: .9rem; }
+  .nav-dropdown-section { padding: 6px 16px 2px; font-size: .72rem; font-weight: 700; color: #9CA3AF; text-transform: uppercase; }
+  .nav-dropdown-divider { border: none; border-top: 1px solid #E5E7EB; margin: 4px 0; }
+  .nav-dropdown > a::after { content: " ▾"; font-size: .7rem; }
+  .nav-dropdown.open > a::after { content: " ▴"; font-size: .7rem; }
+}</style>
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3S7D3JJ9JS"></script>
 <script>
- window.dataLayer = window.dataLayer || [];
- function gtag(){dataLayer.push(arguments);}
- gtag('js', new Date());
- gtag('config', 'G-3S7D3JJ9JS');
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Are the SEAI grant amounts in these prompts up to date?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Grant amounts mentioned are indicative based on 2025 SEAI figures. Always verify current amounts at seai.ie before quoting them to clients, as they change between budget cycles."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I use these prompts for commercial HVAC work too?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. The F-Gas prompt and the service reminder work well for commercial clients. For commercial jobs, add specific site details and adjust the tone to suit a facilities manager or building owner rather than a homeowner."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What if my client is in a rural area with no great broadband?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "These prompts generate text you send. Your client's broadband doesn't affect the process. For rural clients where phone is preferred, use the shorter WhatsApp or SMS prompt formats and call to follow up."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do I need to be F-Gas certified to use the F-Gas prompt?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "You need F-Gas certification to legally handle refrigerants in Ireland. The prompt helps you communicate about work you've done. It doesn't substitute for the certification itself."
-      }
-    }
-  ]
-}
-</script>
-</head>
-<body>
-
-<nav>
-  <div class="nav-inner">
-    <a href="/" class="brand">Beorns Co</a>
-    <button class="hamburger" id="nav-hamburger" aria-label="Open menu">
-      <span></span><span></span><span></span>
-    </button>
-    <div class="nav-links" id="nav-links">
-      <div class="nav-dropdown">
-        <a href="/pricing/" style="display:flex;align-items:center;gap:4px;">Products <span style="font-size:.7rem;">&#9660;</span></a>
-        <div class="nav-dropdown-content">
-          <div class="nav-dropdown-section">Core SME Toolkit</div>
-          <a href="/ai-starter-kit/">AI Adoption Starter Kit</a>
-          <a href="/ai-prompt-library/">200+ ChatGPT Prompts</a>
-          <a href="/ai-automation-playbook/">AI Automation Playbook</a>
-          <hr class="nav-dropdown-divider">
-          <div class="nav-dropdown-section">Niche Prompt Packs</div>
-          <a href="/ai-trades-prompts/">Tradespeople</a>
-          <a href="/ai-restaurant-prompts/">Restaurant Owners</a>
-          <a href="/ai-photographer-prompts/">Photographers</a>
-          <a href="/ai-sme-ops-prompts/">Small Business (100 prompts)</a>
-          <a href="/ai-prompts-real-estate/">Real Estate</a>
-          <a href="/ai-prompts-ecommerce/">E-commerce and Retail</a>
-        </div>
-      </div>
-      <a href="/free-prompts/">Free Prompts</a>
-      <a href="/pricing/">Pricing</a>
-      <a href="/compare/">Compare</a>
-      <a href="/blog/">Blog</a>
-    </div>
-  </div>
-</nav>
-
-<!-- HERO -->
-<section class="hero">
-<div class="container">
-  <div class="badge">Ireland · HVAC Engineers</div>
-  <h1>AI Prompts for <span>HVAC Engineers in Ireland</span> (2026 Guide)</h1>
-  <p>Heat pump installations in Ireland have gone from niche to mainstream, and HVAC engineers are feeling it on both ends. The enquiry volume is up, the SEAI grant process adds a documentation layer that clients don't fully understand, and the gap between a site survey and a signed contract is full of unanswered emails and missed follow-ups.</p>
-  <a href="/ai-trades-prompts/" class="btn">Get the Full Prompt Pack</a>
-</div>
-</section>
-
-<!-- INTRO -->
-<section class="alt">
-<div class="container fade-in">
-  <div class="section-label">Overview</div>
-  <p>Heat pump installations in Ireland have gone from niche to mainstream, and HVAC engineers are feeling it on both ends. The enquiry volume is up, the SEAI grant process adds a documentation layer that clients don't fully understand, and the gap between a site survey and a signed contract is full of unanswered emails and missed follow-ups.</p><p>Add the seasonal nature of the business and the rural vs. Dublin pricing split, and you've got a trade where the commercial side requires as much attention as the technical side. These prompts are practical tools for Irish HVAC engineers who want to respond faster, explain more clearly, and stop losing jobs to slow communication.</p>
-</div>
-</section>
-
-<!-- WHY -->
-<section>
-<div class="container fade-in">
-  <div class="section-label">Why It Matters</div>
-  <h2>Where Time Gets Lost for Irish HVAC Engineers</h2>
-  <p>A heat pump installer in Cork describes a common pattern: a client calls after hearing about the SEAI Better Energy Homes grant, wants to know if their house qualifies, what the cost will be, and when you can start. Answering that properly takes time. Getting it wrong, or taking three days to respond, means the client calls someone else.</p><p>The same pattern plays out with F-Gas log maintenance, seasonal air conditioning servicing reminders, and end-of-job handover documents. None of this is technically difficult. It's just time-consuming to write from scratch every time. AI gives you a solid draft to work from. You adjust the numbers, the name, the job details, and send.</p>
-</div>
-</section>
-
-<!-- PROMPTS -->
-<section class="alt">
-<div class="container fade-in">
-  <div class="section-label">Ready-to-Use Prompts</div>
-  <h2>Copy, Paste, Send</h2>
-  <p class="section-sub">Fill in the [brackets] with your details, paste into ChatGPT (free version works), and review the output before sending.</p>
-  
-    <div class="prompt-box">
-      <div class="prompt-label">SEAI Heat Pump Grant Enquiry Response</div>
-      <div class="prompt-text">Write a clear, helpful email response to a homeowner in Ireland who has enquired about replacing their oil boiler with an air source heat pump under the SEAI Better Energy Homes scheme. Cover:
-- A brief confirmation that I install heat pump systems and am registered with SEAI
-- What the typical grant amount covers (up to €6,500 for air-to-water heat pump as of 2025, subject to eligibility)
-- That a site survey is the first step to confirm suitability (insulation levels, radiator sizing, etc.)
-- How to book the survey: [phone/email/link]
-Keep it reassuring and jargon-light. The client may have no technical background.</div>
-    </div>
-    <div class="prompt-box">
-      <div class="prompt-label">Seasonal Service Reminder</div>
-      <div class="prompt-text">Write a short email or SMS to send to existing clients in Ireland reminding them to book their annual air conditioning / heat pump service before [season] demand picks up. Mention:
-- Typical service includes refrigerant check, filter clean, electrical check, and efficiency test
-- Price: €[amount] for single unit, €[amount] for multi-split
-- Limited slots available in [month/period]
-- How to book: [contact method]
-Keep it brief and practical. Not salesy.</div>
-    </div>
-    <div class="prompt-box">
-      <div class="prompt-label">F-Gas Service Record Summary Email</div>
-      <div class="prompt-text">Write a professional email to a commercial client in Ireland summarising an F-Gas refrigerant log update following a service visit at [site/building name]. Include:
-- Date of service
-- System type and refrigerant used (e.g. R32, R410A)
-- Current charge (kg) and any topping up done
-- Leak check result (pass/fail, location if applicable)
-- Next inspection due date
-- Technician name and F-Gas cert number placeholder
-Tone: formal, factual.</div>
-    </div>
-    <div class="prompt-box">
-      <div class="prompt-label">Follow-Up After Site Survey (No Decision Yet)</div>
-      <div class="prompt-text">Write a follow-up email to a homeowner in [county, Ireland] who had a heat pump site survey [X weeks] ago but hasn't yet confirmed whether they want to proceed. The proposed system was [brief description, e.g. 8kW air-to-water heat pump with cylinder, €[amount] after SEAI grant].
-Be friendly and helpful. Mention that SEAI grant eligibility requires using a registered contractor, and that I'm available to answer any questions by phone. Don't pressure them.</div>
-    </div>
-    <div class="prompt-box">
-      <div class="prompt-label">Handover Document Email to Client</div>
-      <div class="prompt-text">Write a professional handover email to a homeowner in Ireland after completing a heat pump installation. Attach (or reference) the following documents:
-- Commissioning sheet
-- SEAI Declaration of Works (for grant claim)
-- Manufacturer warranty registration confirmation
-- Basic operating guide summary
-Include a reminder that they should register the warranty within [X days] and that I'm available for any questions in the first few weeks. Warm but professional tone.</div>
-    </div>
-</div>
-</section>
-
-<!-- USE CASES -->
-<section>
-<div class="container fade-in">
-  <div class="section-label">Real Use Cases</div>
-  <h2>How Hvac-engineers Use These in Practice</h2>
-  
-    <div class="use-case">
-      <div class="uc-label">The SEAI Grant Confusion Call</div>
-      <p style="margin:0;color:#374151;font-size:.96rem">A homeowner in Tipperary calls after seeing an ad about SEAI heat pump grants. She has a 1970s semi-d with oil heating and wants to know if she qualifies. The HVAC engineer uses the grant enquiry response prompt, fills in her county and house type details, and sends a clear email within 10 minutes of the call.</p>
-    </div>
-    <div class="use-case">
-      <div class="uc-label">The Rural vs Dublin Price Gap</div>
-      <p style="margin:0;color:#374151;font-size:.96rem">An engineer covering both rural Galway and Dublin commuter towns keeps two versions of the site survey follow-up prompt. Travel costs and installation complexity differ enough that having a tailored draft saves time explaining the pricing difference to clients.</p>
-    </div>
-    <div class="use-case">
-      <div class="uc-label">The F-Gas Commercial Audit</div>
-      <p style="margin:0;color:#374151;font-size:.96rem">A facilities manager in Limerick asks for documentation of all F-Gas service visits across their 6-unit commercial AC system over the past 12 months. Instead of writing a summary from scratch, the engineer uses the F-Gas record email prompt to generate a clean summary for each visit.</p>
-    </div>
-    <div class="use-case">
-      <div class="uc-label">The Pre-Summer Rush</div>
-      <p style="margin:0;color:#374151;font-size:.96rem">In April, an HVAC engineer in Dublin sends seasonal service reminders to 80 existing air conditioning clients. Using the reminder prompt and personalising the name and unit details via mail merge, the whole batch is done in under an hour.</p>
-    </div>
-</div>
-</section>
-
-<!-- LOCAL -->
-<section class="alt">
-<div class="container fade-in">
-  <div class="section-label">Local Considerations</div>
-  <h2>What to Know About This Market</h2>
-  <p>Ireland has specific requirements that affect how these prompts should be used:</p>
-<ul style="margin:12px 0 12px 20px;color:#374151">
-<li style="margin-bottom:8px"><strong>SEAI registration:</strong> To install under the Better Energy Homes scheme, you must be on the SEAI registered contractor list. Reference this clearly in any client communication about grants.</li>
-<li style="margin-bottom:8px"><strong>VAT:</strong> Managed by Revenue Commissioners (revenue.ie). Standard rate is 23%, reduced rate of 13.5% applies to certain construction services. Confirm with your accountant which rate applies to your services.</li>
-<li style="margin-bottom:8px"><strong>Rural pricing:</strong> Travel time to rural properties (Kerry, Donegal, Connacht) significantly affects job economics. Build a note into your quote prompts referencing travel charges.</li>
-<li style="margin-bottom:8px"><strong>Word of mouth:</strong> Ireland's trades market is highly referral-driven, especially outside Dublin. A prompt asking for a referral or review from a satisfied client is high-ROI here.</li>
-</ul>
-</div>
-</section>
-
-<!-- OTHER COUNTRIES -->
-<section>
-<div class="container fade-in">
-  <div class="section-label">Also Available For</div>
-  <h2>AI Prompts for Hvac-engineers in Other Countries</h2>
-  <p>These prompts are adapted for each country's language, regulations, and market conditions.</p>
-  <div class="country-links">
-    <a href="/ai-prompts-for-hvac-engineers-in-belgium/">AI Prompts for Hvac-engineers in Belgium</a>
-<a href="/ai-prompts-for-hvac-engineers-in-united-kingdom/">AI Prompts for Hvac-engineers in the United Kingdom</a>
-<a href="/ai-prompts-for-hvac-engineers-in-netherlands/">AI Prompts for Hvac-engineers in the Netherlands</a>
-<a href="/ai-prompts-for-hvac-engineers-in-germany/">AI Prompts for Hvac-engineers in Germany</a>
-
-  </div>
-</div>
-</section>
-
-<!-- RELATED -->
-<section class="alt">
-<div class="container fade-in">
-  <div class="section-label">Explore More</div>
-  <h2>Related AI Prompt Guides</h2>
-  <div class="related-grid">
-    
-    <div class="related-card">
-      <a href="/ai-prompts-for-plumbers-in-belgium/">AI Prompts for Plumbers in Belgium</a>
-      <span>BTW quotes, heat pump comms, bilingual clients</span>
-    </div>
-    <div class="related-card">
-      <a href="/ai-prompts-for-tilers-in-ireland/">AI Prompts for Tilers in Ireland</a>
-      <span>Wet room compliance, construction boom, Dublin market</span>
-    </div>
-    <div class="related-card">
-      <a href="/ai-prompts-for-electricians-in-united-kingdom/">AI Prompts for Electricians in the UK</a>
-      <span>EV charger installs, EICR certs, Part P</span>
-    </div>
-    <div class="related-card">
-      <a href="/ai-trades-prompts/">Full AI Prompt Pack for Tradespeople</a>
-      <span>54 prompts covering the full business admin stack</span>
-    </div>
-  </div>
-</div>
-</section>
-
-<!-- EXPAND TOOLKIT CTA -->
-<section style="background:var(--blue);padding:64px 0;text-align:center">
-<div class="container">
-  <h2 style="color:#fff;margin-bottom:12px">Want 54 Prompts Covering Your Full Business Admin?</h2>
-  <p style="color:rgba(255,255,255,.85);font-size:1.05rem;margin-bottom:28px;max-width:500px;margin-left:auto;margin-right:auto">The full AI Prompt Pack for Tradespeople covers quoting, invoicing, customer complaints, reviews, hiring, and more. One-time purchase. Instant download.</p>
-  <a href="/ai-trades-prompts/" class="btn" style="background:#fff;color:var(--blue);margin-right:12px">See the Full Pack</a>
-  <a href="/free-prompts/" class="btn" style="background:transparent;border:2px solid rgba(255,255,255,.6);color:#fff">Try Free Prompts</a>
-</div>
-</section>
-
-<!-- FAQ -->
-<section>
-<div class="container fade-in">
-  <div class="section-label">FAQ</div>
-  <h2>Common Questions</h2>
-  
-    <div class="faq-item">
-      <strong>Are the SEAI grant amounts in these prompts up to date?</strong>
-      <p>Grant amounts mentioned are indicative based on 2025 SEAI figures. Always verify current amounts at seai.ie before quoting them to clients, as they change between budget cycles.</p>
-    </div>
-    <div class="faq-item">
-      <strong>Can I use these prompts for commercial HVAC work too?</strong>
-      <p>Yes. The F-Gas prompt and the service reminder work well for commercial clients. For commercial jobs, add specific site details and adjust the tone to suit a facilities manager or building owner rather than a homeowner.</p>
-    </div>
-    <div class="faq-item">
-      <strong>What if my client is in a rural area with no great broadband?</strong>
-      <p>These prompts generate text you send. Your client's broadband doesn't affect the process. For rural clients where phone is preferred, use the shorter WhatsApp or SMS prompt formats and call to follow up.</p>
-    </div>
-    <div class="faq-item">
-      <strong>Do I need to be F-Gas certified to use the F-Gas prompt?</strong>
-      <p>You need F-Gas certification to legally handle refrigerants in Ireland. The prompt helps you communicate about work you've done. It doesn't substitute for the certification itself.</p>
-    </div>
-</div>
-</section>
-
-<!-- CONCLUSION -->
-<section class="alt">
-<div class="container fade-in">
-  <h2>Getting Started</h2>
-  <p>The Irish HVAC market is busy. SEAI-driven demand for heat pumps isn't going away, and clients need clear communication from the first enquiry through to the handover documents. These prompts give you a solid draft for each of those touchpoints so you spend less time writing and more time on-site. You can trial the workflow quickly with <a href="/free-prompts/">the free prompt starter pack</a>, then scale up with the <a href="/ai-trades-prompts/">full tradespeople prompt pack</a>.</p>
-</div>
-</section>
-
-<footer>
-  © 2026 Beorns Co · <a href="/terms/">Terms</a> · <a href="/privacy/">Privacy</a> · <a href="https://twitter.com/beornsco" target="_blank" rel="noopener">X/Twitter</a> · <a href="https://medium.com/@beornsco" target="_blank" rel="noopener">Medium</a> · <a href="https://beornsco.lemonsqueezy.com" target="_blank" rel="noopener">Lemon Squeezy Store</a>
-</footer>
-<script>
-const observer = new IntersectionObserver(els => els.forEach(e => {
-  if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}
-}),{threshold:.12});
-document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
-</script>
-
-<script>
 (function(){
   var btn = document.getElementById('nav-hamburger');
   var links = document.getElementById('nav-links');
+  var dropdownTrigger = document.querySelector('.nav-dropdown > a');
+  var dropdownContent = document.querySelector('.nav-dropdown-content');
+  var dropdown = document.querySelector('.nav-dropdown');
+
+  // Hamburger toggle
   if(btn && links){
-    btn.addEventListener('click', function(){
+    btn.addEventListener('click', function(e){
+      e.stopPropagation();
       btn.classList.toggle('open');
       links.classList.toggle('open');
     });
   }
+
+  // Mobile: Products dropdown toggle (prevent nav close)
+  if(dropdownTrigger && dropdownContent){
+    dropdownTrigger.addEventListener('click', function(e){
+      if(window.innerWidth <= 768){
+        e.preventDefault();
+        e.stopPropagation();
+        dropdown.classList.toggle('open');
+        dropdownContent.classList.toggle('open');
+      }
+    });
+  }
+
+  // Close nav when clicking outside
+  document.addEventListener('click', function(e){
+    if(links && !links.contains(e.target) && btn && !btn.contains(e.target)){
+      links.classList.remove('open');
+      btn.classList.remove('open');
+      if(dropdown) dropdown.classList.remove('open');
+      if(dropdownContent) dropdownContent.classList.remove('open');
+    }
+  });
 })();
 </script>
 </body>

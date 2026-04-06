@@ -55,264 +55,67 @@ nav .hamburger.open span:nth-child(3){transform:rotate(-45deg) translate(5px,-5p
 footer{padding:36px 0;text-align:center;color:#aaa;font-size:.9rem;background:var(--dark)}
 footer a{color:#ccc}
 
-.nav-dropdown { position: relative; display: inline-block; }
-.nav-dropdown-content { display: none; position: absolute; top: 100%; left: 0; background: #fff; border: 1px solid #E5E7EB; border-radius: 8px; min-width: 220px; box-shadow: 0 4px 12px rgba(0,0,0,.1); z-index: 200; padding: 8px 0; }
-.nav-dropdown:hover .nav-dropdown-content { display: block; }
-.nav-dropdown-content a { display: block; padding: 8px 16px; color: #374151; font-size: .87rem; white-space: nowrap; }
-.nav-dropdown-content a:hover { background: #F3F4F6; color: #2962FF; }
-.nav-dropdown-section { padding: 6px 16px 4px; font-size: .75rem; font-weight: 700; color: #9CA3AF; text-transform: uppercase; letter-spacing: .05em; }
-.nav-dropdown-divider { border: none; border-top: 1px solid #E5E7EB; margin: 6px 0; }
-</style>
+/* Desktop dropdown - hover */
+@media(min-width:769px){
+  .nav-dropdown { position: relative; display: inline-block; }
+  .nav-dropdown-content { display: none; position: absolute; top: 100%; left: 0; background: #fff; border: 1px solid #E5E7EB; border-radius: 8px; min-width: 220px; box-shadow: 0 4px 12px rgba(0,0,0,.1); z-index: 200; padding: 8px 0; }
+  .nav-dropdown:hover .nav-dropdown-content { display: block; }
+  .nav-dropdown-content a { display: block; padding: 8px 16px; color: #374151; font-size: .87rem; white-space: nowrap; }
+  .nav-dropdown-content a:hover { background: #F3F4F6; color: #2962FF; }
+  .nav-dropdown-section { padding: 6px 16px 4px; font-size: .75rem; font-weight: 700; color: #9CA3AF; text-transform: uppercase; letter-spacing: .05em; }
+  .nav-dropdown-divider { border: none; border-top: 1px solid #E5E7EB; margin: 6px 0; }
+}
+
+/* Mobile dropdown - click/tap */
+@media(max-width:768px){
+  .nav-dropdown-content { display: none; background: #f9fafb; padding: 4px 0 4px 16px; }
+  .nav-dropdown-content.open { display: block; }
+  .nav-dropdown-content a { display: block; padding: 10px 16px; color: #374151; font-size: .9rem; }
+  .nav-dropdown-section { padding: 6px 16px 2px; font-size: .72rem; font-weight: 700; color: #9CA3AF; text-transform: uppercase; }
+  .nav-dropdown-divider { border: none; border-top: 1px solid #E5E7EB; margin: 4px 0; }
+  .nav-dropdown > a::after { content: " ▾"; font-size: .7rem; }
+  .nav-dropdown.open > a::after { content: " ▴"; font-size: .7rem; }
+}</style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3S7D3JJ9JS"></script>
-<script>
- window.dataLayer = window.dataLayer || [];
- function gtag(){dataLayer.push(arguments);}
- gtag('js', new Date());
- gtag('config', 'G-3S7D3JJ9JS');
-</script>
-</head>
-<body>
-    <nav>
-  <div class="nav-inner">
-    <a href="/" class="brand">Beorns Co</a>
-    <button class="hamburger" id="nav-hamburger" aria-label="Open menu">
-      <span></span><span></span><span></span>
-    </button>
-    <div class="nav-links" id="nav-links">
-      <div class="nav-dropdown">
-        <a href="/pricing/" style="display:flex;align-items:center;gap:4px;">Products <span style="font-size:.7rem;">&#9660;</span></a>
-        <div class="nav-dropdown-content">
-          <div class="nav-dropdown-section">Core SME Toolkit</div>
-          <a href="/ai-starter-kit/">AI Adoption Starter Kit</a>
-          <a href="/ai-prompt-library/">200+ ChatGPT Prompts</a>
-          <a href="/ai-automation-playbook/">AI Automation Playbook</a>
-          <hr class="nav-dropdown-divider">
-          <div class="nav-dropdown-section">Niche Prompt Packs</div>
-          <a href="/ai-trades-prompts/">Tradespeople</a>
-          <a href="/ai-restaurant-prompts/">Restaurant Owners</a>
-          <a href="/ai-photographer-prompts/">Photographers</a>
-          <a href="/ai-sme-ops-prompts/">Small Business (100 prompts)</a>
-          <a href="/ai-prompts-real-estate/">Real Estate</a>
-          <a href="/ai-prompts-ecommerce/">E-commerce and Retail</a>
-        </div>
-      </div>
-      <a href="/free-prompts/">Free Prompts</a>
-      <a href="/pricing/">Pricing</a>
-      <a href="/compare/">Compare</a>
-      <a href="/blog/">Blog</a>
-    </div>
-  </div>
-</nav>
-    <div class="container">
-        <article>
-            <h1>How to Identify AI Opportunities in Your Small Business</h1>
-            <div class="meta">March 2026 · 8 min read</div>
-
-            <p>Every week, another headline screams about AI transforming business. But if you're running a 10-person accounting firm, a local logistics company, or a growing e-commerce shop, those headlines don't help much. What you need is a practical way to look at <em>your</em> business and figure out where AI can actually make a difference.</p>
-
-            <p>Not where it <em>theoretically</em> could help. Where it will save you real time, real money, or real headaches.</p>
-
-            <p>This guide gives you a framework for doing exactly that. No consultants required. No technical background needed. Just honest analysis of your own operations.</p>
-
-            <h2>Why Most Businesses Start in the Wrong Place</h2>
-
-            <p>The most common mistake? Starting with the technology instead of the problem.</p>
-
-            <p>Someone reads about ChatGPT, gets excited, and tries to bolt it onto their business. Maybe they set up a chatbot nobody asked for, or they start generating marketing copy that sounds like everyone else's marketing copy.</p>
-
-            <p>That's backwards. The right approach is to start with the pain, the things in your business that are slow, expensive, error-prone, or just annoying, and then ask whether AI can help with any of them.</p>
-
-            <h2>The Pain-First Framework</h2>
-
-            <p>Here's a simple four-step process that works for businesses of any size:</p>
-
-            <h3>Step 1: Map Your Repetitive Tasks</h3>
-
-            <p>Grab a notebook (or a spreadsheet, if you're that person) and spend one week noting every task in your business that:</p>
-
-            <ul>
-                <li><strong>Happens more than once a week</strong>, data entry, responding to similar emails, generating reports, sorting through applications</li>
-                <li><strong>Follows a predictable pattern</strong>, if you could write a rough script for how it works, it's a candidate</li>
-                <li><strong>Doesn't require deep human judgment</strong>, scheduling, categorizing, summarizing, first-draft writing</li>
-                <li><strong>Makes someone on your team groan</strong>, the tasks people dread are often the ones AI handles best</li>
-            </ul>
-
-            <p>Don't filter yet. Just list everything. You'll be surprised how many tasks fit these criteria once you start looking.</p>
-
-            <h3>Step 2: Estimate the Time Cost</h3>
-
-            <p>For each task on your list, estimate two things:</p>
-
-            <ol>
-                <li><strong>Hours per week</strong>, how much time does this task consume across your entire team?</li>
-                <li><strong>Hourly cost</strong>, what's the loaded cost of the person doing it? (Salary + benefits + overhead, roughly)</li>
-            </ol>
-
-            <p>Multiply those together. You now have a weekly cost for each repetitive task. Sort the list by cost, highest first.</p>
-
-            <p>A bookkeeper spending 8 hours a week on invoice categorization at €35/hour loaded cost? That's €280/week, or over €14,000 a year. Even if AI only handles 60% of that work, you're looking at €8,400 in recovered time.</p>
-
-            <h3>Step 3: Score Each Task for AI Fit</h3>
-
-            <p>Not every repetitive task is a good fit for AI. For each item on your sorted list, ask these five questions:</p>
-
-            <ol>
-                <li><strong>Is the input mostly text, numbers, or images?</strong> AI is great with these. If the input is physical (packing boxes, plumbing), AI can't help directly.</li>
-                <li><strong>Is the output mostly text, numbers, or decisions?</strong> Same logic. AI produces digital outputs.</li>
-                <li><strong>Is a "pretty good" answer acceptable?</strong> AI isn't perfect. If you need 100% accuracy (regulatory filings, medical dosages), AI might only assist, not replace. If 90% is fine and a human reviews exceptions, that's a fit.</li>
-                <li><strong>Do you have examples of the task being done correctly?</strong> AI learns from examples. If you have past emails, categorized invoices, or previous reports, that's training data.</li>
-                <li><strong>Could a smart new hire learn this in a week?</strong> If yes, AI can probably handle it. If it takes months of domain expertise, AI might still help but won't fully automate it.</li>
-            </ol>
-
-            <p>Give each question a simple yes/no. Tasks with 4-5 "yes" answers are your best AI opportunities. Tasks with 1-2 are probably not worth pursuing yet.</p>
-
-            <h3>Step 4: Pick One and Test It</h3>
-
-            <p>This is the most important step, and it's where most people stall. They analyze forever and never actually try anything.</p>
-
-            <p>Pick the task that scores highest on both cost and AI fit. Then run a simple test:</p>
-
-            <ul>
-                <li><strong>Week 1:</strong> Try doing the task with a general AI tool (like ChatGPT, Claude, or Gemini). Just manually. See if it works.</li>
-                <li><strong>Week 2:</strong> If it worked, try to streamline it. Create a prompt template. Set up a simple workflow.</li>
-                <li><strong>Week 3:</strong> Measure. How much time did you actually save? What was the quality like? What needed human review?</li>
-            </ul>
-
-            <p>Three weeks. That's it. You'll know whether this particular AI opportunity is real or hype.</p>
-
-            <h2>Common AI Opportunities by Business Type</h2>
-
-            <p>To get your thinking started, here are the most common high-value AI opportunities we see across different business types:</p>
-
-            <h3>Service Businesses (Consultants, Agencies, Accountants)</h3>
-            <ul>
-                <li>Drafting proposals and statements of work from templates</li>
-                <li>Summarizing meeting notes and generating action items</li>
-                <li>Categorizing and routing incoming emails</li>
-                <li>First-draft client reports from raw data</li>
-            </ul>
-
-            <h3>E-commerce and Retail</h3>
-            <ul>
-                <li>Writing product descriptions at scale</li>
-                <li>Responding to common customer questions</li>
-                <li>Analyzing reviews for product improvement insights</li>
-                <li>Demand forecasting based on historical sales data</li>
-            </ul>
-
-            <h3>Manufacturing and Logistics</h3>
-            <ul>
-                <li>Quality control image analysis</li>
-                <li>Predictive maintenance scheduling</li>
-                <li>Route optimization</li>
-                <li>Supplier communication and order tracking</li>
-            </ul>
-
-            <h3>Professional Services (Legal, HR, Finance)</h3>
-            <ul>
-                <li>Document review and summarization</li>
-                <li>Contract clause extraction and comparison</li>
-                <li>Resume screening and candidate summaries</li>
-                <li>Compliance document generation</li>
-            </ul>
-
-            <h2>Three Traps to Avoid</h2>
-
-            <h3>Trap 1: The "Automate Everything" Mindset</h3>
-
-            <p>AI isn't about automating your whole business. It's about automating the boring parts so your people can focus on the parts that actually need a human, relationships, strategy, creative problem-solving, and the judgment calls that build your reputation.</p>
-
-            <h3>Trap 2: Ignoring the Integration Cost</h3>
-
-            <p>An AI tool that saves 5 hours a week but takes 3 hours a week to manage isn't saving you 5 hours. It's saving you 2. Always factor in the time to set up, maintain, review outputs, and handle the cases AI gets wrong.</p>
-
-            <h3>Trap 3: Waiting for Perfect</h3>
-
-            <p>AI tools are good enough right now for many business tasks. They're not perfect, and they won't be next year either. But "good enough with human review" beats "doing everything manually" in most cases. Don't wait for perfection. Start with progress.</p>
-
-            <h2>What to Do After You Find Your Opportunities</h2>
-
-            <p>Once you've identified 3-5 genuine AI opportunities in your business, the next step is prioritizing them. You want to start with the one that has:</p>
-
-            <ul>
-                <li>The highest cost savings</li>
-                <li>The lowest implementation complexity</li>
-                <li>The most enthusiastic team member to champion it</li>
-            </ul>
-
-            <p>That last point matters more than people think. AI adoption works best when someone on the team is genuinely excited to try it, not when it's mandated from above.</p>
-
-            <div class="cta-box">
-                <h3>Want a Structured Way to Find Your AI Opportunities?</h3>
-                <p>Our free AI Readiness Checklist walks you through this entire framework step by step, with scoring templates and priority matrices included.</p>
-                <a href="https://beornsco.github.io/ai-starter-kit/">Get the Free Checklist →</a>
-            </div>
-
-            <h2>The Bottom Line</h2>
-
-            <p>Finding AI opportunities in your small business isn't about being a tech expert. It's about being honest about where your business bleeds time and money on repetitive work, and then testing whether AI can stop the bleeding.</p>
-
-            <p>Start with pain. Score for fit. Test quickly. Measure honestly.</p>
-
-            <p>Most businesses have 3-5 genuinely valuable AI opportunities hiding in plain sight. The framework above will help you find yours in a week, not a quarter.</p>
-        
-    <div style="background:#f0fdf4;border:2px solid #16a34a;border-radius:8px;padding:1.5rem 2rem;margin:2.5rem 0;text-align:center">
-      <h3 style="color:#16a34a;margin:0 0 0.5rem">🎓 Free 5-Day Email Course</h3>
-      <p style="margin-bottom:6px"><strong>5 Days to Your First AI Quick Win</strong></p>
-      <p style="color:#6B7280;margin-bottom:1rem">One lesson per day. Find your best AI opportunity, write your first prompt, build a reusable template, create an AI policy, and calculate your ROI.</p>
-      <form class="ml-course-form" style="display:flex;gap:12px;max-width:500px;margin:0 auto;flex-wrap:wrap;justify-content:center">
-        <input type="email" name="fields[email]" placeholder="Your work email" required style="flex:1;min-width:220px;padding:14px 18px;border:2px solid #E5E7EB;border-radius:8px;font-size:1rem;outline:none">
-        <button type="submit" style="white-space:nowrap;background:#16a34a;color:#fff;padding:14px 24px;border:none;border-radius:8px;font-size:1rem;font-weight:600;cursor:pointer">Start the Free Course</button>
-      </form>
-      <p class="ml-course-msg" style="margin-top:12px;font-weight:600;display:none"></p>
-      <p style="color:#6B7280;font-size:.85rem;margin-top:8px">No spam. Unsubscribe anytime.</p>
-    </div>
-
-        
-<div class="cta-block" style="background:linear-gradient(135deg,#2962FF,#1a47cc);color:white;padding:32px;border-radius:12px;margin:40px 0;text-align:center;">
-  <h3 style="color:white;margin-bottom:8px">Ready to save 5 hours a week?</h3>
-  <p style="color:rgba(255,255,255,0.85);margin-bottom:20px">Start with proven business prompts for marketing, operations, and customer communication. Copy, paste, and adapt.</p>
-  <a href="/ai-prompt-library/" style="background:white;color:#2962FF;padding:14px 28px;border-radius:8px;font-weight:700;text-decoration:none;display:inline-block">Get the Prompts</a>
-  <a href="/free-prompts/" style="color:rgba(255,255,255,0.85);padding:14px 20px;display:inline-block;text-decoration:underline">Or start free</a>
-</div>
-
-</article>
-    </div>
-    <footer>
-  © 2026 Beorns Co · <a href="/terms/">Terms</a> · <a href="/privacy/">Privacy</a> · <a href="https://twitter.com/beornsco" target="_blank" rel="noopener">X/Twitter</a> · <a href="https://medium.com/@beornsco" target="_blank" rel="noopener">Medium</a> · <a href="https://beornsco.lemonsqueezy.com" target="_blank" rel="noopener">Lemon Squeezy Store</a>
-</footer>
-
-<script>
-document.querySelectorAll('.ml-course-form').forEach(function(form){
-form.addEventListener('submit',function(e){
-e.preventDefault();
-var email=this.querySelector('[name="fields[email]"]').value;
-var msg=this.parentElement.querySelector('.ml-course-msg');
-var cb='mlc_'+Date.now();
-window[cb]=function(){
-msg.style.display='block';
-msg.style.color='#16a34a';
-msg.textContent='You\'re in! Check your inbox for Day 1.';
-form.style.display='none';
-};
-var s=document.createElement('script');
-s.src='https://assets.mailerlite.com/jsonp/2208896/forms/182863223702160765/subscribe?fields[email]='+encodeURIComponent(email)+'&callback='+cb;
-document.body.appendChild(s);
-});
-});
-</script>
-
 <script>
 (function(){
   var btn = document.getElementById('nav-hamburger');
   var links = document.getElementById('nav-links');
+  var dropdownTrigger = document.querySelector('.nav-dropdown > a');
+  var dropdownContent = document.querySelector('.nav-dropdown-content');
+  var dropdown = document.querySelector('.nav-dropdown');
+
+  // Hamburger toggle
   if(btn && links){
-    btn.addEventListener('click', function(){
+    btn.addEventListener('click', function(e){
+      e.stopPropagation();
       btn.classList.toggle('open');
       links.classList.toggle('open');
     });
   }
+
+  // Mobile: Products dropdown toggle (prevent nav close)
+  if(dropdownTrigger && dropdownContent){
+    dropdownTrigger.addEventListener('click', function(e){
+      if(window.innerWidth <= 768){
+        e.preventDefault();
+        e.stopPropagation();
+        dropdown.classList.toggle('open');
+        dropdownContent.classList.toggle('open');
+      }
+    });
+  }
+
+  // Close nav when clicking outside
+  document.addEventListener('click', function(e){
+    if(links && !links.contains(e.target) && btn && !btn.contains(e.target)){
+      links.classList.remove('open');
+      btn.classList.remove('open');
+      if(dropdown) dropdown.classList.remove('open');
+      if(dropdownContent) dropdownContent.classList.remove('open');
+    }
+  });
 })();
 </script>
 </body>

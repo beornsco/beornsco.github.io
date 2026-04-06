@@ -64,337 +64,67 @@ nav .hamburger.open span:nth-child(3){transform:rotate(-45deg) translate(5px,-5p
 footer{padding:36px 0;text-align:center;color:#aaa;font-size:.9rem;background:var(--dark)}
 footer a{color:#ccc}
 
-.nav-dropdown { position: relative; display: inline-block; }
-.nav-dropdown-content { display: none; position: absolute; top: 100%; left: 0; background: #fff; border: 1px solid #E5E7EB; border-radius: 8px; min-width: 220px; box-shadow: 0 4px 12px rgba(0,0,0,.1); z-index: 200; padding: 8px 0; }
-.nav-dropdown:hover .nav-dropdown-content { display: block; }
-.nav-dropdown-content a { display: block; padding: 8px 16px; color: #374151; font-size: .87rem; white-space: nowrap; }
-.nav-dropdown-content a:hover { background: #F3F4F6; color: #2962FF; }
-.nav-dropdown-section { padding: 6px 16px 4px; font-size: .75rem; font-weight: 700; color: #9CA3AF; text-transform: uppercase; letter-spacing: .05em; }
-.nav-dropdown-divider { border: none; border-top: 1px solid #E5E7EB; margin: 6px 0; }
-</style>
+/* Desktop dropdown - hover */
+@media(min-width:769px){
+  .nav-dropdown { position: relative; display: inline-block; }
+  .nav-dropdown-content { display: none; position: absolute; top: 100%; left: 0; background: #fff; border: 1px solid #E5E7EB; border-radius: 8px; min-width: 220px; box-shadow: 0 4px 12px rgba(0,0,0,.1); z-index: 200; padding: 8px 0; }
+  .nav-dropdown:hover .nav-dropdown-content { display: block; }
+  .nav-dropdown-content a { display: block; padding: 8px 16px; color: #374151; font-size: .87rem; white-space: nowrap; }
+  .nav-dropdown-content a:hover { background: #F3F4F6; color: #2962FF; }
+  .nav-dropdown-section { padding: 6px 16px 4px; font-size: .75rem; font-weight: 700; color: #9CA3AF; text-transform: uppercase; letter-spacing: .05em; }
+  .nav-dropdown-divider { border: none; border-top: 1px solid #E5E7EB; margin: 6px 0; }
+}
+
+/* Mobile dropdown - click/tap */
+@media(max-width:768px){
+  .nav-dropdown-content { display: none; background: #f9fafb; padding: 4px 0 4px 16px; }
+  .nav-dropdown-content.open { display: block; }
+  .nav-dropdown-content a { display: block; padding: 10px 16px; color: #374151; font-size: .9rem; }
+  .nav-dropdown-section { padding: 6px 16px 2px; font-size: .72rem; font-weight: 700; color: #9CA3AF; text-transform: uppercase; }
+  .nav-dropdown-divider { border: none; border-top: 1px solid #E5E7EB; margin: 4px 0; }
+  .nav-dropdown > a::after { content: " ▾"; font-size: .7rem; }
+  .nav-dropdown.open > a::after { content: " ▴"; font-size: .7rem; }
+}</style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3S7D3JJ9JS"></script>
-<script>
- window.dataLayer = window.dataLayer || [];
- function gtag(){dataLayer.push(arguments);}
- gtag('js', new Date());
- gtag('config', 'G-3S7D3JJ9JS');
-</script>
-</head>
-<body>
-    <nav>
-  <div class="nav-inner">
-    <a href="/" class="brand">Beorns Co</a>
-    <button class="hamburger" id="nav-hamburger" aria-label="Open menu">
-      <span></span><span></span><span></span>
-    </button>
-    <div class="nav-links" id="nav-links">
-      <div class="nav-dropdown">
-        <a href="/pricing/" style="display:flex;align-items:center;gap:4px;">Products <span style="font-size:.7rem;">&#9660;</span></a>
-        <div class="nav-dropdown-content">
-          <div class="nav-dropdown-section">Core SME Toolkit</div>
-          <a href="/ai-starter-kit/">AI Adoption Starter Kit</a>
-          <a href="/ai-prompt-library/">200+ ChatGPT Prompts</a>
-          <a href="/ai-automation-playbook/">AI Automation Playbook</a>
-          <hr class="nav-dropdown-divider">
-          <div class="nav-dropdown-section">Niche Prompt Packs</div>
-          <a href="/ai-trades-prompts/">Tradespeople</a>
-          <a href="/ai-restaurant-prompts/">Restaurant Owners</a>
-          <a href="/ai-photographer-prompts/">Photographers</a>
-          <a href="/ai-sme-ops-prompts/">Small Business (100 prompts)</a>
-          <a href="/ai-prompts-real-estate/">Real Estate</a>
-          <a href="/ai-prompts-ecommerce/">E-commerce and Retail</a>
-        </div>
-      </div>
-      <a href="/free-prompts/">Free Prompts</a>
-      <a href="/pricing/">Pricing</a>
-      <a href="/compare/">Compare</a>
-      <a href="/blog/">Blog</a>
-    </div>
-  </div>
-</nav>
-    <div class="container">
-        <article>
-            <h1>AI Project Management Tools: A Small Business Owner's Guide</h1>
-            <div class="meta">June 2026 &middot; 10 min read</div>
-
-            <p>Small business project management is often a contradiction. You need structure to deliver consistently, but you don't have the staff to support heavy project management overhead. The result? Deadlines slip, tasks fall through the cracks, and the owner ends up as the human reminder system for every open item.</p>
-
-            <p>AI-powered project management tools are changing this dynamic. They handle the coordination work, the status updates, the risk flags, the schedule optimization, so your team can focus on the actual work. And unlike enterprise PM platforms that cost thousands per month and require a certified project manager to operate, the current generation of AI tools is built for small teams.</p>
-
-            <p>This guide covers what AI project management actually does, which tools are worth your time, and how to implement one without creating more chaos than you are trying to solve.</p>
-
-            <h2>What "AI Project Management" Actually Means</h2>
-
-            <p>Let's cut through the marketing hype. When project management tools advertise "AI features," they are typically offering some combination of these capabilities:</p>
-
-            <h3>1. Intelligent Task Assignment</h3>
-
-            <p>Traditional project management: you manually assign tasks based on your mental model of who is available and who has the right skills. AI-powered assignment looks at actual workload data, past performance on similar tasks, current availability, and even individual productivity patterns to suggest (or automatically make) assignments.</p>
-
-            <p>For a business with 20 to 50 employees, this eliminates the problem of certain team members being consistently overloaded while others have slack, a pattern that is invisible in spreadsheets but obvious to an algorithm analyzing actual task completion data.</p>
-
-            <h3>2. Schedule and Deadline Prediction</h3>
-
-            <p>This is where AI adds the most value. Instead of relying on optimistic estimates ("this should take about a week"), AI analyzes how long similar tasks actually took in the past and predicts realistic completion dates. If a task type typically takes 3 days in your estimates but 5 days in practice, the AI flags this before you make promises to clients.</p>
-
-            <p>Some tools also identify bottleneck risks. If three tasks all depend on the same team member and that person is already at capacity, the AI warns you weeks before the deadline is at risk, not the day before.</p>
-
-            <h3>3. Automated Status Updates and Reporting</h3>
-
-            <p>One of the biggest time sinks in project management is gathering status updates. AI tools can generate project status reports automatically by analyzing task completion rates, time tracking data, communication patterns, and milestone progress. Instead of spending Friday afternoons chasing updates from your team, you get an auto-generated report that is often more accurate than the manually compiled version.</p>
-
-            <h3>4. Meeting and Communication Summaries</h3>
-
-            <p>AI can transcribe meetings, extract action items, and automatically create tasks from meeting notes. This eliminates the "I thought you were handling that" problem that plagues every small business. When every meeting generates a clear list of who owns what and by when, accountability becomes automatic.</p>
-
-            <h3>5. Risk Detection and Early Warnings</h3>
-
-            <p>AI monitors project health continuously: Are tasks being completed on schedule? Has communication on a specific project gone quiet (often a sign of trouble)? Are dependencies creating hidden delays? Is the budget tracking above or below plan? Rather than discovering problems in weekly reviews, you get flagged the moment patterns suggest trouble.</p>
-
-            <h2>The Best AI Project Management Tools for Small Businesses</h2>
-
-            <p>Here is an honest assessment of the leading options. We are evaluating based on AI capability, small business fit, pricing, and learning curve.</p>
-
-            <h3>Monday.com with AI Assistant</h3>
-
-            <p><strong>Best for:</strong> Visual thinkers and teams that want flexibility.</p>
-
-            <p>Monday's AI can generate task lists from project descriptions, summarize updates, compose emails, and build formulas for automations. The AI assistant sits inside the interface and responds to natural language queries: "Show me all overdue tasks assigned to the marketing team" or "Generate a summary of this week's progress on the website redesign."</p>
-
-            <ul>
-                <li><strong>Pricing:</strong> From $9/seat/month (AI features in Standard plan and above)</li>
-                <li><strong>Strengths:</strong> Highly customizable boards, strong visual interface, good integration ecosystem</li>
-                <li><strong>Weaknesses:</strong> Can get expensive with larger teams; some AI features are still surface-level</li>
-                <li><strong>Learning curve:</strong> Moderate. Plan 1 to 2 weeks for team adoption.</li>
-            </ul>
-
-            <h3>Asana with AI</h3>
-
-            <p><strong>Best for:</strong> Process-driven teams that value structured workflows.</p>
-
-            <p>Asana's AI features include smart status updates, project risk detection, task field suggestions, and workflow recommendations. The "Smart Status" feature is particularly useful: it analyzes task progress across a project and generates an honest status summary, flagging what is on track, what is at risk, and what is blocked.</p>
-
-            <ul>
-                <li><strong>Pricing:</strong> From $10.99/user/month (AI included in Advanced plan)</li>
-                <li><strong>Strengths:</strong> Excellent workflow automation, strong at handling complex dependencies, clean interface</li>
-                <li><strong>Weaknesses:</strong> Less flexible than Monday for non-standard use cases; reporting could be stronger</li>
-                <li><strong>Learning curve:</strong> Low to moderate. Intuitive for list-oriented teams.</li>
-            </ul>
-
-            <h3>ClickUp with ClickUp Brain</h3>
-
-            <p><strong>Best for:</strong> Teams that want an all-in-one platform and don't mind complexity.</p>
-
-            <p>ClickUp Brain is one of the more ambitious AI implementations. It can write task descriptions, generate project plans from a brief, summarize comment threads, answer questions about your project data ("What is our average task completion time this month?"), and create automated workflows from natural language instructions.</p>
-
-            <ul>
-                <li><strong>Pricing:</strong> From $7/member/month; ClickUp Brain is an add-on at $7/member/month</li>
-                <li><strong>Strengths:</strong> Feature-rich, affordable, covers docs, tasks, goals, and chat in one platform</li>
-                <li><strong>Weaknesses:</strong> Can feel overwhelming; too many features for teams that need simplicity</li>
-                <li><strong>Learning curve:</strong> Steep. Budget 2 to 4 weeks for proper adoption.</li>
-            </ul>
-
-            <h3>Notion with AI</h3>
-
-            <p><strong>Best for:</strong> Knowledge-heavy businesses (agencies, consultancies, creative firms).</p>
-
-            <p>Notion AI is excellent at content-related project management. It can generate project briefs, summarize documentation, translate content, extract action items from notes, and autofill database properties. For businesses where projects involve significant writing, planning, or knowledge work, Notion's AI feels natural.</p>
-
-            <ul>
-                <li><strong>Pricing:</strong> From $10/seat/month (AI is an add-on at $10/member/month)</li>
-                <li><strong>Strengths:</strong> Beautiful interface, incredibly flexible, doubles as a knowledge base</li>
-                <li><strong>Weaknesses:</strong> Not a traditional PM tool; lacks Gantt charts, resource leveling, and time tracking without add-ons</li>
-                <li><strong>Learning curve:</strong> Moderate. The blank canvas can be intimidating for structured teams.</li>
-            </ul>
-
-            <h3>Basecamp (with Hey Calendar AI)</h3>
-
-            <p><strong>Best for:</strong> Teams that value simplicity and are tired of tool overload.</p>
-
-            <p>Basecamp takes a deliberately simpler approach. While it doesn't have built-in AI as extensive as competitors, its integration with Hey Calendar (from the same company) adds AI scheduling intelligence. Basecamp's strength is clarity: every project has a clear structure, and the flat pricing makes it budget-friendly for growing teams.</p>
-
-            <ul>
-                <li><strong>Pricing:</strong> $299/month flat (unlimited users)</li>
-                <li><strong>Strengths:</strong> Unlimited users for one price, intentionally simple, minimal distractions</li>
-                <li><strong>Weaknesses:</strong> Fewer AI features than competitors; less customizable</li>
-                <li><strong>Learning curve:</strong> Very low. Most teams are productive within a day.</li>
-            </ul>
-
-            <h3>Using ChatGPT or Claude as a PM Assistant</h3>
-
-            <p>If you are not ready for a new tool, you can use AI assistants alongside your current setup:</p>
-
-            <ul>
-                <li><strong>Generate project plans:</strong> Describe your project and ask for a breakdown into phases, tasks, and estimated timelines</li>
-                <li><strong>Create risk assessments:</strong> Paste your project plan and ask for potential risks and mitigation strategies</li>
-                <li><strong>Draft status updates:</strong> Share your task list and ask for a client-ready status report</li>
-                <li><strong>Build templates:</strong> Ask the AI to create reusable project templates for your common project types</li>
-            </ul>
-
-            <p>This approach works well as a first step. It costs almost nothing and helps you understand what AI can do for your project management before investing in a dedicated tool.</p>
-
-            <h2>How to Choose the Right Tool for Your Business</h2>
-
-            <p>Don't start with features. Start with your actual problems:</p>
-
-            <ul>
-                <li><strong>If your main problem is deadline slippage:</strong> Prioritize tools with schedule prediction and risk detection (Asana, ClickUp)</li>
-                <li><strong>If your main problem is coordination:</strong> Look for strong automated status updates and meeting action item capture (Monday, ClickUp)</li>
-                <li><strong>If your main problem is too many tools:</strong> Consider an all-in-one like ClickUp or Notion that replaces multiple subscriptions</li>
-                <li><strong>If your main problem is team adoption:</strong> Choose the simplest option that solves your core need (Basecamp, or even just Notion)</li>
-                <li><strong>If budget is the primary constraint:</strong> Start with ChatGPT/Claude alongside your current tools, then upgrade when revenue justifies it</li>
-            </ul>
-
-            <h2>Implementation: A 3-Week Rollout Plan</h2>
-
-            <h3>Week 1: Prepare</h3>
-
-            <ol>
-                <li><strong>Document your current workflow.</strong> How do projects flow from intake to completion today? Where do things stall?</li>
-                <li><strong>Pick one project type to pilot.</strong> Choose something recurring (like client onboarding, product launches, or monthly reporting) so you can compare before and after.</li>
-                <li><strong>Set up the tool with just the basics.</strong> Don't configure every possible feature. Create one workspace, one project template, and invite the pilot team (3 to 5 people max).</li>
-            </ol>
-
-            <h3>Week 2: Pilot</h3>
-
-            <ol>
-                <li><strong>Run one real project through the new tool.</strong> Use AI features for task generation, status updates, and timeline predictions.</li>
-                <li><strong>Hold a 15-minute daily standup for the first week.</strong> Not to micromanage, but to gather feedback: What is working? What is confusing? What is the AI getting wrong?</li>
-                <li><strong>Track time savings.</strong> How many minutes per day is the team saving on updates, coordination, and status meetings?</li>
-            </ol>
-
-            <h3>Week 3: Adjust and Expand</h3>
-
-            <ol>
-                <li><strong>Fix what is not working.</strong> Common adjustments: simplifying task structures, adjusting notification settings (too many alerts kills adoption), and tweaking AI suggestions.</li>
-                <li><strong>Add automation.</strong> Set up recurring task templates, automatic status reports, and AI-generated meeting summaries.</li>
-                <li><strong>Invite the rest of the team.</strong> Use the pilot team as internal champions to help others get started.</li>
-            </ol>
-
-            <h2>Measuring Success</h2>
-
-            <p>After 60 days, evaluate against these benchmarks:</p>
-
-            <ul>
-                <li><strong>On-time delivery rate:</strong> Should improve by 15 to 30%</li>
-                <li><strong>Hours spent on project coordination per week:</strong> Should decrease by 25 to 40%</li>
-                <li><strong>Time from project kickoff to first deliverable:</strong> Should decrease as planning becomes faster</li>
-                <li><strong>Team satisfaction:</strong> Ask your team directly. If they hate the tool, it will not stick regardless of metrics.</li>
-                <li><strong>Client visibility:</strong> Are clients getting better, more timely updates?</li>
-            </ul>
-
-            <p>If you are not seeing measurable improvement after 60 days, reassess. The problem might be the tool choice, but more often it is incomplete adoption (only half the team uses it) or trying to manage too many project types at once.</p>
-
-            <h2>Tips for Long-Term Success</h2>
-
-            <ul>
-                <li><strong>Keep it simple.</strong> The best project management system is the one your team actually uses. Resist the urge to add complexity.</li>
-                <li><strong>Review AI suggestions regularly.</strong> AI predictions get better over time, but they can also develop blind spots. Check the AI's recommendations against reality monthly.</li>
-                <li><strong>Standardize your project templates.</strong> The more consistent your project structure, the better AI can predict and assist. Create templates for your 3 to 5 most common project types.</li>
-                <li><strong>Don't skip the retrospective.</strong> After every major project, spend 20 minutes documenting what went well and what didn't. This data feeds better AI predictions.</li>
-                <li><strong>Budget for the tool as a percentage of labor cost.</strong> If your team costs $20,000/month in labor and the PM tool saves 10 hours/week, that tool is paying for itself many times over even at $500/month.</li>
-            </ul>
-
-            <h2>The Bottom Line</h2>
-
-            <p>AI project management tools won't fix broken processes, but they will amplify good ones. If your team already has a basic workflow for handling projects, AI can make that workflow faster, more predictable, and less dependent on any single person remembering everything.</p>
-
-            <p>Start with one project type. Pick a tool that matches your team's working style. Give it 60 days. And focus on the metric that matters most to your business, whether that is on-time delivery, team hours saved, or client satisfaction.</p>
-
-            <p>The best time to modernize your project management was a year ago. The second best time is now, and AI makes the transition easier than it has ever been.</p>
-
-            <div class="cta-box">
-                <h3>Need AI Prompts for Project Planning?</h3>
-                <p>Our AI Prompt Library includes 200+ tested prompts, with a full section on project management, planning, and team coordination.</p>
-                <a href="https://beornsco.github.io/ai-prompt-library/">Get the Prompt Library for &#8364;19 &#8594;</a>
-            </div>
-
-            <div style="background:#f0fdf4;border:2px solid #16a34a;border-radius:8px;padding:1.5rem 2rem;margin:2.5rem 0;text-align:center">
-                <h3 style="color:#16a34a;margin:0 0 0.5rem">&#127891; Free 5-Day Email Course</h3>
-                <p style="margin-bottom:6px"><strong>5 Days to Your First AI Quick Win</strong></p>
-                <p style="color:#6B7280;margin-bottom:1rem">One lesson per day. Find your best AI opportunity, write your first prompt, build a reusable template, create an AI policy, and calculate your ROI.</p>
-                <form class="ml-course-form" style="display:flex;gap:12px;max-width:500px;margin:0 auto;flex-wrap:wrap;justify-content:center">
-                    <input type="email" name="fields[email]" placeholder="Your work email" required style="flex:1;min-width:220px;padding:14px 18px;border:2px solid #E5E7EB;border-radius:8px;font-size:1rem;outline:none">
-                    <button type="submit" style="white-space:nowrap;background:#16a34a;color:#fff;padding:14px 24px;border:none;border-radius:8px;font-size:1rem;font-weight:600;cursor:pointer">Start the Free Course</button>
-                </form>
-                <p class="ml-course-msg" style="margin-top:12px;font-weight:600;display:none"></p>
-                <p style="color:#6B7280;font-size:.85rem;margin-top:8px">No spam. Unsubscribe anytime.</p>
-            </div>
-
-            <h2>Explore Our AI Resources for Small Business</h2>
-
-            <div class="product-grid">
-                <div class="product-card">
-                    <h4>AI Adoption Starter Kit</h4>
-                    <p>Complete implementation roadmap, AI policy template, ROI calculator, and tool comparison guides.</p>
-                    <div class="price">&#8364;27</div>
-                    <a href="https://beornsco.github.io/ai-starter-kit/">Learn more &#8594;</a>
-                </div>
-                <div class="product-card">
-                    <h4>AI Prompt Library</h4>
-                    <p>200+ tested prompts for marketing, sales, HR, operations, and customer service.</p>
-                    <div class="price">&#8364;19</div>
-                    <a href="https://beornsco.github.io/ai-prompt-library/">Learn more &#8594;</a>
-                </div>
-                <div class="product-card">
-                    <h4>AI Automation Playbook</h4>
-                    <p>Step-by-step workflows to automate repetitive tasks across your entire business.</p>
-                    <div class="price">&#8364;39</div>
-                    <a href="https://beornsco.github.io/ai-automation-playbook/">Learn more &#8594;</a>
-                </div>
-                <div class="product-card">
-                    <h4>Core Bundle</h4>
-                    <p>All three products at a discount. Everything you need to implement AI across your business.</p>
-                    <div class="price">&#8364;69</div>
-                    <a href="https://beornscout.gumroad.com/l/fabnse">Get the bundle &#8594;</a>
-                </div>
-            </div>
-
-        
-<div class="cta-block" style="background:linear-gradient(135deg,#2962FF,#1a47cc);color:white;padding:32px;border-radius:12px;margin:40px 0;text-align:center;">
-  <h3 style="color:white;margin-bottom:8px">Ready to save 5 hours a week?</h3>
-  <p style="color:rgba(255,255,255,0.85);margin-bottom:20px">Start with proven business prompts for marketing, operations, and customer communication. Copy, paste, and adapt.</p>
-  <a href="/ai-prompt-library/" style="background:white;color:#2962FF;padding:14px 28px;border-radius:8px;font-weight:700;text-decoration:none;display:inline-block">Get the Prompts</a>
-  <a href="/free-prompts/" style="color:rgba(255,255,255,0.85);padding:14px 20px;display:inline-block;text-decoration:underline">Or start free</a>
-</div>
-
-</article>
-    </div>
-    <footer>
-  © 2026 Beorns Co · <a href="/terms/">Terms</a> · <a href="/privacy/">Privacy</a> · <a href="https://twitter.com/beornsco" target="_blank" rel="noopener">X/Twitter</a> · <a href="https://medium.com/@beornsco" target="_blank" rel="noopener">Medium</a> · <a href="https://beornsco.lemonsqueezy.com" target="_blank" rel="noopener">Lemon Squeezy Store</a>
-</footer>
-
-<script>
-document.querySelectorAll('.ml-course-form').forEach(function(form){
-form.addEventListener('submit',function(e){
-e.preventDefault();
-var email=this.querySelector('[name="fields[email]"]').value;
-var msg=this.parentElement.querySelector('.ml-course-msg');
-var cb='mlc_'+Date.now();
-window[cb]=function(){
-msg.style.display='block';
-msg.style.color='#16a34a';
-msg.textContent='You\'re in! Check your inbox for Day 1.';
-form.style.display='none';
-};
-var s=document.createElement('script');
-s.src='https://assets.mailerlite.com/jsonp/2208896/forms/182863223702160765/subscribe?fields[email]='+encodeURIComponent(email)+'&callback='+cb;
-document.body.appendChild(s);
-});
-});
-</script>
-
 <script>
 (function(){
   var btn = document.getElementById('nav-hamburger');
   var links = document.getElementById('nav-links');
+  var dropdownTrigger = document.querySelector('.nav-dropdown > a');
+  var dropdownContent = document.querySelector('.nav-dropdown-content');
+  var dropdown = document.querySelector('.nav-dropdown');
+
+  // Hamburger toggle
   if(btn && links){
-    btn.addEventListener('click', function(){
+    btn.addEventListener('click', function(e){
+      e.stopPropagation();
       btn.classList.toggle('open');
       links.classList.toggle('open');
     });
   }
+
+  // Mobile: Products dropdown toggle (prevent nav close)
+  if(dropdownTrigger && dropdownContent){
+    dropdownTrigger.addEventListener('click', function(e){
+      if(window.innerWidth <= 768){
+        e.preventDefault();
+        e.stopPropagation();
+        dropdown.classList.toggle('open');
+        dropdownContent.classList.toggle('open');
+      }
+    });
+  }
+
+  // Close nav when clicking outside
+  document.addEventListener('click', function(e){
+    if(links && !links.contains(e.target) && btn && !btn.contains(e.target)){
+      links.classList.remove('open');
+      btn.classList.remove('open');
+      if(dropdown) dropdown.classList.remove('open');
+      if(dropdownContent) dropdownContent.classList.remove('open');
+    }
+  });
 })();
 </script>
 </body>
