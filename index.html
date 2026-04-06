@@ -63,8 +63,9 @@ nav{background:#fff;border-bottom:1px solid #e5e7eb;position:sticky;top:0;z-inde
 .nav-dd{position:relative}
 .nav-dd>button{display:flex;align-items:center;gap:4px}
 .nav-dd>button::after{content:"";display:inline-block;width:0;height:0;border-left:4px solid transparent;border-right:4px solid transparent;border-top:5px solid currentColor;margin-top:1px}
-.nav-dd-menu{display:none;position:absolute;top:calc(100% + 4px);left:0;background:#fff;border:1px solid #e5e7eb;border-radius:10px;box-shadow:0 8px 24px rgba(0,0,0,.1);min-width:200px;padding:6px 0;z-index:1001}
+.nav-dd-menu{display:none;position:absolute;top:100%;left:0;background:#fff;border:1px solid #e5e7eb;border-radius:10px;box-shadow:0 8px 24px rgba(0,0,0,.1);min-width:200px;padding:12px 0 6px;z-index:1001;margin-top:0}
 .nav-dd:hover .nav-dd-menu,.nav-dd.open .nav-dd-menu{display:block}
+.nav-dd>button{padding-bottom:10px;margin-bottom:-4px}
 .nav-dd-menu a{display:block;padding:8px 16px;color:#374151;font-size:.875rem;text-decoration:none}
 .nav-dd-menu a:hover{background:#f9fafb;color:#2962ff}
 .nav-dd-label{padding:6px 16px 3px;font-size:.7rem;font-weight:700;color:#9ca3af;text-transform:uppercase;letter-spacing:.05em}
