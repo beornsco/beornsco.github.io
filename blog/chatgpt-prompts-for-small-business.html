@@ -55,68 +55,390 @@ nav .hamburger.open span:nth-child(3){transform:rotate(-45deg) translate(5px,-5p
 }
 footer{padding:36px 0;text-align:center;color:#aaa;font-size:.9rem;background:var(--dark)}
 footer a{color:#ccc}
-
-/* Desktop dropdown - hover */
-@media(min-width:769px){
-  .nav-dropdown { position: relative; display: inline-block; }
-  .nav-dropdown-content { display: none; position: absolute; top: 100%; left: 0; background: #fff; border: 1px solid #E5E7EB; border-radius: 8px; min-width: 220px; box-shadow: 0 4px 12px rgba(0,0,0,.1); z-index: 200; padding: 8px 0; }
-  .nav-dropdown:hover .nav-dropdown-content { display: block; }
-  .nav-dropdown-content a { display: block; padding: 8px 16px; color: #374151; font-size: .87rem; white-space: nowrap; }
-  .nav-dropdown-content a:hover { background: #F3F4F6; color: #2962FF; }
-  .nav-dropdown-section { padding: 6px 16px 4px; font-size: .75rem; font-weight: 700; color: #9CA3AF; text-transform: uppercase; letter-spacing: .05em; }
-  .nav-dropdown-divider { border: none; border-top: 1px solid #E5E7EB; margin: 6px 0; }
-}
-
-/* Mobile dropdown - click/tap */
-@media(max-width:768px){
-  .nav-dropdown-content { display: none; background: #f9fafb; padding: 4px 0 4px 16px; }
-  .nav-dropdown-content.open { display: block; }
-  .nav-dropdown-content a { display: block; padding: 10px 16px; color: #374151; font-size: .9rem; }
-  .nav-dropdown-section { padding: 6px 16px 2px; font-size: .72rem; font-weight: 700; color: #9CA3AF; text-transform: uppercase; }
-  .nav-dropdown-divider { border: none; border-top: 1px solid #E5E7EB; margin: 4px 0; }
-  .nav-dropdown > a::after { content: " ▾"; font-size: .7rem; }
-  .nav-dropdown.open > a::after { content: " ▴"; font-size: .7rem; }
-}</style>
+</style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3S7D3JJ9JS"></script>
 <script>
+ window.dataLayer = window.dataLayer || [];
+ function gtag(){dataLayer.push(arguments);}
+ gtag('js', new Date());
+ gtag('config', 'G-3S7D3JJ9JS');
+</script>
+</head>
+<body>
+    <nav>
+  <div class="nav-inner">
+    <a href="/" class="brand">Beorns Co</a>
+    <button class="hamburger" id="nav-hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links" id="nav-links">
+      <div class="nav-dropdown">
+        <a href="/pricing/" style="display:flex;align-items:center;gap:4px;">Products <span style="font-size:.7rem;">&#9660;</span></a>
+        <div class="nav-dropdown-content">
+          <div class="nav-dropdown-section">Core SME Toolkit</div>
+          <a href="/ai-starter-kit/">AI Adoption Starter Kit</a>
+          <a href="/ai-prompt-library/">200+ ChatGPT Prompts</a>
+          <a href="/ai-automation-playbook/">AI Automation Playbook</a>
+          <hr class="nav-dropdown-divider">
+          <div class="nav-dropdown-section">Niche Prompt Packs</div>
+          <a href="/ai-trades-prompts/">Tradespeople</a>
+          <a href="/ai-restaurant-prompts/">Restaurant Owners</a>
+          <a href="/ai-photographer-prompts/">Photographers</a>
+          <a href="/ai-sme-ops-prompts/">Small Business (100 prompts)</a>
+          <a href="/ai-prompts-real-estate/">Real Estate</a>
+          <a href="/ai-prompts-ecommerce/">E-commerce and Retail</a>
+        </div>
+      </div>
+      <a href="/free-prompts/">Free Prompts</a>
+      <a href="/pricing/">Pricing</a>
+      <a href="/compare/">Compare</a>
+      <a href="/blog/">Blog</a>
+    </div>
+  </div>
+</nav>
+    <div class="container">
+        <article>
+            <h1>15 ChatGPT Prompts for Small Business (That Actually Work)</h1>
+            <div class="meta">March 2026 · 10 min read</div>
+
+            <p>Most "ChatGPT prompt" lists are useless for small business owners. They're either so generic they could apply to anyone ("Write a blog post about X") or so complicated they take longer to set up than doing the task manually.</p>
+
+            <p>This is different. These are 15 prompts we've tested and refined specifically for small business use cases, marketing, customer service, operations, hiring, and strategy. Each one saves real time on a real task.</p>
+
+            <p>Copy them. Customize them. Use them today.</p>
+
+            <h2>How to Get Better Results from Any Prompt</h2>
+
+            <p>Before we dive in, three quick rules that make every prompt work better:</p>
+
+            <ol>
+                <li><strong>Give context about your business.</strong> "I run a 12-person plumbing company in Leeds" gets wildly better results than just asking a generic question.</li>
+                <li><strong>Specify the format you want.</strong> Bullet points? A draft email? A table? Tell the AI what shape the output should take.</li>
+                <li><strong>Iterate, don't start over.</strong> If the first response is 70% right, say "Good, but make it shorter and more conversational." Don't rewrite the whole prompt.</li>
+            </ol>
+
+            <p>Now, the prompts.</p>
+
+            <h2>Marketing Prompts</h2>
+
+            <h3>1. Write a Week of Social Media Posts</h3>
+
+            <p>This prompt generates a full week of platform-specific content in one shot. The key is giving it your brand voice and audience.</p>
+
+            <div class="prompt-box">I run [your business type] serving [your target audience] in [your location]. Our brand voice is [professional/casual/friendly/authoritative].
+
+Write 5 social media posts for [platform: LinkedIn/Instagram/Facebook] for next week. Each post should:
+- Address a different pain point our customers have
+- Be under 150 words
+- Include a call to action
+- NOT sound like it was written by AI (no "in today's fast-paced world" or "let's dive in")
+
+Our main services/products are: [list them]</div>
+
+            <p><strong>Why it works:</strong> Specifying what NOT to say is just as important as what to say. The anti-AI-cliché instruction alone makes the output 3x more usable.</p>
+
+            <h3>2. Generate Email Subject Lines That Get Opened</h3>
+
+            <div class="prompt-box">I'm sending an email to [audience: existing customers/leads/newsletter subscribers] about [topic/offer].
+
+Generate 10 email subject lines. For each one, tell me:
+- The subject line
+- Why it might work (curiosity, urgency, specificity, etc.)
+- Estimated open rate: low/medium/high
+
+Rules: No clickbait. No ALL CAPS. No excessive punctuation. These are for a [business type] that wants to be taken seriously.</div>
+
+            <p><strong>Why it works:</strong> Asking for the reasoning behind each subject line teaches you what makes good subject lines, so you get better at writing them yourself over time.</p>
+
+            <h3>3. Rewrite Your Website Copy for a Specific Audience</h3>
+
+            <div class="prompt-box">Here's the current copy from my [homepage/service page/about page]:
+
+[paste your existing copy]
+
+Rewrite this for [specific audience: e.g., "restaurant owners who are skeptical about technology"]. Keep the same information but:
+- Use language they'd actually use
+- Lead with their biggest pain point
+- Cut anything that doesn't help them decide to contact us
+- Keep it under [word count] words</div>
+
+            <p><strong>Why it works:</strong> Rewriting existing copy is easier for AI than writing from scratch. You get better results and it takes less time to review.</p>
+
+            <h3>4. Create a Content Calendar</h3>
+
+            <div class="prompt-box">I need a 30-day content calendar for my [business type]. My target customers are [describe them]. My goal is [brand awareness/lead generation/sales/thought leadership].
+
+For each day, give me:
+- Content topic
+- Platform (choose from: [your platforms])
+- Content type (post, article, video script, infographic idea)
+- One key message or hook
+
+Mix educational content (60%), behind-the-scenes/personality (20%), and promotional (20%). No weekends.</div>
+
+            <h2>Customer Service Prompts</h2>
+
+            <h3>5. Draft Response Templates for Common Questions</h3>
+
+            <div class="prompt-box">I run a [business type]. Here are the 5 questions customers ask us most often:
+
+1. [Question 1]
+2. [Question 2]
+3. [Question 3]
+4. [Question 4]
+5. [Question 5]
+
+For each question, write a response template that:
+- Answers the question directly in the first sentence
+- Is warm but professional
+- Is under 100 words
+- Includes a next step or CTA
+- Has [brackets] for any details that need to be customized per customer</div>
+
+            <p><strong>Why it works:</strong> The bracket instruction is key, it produces templates your team can actually use repeatedly, not just one-off answers.</p>
+
+            <h3>6. Turn a Negative Review Into a Professional Response</h3>
+
+            <div class="prompt-box">A customer left this review: "[paste the review]"
+
+Write a public response that:
+- Acknowledges their frustration without being defensive
+- Briefly explains what happened (if I know: [context])
+- Offers a specific next step to resolve it
+- Shows other readers we take feedback seriously
+- Stays under 100 words
+- Does NOT apologize for things that weren't our fault</div>
+
+            <h3>7. Create an FAQ Page From Customer Conversations</h3>
+
+            <div class="prompt-box">Here are real questions customers have asked us over the past month (from emails, calls, and messages):
+
+[Paste 10-20 actual customer questions, even if messy/informal]
+
+Group these into logical categories, clean up the wording, and write clear answers for each. Use our perspective as a [business type]. Answers should be 2-3 sentences max. Format as an FAQ page with category headers.</div>
+
+            <div class="cta-box">
+                <h3>Want 100+ Ready-to-Use Business Prompts?</h3>
+                <p>Our AI Prompt Library for Small Business includes tested prompts for marketing, operations, hiring, finance, and more, organized by department and ready to copy-paste.</p>
+                <a href="https://beornsco.github.io/ai-prompt-library/">Get the Prompt Library →</a>
+            </div>
+
+            <h2>Operations Prompts</h2>
+
+            <h3>8. Write Standard Operating Procedures</h3>
+
+            <div class="prompt-box">I need to document the process for [task name] at my [business type].
+
+Here's roughly how it works: [describe the process in your own words, even if messy]
+
+Turn this into a clean SOP (Standard Operating Procedure) with:
+- A brief overview (who does this, when, why)
+- Numbered step-by-step instructions
+- Decision points clearly marked (if X, do Y; if Z, do W)
+- Common mistakes to avoid
+- Who to contact if something goes wrong
+
+Write it so a new employee could follow it on their first day.</div>
+
+            <p><strong>Why it works:</strong> Most SOPs never get written because they're tedious. Dumping your knowledge in messy form and letting AI clean it up removes the biggest barrier.</p>
+
+            <h3>9. Analyze a Process for Inefficiencies</h3>
+
+            <div class="prompt-box">Here's how we currently handle [process name, e.g., "new client onboarding"]:
+
+[Describe your current process step by step]
+
+Analyze this process and tell me:
+1. Which steps could be automated or eliminated?
+2. Where are the likely bottlenecks?
+3. What information gets lost or duplicated?
+4. What would a streamlined version look like?
+5. What tools (free or cheap) could help?
+
+Keep suggestions practical for a small business with [X] employees and limited IT resources.</div>
+
+            <h3>10. Draft a Professional Email You're Dreading</h3>
+
+            <div class="prompt-box">I need to write an email to [who] about [what]. The situation is: [explain the context and why it's tricky].
+
+I want to: [your goal, e.g., "push back on the timeline without damaging the relationship"]
+
+Tone should be: [professional/firm/empathetic/diplomatic]
+
+Write the email. Keep it under 200 words. Don't be passive-aggressive. Be direct but human.</div>
+
+            <p><strong>Why it works:</strong> Difficult emails eat up disproportionate amounts of time. Having a solid first draft to edit cuts the agony by 80%.</p>
+
+            <h2>Hiring Prompts</h2>
+
+            <h3>11. Write a Job Description That Attracts the Right People</h3>
+
+            <div class="prompt-box">I'm hiring a [job title] for my [business type, size, location].
+
+The role involves: [list main responsibilities]
+Must-have skills: [list]
+Nice-to-have: [list]
+Salary range: [range or "competitive"]
+What makes us different: [why someone would want to work here]
+
+Write a job description that:
+- Opens with what the person will actually DO (not company history)
+- Is honest about challenges (we're a small team, things move fast)
+- Avoids clichés like "rockstar," "ninja," or "wear many hats"
+- Includes practical details (remote/hybrid/office, hours, benefits)
+- Is under 500 words</div>
+
+            <h3>12. Create Interview Questions for a Specific Role</h3>
+
+            <div class="prompt-box">I'm interviewing candidates for [role] at my [business type]. The key skills I need are [list]. The biggest challenge in this role will be [describe].
+
+Give me 10 interview questions that:
+- Test for the actual skills needed (not generic "what's your biggest weakness" stuff)
+- Include 3 situational/behavioral questions specific to our industry
+- Include 2 practical questions (e.g., "how would you handle X scenario?")
+- Are designed for a [junior/mid/senior] level candidate
+
+For each question, tell me what a good answer would include.</div>
+
+            <h2>Strategy Prompts</h2>
+
+            <h3>13. Competitive Analysis in 10 Minutes</h3>
+
+            <div class="prompt-box">I run a [business type] in [location/market]. My main competitors are:
+1. [Competitor 1, brief description]
+2. [Competitor 2, brief description]
+3. [Competitor 3, brief description]
+
+Based on what you know, create a competitive analysis that covers:
+- What each competitor does well
+- Their likely weaknesses
+- Gaps in the market none of them are filling
+- Where I could differentiate
+- Pricing positioning suggestions
+
+Present this as a table with competitors as columns.</div>
+
+            <h3>14. Brainstorm Revenue Streams</h3>
+
+            <div class="prompt-box">I run a [business type] with [X] employees. Our current revenue comes from: [list your services/products and rough percentages].
+
+Our existing customers are: [describe]
+Our team's skills include: [list]
+Our assets include: [equipment, IP, audience, relationships, etc.]
+
+Brainstorm 10 additional revenue streams we could realistically launch in the next 6 months. For each one, estimate:
+- Setup effort (low/medium/high)
+- Revenue potential ($/month range)
+- Risk level
+- Whether it leverages our existing strengths
+
+Rank them by "effort to revenue" ratio, best first.</div>
+
+            <h3>15. Summarize a Long Document and Extract Action Items</h3>
+
+            <div class="prompt-box">Here's a [contract/report/proposal/meeting transcript]:
+
+[Paste the document]
+
+Give me:
+1. A 3-sentence summary
+2. The 5 most important points
+3. Any deadlines or dates mentioned
+4. Risks or concerns I should be aware of
+5. Specific action items for me, with suggested deadlines
+
+Flag anything that seems unusual or that I should get a second opinion on.</div>
+
+            <p><strong>Why it works:</strong> This is genuinely one of the highest-value uses of AI. Turning a 20-page document into a 1-page brief with action items saves hours, not minutes.</p>
+
+            <h2>Making Prompts Work Long-Term</h2>
+
+            <p>Individual prompts are useful. A <em>library</em> of tested, customized prompts is transformative.</p>
+
+            <p>Here's what the most effective small businesses do:</p>
+
+            <ol>
+                <li><strong>Save prompts that work.</strong> When a prompt gives you great output, save it, in a doc, a folder, wherever your team can find it.</li>
+                <li><strong>Customize for your business.</strong> Replace the generic placeholders with your actual business details. The more specific the prompt, the less editing the output needs.</li>
+                <li><strong>Share with your team.</strong> Don't make everyone reinvent the wheel. A shared prompt library means everyone gets the same quality output.</li>
+                <li><strong>Update over time.</strong> As you learn what works and what doesn't, refine your prompts. Version them if you need to.</li>
+            </ol>
+
+            <p>The difference between a business that uses AI occasionally and one that uses it effectively isn't the tool, it's the prompts. Good prompts turn a general-purpose AI into a specialized business assistant.</p>
+
+            <div class="cta-box">
+                <h3>Skip the Trial-and-Error</h3>
+                <p>Our AI Prompt Library gives you 100+ tested prompts organized by business function, marketing, operations, HR, finance, strategy, and customer service. Each prompt includes context on when to use it and how to customize it.</p>
+                <a href="https://beornsco.github.io/ai-prompt-library/">Get the Prompt Library →</a>
+            </div>
+
+            <h2>Getting Started Today</h2>
+
+            <p>Don't try all 15 prompts at once. Pick the one that solves your biggest time drain this week. Use it. See the result. Then come back for the next one.</p>
+
+            <p>AI adoption isn't about one big transformation. It's about dozens of small wins that compound over time. A social media post here, a customer response there, an SOP that finally gets written, each one saves 15-30 minutes. Do that consistently and you're reclaiming hours every week.</p>
+
+            <p>The prompts above are a starting point. The real power comes when you build a library of prompts tailored to <em>your</em> business, <em>your</em> customers, and <em>your</em> workflow.</p>
+
+            <p>Start with one. Ship it. Move to the next.</p>
+        
+    <div style="background:#f0fdf4;border:2px solid #16a34a;border-radius:8px;padding:1.5rem 2rem;margin:2.5rem 0;text-align:center">
+      <h3 style="color:#16a34a;margin:0 0 0.5rem">🎓 Free 5-Day Email Course</h3>
+      <p style="margin-bottom:6px"><strong>5 Days to Your First AI Quick Win</strong></p>
+      <p style="color:#6B7280;margin-bottom:1rem">One lesson per day. Find your best AI opportunity, write your first prompt, build a reusable template, create an AI policy, and calculate your ROI.</p>
+      <form class="ml-course-form" style="display:flex;gap:12px;max-width:500px;margin:0 auto;flex-wrap:wrap;justify-content:center">
+        <input type="email" name="fields[email]" placeholder="Your work email" required style="flex:1;min-width:220px;padding:14px 18px;border:2px solid #E5E7EB;border-radius:8px;font-size:1rem;outline:none">
+        <button type="submit" style="white-space:nowrap;background:#16a34a;color:#fff;padding:14px 24px;border:none;border-radius:8px;font-size:1rem;font-weight:600;cursor:pointer">Start the Free Course</button>
+      </form>
+      <p class="ml-course-msg" style="margin-top:12px;font-weight:600;display:none"></p>
+      <p style="color:#6B7280;font-size:.85rem;margin-top:8px">No spam. Unsubscribe anytime.</p>
+    </div>
+
+        
+<div class="cta-block" style="background:linear-gradient(135deg,#2962FF,#1a47cc);color:white;padding:32px;border-radius:12px;margin:40px 0;text-align:center;">
+  <h3 style="color:white;margin-bottom:8px">Ready to save 5 hours a week?</h3>
+  <p style="color:rgba(255,255,255,0.85);margin-bottom:20px">Use restaurant-focused prompts to plan menus, write promotions, answer reviews, and fill tables faster.</p>
+  <a href="/ai-restaurant-prompts/" style="background:white;color:#2962FF;padding:14px 28px;border-radius:8px;font-weight:700;text-decoration:none;display:inline-block">Get the Prompts</a>
+  <a href="/free-prompts/" style="color:rgba(255,255,255,0.85);padding:14px 20px;display:inline-block;text-decoration:underline">Or start free</a>
+</div>
+
+</article>
+    </div>
+    <footer>
+  &copy; 2026 Beorns Co &middot; <a href="mailto:beornsco@proton.me">beornsco@proton.me</a> &middot; <a href="/terms/">Terms</a> &middot; <a href="/privacy/">Privacy</a> &middot; <a href="https://twitter.com/beornsco" target="_blank" rel="noopener">X/Twitter</a> &middot; <a href="https://medium.com/@beornsco" target="_blank" rel="noopener">Medium</a> · <a href="https://beornsco.lemonsqueezy.com" target="_blank" rel="noopener">Lemon Squeezy Store</a>
+</footer>
+
+<script>
+document.querySelectorAll('.ml-course-form').forEach(function(form){
+form.addEventListener('submit',function(e){
+e.preventDefault();
+var email=this.querySelector('[name="fields[email]"]').value;
+var msg=this.parentElement.querySelector('.ml-course-msg');
+var cb='mlc_'+Date.now();
+window[cb]=function(){
+msg.style.display='block';
+msg.style.color='#16a34a';
+msg.textContent='You\'re in! Check your inbox for Day 1.';
+form.style.display='none';
+};
+var s=document.createElement('script');
+s.src='https://assets.mailerlite.com/jsonp/2208896/forms/182863223702160765/subscribe?fields[email]='+encodeURIComponent(email)+'&callback='+cb;
+document.body.appendChild(s);
+});
+});
+</script>
+
+<script>
 (function(){
-  var btn = document.getElementById('nav-hamburger');
-  var links = document.getElementById('nav-links');
-  var dropdownTrigger = document.querySelector('.nav-dropdown > a');
-  var dropdownContent = document.querySelector('.nav-dropdown-content');
-  var dropdown = document.querySelector('.nav-dropdown');
-
-  // Hamburger toggle
-  if(btn && links){
-    btn.addEventListener('click', function(e){
-      e.stopPropagation();
-      btn.classList.toggle('open');
-      links.classList.toggle('open');
-    });
-  }
-
-  // Mobile: Products dropdown toggle (prevent nav close)
-  if(dropdownTrigger && dropdownContent){
-    dropdownTrigger.addEventListener('click', function(e){
-      if(window.innerWidth <= 768){
-        e.preventDefault();
-        e.stopPropagation();
-        dropdown.classList.toggle('open');
-        dropdownContent.classList.toggle('open');
-      }
-    });
-  }
-
-  // Close nav when clicking outside
-  document.addEventListener('click', function(e){
-    if(links && !links.contains(e.target) && btn && !btn.contains(e.target)){
-      links.classList.remove('open');
-      btn.classList.remove('open');
-      if(dropdown) dropdown.classList.remove('open');
-      if(dropdownContent) dropdownContent.classList.remove('open');
-    }
-  });
+  var btn=document.getElementById('nav-hamburger');
+  var links=document.getElementById('nav-links');
+  var dropdown=document.querySelector('.nav-dropdown');
+  var dropdownContent=document.querySelector('.nav-dropdown-content');
+  var dropdownTrigger=document.querySelector('.nav-dropdown > a');
+  if(btn&&links){btn.addEventListener('click',function(e){e.stopPropagation();btn.classList.toggle('open');links.classList.toggle('open');});}
+  if(dropdownTrigger&&dropdownContent){dropdownTrigger.addEventListener('click',function(e){if(window.innerWidth<=768){e.preventDefault();e.stopPropagation();dropdown.classList.toggle('open');dropdownContent.classList.toggle('open');}});}
+  document.addEventListener('click',function(e){if(links&&!links.contains(e.target)&&btn&&!btn.contains(e.target)){links.classList.remove('open');btn.classList.remove('open');if(dropdown)dropdown.classList.remove('open');if(dropdownContent)dropdownContent.classList.remove('open');}});
 })();
 </script>
 </body>

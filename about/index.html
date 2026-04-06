@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About Beorns Co | AI Business Toolkit | Beorns Co</title>
+<title>About Beorns Co | AI Business Toolkit</title>
 <meta name="description" content="Beorns Co creates practical AI adoption resources for small and medium businesses. No jargon, no consultants, just guides that work.">
 <meta property="og:title" content="About Beorns Co | AI Business Toolkit">
 <meta property="og:description" content="Beorns Co creates practical AI adoption resources for small and medium businesses. No jargon, no consultants, just guides that work.">
@@ -68,28 +68,7 @@ h2{font-size:1.5rem;margin-bottom:16px;letter-spacing:-.01em}
 
 footer{padding:36px 0;text-align:center;color:#aaa;font-size:.9rem;background:var(--dark)}
 footer a{color:#ccc}
-
-/* Desktop dropdown - hover */
-@media(min-width:769px){
-  .nav-dropdown { position: relative; display: inline-block; }
-  .nav-dropdown-content { display: none; position: absolute; top: 100%; left: 0; background: #fff; border: 1px solid #E5E7EB; border-radius: 8px; min-width: 220px; box-shadow: 0 4px 12px rgba(0,0,0,.1); z-index: 200; padding: 8px 0; }
-  .nav-dropdown:hover .nav-dropdown-content { display: block; }
-  .nav-dropdown-content a { display: block; padding: 8px 16px; color: #374151; font-size: .87rem; white-space: nowrap; }
-  .nav-dropdown-content a:hover { background: #F3F4F6; color: #2962FF; }
-  .nav-dropdown-section { padding: 6px 16px 4px; font-size: .75rem; font-weight: 700; color: #9CA3AF; text-transform: uppercase; letter-spacing: .05em; }
-  .nav-dropdown-divider { border: none; border-top: 1px solid #E5E7EB; margin: 6px 0; }
-}
-
-/* Mobile dropdown - click/tap */
-@media(max-width:768px){
-  .nav-dropdown-content { display: none; background: #f9fafb; padding: 4px 0 4px 16px; }
-  .nav-dropdown-content.open { display: block; }
-  .nav-dropdown-content a { display: block; padding: 10px 16px; color: #374151; font-size: .9rem; }
-  .nav-dropdown-section { padding: 6px 16px 2px; font-size: .72rem; font-weight: 700; color: #9CA3AF; text-transform: uppercase; }
-  .nav-dropdown-divider { border: none; border-top: 1px solid #E5E7EB; margin: 4px 0; }
-  .nav-dropdown > a::after { content: " ▾"; font-size: .7rem; }
-  .nav-dropdown.open > a::after { content: " ▴"; font-size: .7rem; }
-}</style>
+</style>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -111,43 +90,202 @@ footer a{color:#ccc}
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3S7D3JJ9JS"></script>
 <script>
+ window.dataLayer = window.dataLayer || [];
+ function gtag(){dataLayer.push(arguments);}
+ gtag('js', new Date());
+ gtag('config', 'G-3S7D3JJ9JS');
+</script>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="/" class="brand">Beorns Co</a>
+    <button class="hamburger" id="nav-hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links" id="nav-links">
+      <div class="nav-dropdown">
+        <a href="/pricing/" style="display:flex;align-items:center;gap:4px;">Products <span style="font-size:.7rem;">&#9660;</span></a>
+        <div class="nav-dropdown-content">
+          <div class="nav-dropdown-section">Core SME Toolkit</div>
+          <a href="/ai-starter-kit/">AI Adoption Starter Kit</a>
+          <a href="/ai-prompt-library/">200+ ChatGPT Prompts</a>
+          <a href="/ai-automation-playbook/">AI Automation Playbook</a>
+          <hr class="nav-dropdown-divider">
+          <div class="nav-dropdown-section">Niche Prompt Packs</div>
+          <a href="/ai-trades-prompts/">Tradespeople</a>
+          <a href="/ai-restaurant-prompts/">Restaurant Owners</a>
+          <a href="/ai-photographer-prompts/">Photographers</a>
+          <a href="/ai-sme-ops-prompts/">Small Business (100 prompts)</a>
+          <a href="/ai-prompts-real-estate/">Real Estate</a>
+          <a href="/ai-prompts-ecommerce/">E-commerce and Retail</a>
+        </div>
+      </div>
+      <a href="/free-prompts/">Free Prompts</a>
+      <a href="/pricing/">Pricing</a>
+      <a href="/compare/">Compare</a>
+      <a href="/blog/">Blog</a>
+    </div>
+  </div>
+</nav>
+
+<section class="hero">
+<div class="container">
+  <h1>About Beorns Co</h1>
+  <p>Practical AI adoption resources for small and medium businesses. No jargon, no consultants, just guides that work.</p>
+</div>
+</section>
+
+<section>
+<div class="container">
+  <div class="content">
+
+    <p>Beorns Co creates practical AI adoption resources for small and medium businesses. Founded in 2026, we focus on one thing: helping SME owners (10 to 200 employees) start using AI without hiring consultants or learning to code. Our main site is beornsco.github.io, with products sold on both Gumroad and Lemon Squeezy.</p>
+
+    <h2>The Problem</h2>
+    <p>Most AI advice is built for enterprises with big tech teams and six-figure budgets. Small businesses get left behind, stuck between generic chatbot tutorials and expensive consulting engagements.</p>
+    <p>The result? Business owners know AI matters, but they do not know where to start. They waste hours watching YouTube videos, testing random prompts, and wondering if they are falling behind.</p>
+
+    <h2>Our Approach</h2>
+    <p>We create step-by-step guides, ready-to-use templates, and copy-paste prompts that work with any AI tool. Everything is written in plain language. No jargon. No prerequisites. If you can use email, you can use our guides.</p>
+    <p>Every product follows the same principle: open the PDF, follow the steps, get results. We include the exact prompts to copy, the exact tools to use, and the exact sequence to follow.</p>
+
+    <h2>What We Offer</h2>
+    <p>We currently offer 10 products priced from €12. This includes our core AI adoption toolkit plus niche prompt packs for tradespeople, restaurant owners, photographers, SME owners, real estate professionals, and e-commerce teams. All products are available through both Gumroad and Lemon Squeezy.</p>
+    <div class="product-list">
+      <div class="product-item">
+        <div class="info">
+          <strong>AI Prompt Library</strong>
+          <span>127 pages, 200+ prompts for 10 departments</span>
+        </div>
+        <div class="price-link">
+          <span class="price-tag">€19</span>
+          <a href="/ai-prompt-library/">Learn more &#8594;</a>
+        </div>
+      </div>
+      <div class="product-item">
+        <div class="info">
+          <strong>AI Adoption Starter Kit</strong>
+          <span>37 pages, assessment framework, policy template, 90-day roadmap</span>
+        </div>
+        <div class="price-link">
+          <span class="price-tag">€27</span>
+          <a href="/ai-starter-kit/">Learn more &#8594;</a>
+        </div>
+      </div>
+      <div class="product-item">
+        <div class="info">
+          <strong>AI Automation Playbook</strong>
+          <span>170 pages, 12 playbooks, 50 prompt templates, tool comparison</span>
+        </div>
+        <div class="price-link">
+          <span class="price-tag">€39</span>
+          <a href="/ai-automation-playbook/">Learn more &#8594;</a>
+        </div>
+      </div>
+      <div class="product-item">
+        <div class="info">
+          <strong>54 AI Prompts for Tradespeople</strong>
+          <span>54 practical prompts for plumbers, electricians, cleaners, and other trade businesses</span>
+        </div>
+        <div class="price-link">
+          <span class="price-tag">€14</span>
+          <a href="/ai-trades-prompts/">Learn more &#8594;</a>
+        </div>
+      </div>
+      <div class="product-item">
+        <div class="info">
+          <strong>50 AI Prompts for Restaurant Owners</strong>
+          <span>50 prompts for menus, marketing, customer communication, and operations</span>
+        </div>
+        <div class="price-link">
+          <span class="price-tag">€14</span>
+          <a href="/ai-restaurant-prompts/">Learn more &#8594;</a>
+        </div>
+      </div>
+      <div class="product-item">
+        <div class="info">
+          <strong>60 AI Prompts for Photographers</strong>
+          <span>60 prompts for client inquiries, shoots, edits, marketing, and follow-up</span>
+        </div>
+        <div class="price-link">
+          <span class="price-tag">€12</span>
+          <a href="/ai-photographer-prompts/">Learn more &#8594;</a>
+        </div>
+      </div>
+      <div class="product-item">
+        <div class="info">
+          <strong>100 AI Prompts for SME Owners</strong>
+          <span>100 prompts for decision-making, planning, communication, and team productivity</span>
+        </div>
+        <div class="price-link">
+          <span class="price-tag">€19</span>
+          <a href="/ai-sme-ops-prompts/">Learn more &#8594;</a>
+        </div>
+      </div>
+      <div class="product-item">
+        <div class="info">
+          <strong>AI Prompt Pack: Real Estate</strong>
+          <span>38 pages, 50+ prompts for agents, brokers, and property managers</span>
+        </div>
+        <div class="price-link">
+          <span class="price-tag">€14</span>
+          <a href="/ai-prompts-real-estate/">Learn more &#8594;</a>
+        </div>
+      </div>
+      <div class="product-item">
+        <div class="info">
+          <strong>AI Prompt Pack: E-commerce and Retail</strong>
+          <span>50+ prompts for product descriptions, ads, emails, support, and operations</span>
+        </div>
+        <div class="price-link">
+          <span class="price-tag">€14</span>
+          <a href="/ai-prompts-ecommerce/">Learn more &#8594;</a>
+        </div>
+      </div>
+      <div class="product-item">
+        <div class="info">
+          <strong>Core Bundle</strong>
+          <span>Starter Kit + Prompt Library + Automation Playbook. Save €16.</span>
+        </div>
+        <div class="price-link">
+          <span class="price-tag">€69</span>
+          <a href="/pricing/">See pricing &#8594;</a>
+        </div>
+      </div>
+    </div>
+
+    <h2>Our Content</h2>
+    <p>We publish free resources alongside our paid products: 19 blog articles covering AI adoption, prompt engineering, automation, and department-specific use cases. We also offer a free 5-day email course ("Your First AI Quick Win") and three free lead magnets: the AI Opportunity Checklist, the 10 Best Prompts sampler, and the 5-Minute Automation Audit.</p>
+    <p>We believe the best marketing is genuinely useful content. Every article is written to help you make a real decision or take a real action, not to sell you something.</p>
+
+    <h2>Contact</h2>
+    <ul class="contact-list">
+      <li>📧 Email: <a href="mailto:beornsco@proton.me">beornsco@proton.me</a></li>
+      <li>🐦 X/Twitter: <a href="https://twitter.com/beornsco" target="_blank" rel="noopener">@beornsco</a></li>
+      <li>📝 Medium: <a href="https://medium.com/@beornsco" target="_blank" rel="noopener">@beornsco</a></li>
+    </ul>
+
+  </div>
+</div>
+</section>
+
+<footer>
+  <a href="/">Home</a> · <a href="/terms/">Terms</a> · <a href="/privacy/">Privacy</a> · <a href="https://twitter.com/beornsco" target="_blank" rel="noopener">X/Twitter</a> · <a href="https://medium.com/@beornsco" target="_blank" rel="noopener">Medium</a>
+  <br><span style="margin-top:8px;display:inline-block">© 2026 Beorns Co</span> · <a href="https://beornsco.lemonsqueezy.com" target="_blank" rel="noopener">Lemon Squeezy Store</a>
+</footer>
+
+<script>
 (function(){
-  var btn = document.getElementById('nav-hamburger');
-  var links = document.getElementById('nav-links');
-  var dropdownTrigger = document.querySelector('.nav-dropdown > a');
-  var dropdownContent = document.querySelector('.nav-dropdown-content');
-  var dropdown = document.querySelector('.nav-dropdown');
-
-  // Hamburger toggle
-  if(btn && links){
-    btn.addEventListener('click', function(e){
-      e.stopPropagation();
-      btn.classList.toggle('open');
-      links.classList.toggle('open');
-    });
-  }
-
-  // Mobile: Products dropdown toggle (prevent nav close)
-  if(dropdownTrigger && dropdownContent){
-    dropdownTrigger.addEventListener('click', function(e){
-      if(window.innerWidth <= 768){
-        e.preventDefault();
-        e.stopPropagation();
-        dropdown.classList.toggle('open');
-        dropdownContent.classList.toggle('open');
-      }
-    });
-  }
-
-  // Close nav when clicking outside
-  document.addEventListener('click', function(e){
-    if(links && !links.contains(e.target) && btn && !btn.contains(e.target)){
-      links.classList.remove('open');
-      btn.classList.remove('open');
-      if(dropdown) dropdown.classList.remove('open');
-      if(dropdownContent) dropdownContent.classList.remove('open');
-    }
-  });
+  var btn=document.getElementById('nav-hamburger');
+  var links=document.getElementById('nav-links');
+  var dropdown=document.querySelector('.nav-dropdown');
+  var dropdownContent=document.querySelector('.nav-dropdown-content');
+  var dropdownTrigger=document.querySelector('.nav-dropdown > a');
+  if(btn&&links){btn.addEventListener('click',function(e){e.stopPropagation();btn.classList.toggle('open');links.classList.toggle('open');});}
+  if(dropdownTrigger&&dropdownContent){dropdownTrigger.addEventListener('click',function(e){if(window.innerWidth<=768){e.preventDefault();e.stopPropagation();dropdown.classList.toggle('open');dropdownContent.classList.toggle('open');}});}
+  document.addEventListener('click',function(e){if(links&&!links.contains(e.target)&&btn&&!btn.contains(e.target)){links.classList.remove('open');btn.classList.remove('open');if(dropdown)dropdown.classList.remove('open');if(dropdownContent)dropdownContent.classList.remove('open');}});
 })();
 </script>
 </body>

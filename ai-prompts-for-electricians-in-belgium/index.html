@@ -63,68 +63,254 @@ nav .hamburger.open span:nth-child(3){transform:rotate(-45deg) translate(5px,-5p
 }
 footer{padding:36px 0;text-align:center;color:#aaa;font-size:.9rem;background:var(--dark)}
 footer a{color:#ccc}
-
-/* Desktop dropdown - hover */
-@media(min-width:769px){
-  .nav-dropdown { position: relative; display: inline-block; }
-  .nav-dropdown-content { display: none; position: absolute; top: 100%; left: 0; background: #fff; border: 1px solid #E5E7EB; border-radius: 8px; min-width: 220px; box-shadow: 0 4px 12px rgba(0,0,0,.1); z-index: 200; padding: 8px 0; }
-  .nav-dropdown:hover .nav-dropdown-content { display: block; }
-  .nav-dropdown-content a { display: block; padding: 8px 16px; color: #374151; font-size: .87rem; white-space: nowrap; }
-  .nav-dropdown-content a:hover { background: #F3F4F6; color: #2962FF; }
-  .nav-dropdown-section { padding: 6px 16px 4px; font-size: .75rem; font-weight: 700; color: #9CA3AF; text-transform: uppercase; letter-spacing: .05em; }
-  .nav-dropdown-divider { border: none; border-top: 1px solid #E5E7EB; margin: 6px 0; }
-}
-
-/* Mobile dropdown - click/tap */
-@media(max-width:768px){
-  .nav-dropdown-content { display: none; background: #f9fafb; padding: 4px 0 4px 16px; }
-  .nav-dropdown-content.open { display: block; }
-  .nav-dropdown-content a { display: block; padding: 10px 16px; color: #374151; font-size: .9rem; }
-  .nav-dropdown-section { padding: 6px 16px 2px; font-size: .72rem; font-weight: 700; color: #9CA3AF; text-transform: uppercase; }
-  .nav-dropdown-divider { border: none; border-top: 1px solid #E5E7EB; margin: 4px 0; }
-  .nav-dropdown > a::after { content: " ▾"; font-size: .7rem; }
-  .nav-dropdown.open > a::after { content: " ▴"; font-size: .7rem; }
-}</style>
+</style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3S7D3JJ9JS"></script>
 <script>
-(function(){
-  var btn = document.getElementById('nav-hamburger');
-  var links = document.getElementById('nav-links');
-  var dropdownTrigger = document.querySelector('.nav-dropdown > a');
-  var dropdownContent = document.querySelector('.nav-dropdown-content');
-  var dropdown = document.querySelector('.nav-dropdown');
-
-  // Hamburger toggle
-  if(btn && links){
-    btn.addEventListener('click', function(e){
-      e.stopPropagation();
-      btn.classList.toggle('open');
-      links.classList.toggle('open');
-    });
-  }
-
-  // Mobile: Products dropdown toggle (prevent nav close)
-  if(dropdownTrigger && dropdownContent){
-    dropdownTrigger.addEventListener('click', function(e){
-      if(window.innerWidth <= 768){
-        e.preventDefault();
-        e.stopPropagation();
-        dropdown.classList.toggle('open');
-        dropdownContent.classList.toggle('open');
+ window.dataLayer = window.dataLayer || [];
+ function gtag(){dataLayer.push(arguments);}
+ gtag('js', new Date());
+ gtag('config', 'G-3S7D3JJ9JS');
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "LocalBusiness",
+      "name": "Beorns Co - AI Prompts for Electricians",
+      "description": "Copy-paste AI prompts built for electricians in Belgium. Quotes, invoices, reviews and social posts done in minutes. Works with free ChatGPT.",
+      "url": "https://beornsco.github.io/ai-prompts-for-electricians-in-belgium/",
+      "areaServed": {
+        "@type": "Country",
+        "name": "Belgium"
+      },
+      "brand": {
+        "@type": "Brand",
+        "name": "Beorns Co"
       }
-    });
-  }
-
-  // Close nav when clicking outside
-  document.addEventListener('click', function(e){
-    if(links && !links.contains(e.target) && btn && !btn.contains(e.target)){
-      links.classList.remove('open');
-      btn.classList.remove('open');
-      if(dropdown) dropdown.classList.remove('open');
-      if(dropdownContent) dropdownContent.classList.remove('open');
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Do these prompts work for electricians in Belgium?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. The prompts cover GDPR-aware admin templates and invoice language suited to EU regulations, making them a practical fit for electricians operating in Belgium."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What AI tool do I need?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You only need the free version of ChatGPT at chat.openai.com. No paid plan, no plugins, no technical setup. The prompts also work with Claude, Google Gemini, and Microsoft Copilot."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does it take to get results?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most tradespeople get a usable result within 2 to 3 minutes of using their first prompt. Copy the prompt, fill in your details where it says [brackets], paste into ChatGPT, and hit send. That is it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is ChatGPT free for electricians in Belgium?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. The basic version of ChatGPT at chat.openai.com is completely free and works perfectly for all the prompts in our pack. You do not need a paid subscription. Claude by Anthropic also has a free tier that works equally well."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I use these AI prompts on my phone?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Open ChatGPT or Claude in your phone browser, copy a prompt from the pack, paste it in, fill in the brackets with your details, and send. Most electricians use the prompts directly from their phone on site between jobs. No apps to install."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I customise these prompts for my specific business?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, that is the point of the [BRACKETS] in every prompt. Replace them with your business name, customer name, job details, and price. After a few uses you will have your own version of each prompt saved and ready to reuse."
+          }
+        }
+      ]
     }
-  });
+  ]
+}
+</script>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="/" class="brand">Beorns Co</a>
+    <button class="hamburger" id="nav-hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links" id="nav-links">
+      <div class="nav-dropdown">
+        <a href="/pricing/" style="display:flex;align-items:center;gap:4px;">Products <span style="font-size:.7rem;">&#9660;</span></a>
+        <div class="nav-dropdown-content">
+          <div class="nav-dropdown-section">Core SME Toolkit</div>
+          <a href="/ai-starter-kit/">AI Adoption Starter Kit</a>
+          <a href="/ai-prompt-library/">200+ ChatGPT Prompts</a>
+          <a href="/ai-automation-playbook/">AI Automation Playbook</a>
+          <hr class="nav-dropdown-divider">
+          <div class="nav-dropdown-section">Niche Prompt Packs</div>
+          <a href="/ai-trades-prompts/">Tradespeople</a>
+          <a href="/ai-restaurant-prompts/">Restaurant Owners</a>
+          <a href="/ai-photographer-prompts/">Photographers</a>
+          <a href="/ai-sme-ops-prompts/">Small Business (100 prompts)</a>
+          <a href="/ai-prompts-real-estate/">Real Estate</a>
+          <a href="/ai-prompts-ecommerce/">E-commerce and Retail</a>
+        </div>
+      </div>
+      <a href="/free-prompts/">Free Prompts</a>
+      <a href="/pricing/">Pricing</a>
+      <a href="/compare/">Compare</a>
+      <a href="/blog/">Blog</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+<div class="container">
+  <div class="badge">For Electricians in Belgium</div>
+  <h1>AI Prompts for <span>Electricians</span><br>in Belgium</h1>
+  <p>Electricians in Belgium are often flat out on site all week, then face a pile of unanswered messages, unsent invoices, and zero time for social media. These prompts give you professional text in seconds, without having to think about what to write.</p>
+  <a href="/ai-trades-prompts/" class="btn">Get 54 Prompts for Tradespeople</a>
+</div>
+</section>
+
+<!-- WHAT THESE PROMPTS HELP WITH -->
+<section class="alt">
+<div class="container fade-in">
+  <div class="section-label">What These Prompts Help With</div>
+  <h2>5 Ways AI Saves You Time as a Electrician</h2>
+  <p class="section-sub">Every use case is specific to the work electricians do every day.</p>
+  <div class="use-cases">
+    <div class="use-case">Quoting for consumer unit upgrades, rewires, EV charger installs, and inspection work</div>
+    <div class="use-case">Sending polite payment reminders and overdue invoice follow-ups</div>
+    <div class="use-case">Responding to Google and Facebook reviews in a professional tone</div>
+    <div class="use-case">Writing social media posts about completed electrical projects and seasonal safety tips</div>
+    <div class="use-case">Drafting clear job confirmation and arrival time messages to customers</div>
+  </div>
+</div>
+</section>
+
+<!-- EXAMPLE PROMPTS -->
+<section>
+<div class="container fade-in">
+  <div class="section-label">Example Prompts</div>
+  <h2>3 Ready-to-Use Prompts for Electricians</h2>
+  <p class="section-sub">Copy, fill in the [brackets] with your details, and paste into ChatGPT. Done.</p>
+
+  <div class="prompt-card">
+    <div class="prompt-label">Quote Follow-Up Prompt</div>
+    <pre>Write a follow-up email for an electrical quote I sent 4 days ago. The work is [describe job, e.g. full rewire of a 3-bedroom house]. Business: [Name]. Customer: [Customer Name]. Quote total: [amount]. Be professional, not pushy. Remind them the quote is valid for 30 days.</pre>
+  </div>
+
+  <div class="prompt-card">
+    <div class="prompt-label">Google Review Response Prompt</div>
+    <pre>Write a Google review response for my electrical business. The review says: &quot;[paste review]&quot;. If positive: thank them and reference the specific work done. If negative: stay calm, acknowledge the concern, and invite them to contact you directly. Keep it under 75 words.</pre>
+  </div>
+
+  <div class="prompt-card">
+    <div class="prompt-label">Social Media Post Prompt</div>
+    <pre>Write an Instagram caption for my electrical business. I have just finished installing [number] EV chargers at a [home/business] in [town, Belgium]. Business name: [Name]. Tone: professional but approachable. Mention the benefit to the customer. End with a soft call to action. Under 100 words.</pre>
+  </div>
+</div>
+</section>
+
+<!-- CTA -->
+<section class="alt">
+<div class="container fade-in">
+  <div class="cta-box">
+    <h2>Get 54 Prompts Built for Tradespeople in Belgium</h2>
+    <p>Quotes, invoices, reviews, social posts, complaints, hiring, admin. All in one pack. Works with free ChatGPT. One-time purchase.</p>
+    <a href="/ai-trades-prompts/" class="btn" style="background:#fff;color:var(--blue)">See the Full Prompt Pack</a>
+  </div>
+</div>
+</section>
+
+
+<section style="background:#f0f4ff;padding:24px;border-radius:8px;margin:32px 0;">
+  <h3 style="color:#2962FF;margin-bottom:12px">Also available for Electricians in other countries:</h3>
+  <div style="display:flex;gap:12px;flex-wrap:wrap;">
+    <a href="/ai-prompts-for-electricians-in-germany/" style="background:white;border:1px solid #c9d8ff;padding:10px 14px;border-radius:8px;color:#1a47cc;text-decoration:none;font-weight:600">AI Prompts for Electricians in Germany</a>
+    <a href="/ai-prompts-for-electricians-in-ireland/" style="background:white;border:1px solid #c9d8ff;padding:10px 14px;border-radius:8px;color:#1a47cc;text-decoration:none;font-weight:600">AI Prompts for Electricians in Ireland</a>
+    <a href="/ai-prompts-for-electricians-in-netherlands/" style="background:white;border:1px solid #c9d8ff;padding:10px 14px;border-radius:8px;color:#1a47cc;text-decoration:none;font-weight:600">AI Prompts for Electricians in Netherlands</a>
+    <a href="/ai-prompts-for-electricians-in-united-kingdom/" style="background:white;border:1px solid #c9d8ff;padding:10px 14px;border-radius:8px;color:#1a47cc;text-decoration:none;font-weight:600">AI Prompts for Electricians in United Kingdom</a>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section>
+<div class="container fade-in">
+  <div class="section-label">FAQ</div>
+  <h2>Common Questions</h2>
+  <div class="faq">
+    <div class="faq-item">
+      <strong>Do these prompts work for electricians in Belgium?</strong>
+      <p>Yes. The prompts cover GDPR-aware admin templates and invoice language suited to EU regulations, making them a practical fit for electricians operating in Belgium.</p>
+    </div>
+    <div class="faq-item">
+      <strong>What AI tool do I need?</strong>
+      <p>You only need the free version of ChatGPT at chat.openai.com. No paid plan, no plugins, no technical setup. The prompts also work with Claude, Google Gemini, and Microsoft Copilot.</p>
+    </div>
+    <div class="faq-item">
+      <strong>How long does it take to get results?</strong>
+      <p>Most tradespeople get a usable result within 2 to 3 minutes of using their first prompt. Copy the prompt, fill in your details where it says [brackets], paste into ChatGPT, and hit send. That is it.</p>
+    </div>
+    <div class="faq-item">
+      <strong>Is ChatGPT free for electricians in Belgium?</strong>
+      <p>Yes. The basic version of ChatGPT at chat.openai.com is completely free and works perfectly for all the prompts in our pack. You do not need a paid subscription. Claude by Anthropic also has a free tier that works equally well.</p>
+    </div>
+    <div class="faq-item">
+      <strong>How do I use these AI prompts on my phone?</strong>
+      <p>Open ChatGPT or Claude in your phone browser, copy a prompt from the pack, paste it in, fill in the brackets with your details, and send. Most electricians use the prompts directly from their phone on site between jobs. No apps to install.</p>
+    </div>
+    <div class="faq-item">
+      <strong>Can I customise these prompts for my specific business?</strong>
+      <p>Yes, that is the point of the [BRACKETS] in every prompt. Replace them with your business name, customer name, job details, and price. After a few uses you will have your own version of each prompt saved and ready to reuse.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<footer>
+<div class="container">
+  <p>© 2026 <a href="https://beornsco.github.io">Beorns Co</a> · Practical AI tools for real businesses · <a href="/terms/">Terms</a> · <a href="/privacy/">Privacy</a></p>
+</div> · <a href="https://beornsco.lemonsqueezy.com" target="_blank" rel="noopener">Lemon Squeezy Store</a>
+</footer>
+
+<script>
+
+const observer = new IntersectionObserver(els => els.forEach(e => {
+  if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}
+}),{threshold:.12});
+document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+</script>
+<script>
+(function(){
+  var btn=document.getElementById('nav-hamburger');
+  var links=document.getElementById('nav-links');
+  var dropdown=document.querySelector('.nav-dropdown');
+  var dropdownContent=document.querySelector('.nav-dropdown-content');
+  var dropdownTrigger=document.querySelector('.nav-dropdown > a');
+  if(btn&&links){btn.addEventListener('click',function(e){e.stopPropagation();btn.classList.toggle('open');links.classList.toggle('open');});}
+  if(dropdownTrigger&&dropdownContent){dropdownTrigger.addEventListener('click',function(e){if(window.innerWidth<=768){e.preventDefault();e.stopPropagation();dropdown.classList.toggle('open');dropdownContent.classList.toggle('open');}});}
+  document.addEventListener('click',function(e){if(links&&!links.contains(e.target)&&btn&&!btn.contains(e.target)){links.classList.remove('open');btn.classList.remove('open');if(dropdown)dropdown.classList.remove('open');if(dropdownContent)dropdownContent.classList.remove('open');}});
 })();
 </script>
 </body>

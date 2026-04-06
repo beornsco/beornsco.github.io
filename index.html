@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Home | Beorns Co</title>
+<title>Beorns Co. Practical AI Tools for Real Businesses</title>
 <meta name="description" content="AI Business Toolkit: 250+ prompts, 12 automation playbooks, industry prompt packs, and a 37-page adoption roadmap for SMEs. From €14. Free 5-day email course included.">
 <meta property="og:title" content="Beorns Co. Practical AI Tools for Real Businesses">
 <meta property="og:description" content="250+ AI prompts, 12 automation playbooks, industry prompt packs, and a 37-page adoption roadmap. From €14, one-time purchase.">
@@ -75,14 +75,6 @@ nav .hamburger.open span:nth-child(3){transform:rotate(-45deg) translate(5px,-5p
   .fade-in{opacity:0;transform:translateY(20px);transition:opacity .5s,transform .5s}
   .fade-in.visible{opacity:1;transform:none}
 }
-
-.nav-dropdown { position: relative; display: inline-block; }
-.nav-dropdown-content { display: none; position: absolute; top: 100%; left: 0; background: #fff; border: 1px solid #E5E7EB; border-radius: 8px; min-width: 220px; box-shadow: 0 4px 12px rgba(0,0,0,.1); z-index: 200; padding: 8px 0; }
-.nav-dropdown:hover .nav-dropdown-content { display: block; }
-.nav-dropdown-content a { display: block; padding: 8px 16px; color: #374151; font-size: .87rem; white-space: nowrap; }
-.nav-dropdown-content a:hover { background: #F3F4F6; color: #2962FF; }
-.nav-dropdown-section { padding: 6px 16px 4px; font-size: .75rem; font-weight: 700; color: #9CA3AF; text-transform: uppercase; letter-spacing: .05em; }
-.nav-dropdown-divider { border: none; border-top: 1px solid #E5E7EB; margin: 6px 0; }
 </style>
 <link rel="canonical" href="https://beornsco.github.io/">
 <script type="application/ld+json">
@@ -250,7 +242,7 @@ nav .hamburger.open span:nth-child(3){transform:rotate(-45deg) translate(5px,-5p
 <section>
 <div class="container">
   <h2>Core SME Toolkit</h2>
-  <p style="text-align:center;color:var(--gray);margin-bottom:28px;margin-top:-16px">Strategy, prompts, and automation - the foundation for any business adopting AI. 372 pages, 250+ prompts, 12 playbooks.</p>
+  <p style="text-align:center;color:var(--gray);margin-bottom:28px;margin-top:-16px">Strategy, prompts, and automation : the foundation for any business adopting AI. 372 pages, 250+ prompts, 12 playbooks.</p>
   <div class="products fade-in">
     <div class="card">
       <h3>AI Adoption Starter Kit</h3>
@@ -316,7 +308,7 @@ nav .hamburger.open span:nth-child(3){transform:rotate(-45deg) translate(5px,-5p
 
 <section>
 <div class="container">
-  <h2>Niche Prompt Packs - Built for Your Industry</h2>
+  <h2>Niche Prompt Packs : Built for Your Industry</h2>
   <p style="text-align:center;color:var(--gray);margin-bottom:28px;margin-top:-16px">50-100 copy-paste AI prompts, organised by the tasks your specific business actually does. From €12.</p>
   <div class="products fade-in" style="grid-template-columns:repeat(3,1fr)">
     <div class="card">
@@ -482,9 +474,9 @@ nav .hamburger.open span:nth-child(3){transform:rotate(-45deg) translate(5px,-5p
 </section>
 
 <footer>
-  © 2026 Beorns Co · <a href="/terms/">Terms</a> · <a href="/privacy/">Privacy</a> · <a href="https://twitter.com/beornsco" target="_blank" rel="noopener">X/Twitter</a> · <a href="https://medium.com/@beornsco" target="_blank" rel="noopener">Medium</a> · <a href="https://beornsco.lemonsqueezy.com" target="_blank" rel="noopener">Lemon Squeezy Store</a>
+  © 2026 Beorns Co · <a href="mailto:beornsco@proton.me">beornsco@proton.me</a> · <a href="/terms/">Terms</a> · <a href="/privacy/">Privacy</a> · <a href="https://twitter.com/beornsco" target="_blank" rel="noopener">X/Twitter</a> · <a href="https://medium.com/@beornsco" target="_blank" rel="noopener">Medium</a> · <a href="https://beornsco.lemonsqueezy.com" target="_blank" rel="noopener">Lemon Squeezy Store</a>
   <div style="margin-top:12px;">
-    <a href="https://navifyai.com/" target="_blank" rel="noopener"><img src="https://navifyai.com/static/img/badge-dark.svg" alt="Featured on NavifyAI.com - AI Tools Directory" style="height:32px;"></a>
+    <a href="https://navifyai.com/" target="_blank" rel="noopener"><img src="https://navifyai.com/static/img/badge-dark.svg" alt="Featured on NavifyAI.com - AI Tools Directory" style="height:32px;" /></a>
   </div>
 </footer>
 
@@ -524,14 +516,14 @@ document.body.appendChild(s);
 </script>
 <script>
 (function(){
-  var btn = document.getElementById('nav-hamburger');
-  var links = document.getElementById('nav-links');
-  if(btn && links){
-    btn.addEventListener('click', function(){
-      btn.classList.toggle('open');
-      links.classList.toggle('open');
-    });
-  }
+  var btn=document.getElementById('nav-hamburger');
+  var links=document.getElementById('nav-links');
+  var dropdown=document.querySelector('.nav-dropdown');
+  var dropdownContent=document.querySelector('.nav-dropdown-content');
+  var dropdownTrigger=document.querySelector('.nav-dropdown > a');
+  if(btn&&links){btn.addEventListener('click',function(e){e.stopPropagation();btn.classList.toggle('open');links.classList.toggle('open');});}
+  if(dropdownTrigger&&dropdownContent){dropdownTrigger.addEventListener('click',function(e){if(window.innerWidth<=768){e.preventDefault();e.stopPropagation();dropdown.classList.toggle('open');dropdownContent.classList.toggle('open');}});}
+  document.addEventListener('click',function(e){if(links&&!links.contains(e.target)&&btn&&!btn.contains(e.target)){links.classList.remove('open');btn.classList.remove('open');if(dropdown)dropdown.classList.remove('open');if(dropdownContent)dropdownContent.classList.remove('open');}});
 })();
 </script>
 </body>

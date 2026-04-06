@@ -102,28 +102,7 @@ footer a{color:#ccc}
   .fade-in{opacity:0;transform:translateY(20px);transition:opacity .5s,transform .5s}
   .fade-in.visible{opacity:1;transform:none}
 }
-
-/* Desktop dropdown - hover */
-@media(min-width:769px){
-  .nav-dropdown { position: relative; display: inline-block; }
-  .nav-dropdown-content { display: none; position: absolute; top: 100%; left: 0; background: #fff; border: 1px solid #E5E7EB; border-radius: 8px; min-width: 220px; box-shadow: 0 4px 12px rgba(0,0,0,.1); z-index: 200; padding: 8px 0; }
-  .nav-dropdown:hover .nav-dropdown-content { display: block; }
-  .nav-dropdown-content a { display: block; padding: 8px 16px; color: #374151; font-size: .87rem; white-space: nowrap; }
-  .nav-dropdown-content a:hover { background: #F3F4F6; color: #2962FF; }
-  .nav-dropdown-section { padding: 6px 16px 4px; font-size: .75rem; font-weight: 700; color: #9CA3AF; text-transform: uppercase; letter-spacing: .05em; }
-  .nav-dropdown-divider { border: none; border-top: 1px solid #E5E7EB; margin: 6px 0; }
-}
-
-/* Mobile dropdown - click/tap */
-@media(max-width:768px){
-  .nav-dropdown-content { display: none; background: #f9fafb; padding: 4px 0 4px 16px; }
-  .nav-dropdown-content.open { display: block; }
-  .nav-dropdown-content a { display: block; padding: 10px 16px; color: #374151; font-size: .9rem; }
-  .nav-dropdown-section { padding: 6px 16px 2px; font-size: .72rem; font-weight: 700; color: #9CA3AF; text-transform: uppercase; }
-  .nav-dropdown-divider { border: none; border-top: 1px solid #E5E7EB; margin: 4px 0; }
-  .nav-dropdown > a::after { content: " ▾"; font-size: .7rem; }
-  .nav-dropdown.open > a::after { content: " ▴"; font-size: .7rem; }
-}</style>
+</style>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -183,43 +162,245 @@ footer a{color:#ccc}
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3S7D3JJ9JS"></script>
 <script>
+ window.dataLayer = window.dataLayer || [];
+ function gtag(){dataLayer.push(arguments);}
+ gtag('js', new Date());
+ gtag('config', 'G-3S7D3JJ9JS');
+</script>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="/" class="brand">Beorns Co</a>
+    <button class="hamburger" id="nav-hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links" id="nav-links">
+      <div class="nav-dropdown">
+        <a href="/pricing/" style="display:flex;align-items:center;gap:4px;">Products <span style="font-size:.7rem;">&#9660;</span></a>
+        <div class="nav-dropdown-content">
+          <div class="nav-dropdown-section">Core SME Toolkit</div>
+          <a href="/ai-starter-kit/">AI Adoption Starter Kit</a>
+          <a href="/ai-prompt-library/">200+ ChatGPT Prompts</a>
+          <a href="/ai-automation-playbook/">AI Automation Playbook</a>
+          <hr class="nav-dropdown-divider">
+          <div class="nav-dropdown-section">Niche Prompt Packs</div>
+          <a href="/ai-trades-prompts/">Tradespeople</a>
+          <a href="/ai-restaurant-prompts/">Restaurant Owners</a>
+          <a href="/ai-photographer-prompts/">Photographers</a>
+          <a href="/ai-sme-ops-prompts/">Small Business (100 prompts)</a>
+          <a href="/ai-prompts-real-estate/">Real Estate</a>
+          <a href="/ai-prompts-ecommerce/">E-commerce and Retail</a>
+        </div>
+      </div>
+      <a href="/free-prompts/">Free Prompts</a>
+      <a href="/pricing/">Pricing</a>
+      <a href="/compare/">Compare</a>
+      <a href="/blog/">Blog</a>
+    </div>
+  </div>
+</nav>
+
+<section class="hero">
+<div class="container">
+  <h1>Getting Started with AI Business Toolkit</h1>
+  <p>Choose the right product, download instantly, and start using AI in your business today. No coding required.</p>
+</div>
+</section>
+
+<section>
+<div class="container">
+  <div class="doc-content">
+
+    <h2>What is AI Business Toolkit?</h2>
+    <p>AI Business Toolkit is a collection of practical guides, prompts, and playbooks that help small and medium businesses adopt AI. It includes four products: the AI Adoption Starter Kit (€27), the AI Prompt Library for Business (€19), the AI Automation Playbook (€39), and industry-specific prompt packs starting at €14. Plus several free resources. No coding or technical skills required.</p>
+    <p>Every guide is written in plain language with step-by-step instructions. If you can copy and paste, you can use these tools to save hours every week.</p>
+
+    <h2>Which product should I start with?</h2>
+    <ul class="decision-tree">
+      <li>
+        <span class="scenario">"I have no idea where to start with AI"</span>
+        <span class="recommendation">Start with the <a href="/ai-course/">free 5-day email course</a>, then get the <a href="/ai-starter-kit/">AI Adoption Starter Kit</a> (€27). It gives you a complete roadmap: assess your opportunities, prioritize use cases, set up an AI policy, and follow a 30/60/90 day implementation plan.</span>
+      </li>
+      <li>
+        <span class="scenario">"I already use AI but want better results"</span>
+        <span class="recommendation">Get the <a href="/ai-prompt-library/">AI Prompt Library for Business</a> (€19). It contains 200+ prompts organized by department, including marketing, sales, HR, operations, finance, and customer service. Each prompt includes customization brackets and pro tips.</span>
+      </li>
+      <li>
+        <span class="scenario">"I know what I want to automate"</span>
+        <span class="recommendation">Get the <a href="/ai-automation-playbook/">AI Automation Playbook</a> (€39). It contains 12 step-by-step playbooks for specific processes like email responses, content creation, lead qualification, and employee onboarding.</span>
+      </li>
+      <li>
+        <span class="scenario">"I want everything"</span>
+        <span class="recommendation">Get the <a href="https://beornsco.gumroad.com/l/fabnse">Core Bundle</a> (€69, save €16). All three foundational products in one purchase. Strategy, prompts, and automation playbooks combined.</span>
+      </li>
+      <li>
+        <span class="scenario">"I work in real estate"</span>
+        <span class="recommendation">Get the <a href="/ai-prompts-real-estate/">AI Prompt Pack: Real Estate</a> (€14). 50+ prompts built for agents, brokers, and property managers. Covers listings, client emails, lead gen, market analysis, and social media.</span>
+      </li>
+    </ul>
+
+    <h2>How it works</h2>
+    <ol class="steps">
+      <li>
+        <strong>Choose your product (or start free)</strong>
+        <span>Pick the toolkit that fits your needs, or begin with the free 5-day email course to find your best AI opportunity.</span>
+      </li>
+      <li>
+        <strong>Download instantly via Gumroad</strong>
+        <span>After purchase, you get immediate access to download your PDF files. No waiting, no shipping.</span>
+      </li>
+      <li>
+        <strong>Open the guide and follow the instructions</strong>
+        <span>Each product is structured step by step. Start at page one and work through at your own pace.</span>
+      </li>
+      <li>
+        <strong>Use the templates with any AI tool</strong>
+        <span>Copy the prompts and templates into ChatGPT, Claude, Gemini, Microsoft Copilot, or any other AI assistant. Everything is tool-agnostic.</span>
+      </li>
+      <li>
+        <strong>Implement and measure results</strong>
+        <span>Track your time saved and ROI using the included frameworks. Most users see results within the first week.</span>
+      </li>
+    </ol>
+
+    <h2>What's included in each product</h2>
+    <div class="product-summary">
+      <div class="product-card">
+        <h3>AI Adoption Starter Kit</h3>
+        <div class="price">€27</div>
+        <div class="pages">37 pages</div>
+        <ul>
+          <li>AI Opportunity Assessment</li>
+          <li>Use Case Prioritization Matrix</li>
+          <li>Internal AI Policy Template</li>
+          <li>30/60/90 Day Roadmap</li>
+          <li>ROI Calculator</li>
+        </ul>
+        <a href="/ai-starter-kit/" class="btn btn-sm" style="width:100%;text-align:center">Learn more</a>
+      </div>
+      <div class="product-card">
+        <h3>AI Prompt Library</h3>
+        <div class="price">€19</div>
+        <div class="pages">127 pages</div>
+        <ul>
+          <li>200+ tested prompts</li>
+          <li>10 departments covered</li>
+          <li>Customizable [BRACKETS]</li>
+          <li>Pro tips per prompt</li>
+          <li>Works with ChatGPT, Copilot, Claude &amp; any AI assistant</li>
+        </ul>
+        <a href="/ai-prompt-library/" class="btn btn-sm" style="width:100%;text-align:center">Learn more</a>
+      </div>
+      <div class="product-card">
+        <h3>AI Automation Playbook</h3>
+        <div class="price">€39</div>
+        <div class="pages">170 pages</div>
+        <ul>
+          <li>12 automation playbooks</li>
+          <li>50 prompt templates</li>
+          <li>Tool comparison matrix</li>
+          <li>Automation project tracker</li>
+          <li>Step-by-step walkthroughs</li>
+        </ul>
+        <a href="/ai-automation-playbook/" class="btn btn-sm" style="width:100%;text-align:center">Learn more</a>
+      </div>
+      <div class="product-card">
+        <h3>AI Prompt Pack: Real Estate</h3>
+        <div class="price">€14</div>
+        <div class="pages">38 pages</div>
+        <ul>
+          <li>50+ real estate prompts</li>
+          <li>8 categories covered</li>
+          <li>Listings, leads, marketing</li>
+          <li>Client communication</li>
+          <li>For agents and brokers</li>
+        </ul>
+        <a href="/ai-prompts-real-estate/" class="btn btn-sm" style="width:100%;text-align:center">Learn more</a>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:16px">
+      <a href="https://beornsco.gumroad.com/l/fabnse" class="btn">Get the Core Bundle, €69 (save €16)</a>
+    </div>
+
+    <h2>Free resources</h2>
+    <ul class="free-list">
+      <li><a href="/ai-course/">5-day email course</a>: Your First AI Quick Win. One actionable lesson per day, delivered to your inbox.</li>
+      <li>AI Opportunity Discovery Checklist (4 pages): Score 25 common business tasks for automation potential.</li>
+      <li>10 Best AI Prompts for Business (6 pages): Ready-to-use prompts for marketing, sales, HR, and operations.</li>
+      <li>5-Minute Automation Audit: Quick self-assessment to find your highest-impact automation opportunities.</li>
+      <li><a href="/blog/">19 blog articles</a>: Practical guides on AI adoption, prompts, automation, HR, sales, marketing, and more.</li>
+    </ul>
+
+    <h2>Compatibility</h2>
+    <p>All guides and prompts are tool-agnostic. They work with any AI assistant you prefer:</p>
+    <div class="compat-grid">
+      <span class="compat-tag">ChatGPT (OpenAI)</span>
+      <span class="compat-tag">Claude (Anthropic)</span>
+      <span class="compat-tag">Gemini (Google)</span>
+      <span class="compat-tag">Microsoft Copilot</span>
+      <span class="compat-tag">Any other AI assistant</span>
+    </div>
+    <p style="margin-top:16px">The prompts use standard natural language. No special formatting or plugins needed. If the AI tool accepts text input, it works.</p>
+
+    <h2>Frequently Asked Questions</h2>
+
+    <details class="faq-item">
+      <summary>How are products delivered?</summary>
+      <p>Instantly via Gumroad. After purchase you get immediate access to download the PDF files. No waiting, no shipping.</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>Can I use these with my team?</summary>
+      <p>Yes. A single purchase covers your team. Share the guides, prompts, and playbooks with colleagues at no extra cost.</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>Do I need a subscription?</summary>
+      <p>No. All products are a one-time purchase. Pay once, use forever. No recurring fees.</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>What if I need help?</summary>
+      <p>Email <a href="mailto:beornsco@proton.me">beornsco@proton.me</a> and we will get back to you within 24 hours.</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>Is there a refund policy?</summary>
+      <p>Yes. Gumroad offers a 30-day money-back guarantee on all purchases. No questions asked.</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>Will products be updated?</summary>
+      <p>Yes. Existing customers get free updates whenever we improve or expand the guides. You will receive an email notification from Gumroad when updates are available.</p>
+    </details>
+
+  </div>
+</div>
+</section>
+
+<footer>
+  <a href="/">Home</a> · <a href="/terms/">Terms</a> · <a href="/privacy/">Privacy</a> · <a href="https://twitter.com/beornsco" target="_blank" rel="noopener">X/Twitter</a> · <a href="https://medium.com/@beornsco" target="_blank" rel="noopener">Medium</a>
+  <br><span style="margin-top:8px;display:inline-block">© 2026 Beorns Co · <a href="mailto:beornsco@proton.me">beornsco@proton.me</a></span> · <a href="https://beornsco.lemonsqueezy.com" target="_blank" rel="noopener">Lemon Squeezy Store</a>
+</footer>
+
+<script>
+if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+  const o=new IntersectionObserver(e=>e.forEach(i=>{if(i.isIntersecting){i.target.classList.add('visible');o.unobserve(i.target)}}),{threshold:.15});
+  document.querySelectorAll('.fade-in').forEach(el=>o.observe(el));
+}
+</script>
+<script>
 (function(){
-  var btn = document.getElementById('nav-hamburger');
-  var links = document.getElementById('nav-links');
-  var dropdownTrigger = document.querySelector('.nav-dropdown > a');
-  var dropdownContent = document.querySelector('.nav-dropdown-content');
-  var dropdown = document.querySelector('.nav-dropdown');
-
-  // Hamburger toggle
-  if(btn && links){
-    btn.addEventListener('click', function(e){
-      e.stopPropagation();
-      btn.classList.toggle('open');
-      links.classList.toggle('open');
-    });
-  }
-
-  // Mobile: Products dropdown toggle (prevent nav close)
-  if(dropdownTrigger && dropdownContent){
-    dropdownTrigger.addEventListener('click', function(e){
-      if(window.innerWidth <= 768){
-        e.preventDefault();
-        e.stopPropagation();
-        dropdown.classList.toggle('open');
-        dropdownContent.classList.toggle('open');
-      }
-    });
-  }
-
-  // Close nav when clicking outside
-  document.addEventListener('click', function(e){
-    if(links && !links.contains(e.target) && btn && !btn.contains(e.target)){
-      links.classList.remove('open');
-      btn.classList.remove('open');
-      if(dropdown) dropdown.classList.remove('open');
-      if(dropdownContent) dropdownContent.classList.remove('open');
-    }
-  });
+  var btn=document.getElementById('nav-hamburger');
+  var links=document.getElementById('nav-links');
+  var dropdown=document.querySelector('.nav-dropdown');
+  var dropdownContent=document.querySelector('.nav-dropdown-content');
+  var dropdownTrigger=document.querySelector('.nav-dropdown > a');
+  if(btn&&links){btn.addEventListener('click',function(e){e.stopPropagation();btn.classList.toggle('open');links.classList.toggle('open');});}
+  if(dropdownTrigger&&dropdownContent){dropdownTrigger.addEventListener('click',function(e){if(window.innerWidth<=768){e.preventDefault();e.stopPropagation();dropdown.classList.toggle('open');dropdownContent.classList.toggle('open');}});}
+  document.addEventListener('click',function(e){if(links&&!links.contains(e.target)&&btn&&!btn.contains(e.target)){links.classList.remove('open');btn.classList.remove('open');if(dropdown)dropdown.classList.remove('open');if(dropdownContent)dropdownContent.classList.remove('open');}});
 })();
 </script>
 </body>
