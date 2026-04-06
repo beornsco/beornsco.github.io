@@ -63,20 +63,13 @@ footer a{color:#ccc}
 <nav>
 <div class="nav-inner">
   <a href="/" class="brand">Beorns Co</a>
-  <button class="hamburger" onclick="this.classList.toggle('open');document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu">
+  <button class="hamburger" onclick="this.classList.toggle('open');document.getElementById('nav-links').classList.toggle('open')" aria-label="Menu">
     <span></span><span></span><span></span>
   </button>
-  <div class="nav-links">
-    <a href="/ai-starter-kit/">Starter Kit</a>
-    <a href="/ai-prompt-library/">Prompts</a>
-    <a href="/ai-automation-playbook/">Playbook</a>
-    <a href="/ai-prompts-real-estate/">Real Estate</a>
-    <a href="/ai-prompts-ecommerce/">E-commerce</a>
-    <a href="/ai-course/">Free Course</a>
-    <a href="/pricing/">Pricing</a>
+  <div class="nav-links" id="nav-links">
+    <a href="/free-prompts/">Free Prompts</a>
+    <a href="/pricing/">All Products</a>
     <a href="/compare/">Compare</a>
-    <a href="/docs/">Docs</a>
-    <a href="/about/">About</a>
     <a href="/blog/">Blog</a>
   </div>
 </div>
