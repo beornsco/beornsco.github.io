@@ -226,15 +226,17 @@ footer a{color:#ccc}
 <nav>
   <div class="nav-inner">
     <a href="/" class="brand">Beorns Co</a>
-    <div class="nav-links">
+    <button class="hamburger" id="nav-hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links" id="nav-links">
       <div class="nav-dropdown">
-        <a href="/pricing/" style="display:flex;align-items:center;gap:4px;">Products <span style="font-size:.7rem;">▼</span></a>
+        <a href="/pricing/" style="display:flex;align-items:center;gap:4px;">Products <span style="font-size:.7rem;">&#9660;</span></a>
         <div class="nav-dropdown-content">
           <div class="nav-dropdown-section">Core SME Toolkit</div>
           <a href="/ai-starter-kit/">AI Adoption Starter Kit</a>
           <a href="/ai-prompt-library/">200+ ChatGPT Prompts</a>
           <a href="/ai-automation-playbook/">AI Automation Playbook</a>
-          <a href="/">Complete Bundle</a>
           <hr class="nav-dropdown-divider">
           <div class="nav-dropdown-section">Niche Prompt Packs</div>
           <a href="/ai-trades-prompts/">Tradespeople</a>
@@ -605,6 +607,18 @@ document.querySelectorAll('.faq-q').forEach(function(q){
     this.parentElement.classList.toggle('open');
   });
 });
+</script>
+<script>
+(function(){
+  var btn = document.getElementById('nav-hamburger');
+  var links = document.getElementById('nav-links');
+  if(btn && links){
+    btn.addEventListener('click', function(){
+      btn.classList.toggle('open');
+      links.classList.toggle('open');
+    });
+  }
+})();
 </script>
 </body>
 </html>
