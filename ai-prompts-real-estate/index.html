@@ -92,6 +92,16 @@ nav{background:#fff;border-bottom:1px solid #e5e7eb;position:sticky;top:0;z-inde
   .fade-in{opacity:0;transform:translateY(20px);transition:opacity .5s,transform .5s}
   .fade-in.visible{opacity:1;transform:none}
 }
+
+/* Restored layout rules */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;text-align:center;padding:40px 0}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;max-width:900px;margin:0 auto}
+.stat{padding:8px}
+.stat .num{font-size:2.5rem;font-weight:800;color:var(--blue);line-height:1}
+.stat .label{color:var(--gray);font-size:.9rem;margin-top:8px}
+.features{list-style:none;counter-reset:feature}
+.features li{counter-increment:feature;padding:20px 20px 20px 60px;position:relative;border-bottom:1px solid #f3f4f6}
+.features li::before{content:counter(feature);position:absolute;left:16px;top:20px;width:28px;height:28px;background:var(--blue);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.85rem}
 </style>
 <script type="application/ld+json">
 {
