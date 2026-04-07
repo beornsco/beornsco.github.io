@@ -97,6 +97,19 @@ nav{background:#fff;border-bottom:1px solid #e5e7eb;position:sticky;top:0;z-inde
 .features{list-style:none;counter-reset:feature}
 .features li{counter-increment:feature;padding:20px 20px 20px 60px;position:relative;border-bottom:1px solid #f3f4f6}
 .features li::before{content:counter(feature);position:absolute;left:16px;top:20px;width:28px;height:28px;background:var(--blue);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.85rem}
+
+/* Prompt sections grid */
+.prompt-sections { display: grid; grid-template-columns: 1fr; gap: 16px; margin: 32px 0; }
+.prompt-section { display: flex; align-items: flex-start; gap: 16px; background: #f9fafb; border: 1px solid #e5e7eb; border-radius: 10px; padding: 20px; transition: border-color .15s; }
+.prompt-section:hover { border-color: #2962FF; }
+.prompt-count { flex-shrink: 0; background: #2962FF; color: #fff; font-weight: 700; font-size: .85rem; padding: 4px 10px; border-radius: 20px; white-space: nowrap; }
+.prompt-section-body { flex: 1; }
+.prompt-section-title { font-weight: 700; color: #111827; margin-bottom: 4px; }
+.prompt-section-desc { color: #6b7280; font-size: .9rem; line-height: 1.5; }
+.prompt-bonus { background: #fff7ed; border-color: #fed7aa; }
+.prompt-bonus .prompt-count { background: #ea580c; }
+@media(min-width: 640px) { .prompt-sections { grid-template-columns: 1fr 1fr; } }
+
 </style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3S7D3JJ9JS"></script>
@@ -240,18 +253,18 @@ nav{background:#fff;border-bottom:1px solid #e5e7eb;position:sticky;top:0;z-inde
 <section class="alt">
 <div class="container fade-in">
   <h2>What's Inside : 10 Categories, 50 Prompts</h2>
-  <ul class="items">
-    <li><strong>1. Menus &amp; Specials</strong><span>Write daily specials, seasonal menus, dish descriptions, allergen notices, and tasting menu copy</span></li>
-    <li><strong>2. Reviews</strong><span>Respond to negative TripAdvisor/Google reviews, thank positive reviewers, and encourage repeat customers to share feedback</span></li>
-    <li><strong>3. Social Media</strong><span>Instagram captions, Facebook posts, story ideas, hashtag suggestions, and weekly content plans</span></li>
-    <li><strong>4. Customer Communications</strong><span>Booking confirmations, apology messages, allergy queries, complaint handling, and loyalty messages</span></li>
-    <li><strong>5. Reservations &amp; Events</strong><span>Private dining enquiries, event proposals, Christmas party packages, and group booking follow-ups</span></li>
-    <li><strong>6. Staff &amp; Team</strong><span>Job ads for chefs and front-of-house, shift reminders, onboarding messages, and team announcements</span></li>
-    <li><strong>7. Supplier &amp; Admin</strong><span>Quote requests, order confirmations, complaint letters to suppliers, and invoice chasers</span></li>
-    <li><strong>8. Marketing</strong><span>Email newsletters, Google Business updates, loyalty programme copy, and promotional flyer text</span></li>
-    <li><strong>9. Delivery &amp; Takeaway</strong><span>Deliveroo/Uber Eats menu descriptions, packaging inserts, delivery delay messages, and upsell prompts</span></li>
-    <li><strong>10. Bonus: WhatsApp Scripts</strong><span>5 ready-to-send WhatsApp message templates for bookings, reminders, specials, and review requests</span></li>
-  </ul>
+  <div class="prompt-sections">
+    <div class="prompt-section"><span class="prompt-count">1</span><div class="prompt-section-body"><div class="prompt-section-title">Menus &amp; Specials</div><div class="prompt-section-desc">Write daily specials, seasonal menus, dish descriptions, allergen notices, and tasting menu copy.</div></div></div>
+    <div class="prompt-section"><span class="prompt-count">2</span><div class="prompt-section-body"><div class="prompt-section-title">Reviews</div><div class="prompt-section-desc">Respond to negative TripAdvisor and Google reviews, thank positive reviewers, and encourage repeat customers to share feedback.</div></div></div>
+    <div class="prompt-section"><span class="prompt-count">3</span><div class="prompt-section-body"><div class="prompt-section-title">Social Media</div><div class="prompt-section-desc">Instagram captions, Facebook posts, story ideas, hashtag suggestions, and weekly content plans.</div></div></div>
+    <div class="prompt-section"><span class="prompt-count">4</span><div class="prompt-section-body"><div class="prompt-section-title">Customer Communications</div><div class="prompt-section-desc">Booking confirmations, apology messages, allergy queries, complaint handling, and loyalty messages.</div></div></div>
+    <div class="prompt-section"><span class="prompt-count">5</span><div class="prompt-section-body"><div class="prompt-section-title">Reservations &amp; Events</div><div class="prompt-section-desc">Private dining enquiries, event proposals, Christmas party packages, and group booking follow-ups.</div></div></div>
+    <div class="prompt-section"><span class="prompt-count">6</span><div class="prompt-section-body"><div class="prompt-section-title">Staff &amp; Team</div><div class="prompt-section-desc">Job ads for chefs and front-of-house, shift reminders, onboarding messages, and team announcements.</div></div></div>
+    <div class="prompt-section"><span class="prompt-count">7</span><div class="prompt-section-body"><div class="prompt-section-title">Supplier &amp; Admin</div><div class="prompt-section-desc">Quote requests, order confirmations, complaint letters to suppliers, and invoice chasers.</div></div></div>
+    <div class="prompt-section"><span class="prompt-count">8</span><div class="prompt-section-body"><div class="prompt-section-title">Marketing</div><div class="prompt-section-desc">Email newsletters, Google Business updates, loyalty programme copy, and promotional flyer text.</div></div></div>
+    <div class="prompt-section"><span class="prompt-count">9</span><div class="prompt-section-body"><div class="prompt-section-title">Delivery &amp; Takeaway</div><div class="prompt-section-desc">Deliveroo and Uber Eats menu descriptions, packaging inserts, delivery delay messages, and upsell prompts.</div></div></div>
+    <div class="prompt-section prompt-bonus"><span class="prompt-count">Bonus 10</span><div class="prompt-section-body"><div class="prompt-section-title">WhatsApp Scripts</div><div class="prompt-section-desc">5 ready-to-send WhatsApp message templates for bookings, reminders, specials, and review requests.</div></div></div>
+  </div>
 </div>
 </section>
 

@@ -102,6 +102,19 @@ nav{background:#fff;border-bottom:1px solid #e5e7eb;position:sticky;top:0;z-inde
 .features{list-style:none;counter-reset:feature}
 .features li{counter-increment:feature;padding:20px 20px 20px 60px;position:relative;border-bottom:1px solid #f3f4f6}
 .features li::before{content:counter(feature);position:absolute;left:16px;top:20px;width:28px;height:28px;background:var(--blue);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.85rem}
+
+/* Prompt sections grid */
+.prompt-sections { display: grid; grid-template-columns: 1fr; gap: 16px; margin: 32px 0; }
+.prompt-section { display: flex; align-items: flex-start; gap: 16px; background: #f9fafb; border: 1px solid #e5e7eb; border-radius: 10px; padding: 20px; transition: border-color .15s; }
+.prompt-section:hover { border-color: #2962FF; }
+.prompt-count { flex-shrink: 0; background: #2962FF; color: #fff; font-weight: 700; font-size: .85rem; padding: 4px 10px; border-radius: 20px; white-space: nowrap; }
+.prompt-section-body { flex: 1; }
+.prompt-section-title { font-weight: 700; color: #111827; margin-bottom: 4px; }
+.prompt-section-desc { color: #6b7280; font-size: .9rem; line-height: 1.5; }
+.prompt-bonus { background: #fff7ed; border-color: #fed7aa; }
+.prompt-bonus .prompt-count { background: #ea580c; }
+@media(min-width: 640px) { .prompt-sections { grid-template-columns: 1fr 1fr; } }
+
 </style>
 <script type="application/ld+json">
 {
@@ -192,40 +205,16 @@ nav{background:#fff;border-bottom:1px solid #e5e7eb;position:sticky;top:0;z-inde
 <section>
 <div class="container">
   <h2 style="text-align:center">8 Categories. Every Part of Your Workflow.</h2>
-  <ul class="categories fade-in">
-    <li>
-      <div class="cat-icon">&#127968;</div>
-      <div><strong>Property Listings</strong><span>Compelling descriptions that sell. Luxury, starter homes, commercial, rentals.</span></div>
-    </li>
-    <li>
-      <div class="cat-icon">&#128172;</div>
-      <div><strong>Client Communication</strong><span>Follow-ups, updates, objection handling, and negotiation scripts.</span></div>
-    </li>
-    <li>
-      <div class="cat-icon">&#127919;</div>
-      <div><strong>Lead Generation</strong><span>Cold outreach, referral requests, open house follow-ups, and drip sequences.</span></div>
-    </li>
-    <li>
-      <div class="cat-icon">&#128200;</div>
-      <div><strong>Market Analysis</strong><span>Neighborhood comparisons, CMA summaries, market trend reports for clients.</span></div>
-    </li>
-    <li>
-      <div class="cat-icon">&#128221;</div>
-      <div><strong>Marketing Content</strong><span>Blog posts, email newsletters, property flyers, and ad copy.</span></div>
-    </li>
-    <li>
-      <div class="cat-icon">&#128203;</div>
-      <div><strong>Transaction Management</strong><span>Closing checklists, timeline summaries, and process explanations for buyers and sellers.</span></div>
-    </li>
-    <li>
-      <div class="cat-icon">&#129309;</div>
-      <div><strong>Client Onboarding</strong><span>Welcome packets, buyer/seller guides, expectation-setting templates.</span></div>
-    </li>
-    <li>
-      <div class="cat-icon">&#128241;</div>
-      <div><strong>Social Media &amp; Personal Branding</strong><span>Instagram captions, LinkedIn posts, video scripts, and bio drafts.</span></div>
-    </li>
-  </ul>
+  <div class="prompt-sections fade-in">
+    <div class="prompt-section"><span class="prompt-count">1</span><div class="prompt-section-body"><div class="prompt-section-title">Property Listings</div><div class="prompt-section-desc">Compelling descriptions that sell. Luxury, starter homes, commercial, and rentals.</div></div></div>
+    <div class="prompt-section"><span class="prompt-count">2</span><div class="prompt-section-body"><div class="prompt-section-title">Client Communication</div><div class="prompt-section-desc">Follow-ups, updates, objection handling, and negotiation scripts.</div></div></div>
+    <div class="prompt-section"><span class="prompt-count">3</span><div class="prompt-section-body"><div class="prompt-section-title">Lead Generation</div><div class="prompt-section-desc">Cold outreach, referral requests, open house follow-ups, and drip sequences.</div></div></div>
+    <div class="prompt-section"><span class="prompt-count">4</span><div class="prompt-section-body"><div class="prompt-section-title">Market Analysis</div><div class="prompt-section-desc">Neighborhood comparisons, CMA summaries, and market trend reports for clients.</div></div></div>
+    <div class="prompt-section"><span class="prompt-count">5</span><div class="prompt-section-body"><div class="prompt-section-title">Marketing Content</div><div class="prompt-section-desc">Blog posts, email newsletters, property flyers, and ad copy.</div></div></div>
+    <div class="prompt-section"><span class="prompt-count">6</span><div class="prompt-section-body"><div class="prompt-section-title">Transaction Management</div><div class="prompt-section-desc">Closing checklists, timeline summaries, and process explanations for buyers and sellers.</div></div></div>
+    <div class="prompt-section"><span class="prompt-count">7</span><div class="prompt-section-body"><div class="prompt-section-title">Client Onboarding</div><div class="prompt-section-desc">Welcome packets, buyer and seller guides, and expectation-setting templates.</div></div></div>
+    <div class="prompt-section"><span class="prompt-count">8</span><div class="prompt-section-body"><div class="prompt-section-title">Social Media &amp; Personal Branding</div><div class="prompt-section-desc">Instagram captions, LinkedIn posts, video scripts, and bio drafts.</div></div></div>
+  </div>
 </div>
 </section>
 

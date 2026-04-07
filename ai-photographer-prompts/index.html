@@ -97,6 +97,19 @@ nav{background:#fff;border-bottom:1px solid #e5e7eb;position:sticky;top:0;z-inde
 .features{list-style:none;counter-reset:feature}
 .features li{counter-increment:feature;padding:20px 20px 20px 60px;position:relative;border-bottom:1px solid #f3f4f6}
 .features li::before{content:counter(feature);position:absolute;left:16px;top:20px;width:28px;height:28px;background:var(--blue);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.85rem}
+
+/* Prompt sections grid */
+.prompt-sections { display: grid; grid-template-columns: 1fr; gap: 16px; margin: 32px 0; }
+.prompt-section { display: flex; align-items: flex-start; gap: 16px; background: #f9fafb; border: 1px solid #e5e7eb; border-radius: 10px; padding: 20px; transition: border-color .15s; }
+.prompt-section:hover { border-color: #2962FF; }
+.prompt-count { flex-shrink: 0; background: #2962FF; color: #fff; font-weight: 700; font-size: .85rem; padding: 4px 10px; border-radius: 20px; white-space: nowrap; }
+.prompt-section-body { flex: 1; }
+.prompt-section-title { font-weight: 700; color: #111827; margin-bottom: 4px; }
+.prompt-section-desc { color: #6b7280; font-size: .9rem; line-height: 1.5; }
+.prompt-bonus { background: #fff7ed; border-color: #fed7aa; }
+.prompt-bonus .prompt-count { background: #ea580c; }
+@media(min-width: 640px) { .prompt-sections { grid-template-columns: 1fr 1fr; } }
+
 </style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3S7D3JJ9JS"></script>
@@ -240,18 +253,18 @@ nav{background:#fff;border-bottom:1px solid #e5e7eb;position:sticky;top:0;z-inde
 <section class="alt">
 <div class="container fade-in">
   <h2>What's Inside : 10 Categories, 60 Prompts</h2>
-  <ul class="items">
-    <li><strong>1. Client Enquiry &amp; Booking</strong><span>Respond to new enquiries, confirm bookings, send contracts, and handle last-minute changes</span></li>
-    <li><strong>2. Pricing &amp; Packages</strong><span>Present rates, handle price objections, upsell packages, and follow up on quotes</span></li>
-    <li><strong>3. Wedding Photography</strong><span>Wedding proposals, timeline planning, day-of instructions, venue coordinator emails, and post-wedding messages</span></li>
-    <li><strong>4. Portrait &amp; Family</strong><span>Session prep guides, wardrobe advice emails, booking reminders, and post-shoot gallery notes</span></li>
-    <li><strong>5. Instagram &amp; Social</strong><span>Portfolio captions, behind-the-scenes posts, client features, seasonal promos, and engagement questions</span></li>
-    <li><strong>6. Reviews &amp; Testimonials</strong><span>Request reviews from happy clients, respond to Google reviews, and use feedback in your marketing</span></li>
-    <li><strong>7. Gallery Delivery</strong><span>Gallery delivery emails, download instructions, print upgrade upsells, and album preview messages</span></li>
-    <li><strong>8. Marketing &amp; Blog</strong><span>Blog post outlines, Google Business updates, referral programme messages, and email newsletter copy</span></li>
-    <li><strong>9. Business Admin</strong><span>Late payment chasers, GDPR consent requests, contract follow-ups, and cancellation policy messages</span></li>
-    <li><strong>10. Bonus: Quick Replies</strong><span>5 ready-to-copy short reply templates for common DMs, voicemails, and enquiry form responses</span></li>
-  </ul>
+  <div class="prompt-sections">
+    <div class="prompt-section"><span class="prompt-count">1</span><div class="prompt-section-body"><div class="prompt-section-title">Client Enquiry &amp; Booking</div><div class="prompt-section-desc">Respond to new enquiries, confirm bookings, send contracts, and handle last-minute changes.</div></div></div>
+    <div class="prompt-section"><span class="prompt-count">2</span><div class="prompt-section-body"><div class="prompt-section-title">Pricing &amp; Packages</div><div class="prompt-section-desc">Present rates, handle price objections, upsell packages, and follow up on quotes.</div></div></div>
+    <div class="prompt-section"><span class="prompt-count">3</span><div class="prompt-section-body"><div class="prompt-section-title">Wedding Photography</div><div class="prompt-section-desc">Wedding proposals, timeline planning, day-of instructions, venue coordinator emails, and post-wedding messages.</div></div></div>
+    <div class="prompt-section"><span class="prompt-count">4</span><div class="prompt-section-body"><div class="prompt-section-title">Portrait &amp; Family</div><div class="prompt-section-desc">Session prep guides, wardrobe advice emails, booking reminders, and post-shoot gallery notes.</div></div></div>
+    <div class="prompt-section"><span class="prompt-count">5</span><div class="prompt-section-body"><div class="prompt-section-title">Instagram &amp; Social</div><div class="prompt-section-desc">Portfolio captions, behind-the-scenes posts, client features, seasonal promos, and engagement questions.</div></div></div>
+    <div class="prompt-section"><span class="prompt-count">6</span><div class="prompt-section-body"><div class="prompt-section-title">Reviews &amp; Testimonials</div><div class="prompt-section-desc">Request reviews from happy clients, respond to Google reviews, and use feedback in your marketing.</div></div></div>
+    <div class="prompt-section"><span class="prompt-count">7</span><div class="prompt-section-body"><div class="prompt-section-title">Gallery Delivery</div><div class="prompt-section-desc">Gallery delivery emails, download instructions, print upgrade upsells, and album preview messages.</div></div></div>
+    <div class="prompt-section"><span class="prompt-count">8</span><div class="prompt-section-body"><div class="prompt-section-title">Marketing &amp; Blog</div><div class="prompt-section-desc">Blog post outlines, Google Business updates, referral programme messages, and email newsletter copy.</div></div></div>
+    <div class="prompt-section"><span class="prompt-count">9</span><div class="prompt-section-body"><div class="prompt-section-title">Business Admin</div><div class="prompt-section-desc">Late payment chasers, GDPR consent requests, contract follow-ups, and cancellation policy messages.</div></div></div>
+    <div class="prompt-section prompt-bonus"><span class="prompt-count">Bonus 10</span><div class="prompt-section-body"><div class="prompt-section-title">Quick Replies</div><div class="prompt-section-desc">5 ready-to-copy short reply templates for common DMs, voicemails, and enquiry form responses.</div></div></div>
+  </div>
 </div>
 </section>
 

@@ -97,6 +97,19 @@ nav{background:#fff;border-bottom:1px solid #e5e7eb;position:sticky;top:0;z-inde
 .features{list-style:none;counter-reset:feature}
 .features li{counter-increment:feature;padding:20px 20px 20px 60px;position:relative;border-bottom:1px solid #f3f4f6}
 .features li::before{content:counter(feature);position:absolute;left:16px;top:20px;width:28px;height:28px;background:var(--blue);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.85rem}
+
+/* Prompt sections grid */
+.prompt-sections { display: grid; grid-template-columns: 1fr; gap: 16px; margin: 32px 0; }
+.prompt-section { display: flex; align-items: flex-start; gap: 16px; background: #f9fafb; border: 1px solid #e5e7eb; border-radius: 10px; padding: 20px; transition: border-color .15s; }
+.prompt-section:hover { border-color: #2962FF; }
+.prompt-count { flex-shrink: 0; background: #2962FF; color: #fff; font-weight: 700; font-size: .85rem; padding: 4px 10px; border-radius: 20px; white-space: nowrap; }
+.prompt-section-body { flex: 1; }
+.prompt-section-title { font-weight: 700; color: #111827; margin-bottom: 4px; }
+.prompt-section-desc { color: #6b7280; font-size: .9rem; line-height: 1.5; }
+.prompt-bonus { background: #fff7ed; border-color: #fed7aa; }
+.prompt-bonus .prompt-count { background: #ea580c; }
+@media(min-width: 640px) { .prompt-sections { grid-template-columns: 1fr 1fr; } }
+
 </style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3S7D3JJ9JS"></script>
@@ -244,51 +257,69 @@ nav{background:#fff;border-bottom:1px solid #e5e7eb;position:sticky;top:0;z-inde
   <div class="section-label">What's Inside</div>
   <h2>54 Prompts Across 9 Sections</h2>
   <p class="section-sub">Every prompt is written specifically for local service businesses : not generic business jargon.</p>
-  <div class="sections-grid">
-    <div class="section-card">
-      <span class="num">8 prompts</span>
-      <strong>Quoting &amp; Estimating</strong>
-      <span>Professional quotes that win jobs : even for complex multi-stage work.</span>
+  <div class="prompt-sections">
+    <div class="prompt-section">
+      <span class="prompt-count">8 prompts</span>
+      <div class="prompt-section-body">
+        <div class="prompt-section-title">Quoting &amp; Estimating</div>
+        <div class="prompt-section-desc">Professional quotes that win jobs, even for complex multi-stage work.</div>
+      </div>
     </div>
-    <div class="section-card">
-      <span class="num">6 prompts</span>
-      <strong>Invoicing &amp; Payment Chasing</strong>
-      <span>Get paid faster with firm-but-friendly follow-up messages.</span>
+    <div class="prompt-section">
+      <span class="prompt-count">6 prompts</span>
+      <div class="prompt-section-body">
+        <div class="prompt-section-title">Invoicing &amp; Payment Chasing</div>
+        <div class="prompt-section-desc">Get paid faster with firm-but-friendly follow-up messages.</div>
+      </div>
     </div>
-    <div class="section-card">
-      <span class="num">7 prompts</span>
-      <strong>Customer Communication</strong>
-      <span>Booking confirmations, job updates, follow-ups : handled.</span>
+    <div class="prompt-section">
+      <span class="prompt-count">7 prompts</span>
+      <div class="prompt-section-body">
+        <div class="prompt-section-title">Customer Communication</div>
+        <div class="prompt-section-desc">Booking confirmations, job updates, follow-ups handled.</div>
+      </div>
     </div>
-    <div class="section-card">
-      <span class="num">6 prompts</span>
-      <strong>Handling Complaints</strong>
-      <span>Turn unhappy customers into repeat customers with the right words.</span>
+    <div class="prompt-section">
+      <span class="prompt-count">6 prompts</span>
+      <div class="prompt-section-body">
+        <div class="prompt-section-title">Handling Complaints</div>
+        <div class="prompt-section-desc">Turn unhappy customers into repeat customers with the right words.</div>
+      </div>
     </div>
-    <div class="section-card">
-      <span class="num">5 prompts</span>
-      <strong>Google &amp; Facebook Reviews</strong>
-      <span>Ask for reviews and respond to them : both good and bad.</span>
+    <div class="prompt-section">
+      <span class="prompt-count">5 prompts</span>
+      <div class="prompt-section-body">
+        <div class="prompt-section-title">Google &amp; Facebook Reviews</div>
+        <div class="prompt-section-desc">Ask for reviews and respond to them, both good and bad.</div>
+      </div>
     </div>
-    <div class="section-card">
-      <span class="num">8 prompts</span>
-      <strong>Social Media Posts</strong>
-      <span>Before/after posts, seasonal offers, trust-builders : ready to go.</span>
+    <div class="prompt-section">
+      <span class="prompt-count">8 prompts</span>
+      <div class="prompt-section-body">
+        <div class="prompt-section-title">Social Media Posts</div>
+        <div class="prompt-section-desc">Before/after posts, seasonal offers, trust-builders ready to go.</div>
+      </div>
     </div>
-    <div class="section-card">
-      <span class="num">5 prompts</span>
-      <strong>Hiring &amp; Team</strong>
-      <span>Job ads, interview questions, and onboarding messages for new staff.</span>
+    <div class="prompt-section">
+      <span class="prompt-count">5 prompts</span>
+      <div class="prompt-section-body">
+        <div class="prompt-section-title">Hiring &amp; Team</div>
+        <div class="prompt-section-desc">Job ads, interview questions, and onboarding messages for new staff.</div>
+      </div>
     </div>
-    <div class="section-card">
-      <span class="num">5 prompts</span>
-      <strong>Admin &amp; Compliance</strong>
-      <span>T&amp;Cs, privacy notices, and GDPR-aware templates for EU businesses.</span>
+    <div class="prompt-section">
+      <span class="prompt-count">5 prompts</span>
+      <div class="prompt-section-body">
+        <div class="prompt-section-title">Admin &amp; Compliance</div>
+        <div class="prompt-section-desc">Terms and conditions, privacy notices, and GDPR-aware templates for EU businesses.</div>
+      </div>
     </div>
-    <div class="section-card">
-      <span class="num bonus">Bonus · 4 prompts</span>
-      <strong>Quick SMS &amp; WhatsApp Scripts</strong>
-      <span>Short, punchy messages for reminders, follow-ups, and booking confirmations.</span>
+    <div class="prompt-section prompt-bonus">
+      <span class="prompt-count">Bonus 4</span>
+      <div class="prompt-section-body">
+        <div class="prompt-section-title">Quick SMS &amp; WhatsApp Scripts</div>
+        <div class="prompt-section-desc">Short, punchy messages for reminders, follow-ups, and booking confirmations.</div>
+      </div>
     </div>
   </div>
 </div>

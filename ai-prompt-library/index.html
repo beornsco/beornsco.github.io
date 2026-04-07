@@ -97,6 +97,19 @@ nav{background:#fff;border-bottom:1px solid #e5e7eb;position:sticky;top:0;z-inde
 .features{list-style:none;counter-reset:feature}
 .features li{counter-increment:feature;padding:20px 20px 20px 60px;position:relative;border-bottom:1px solid #f3f4f6}
 .features li::before{content:counter(feature);position:absolute;left:16px;top:20px;width:28px;height:28px;background:var(--blue);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.85rem}
+
+/* Prompt sections grid */
+.prompt-sections { display: grid; grid-template-columns: 1fr; gap: 16px; margin: 32px 0; }
+.prompt-section { display: flex; align-items: flex-start; gap: 16px; background: #f9fafb; border: 1px solid #e5e7eb; border-radius: 10px; padding: 20px; transition: border-color .15s; }
+.prompt-section:hover { border-color: #2962FF; }
+.prompt-count { flex-shrink: 0; background: #2962FF; color: #fff; font-weight: 700; font-size: .85rem; padding: 4px 10px; border-radius: 20px; white-space: nowrap; }
+.prompt-section-body { flex: 1; }
+.prompt-section-title { font-weight: 700; color: #111827; margin-bottom: 4px; }
+.prompt-section-desc { color: #6b7280; font-size: .9rem; line-height: 1.5; }
+.prompt-bonus { background: #fff7ed; border-color: #fed7aa; }
+.prompt-bonus .prompt-count { background: #ea580c; }
+@media(min-width: 640px) { .prompt-sections { grid-template-columns: 1fr 1fr; } }
+
 </style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3S7D3JJ9JS"></script>
@@ -160,13 +173,13 @@ nav{background:#fff;border-bottom:1px solid #e5e7eb;position:sticky;top:0;z-inde
 <section>
 <div class="container">
   <h2>What's Inside</h2>
-  <ul class="items fade-in">
-    <li><strong>200+ tested prompts</strong><span>Organized by department, ready to use today</span></li>
-    <li><strong>10 sections</strong><span>Sales, Marketing, Customer Service, HR, Operations, Finance, Strategy, IT, Legal, and Bonus Meta-Prompts</span></li>
-    <li><strong>Customizable [BRACKETS]</strong><span>Every prompt has fill-in-the-blank placeholders, just add your details</span></li>
-    <li><strong>Pro tips for each prompt</strong><span>Get even better results with expert guidance on how to tweak and iterate</span></li>
-    <li><strong>Works with any AI</strong><span>ChatGPT, Claude, Gemini, and any other AI tool you use</span></li>
-  </ul>
+  <div class="prompt-sections fade-in">
+    <div class="prompt-section"><span class="prompt-count">200+</span><div class="prompt-section-body"><div class="prompt-section-title">200+ tested prompts</div><div class="prompt-section-desc">Organized by department, ready to use today.</div></div></div>
+    <div class="prompt-section"><span class="prompt-count">10</span><div class="prompt-section-body"><div class="prompt-section-title">10 sections</div><div class="prompt-section-desc">Sales, Marketing, Customer Service, HR, Operations, Finance, Strategy, IT, Legal, and bonus meta-prompts.</div></div></div>
+    <div class="prompt-section"><span class="prompt-count">[ ]</span><div class="prompt-section-body"><div class="prompt-section-title">Customizable [BRACKETS]</div><div class="prompt-section-desc">Every prompt has fill-in-the-blank placeholders. Add your details and run.</div></div></div>
+    <div class="prompt-section"><span class="prompt-count">Pro</span><div class="prompt-section-body"><div class="prompt-section-title">Pro tips for each prompt</div><div class="prompt-section-desc">Get better results with practical guidance on how to tweak and iterate.</div></div></div>
+    <div class="prompt-section"><span class="prompt-count">Any AI</span><div class="prompt-section-body"><div class="prompt-section-title">Works with any AI</div><div class="prompt-section-desc">ChatGPT, Claude, Gemini, and any other AI tool you use.</div></div></div>
+  </div>
 </div>
 </section>
 

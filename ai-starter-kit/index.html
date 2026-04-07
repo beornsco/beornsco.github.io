@@ -97,6 +97,19 @@ nav{background:#fff;border-bottom:1px solid #e5e7eb;position:sticky;top:0;z-inde
 .features{list-style:none;counter-reset:feature}
 .features li{counter-increment:feature;padding:20px 20px 20px 60px;position:relative;border-bottom:1px solid #f3f4f6}
 .features li::before{content:counter(feature);position:absolute;left:16px;top:20px;width:28px;height:28px;background:var(--blue);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.85rem}
+
+/* Prompt sections grid */
+.prompt-sections { display: grid; grid-template-columns: 1fr; gap: 16px; margin: 32px 0; }
+.prompt-section { display: flex; align-items: flex-start; gap: 16px; background: #f9fafb; border: 1px solid #e5e7eb; border-radius: 10px; padding: 20px; transition: border-color .15s; }
+.prompt-section:hover { border-color: #2962FF; }
+.prompt-count { flex-shrink: 0; background: #2962FF; color: #fff; font-weight: 700; font-size: .85rem; padding: 4px 10px; border-radius: 20px; white-space: nowrap; }
+.prompt-section-body { flex: 1; }
+.prompt-section-title { font-weight: 700; color: #111827; margin-bottom: 4px; }
+.prompt-section-desc { color: #6b7280; font-size: .9rem; line-height: 1.5; }
+.prompt-bonus { background: #fff7ed; border-color: #fed7aa; }
+.prompt-bonus .prompt-count { background: #ea580c; }
+@media(min-width: 640px) { .prompt-sections { grid-template-columns: 1fr 1fr; } }
+
 </style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3S7D3JJ9JS"></script>
@@ -160,16 +173,16 @@ nav{background:#fff;border-bottom:1px solid #e5e7eb;position:sticky;top:0;z-inde
 <section>
 <div class="container">
   <h2>What's Inside</h2>
-  <ul class="items fade-in">
-    <li><strong>AI Opportunity Assessment Framework</strong><span>Find where AI saves the most time and money in your business</span></li>
-    <li><strong>Prioritization Matrix</strong><span>Rank opportunities by impact and feasibility, stop chasing shiny objects</span></li>
-    <li><strong>AI Readiness Checklist</strong><span>Know if your team and data are ready before investing a cent</span></li>
-    <li><strong>AI Policy Template</strong><span>Protect your business, your data, and your clients from day one</span></li>
-    <li><strong>30/60/90 Day Implementation Roadmap</strong><span>A real plan with milestones, not theory</span></li>
-    <li><strong>ROI Calculator</strong><span>Prove the business case with actual numbers</span></li>
-    <li><strong>Executive Summary Template</strong><span>Get leadership buy-in with a professional, ready-made document</span></li>
-    <li><strong>25 AI Use Cases by Department</strong><span>Real examples across sales, marketing, ops, HR, and finance</span></li>
-  </ul>
+  <div class="prompt-sections fade-in">
+    <div class="prompt-section"><span class="prompt-count">1</span><div class="prompt-section-body"><div class="prompt-section-title">AI Opportunity Assessment Framework</div><div class="prompt-section-desc">Find where AI saves the most time and money in your business.</div></div></div>
+    <div class="prompt-section"><span class="prompt-count">2</span><div class="prompt-section-body"><div class="prompt-section-title">Prioritization Matrix</div><div class="prompt-section-desc">Rank opportunities by impact and feasibility, and stop chasing shiny objects.</div></div></div>
+    <div class="prompt-section"><span class="prompt-count">3</span><div class="prompt-section-body"><div class="prompt-section-title">AI Readiness Checklist</div><div class="prompt-section-desc">Know if your team and data are ready before investing a cent.</div></div></div>
+    <div class="prompt-section"><span class="prompt-count">4</span><div class="prompt-section-body"><div class="prompt-section-title">AI Policy Template</div><div class="prompt-section-desc">Protect your business, your data, and your clients from day one.</div></div></div>
+    <div class="prompt-section"><span class="prompt-count">5</span><div class="prompt-section-body"><div class="prompt-section-title">30/60/90 Day Implementation Roadmap</div><div class="prompt-section-desc">A real plan with milestones, not theory.</div></div></div>
+    <div class="prompt-section"><span class="prompt-count">6</span><div class="prompt-section-body"><div class="prompt-section-title">ROI Calculator</div><div class="prompt-section-desc">Prove the business case with actual numbers.</div></div></div>
+    <div class="prompt-section"><span class="prompt-count">7</span><div class="prompt-section-body"><div class="prompt-section-title">Executive Summary Template</div><div class="prompt-section-desc">Get leadership buy-in with a professional, ready-made document.</div></div></div>
+    <div class="prompt-section"><span class="prompt-count">8</span><div class="prompt-section-body"><div class="prompt-section-title">25 AI Use Cases by Department</div><div class="prompt-section-desc">Real examples across sales, marketing, ops, HR, and finance.</div></div></div>
+  </div>
 </div>
 </section>
 

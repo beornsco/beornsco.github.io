@@ -102,6 +102,19 @@ nav{background:#fff;border-bottom:1px solid #e5e7eb;position:sticky;top:0;z-inde
 .features{list-style:none;counter-reset:feature}
 .features li{counter-increment:feature;padding:20px 20px 20px 60px;position:relative;border-bottom:1px solid #f3f4f6}
 .features li::before{content:counter(feature);position:absolute;left:16px;top:20px;width:28px;height:28px;background:var(--blue);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.85rem}
+
+/* Prompt sections grid */
+.prompt-sections { display: grid; grid-template-columns: 1fr; gap: 16px; margin: 32px 0; }
+.prompt-section { display: flex; align-items: flex-start; gap: 16px; background: #f9fafb; border: 1px solid #e5e7eb; border-radius: 10px; padding: 20px; transition: border-color .15s; }
+.prompt-section:hover { border-color: #2962FF; }
+.prompt-count { flex-shrink: 0; background: #2962FF; color: #fff; font-weight: 700; font-size: .85rem; padding: 4px 10px; border-radius: 20px; white-space: nowrap; }
+.prompt-section-body { flex: 1; }
+.prompt-section-title { font-weight: 700; color: #111827; margin-bottom: 4px; }
+.prompt-section-desc { color: #6b7280; font-size: .9rem; line-height: 1.5; }
+.prompt-bonus { background: #fff7ed; border-color: #fed7aa; }
+.prompt-bonus .prompt-count { background: #ea580c; }
+@media(min-width: 640px) { .prompt-sections { grid-template-columns: 1fr 1fr; } }
+
 </style>
 <script type="application/ld+json">
 {
@@ -193,40 +206,16 @@ nav{background:#fff;border-bottom:1px solid #e5e7eb;position:sticky;top:0;z-inde
 <section>
 <div class="container">
   <h2 style="text-align:center">8 Categories. Every Part of Your Store.</h2>
-  <ul class="categories fade-in">
-    <li>
-      <div class="cat-icon">&#128230;</div>
-      <div><strong>Product Descriptions</strong><span>Compelling copy for any product type, tone, and platform. Shopify, Etsy, Amazon, WooCommerce.</span></div>
-    </li>
-    <li>
-      <div class="cat-icon">&#128269;</div>
-      <div><strong>SEO Titles and Meta</strong><span>Keyword-rich titles, meta descriptions, and alt text that rank on Google.</span></div>
-    </li>
-    <li>
-      <div class="cat-icon">&#128227;</div>
-      <div><strong>Ad Copy</strong><span>Facebook, Instagram, and Google Ads copy with hooks, CTAs, and A/B variants.</span></div>
-    </li>
-    <li>
-      <div class="cat-icon">&#128231;</div>
-      <div><strong>Email Flows</strong><span>Welcome series, cart abandonment, post-purchase, win-back, and VIP campaigns.</span></div>
-    </li>
-    <li>
-      <div class="cat-icon">&#128172;</div>
-      <div><strong>Customer Support</strong><span>Professional replies for returns, complaints, shipping questions, and escalations.</span></div>
-    </li>
-    <li>
-      <div class="cat-icon">&#128247;</div>
-      <div><strong>Social Media</strong><span>Content calendars, product launch posts, behind-the-scenes ideas, and captions.</span></div>
-    </li>
-    <li>
-      <div class="cat-icon">&#128176;</div>
-      <div><strong>Pricing and Promos</strong><span>Flash sale announcements, discount strategies, seasonal campaign copy, and urgency messaging.</span></div>
-    </li>
-    <li>
-      <div class="cat-icon">&#128200;</div>
-      <div><strong>Upsell and Cross-sell</strong><span>Product recommendation emails, bundle descriptions, post-purchase offers, and loyalty program copy.</span></div>
-    </li>
-  </ul>
+  <div class="prompt-sections fade-in">
+    <div class="prompt-section"><span class="prompt-count">1</span><div class="prompt-section-body"><div class="prompt-section-title">Product Descriptions</div><div class="prompt-section-desc">Compelling copy for any product type, tone, and platform. Shopify, Etsy, Amazon, and WooCommerce.</div></div></div>
+    <div class="prompt-section"><span class="prompt-count">2</span><div class="prompt-section-body"><div class="prompt-section-title">SEO Titles and Meta</div><div class="prompt-section-desc">Keyword-rich titles, meta descriptions, and alt text that rank on Google.</div></div></div>
+    <div class="prompt-section"><span class="prompt-count">3</span><div class="prompt-section-body"><div class="prompt-section-title">Ad Copy</div><div class="prompt-section-desc">Facebook, Instagram, and Google Ads copy with hooks, CTAs, and A/B variants.</div></div></div>
+    <div class="prompt-section"><span class="prompt-count">4</span><div class="prompt-section-body"><div class="prompt-section-title">Email Flows</div><div class="prompt-section-desc">Welcome series, cart abandonment, post-purchase, win-back, and VIP campaigns.</div></div></div>
+    <div class="prompt-section"><span class="prompt-count">5</span><div class="prompt-section-body"><div class="prompt-section-title">Customer Support</div><div class="prompt-section-desc">Professional replies for returns, complaints, shipping questions, and escalations.</div></div></div>
+    <div class="prompt-section"><span class="prompt-count">6</span><div class="prompt-section-body"><div class="prompt-section-title">Social Media</div><div class="prompt-section-desc">Content calendars, product launch posts, behind-the-scenes ideas, and captions.</div></div></div>
+    <div class="prompt-section"><span class="prompt-count">7</span><div class="prompt-section-body"><div class="prompt-section-title">Pricing and Promos</div><div class="prompt-section-desc">Flash sale announcements, discount strategies, seasonal campaign copy, and urgency messaging.</div></div></div>
+    <div class="prompt-section"><span class="prompt-count">8</span><div class="prompt-section-body"><div class="prompt-section-title">Upsell and Cross-sell</div><div class="prompt-section-desc">Product recommendation emails, bundle descriptions, post-purchase offers, and loyalty program copy.</div></div></div>
+  </div>
 </div>
 </section>
 

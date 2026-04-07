@@ -97,6 +97,19 @@ nav{background:#fff;border-bottom:1px solid #e5e7eb;position:sticky;top:0;z-inde
 .features{list-style:none;counter-reset:feature}
 .features li{counter-increment:feature;padding:20px 20px 20px 60px;position:relative;border-bottom:1px solid #f3f4f6}
 .features li::before{content:counter(feature);position:absolute;left:16px;top:20px;width:28px;height:28px;background:var(--blue);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.85rem}
+
+/* Prompt sections grid */
+.prompt-sections { display: grid; grid-template-columns: 1fr; gap: 16px; margin: 32px 0; }
+.prompt-section { display: flex; align-items: flex-start; gap: 16px; background: #f9fafb; border: 1px solid #e5e7eb; border-radius: 10px; padding: 20px; transition: border-color .15s; }
+.prompt-section:hover { border-color: #2962FF; }
+.prompt-count { flex-shrink: 0; background: #2962FF; color: #fff; font-weight: 700; font-size: .85rem; padding: 4px 10px; border-radius: 20px; white-space: nowrap; }
+.prompt-section-body { flex: 1; }
+.prompt-section-title { font-weight: 700; color: #111827; margin-bottom: 4px; }
+.prompt-section-desc { color: #6b7280; font-size: .9rem; line-height: 1.5; }
+.prompt-bonus { background: #fff7ed; border-color: #fed7aa; }
+.prompt-bonus .prompt-count { background: #ea580c; }
+@media(min-width: 640px) { .prompt-sections { grid-template-columns: 1fr 1fr; } }
+
 </style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3S7D3JJ9JS"></script>
@@ -240,18 +253,18 @@ nav{background:#fff;border-bottom:1px solid #e5e7eb;position:sticky;top:0;z-inde
 <section class="alt">
 <div class="container fade-in">
   <h2>What's Inside : 10 Departments, 100 Prompts</h2>
-  <ul class="items">
-    <li><strong>1. Customer Service</strong><span>Complaint responses, refund policies, apology messages, FAQ drafts, and escalation scripts</span></li>
-    <li><strong>2. Marketing</strong><span>Ad copy, email campaigns, landing page copy, promotional offers, and Google Business updates</span></li>
-    <li><strong>3. Sales</strong><span>Cold outreach, follow-up sequences, proposal templates, objection handlers, and win-back messages</span></li>
-    <li><strong>4. HR</strong><span>Job ads, interview questions, onboarding plans, performance review frameworks, and team announcements</span></li>
-    <li><strong>5. Operations</strong><span>Process documentation, supplier communications, internal SOPs, meeting agendas, and project updates</span></li>
-    <li><strong>6. Finance</strong><span>Invoice chasers, expense policy templates, budget summary narratives, and financial update messages</span></li>
-    <li><strong>7. Strategy</strong><span>SWOT prompts, quarterly planning frameworks, competitor analysis structures, and goal-setting templates</span></li>
-    <li><strong>8. Team &amp; Culture</strong><span>All-hands messages, recognition posts, team values communication, and culture-building content</span></li>
-    <li><strong>9. Legal &amp; Compliance</strong><span>GDPR notices, data subject request responses, consent language, NDA summaries, and contract review prompts</span></li>
-    <li><strong>10. AI Productivity Hacks</strong><span>Meta-prompts to supercharge your use of AI: summarisation, analysis, brainstorming, and automation starters</span></li>
-  </ul>
+  <div class="prompt-sections">
+    <div class="prompt-section"><span class="prompt-count">1</span><div class="prompt-section-body"><div class="prompt-section-title">Customer Service</div><div class="prompt-section-desc">Complaint responses, refund policies, apology messages, FAQ drafts, and escalation scripts.</div></div></div>
+    <div class="prompt-section"><span class="prompt-count">2</span><div class="prompt-section-body"><div class="prompt-section-title">Marketing</div><div class="prompt-section-desc">Ad copy, email campaigns, landing page copy, promotional offers, and Google Business updates.</div></div></div>
+    <div class="prompt-section"><span class="prompt-count">3</span><div class="prompt-section-body"><div class="prompt-section-title">Sales</div><div class="prompt-section-desc">Cold outreach, follow-up sequences, proposal templates, objection handlers, and win-back messages.</div></div></div>
+    <div class="prompt-section"><span class="prompt-count">4</span><div class="prompt-section-body"><div class="prompt-section-title">HR</div><div class="prompt-section-desc">Job ads, interview questions, onboarding plans, performance review frameworks, and team announcements.</div></div></div>
+    <div class="prompt-section"><span class="prompt-count">5</span><div class="prompt-section-body"><div class="prompt-section-title">Operations</div><div class="prompt-section-desc">Process documentation, supplier communications, internal SOPs, meeting agendas, and project updates.</div></div></div>
+    <div class="prompt-section"><span class="prompt-count">6</span><div class="prompt-section-body"><div class="prompt-section-title">Finance</div><div class="prompt-section-desc">Invoice chasers, expense policy templates, budget summary narratives, and financial update messages.</div></div></div>
+    <div class="prompt-section"><span class="prompt-count">7</span><div class="prompt-section-body"><div class="prompt-section-title">Strategy</div><div class="prompt-section-desc">SWOT prompts, quarterly planning frameworks, competitor analysis structures, and goal-setting templates.</div></div></div>
+    <div class="prompt-section"><span class="prompt-count">8</span><div class="prompt-section-body"><div class="prompt-section-title">Team &amp; Culture</div><div class="prompt-section-desc">All-hands messages, recognition posts, team values communication, and culture-building content.</div></div></div>
+    <div class="prompt-section"><span class="prompt-count">9</span><div class="prompt-section-body"><div class="prompt-section-title">Legal &amp; Compliance</div><div class="prompt-section-desc">GDPR notices, data subject request responses, consent language, NDA summaries, and contract review prompts.</div></div></div>
+    <div class="prompt-section"><span class="prompt-count">10</span><div class="prompt-section-body"><div class="prompt-section-title">AI Productivity Hacks</div><div class="prompt-section-desc">Meta-prompts to supercharge your use of AI: summarisation, analysis, brainstorming, and automation starters.</div></div></div>
+  </div>
 </div>
 </section>
 

@@ -101,6 +101,27 @@ nav{background:#fff;border-bottom:1px solid #e5e7eb;position:sticky;top:0;z-inde
 .features{list-style:none;counter-reset:feature}
 .features li{counter-increment:feature;padding:20px 20px 20px 60px;position:relative;border-bottom:1px solid #f3f4f6}
 .features li::before{content:counter(feature);position:absolute;left:16px;top:20px;width:28px;height:28px;background:var(--blue);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.85rem}
+
+/* Prompt sections grid */
+.prompt-sections { display: grid; grid-template-columns: 1fr; gap: 16px; margin: 32px 0; }
+.prompt-section { display: flex; align-items: flex-start; gap: 16px; background: #f9fafb; border: 1px solid #e5e7eb; border-radius: 10px; padding: 20px; transition: border-color .15s; }
+.prompt-section:hover { border-color: #2962FF; }
+.prompt-count { flex-shrink: 0; background: #2962FF; color: #fff; font-weight: 700; font-size: .85rem; padding: 4px 10px; border-radius: 20px; white-space: nowrap; }
+.prompt-section-body { flex: 1; }
+.prompt-section-title { font-weight: 700; color: #111827; margin-bottom: 4px; }
+.prompt-section-desc { color: #6b7280; font-size: .9rem; line-height: 1.5; }
+.prompt-bonus { background: #fff7ed; border-color: #fed7aa; }
+.prompt-bonus .prompt-count { background: #ea580c; }
+@media(min-width: 640px) { .prompt-sections { grid-template-columns: 1fr 1fr; } }
+
+.playbook-grid { display: grid; grid-template-columns: 1fr; gap: 12px; margin: 24px 0; }
+.playbook-card { display: flex; align-items: flex-start; gap: 16px; background: #fff; border: 1px solid #e5e7eb; border-radius: 10px; padding: 20px; }
+.playbook-num { flex-shrink: 0; width: 32px; height: 32px; background: #2962FF; color: #fff; font-weight: 700; font-size: .9rem; border-radius: 50%; display: flex; align-items: center; justify-content: center; }
+.playbook-card-body { flex: 1; }
+.playbook-card-title { font-weight: 700; color: #111827; margin-bottom: 4px; }
+.playbook-card-desc { color: #6b7280; font-size: .88rem; }
+@media(min-width: 640px) { .playbook-grid { grid-template-columns: 1fr 1fr; } }
+
 </style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-3S7D3JJ9JS"></script>
@@ -196,31 +217,19 @@ nav{background:#fff;border-bottom:1px solid #e5e7eb;position:sticky;top:0;z-inde
   <div class="container">
     <h2>12 Automation Playbooks</h2>
     <p class="lead">Each playbook is a complete guide, from zero to running automation.</p>
-    <div class="playbooks">
-      <div class="playbook-group">
-        <h3>Customer-Facing</h3>
-        <div class="playbook-item"><div class="playbook-num">1</div><div class="playbook-info"><h4>Customer Email Response</h4><p>Draft consistent, professional responses to common inquiries in seconds. Save 3-5 hours/week.</p></div></div>
-        <div class="playbook-item"><div class="playbook-num">2</div><div class="playbook-info"><h4>FAQ & Knowledge Base Builder</h4><p>Turn tribal knowledge into a searchable, AI-powered knowledge base your whole team can use.</p></div></div>
-        <div class="playbook-item"><div class="playbook-num">3</div><div class="playbook-info"><h4>Lead Qualification & Scoring</h4><p>Automatically score and prioritize inbound leads so your sales team focuses on the right prospects.</p></div></div>
-      </div>
-      <div class="playbook-group">
-        <h3>Operations</h3>
-        <div class="playbook-item"><div class="playbook-num">4</div><div class="playbook-info"><h4>Meeting Notes & Action Items</h4><p>Record, transcribe, and extract action items from every meeting automatically.</p></div></div>
-        <div class="playbook-item"><div class="playbook-num">5</div><div class="playbook-info"><h4>Document Processing Pipeline</h4><p>Process invoices, receipts, and contracts into structured data without manual entry.</p></div></div>
-        <div class="playbook-item"><div class="playbook-num">6</div><div class="playbook-info"><h4>SOP Generator</h4><p>Turn verbal explanations and recordings into professional standard operating procedures.</p></div></div>
-      </div>
-      <div class="playbook-group">
-        <h3>Marketing & Sales</h3>
-        <div class="playbook-item"><div class="playbook-num">7</div><div class="playbook-info"><h4>Content Repurposing Engine</h4><p>Turn one piece of content into 10 formats, blog to tweets, LinkedIn posts, emails, and more.</p></div></div>
-        <div class="playbook-item"><div class="playbook-num">8</div><div class="playbook-info"><h4>Social Media Post Generator</h4><p>Generate brand-consistent social media posts at scale with your voice and style.</p></div></div>
-        <div class="playbook-item"><div class="playbook-num">9</div><div class="playbook-info"><h4>Sales Follow-Up Sequences</h4><p>Personalized, AI-drafted follow-up emails that feel human but run on autopilot.</p></div></div>
-      </div>
-      <div class="playbook-group">
-        <h3>Finance & Admin</h3>
-        <div class="playbook-item"><div class="playbook-num">10</div><div class="playbook-info"><h4>Expense Categorization</h4><p>Receipts to categories to reports, automatically. End manual expense tracking.</p></div></div>
-        <div class="playbook-item"><div class="playbook-num">11</div><div class="playbook-info"><h4>Report Generator</h4><p>Turn raw data into executive summaries and visual reports your leadership team will actually read.</p></div></div>
-        <div class="playbook-item"><div class="playbook-num">12</div><div class="playbook-info"><h4>Contract Review Assistant</h4><p>Flag risks, summarize terms, and extract key dates from contracts in minutes instead of hours.</p></div></div>
-      </div>
+    <div class="playbook-grid">
+      <div class="playbook-card"><div class="playbook-num">1</div><div class="playbook-card-body"><div class="playbook-card-title">Customer Email Response</div><div class="playbook-card-desc">Draft consistent, professional responses to common inquiries in seconds. Save 3-5 hours/week.</div></div></div>
+      <div class="playbook-card"><div class="playbook-num">2</div><div class="playbook-card-body"><div class="playbook-card-title">FAQ &amp; Knowledge Base Builder</div><div class="playbook-card-desc">Turn tribal knowledge into a searchable, AI-powered knowledge base your whole team can use.</div></div></div>
+      <div class="playbook-card"><div class="playbook-num">3</div><div class="playbook-card-body"><div class="playbook-card-title">Lead Qualification &amp; Scoring</div><div class="playbook-card-desc">Automatically score and prioritize inbound leads so your sales team focuses on the right prospects.</div></div></div>
+      <div class="playbook-card"><div class="playbook-num">4</div><div class="playbook-card-body"><div class="playbook-card-title">Meeting Notes &amp; Action Items</div><div class="playbook-card-desc">Record, transcribe, and extract action items from every meeting automatically.</div></div></div>
+      <div class="playbook-card"><div class="playbook-num">5</div><div class="playbook-card-body"><div class="playbook-card-title">Document Processing Pipeline</div><div class="playbook-card-desc">Process invoices, receipts, and contracts into structured data without manual entry.</div></div></div>
+      <div class="playbook-card"><div class="playbook-num">6</div><div class="playbook-card-body"><div class="playbook-card-title">SOP Generator</div><div class="playbook-card-desc">Turn verbal explanations and recordings into professional standard operating procedures.</div></div></div>
+      <div class="playbook-card"><div class="playbook-num">7</div><div class="playbook-card-body"><div class="playbook-card-title">Content Repurposing Engine</div><div class="playbook-card-desc">Turn one piece of content into 10 formats, blog to tweets, LinkedIn posts, emails, and more.</div></div></div>
+      <div class="playbook-card"><div class="playbook-num">8</div><div class="playbook-card-body"><div class="playbook-card-title">Social Media Post Generator</div><div class="playbook-card-desc">Generate brand-consistent social media posts at scale with your voice and style.</div></div></div>
+      <div class="playbook-card"><div class="playbook-num">9</div><div class="playbook-card-body"><div class="playbook-card-title">Sales Follow-Up Sequences</div><div class="playbook-card-desc">Personalized, AI-drafted follow-up emails that feel human but run on autopilot.</div></div></div>
+      <div class="playbook-card"><div class="playbook-num">10</div><div class="playbook-card-body"><div class="playbook-card-title">Expense Categorization</div><div class="playbook-card-desc">Receipts to categories to reports, automatically. End manual expense tracking.</div></div></div>
+      <div class="playbook-card"><div class="playbook-num">11</div><div class="playbook-card-body"><div class="playbook-card-title">Report Generator</div><div class="playbook-card-desc">Turn raw data into executive summaries and visual reports your leadership team will actually read.</div></div></div>
+      <div class="playbook-card"><div class="playbook-num">12</div><div class="playbook-card-body"><div class="playbook-card-title">Contract Review Assistant</div><div class="playbook-card-desc">Flag risks, summarize terms, and extract key dates from contracts in minutes instead of hours.</div></div></div>
     </div>
   </div>
 </section>
@@ -229,8 +238,14 @@ nav{background:#fff;border-bottom:1px solid #e5e7eb;position:sticky;top:0;z-inde
 <section>
   <div class="container">
     <h2>What's Inside</h2>
-    <div class="inside-grid">
-      <div class="inside-item"><h4>12 Step-by-Step Playbooks</h4><p>Complete implementation guides with real prompts and templates for each business process.</p></div>
+    <div class="prompt-sections">
+      <div class="prompt-section"><span class="prompt-count">12</span><div class="prompt-section-body"><div class="prompt-section-title">12 Step-by-Step Playbooks</div><div class="prompt-section-desc">Complete implementation guides with real prompts and templates for each business process.</div></div></div>
+      <div class="prompt-section"><span class="prompt-count">50</span><div class="prompt-section-body"><div class="prompt-section-title">50 Prompt Templates</div><div class="prompt-section-desc">Copy-paste ready prompts with [BRACKETS] for easy customization. Works with ChatGPT, Claude, Gemini, Microsoft Copilot, and any AI assistant.</div></div></div>
+      <div class="prompt-section"><span class="prompt-count">Tooling</span><div class="prompt-section-body"><div class="prompt-section-title">Tool Comparison Matrix</div><div class="prompt-section-desc">Free and paid options for every use case. Know exactly what to use and what it costs.</div></div></div>
+      <div class="prompt-section"><span class="prompt-count">Tracker</span><div class="prompt-section-body"><div class="prompt-section-title">Automation Project Tracker</div><div class="prompt-section-desc">Spreadsheet template to track your automation projects, time savings, and ROI.</div></div></div>
+      <div class="prompt-section"><span class="prompt-count">Stack</span><div class="prompt-section-body"><div class="prompt-section-title">Automation Stack Guide</div><div class="prompt-section-desc">How to connect your tools. Recommended stacks for 0 euros, 50 euros, and 150 euros per month budgets.</div></div></div>
+      <div class="prompt-section"><span class="prompt-count">KPIs</span><div class="prompt-section-body"><div class="prompt-section-title">Measurement Framework</div><div class="prompt-section-desc">KPIs, scorecards, and the improve-or-kill decision framework for every automation.</div></div></div>
+    </div>
       <div class="inside-item"><h4>50 Prompt Templates</h4><p>Copy-paste ready prompts with [BRACKETS] for easy customization. Works with ChatGPT, Claude, Gemini, Microsoft Copilot &amp; any AI assistant.</p></div>
       <div class="inside-item"><h4>Tool Comparison Matrix</h4><p>Free vs. paid options for every use case. Know exactly what to use and what it costs.</p></div>
       <div class="inside-item"><h4>Automation Project Tracker</h4><p>Spreadsheet template to track your automation projects, time savings, and ROI.</p></div>
