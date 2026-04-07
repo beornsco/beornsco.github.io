@@ -54,8 +54,16 @@ h2{font-size:1.6rem;margin-bottom:28px;text-align:center;letter-spacing:-.01em}
 footer{padding:36px 0;text-align:center;color:#aaa;font-size:.9rem;background:var(--dark)}
 footer a{color:#ccc}
 
-.table-wrapper{overflow-x:auto;-webkit-overflow-scrolling:touch}
-th{white-space:nowrap}
+.comparison-section{margin:48px 0}
+.comparison-section h3{font-size:1.2rem;font-weight:700;color:#111827;margin-bottom:16px;padding-bottom:8px;border-bottom:2px solid #e5e7eb}
+.comp-table{width:100%;border-collapse:collapse;font-size:.9rem}
+.comp-table th{background:#f9fafb;padding:12px 16px;text-align:left;font-weight:700;border-bottom:2px solid #e5e7eb;white-space:nowrap}
+.comp-table td{padding:12px 16px;border-bottom:1px solid #f3f4f6;vertical-align:top}
+.comp-table tr:hover td{background:#f9fafb}
+.check-yes{color:#16a34a;font-weight:700;font-size:1.1rem}
+.check-no{color:#d1d5db;font-size:1.1rem}
+.check-partial{color:#f59e0b;font-weight:700}
+.table-wrapper{overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid #e5e7eb;border-radius:10px}
 
 
 /* === NAV === */
@@ -99,10 +107,18 @@ nav{background:#fff;border-bottom:1px solid #e5e7eb;position:sticky;top:0;z-inde
   .fade-in.visible{opacity:1;transform:none}
 }
 
-.comparison-table{width:100%;border-collapse:collapse;margin-top:24px}
-.comparison-table th,.comparison-table td{padding:12px 16px;border:1px solid #e5e7eb;text-align:left}
-.comparison-table th{background:#f9fafb;font-weight:600}
-.comparison-table tr:nth-child(even){background:#f9fafb}
+.choice-grid{display:grid;grid-template-columns:1fr;gap:16px;margin:24px 0}
+@media(min-width:640px){.choice-grid{grid-template-columns:1fr 1fr}}
+.choice-card{padding:24px;border-radius:12px;border:2px solid #e5e7eb}
+.choice-card.recommended{border-color:#2962FF;background:#f0f4ff}
+.choice-card h4{font-weight:700;font-size:1rem;margin-bottom:8px;color:#111827}
+.choice-card p{color:#6b7280;font-size:.875rem;line-height:1.6}
+.choice-badge{display:inline-block;background:#2962FF;color:#fff;font-size:.75rem;font-weight:700;padding:2px 10px;border-radius:20px;margin-bottom:10px}
+.faq-list{margin:24px 0;display:flex;flex-direction:column;gap:12px}
+.faq-item{border:1px solid #e5e7eb;border-radius:10px;overflow:hidden}
+.faq-q{font-weight:700;font-size:.95rem;padding:18px 20px;cursor:pointer;background:#f9fafb;color:#111827;display:flex;justify-content:space-between;align-items:center}
+.faq-q::after{content:"+";font-size:1.2rem;color:#2962FF;font-weight:700}
+.faq-a{padding:16px 20px;color:#374151;font-size:.9rem;line-height:1.7;border-top:1px solid #f3f4f6}
 </style>
 
 <!-- FAQPage JSON-LD -->
@@ -264,7 +280,7 @@ nav{background:#fff;border-bottom:1px solid #e5e7eb;position:sticky;top:0;z-inde
   <h2>Feature Comparison at a Glance</h2>
   <div class="table-wrap">
     <div class="table-wrapper">
-    <table>
+    <table class="comp-table">
       <thead>
         <tr>
           <th>Feature</th>
@@ -297,16 +313,16 @@ nav{background:#fff;border-bottom:1px solid #e5e7eb;position:sticky;top:0;z-inde
         </tr>
         <tr>
           <td>Business Prompts Library</td>
-          <td class="highlight-row"><span class="check">✓</span> 200+</td>
-          <td><span class="partial">~</span> Marketing only</td>
-          <td><span class="partial">~</span> Marketing only</td>
-          <td><span class="cross">✗</span></td>
-          <td><span class="cross">✗</span></td>
-          <td><span class="cross">✗</span> DIY</td>
+          <td class="highlight-row"><span class="check-yes">✓</span> 200+</td>
+          <td><span class="check-partial">~</span> Marketing only</td>
+          <td><span class="check-partial">~</span> Marketing only</td>
+          <td><span class="check-no">✗</span></td>
+          <td><span class="check-no">✗</span></td>
+          <td><span class="check-no">✗</span> DIY</td>
         </tr>
         <tr>
           <td>Departments Covered</td>
-          <td class="highlight-row"><span class="check">✓</span> 10 depts</td>
+          <td class="highlight-row"><span class="check-yes">✓</span> 10 depts</td>
           <td>Marketing, Sales</td>
           <td>Marketing</td>
           <td>General docs</td>
@@ -315,75 +331,75 @@ nav{background:#fff;border-bottom:1px solid #e5e7eb;position:sticky;top:0;z-inde
         </tr>
         <tr>
           <td>Automation Playbooks</td>
-          <td class="highlight-row"><span class="check">✓</span> 12 playbooks</td>
-          <td><span class="cross">✗</span></td>
-          <td><span class="partial">~</span> Workflows</td>
-          <td><span class="cross">✗</span></td>
-          <td><span class="partial">~</span> Automations</td>
-          <td><span class="cross">✗</span></td>
+          <td class="highlight-row"><span class="check-yes">✓</span> 12 playbooks</td>
+          <td><span class="check-no">✗</span></td>
+          <td><span class="check-partial">~</span> Workflows</td>
+          <td><span class="check-no">✗</span></td>
+          <td><span class="check-partial">~</span> Automations</td>
+          <td><span class="check-no">✗</span></td>
         </tr>
         <tr>
           <td>AI Adoption Roadmap</td>
-          <td class="highlight-row"><span class="check">✓</span> 30/60/90 day</td>
-          <td><span class="cross">✗</span></td>
-          <td><span class="cross">✗</span></td>
-          <td><span class="cross">✗</span></td>
-          <td><span class="cross">✗</span></td>
-          <td><span class="cross">✗</span></td>
+          <td class="highlight-row"><span class="check-yes">✓</span> 30/60/90 day</td>
+          <td><span class="check-no">✗</span></td>
+          <td><span class="check-no">✗</span></td>
+          <td><span class="check-no">✗</span></td>
+          <td><span class="check-no">✗</span></td>
+          <td><span class="check-no">✗</span></td>
         </tr>
         <tr>
           <td>AI Policy Template</td>
-          <td class="highlight-row"><span class="check">✓</span></td>
-          <td><span class="cross">✗</span></td>
-          <td><span class="cross">✗</span></td>
-          <td><span class="cross">✗</span></td>
-          <td><span class="cross">✗</span></td>
-          <td><span class="cross">✗</span></td>
+          <td class="highlight-row"><span class="check-yes">✓</span></td>
+          <td><span class="check-no">✗</span></td>
+          <td><span class="check-no">✗</span></td>
+          <td><span class="check-no">✗</span></td>
+          <td><span class="check-no">✗</span></td>
+          <td><span class="check-no">✗</span></td>
         </tr>
         <tr>
           <td>ROI Calculator</td>
-          <td class="highlight-row"><span class="check">✓</span></td>
-          <td><span class="cross">✗</span></td>
-          <td><span class="cross">✗</span></td>
-          <td><span class="cross">✗</span></td>
-          <td><span class="cross">✗</span></td>
-          <td><span class="cross">✗</span></td>
+          <td class="highlight-row"><span class="check-yes">✓</span></td>
+          <td><span class="check-no">✗</span></td>
+          <td><span class="check-no">✗</span></td>
+          <td><span class="check-no">✗</span></td>
+          <td><span class="check-no">✗</span></td>
+          <td><span class="check-no">✗</span></td>
         </tr>
         <tr>
           <td>Works With Any AI Tool</td>
-          <td class="highlight-row"><span class="check">✓</span></td>
-          <td><span class="cross">✗</span> Jasper only</td>
-          <td><span class="cross">✗</span> Copy.ai only</td>
-          <td><span class="cross">✗</span> Notion only</td>
-          <td><span class="cross">✗</span> ClickUp only</td>
-          <td><span class="cross">✗</span> OpenAI only</td>
+          <td class="highlight-row"><span class="check-yes">✓</span></td>
+          <td><span class="check-no">✗</span> Jasper only</td>
+          <td><span class="check-no">✗</span> Copy.ai only</td>
+          <td><span class="check-no">✗</span> Notion only</td>
+          <td><span class="check-no">✗</span> ClickUp only</td>
+          <td><span class="check-no">✗</span> OpenAI only</td>
         </tr>
         <tr>
           <td>No Subscription Required</td>
-          <td class="highlight-row"><span class="check">✓</span></td>
-          <td><span class="cross">✗</span></td>
-          <td><span class="partial">~</span> Free tier</td>
-          <td><span class="cross">✗</span></td>
-          <td><span class="cross">✗</span></td>
-          <td><span class="cross">✗</span></td>
+          <td class="highlight-row"><span class="check-yes">✓</span></td>
+          <td><span class="check-no">✗</span></td>
+          <td><span class="check-partial">~</span> Free tier</td>
+          <td><span class="check-no">✗</span></td>
+          <td><span class="check-no">✗</span></td>
+          <td><span class="check-no">✗</span></td>
         </tr>
         <tr>
           <td>No Technical Skills Needed</td>
-          <td class="highlight-row"><span class="check">✓</span></td>
-          <td><span class="check">✓</span></td>
-          <td><span class="check">✓</span></td>
-          <td><span class="partial">~</span></td>
-          <td><span class="partial">~</span></td>
-          <td><span class="partial">~</span> Prompt skill</td>
+          <td class="highlight-row"><span class="check-yes">✓</span></td>
+          <td><span class="check-yes">✓</span></td>
+          <td><span class="check-yes">✓</span></td>
+          <td><span class="check-partial">~</span></td>
+          <td><span class="check-partial">~</span></td>
+          <td><span class="check-partial">~</span> Prompt skill</td>
         </tr>
         <tr>
           <td>AI Content Generation</td>
-          <td><span class="cross">✗</span> Templates only</td>
-          <td class="highlight-row"><span class="check">✓</span></td>
-          <td class="highlight-row"><span class="check">✓</span></td>
-          <td><span class="check">✓</span></td>
-          <td><span class="check">✓</span></td>
-          <td><span class="check">✓</span></td>
+          <td><span class="check-no">✗</span> Templates only</td>
+          <td class="highlight-row"><span class="check-yes">✓</span></td>
+          <td class="highlight-row"><span class="check-yes">✓</span></td>
+          <td><span class="check-yes">✓</span></td>
+          <td><span class="check-yes">✓</span></td>
+          <td><span class="check-yes">✓</span></td>
         </tr>
         <tr>
           <td>Target Audience</td>
@@ -406,35 +422,35 @@ nav{background:#fff;border-bottom:1px solid #e5e7eb;position:sticky;top:0;z-inde
 <div class="container">
   <h2>Detailed Comparisons</h2>
 
-  <div class="vs-section" id="vs-jasper">
+  <div class="comparison-section" id="vs-jasper">
     <h3>AI Business Toolkit vs Jasper</h3>
     <p><a href="https://www.jasper.ai" target="_blank" rel="noopener">Jasper</a> is one of the most well-known AI writing platforms. It is excellent at generating marketing content: blog posts, ad copy, social media captions, and product descriptions. If your primary need is high-volume content creation for a marketing team, Jasper is a strong choice.</p>
     <p>The key difference is scope and cost model. Jasper focuses on content generation within its own platform, starting at $39/month per seat. AI Business Toolkit is a one-time purchase that covers the entire AI adoption journey across 10 departments. It does not generate content for you; instead, it gives your team 200+ ready-to-use prompts and strategic frameworks they can use in any AI tool.</p>
     <p>For marketing-heavy teams that need an always-on content engine, Jasper delivers. For businesses that want to adopt AI across HR, Sales, Operations, Finance, and more, AI Business Toolkit provides broader coverage at a fraction of the cost.</p>
   </div>
 
-  <div class="vs-section" id="vs-copyai">
+  <div class="comparison-section" id="vs-copyai">
     <h3>AI Business Toolkit vs Copy.ai</h3>
     <p><a href="https://www.copy.ai" target="_blank" rel="noopener">Copy.ai</a> is a popular AI copywriting tool with a generous free tier. It is focused on marketing copy: headlines, email subject lines, product descriptions, and similar short-form content. The free plan lets you explore its capabilities before committing.</p>
     <p>Where Copy.ai stays focused on marketing copy, AI Business Toolkit spans the full business. You get department-specific prompt templates for HR onboarding, sales outreach, financial analysis, operations optimization, and more. Copy.ai is a tool you use; AI Business Toolkit is a playbook that teaches your entire organization to use AI effectively.</p>
     <p>If you are a solo marketer or freelancer who needs quick copy generation, Copy.ai's free tier is hard to beat. If you are running a business with multiple departments and want a structured AI adoption plan, AI Business Toolkit offers more strategic value.</p>
   </div>
 
-  <div class="vs-section" id="vs-notion">
+  <div class="comparison-section" id="vs-notion">
     <h3>AI Business Toolkit vs Notion AI</h3>
     <p><a href="https://www.notion.so" target="_blank" rel="noopener">Notion AI</a> adds AI capabilities directly into the Notion workspace. It can summarize pages, generate content, translate text, and help with internal documentation. If your team already lives in Notion, the AI add-on feels seamless.</p>
     <p>The limitation is that Notion AI only works inside Notion. It is great for internal docs and knowledge management, but it does not provide business-specific prompt libraries, automation playbooks, or an AI adoption roadmap. You also need a Notion subscription first, making the total cost higher than it appears.</p>
     <p>For Notion-native teams who want AI features in their existing workspace, Notion AI is a natural fit. For businesses that want tool-agnostic AI guidance they can apply across any platform, AI Business Toolkit provides more flexibility and strategic depth.</p>
   </div>
 
-  <div class="vs-section" id="vs-clickup">
+  <div class="comparison-section" id="vs-clickup">
     <h3>AI Business Toolkit vs ClickUp AI</h3>
     <p><a href="https://www.clickup.com" target="_blank" rel="noopener">ClickUp AI</a> brings AI features into the ClickUp project management platform. It can generate task descriptions, summarize projects, write status updates, and help with project documentation. For project management teams, it adds real value to an existing workflow.</p>
     <p>ClickUp AI is primarily a project management enhancer, not a standalone AI adoption solution. It does not cover department-wide AI strategy, provide cross-functional prompt templates, or include governance frameworks like an AI policy template. It also requires a ClickUp subscription.</p>
     <p>If your main challenge is project management efficiency and you already use ClickUp, ClickUp AI makes sense. If you want to bring AI into every corner of your business, with structured playbooks and a clear adoption roadmap, AI Business Toolkit is the better starting point.</p>
   </div>
 
-  <div class="vs-section" id="vs-chatgpt">
+  <div class="comparison-section" id="vs-chatgpt">
     <h3>AI Business Toolkit vs ChatGPT Plus</h3>
     <p><a href="https://www.openai.com" target="_blank" rel="noopener">ChatGPT Plus</a> is the most powerful general-purpose AI assistant available. At $20/month, you get access to GPT-4, image generation, web browsing, code execution, and more. It can do almost anything, if you know how to ask.</p>
     <p>That "if you know how to ask" is exactly where AI Business Toolkit fits in. ChatGPT Plus is the engine; AI Business Toolkit is the instruction manual. Our 200+ prompts are pre-written, tested, and organized by department and use case. Instead of spending hours figuring out what to ask, your team can copy, customize, and go.</p>
@@ -448,31 +464,15 @@ nav{background:#fff;border-bottom:1px solid #e5e7eb;position:sticky;top:0;z-inde
 <section class="alt">
 <div class="container">
   <h2>Making the Right Choice</h2>
-  <div class="choose-grid">
-    <div class="choose-box green">
-      <h3>Choose AI Business Toolkit when:</h3>
-      <ul>
-        <li>You want AI adoption across your entire organization, not just marketing</li>
-        <li>You prefer a one-time purchase over monthly subscriptions</li>
-        <li>Your team needs ready-to-use prompts and templates, not a blank AI chatbox</li>
-        <li>You want a structured adoption roadmap (30/60/90 day plan)</li>
-        <li>You need an AI governance framework and policy template</li>
-        <li>You want to use any AI tool (ChatGPT, Claude, Gemini) without platform lock-in</li>
-        <li>You are a non-technical team that needs clear, step-by-step guidance</li>
-        <li>Budget matters: you want comprehensive AI resources for under €70</li>
-      </ul>
+  <div class="choice-grid">
+    <div class="choice-card recommended">
+      <div class="choice-badge">Recommended</div>
+      <h4>Choose AI Business Toolkit when:</h4>
+      <p>You want AI adoption across your entire organization, not just marketing. You prefer a one-time purchase over monthly subscriptions. Your team needs ready-to-use prompts and templates, not a blank AI chatbox. You want a structured adoption roadmap with governance support and tool-agnostic workflows.</p>
     </div>
-    <div class="choose-box amber">
-      <h3>When a competitor might be better:</h3>
-      <ul>
-        <li>You need an AI tool that generates content automatically (Jasper, Copy.ai)</li>
-        <li>You only need AI for marketing copy and nothing else (Copy.ai free tier)</li>
-        <li>Your team lives in Notion and wants AI baked into that specific workspace (Notion AI)</li>
-        <li>Your main pain point is project management, not broader AI adoption (ClickUp AI)</li>
-        <li>You are a power user who enjoys crafting prompts from scratch (ChatGPT Plus)</li>
-        <li>You are a solo freelancer with no team to train</li>
-        <li>You want a real-time AI assistant, not a reference library</li>
-      </ul>
+    <div class="choice-card">
+      <h4>When a competitor might be better:</h4>
+      <p>You need an AI tool that generates content automatically. You only need AI for marketing copy. Your team works inside one platform like Notion or ClickUp. You are a solo power user who prefers writing prompts from scratch and wants a live assistant over a playbook.</p>
     </div>
   </div>
 </div>
@@ -482,49 +482,39 @@ nav{background:#fff;border-bottom:1px solid #e5e7eb;position:sticky;top:0;z-inde
 <section>
 <div class="container">
   <h2>Frequently Asked Questions</h2>
-  <div class="faq">
-
+  <div class="faq-list">
     <div class="faq-item">
       <div class="faq-q">What is AI Business Toolkit?</div>
       <div class="faq-a">AI Business Toolkit by Beorns Co is a collection of practical guides, prompts, and playbooks designed to help small and medium businesses adopt AI. It includes over 200 tested prompts, automation playbooks, an AI adoption roadmap, and an internal AI policy template. It is a one-time purchase and works with any AI tool.</div>
     </div>
-
     <div class="faq-item">
       <div class="faq-q">How is AI Business Toolkit different from Jasper?</div>
       <div class="faq-a">Jasper is a subscription-based AI writing assistant focused on marketing content generation ($39-$125/month). AI Business Toolkit is a one-time purchase (starting at €19) that covers the full AI adoption journey across all departments, not just content creation. Jasper generates content for you; AI Business Toolkit teaches your team to use AI tools they already have access to.</div>
     </div>
-
     <div class="faq-item">
       <div class="faq-q">How is AI Business Toolkit different from Copy.ai?</div>
       <div class="faq-a">Copy.ai is an AI copywriting tool focused on marketing copy, with a freemium model ($0-$49/month). AI Business Toolkit covers 10 departments beyond marketing, including HR, Sales, Operations, and Finance. Copy.ai is great if you only need marketing copy; AI Business Toolkit is better if you want to bring AI across your entire organization.</div>
     </div>
-
     <div class="faq-item">
       <div class="faq-q">Is AI Business Toolkit better than ChatGPT Plus?</div>
       <div class="faq-a">They serve different purposes. ChatGPT Plus ($20/month) is a general-purpose AI assistant that requires you to write your own prompts. AI Business Toolkit provides 200+ pre-written, business-specific prompts, automation playbooks, and strategic frameworks so you get results faster. Many users combine both: ChatGPT Plus as the AI tool, and AI Business Toolkit as the instruction manual.</div>
     </div>
-
     <div class="faq-item">
       <div class="faq-q">Does AI Business Toolkit require a subscription?</div>
       <div class="faq-a">No. AI Business Toolkit is a one-time purchase starting at €19 for the Prompt Library, €27 for the Starter Kit, €39 for the Automation Playbook, or €69 for the complete bundle. You pay once and use it forever. There are no monthly fees.</div>
     </div>
-
     <div class="faq-item">
       <div class="faq-q">What AI tools does AI Business Toolkit work with?</div>
       <div class="faq-a">AI Business Toolkit works with any AI assistant, including ChatGPT, Claude, Gemini, Copilot, and others. The prompts and frameworks are tool-agnostic, so you are never locked into a single platform.</div>
     </div>
-
     <div class="faq-item">
       <div class="faq-q">Who should NOT buy AI Business Toolkit?</div>
       <div class="faq-a">If you need an AI tool that generates content automatically (like Jasper or Copy.ai), AI Business Toolkit is not a replacement. It is a strategy and template kit, not an AI content generator. If you are a solo freelancer who only needs AI for writing, a specialized writing tool may be a better fit.</div>
     </div>
-
     <div class="faq-item">
       <div class="faq-q">Is there a money-back guarantee?</div>
       <div class="faq-a">Yes. All purchases come with a 30-day money-back guarantee through Gumroad. If it does not work for your business, you get a full refund.</div>
     </div>
-
-  </div>
     <div class="faq-item">
       <div class="faq-q">How do Beorns Co prompts compare to writing prompts yourself?</div>
       <div class="faq-a">Writing effective AI prompts from scratch takes trial and error. Beorns Co prompts are pre-tested to produce professional output on the first try, include fill-in-the-blank instructions and are structured for specific business tasks. Most users report saving 30-60 minutes per week compared to writing their own prompts.</div>
@@ -534,6 +524,7 @@ nav{background:#fff;border-bottom:1px solid #e5e7eb;position:sticky;top:0;z-inde
       <div class="faq-a">Generic AI tools like ChatGPT require you to know how to prompt effectively. Beorns Co provides the prompts themselves: copy-paste, task-specific and tested for professional output. You get the benefits of AI without needing prompt engineering skills. Products start at EUR 14 as a one-time download with no subscription.</div>
     </div>
   </div>
+</div>
 </section>
 
 <!-- Cross-sell Products -->
