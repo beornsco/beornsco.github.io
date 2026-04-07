@@ -46,6 +46,14 @@ h2{font-size:1.6rem;margin-bottom:28px;text-align:center;letter-spacing:-.01em}
 footer{padding:36px 0;text-align:center;color:#aaa;font-size:.9rem;background:var(--dark)}
 footer a{color:#ccc}
 
+.blog-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:32px}
+@media(max-width:640px){.blog-grid{grid-template-columns:1fr}}
+.blog-card{background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:24px;transition:transform .15s,box-shadow .15s}
+.blog-card:hover{transform:translateY(-2px);box-shadow:0 4px 16px rgba(0,0,0,.08)}
+.blog-card h3{font-size:1.05rem;margin-bottom:6px}
+.blog-card .meta{color:#9ca3af;font-size:.82rem;margin-bottom:10px}
+.blog-card p{color:#6b7280;font-size:.9rem}
+
 
 /* === NAV === */
 nav{background:#fff;border-bottom:1px solid #e5e7eb;position:sticky;top:0;z-index:1000}
@@ -63,8 +71,8 @@ nav{background:#fff;border-bottom:1px solid #e5e7eb;position:sticky;top:0;z-inde
 .nav-dd>button{padding-bottom:10px;margin-bottom:-4px}
 .nav-dd-menu a{display:block;padding:8px 16px;color:#374151;font-size:.875rem;text-decoration:none}
 .nav-dd-menu a:hover{background:#f9fafb;color:#2962ff}
-.nav-dd-label{padding:6px 16px 3px;font-size:.7rem;font-weight:700;color:#9ca3af;text-transform:uppercase;letter-spacing:.05em}
-.nav-dd-sep{border:none;border-top:1px solid #f3f4f6;margin:4px 0}
+.nav-dd-label{padding:8px 16px 3px;font-size:.68rem;font-weight:700;color:#9ca3af;text-transform:uppercase;letter-spacing:.07em}
+.nav-dd-sep{border:none;border-top:1px solid #f3f4f6;margin:6px 8px}
 /* Hamburger */
 .hamburger{display:none;background:none;border:none;cursor:pointer;padding:6px;flex-direction:column;gap:5px}
 .hamburger span{display:block;width:22px;height:2px;background:#374151;border-radius:2px;transition:transform .2s,opacity .2s}
@@ -132,136 +140,145 @@ nav{background:#fff;border-bottom:1px solid #e5e7eb;position:sticky;top:0;z-inde
     <div class="container">
         <h1>Blog</h1>
         <p class="subtitle">Practical AI adoption guides for small and medium businesses.</p>
-        <ul class="post-list">
-            <li>
-                <div class="post-meta">March 2026 · 11 min read</div>
-                <h2><a href="/blog/how-to-write-ai-prompts-for-business.html">How to Write AI Prompts for Business (With Examples)</a></h2>
+        <div class="blog-grid">
+            <div class="blog-card">
+                <div class="meta">March 2026 · 11 min read</div>
+                <h3><a href="/blog/how-to-write-ai-prompts-for-business.html">How to Write AI Prompts for Business (With Examples)</a></h3>
                 <p>Learn how to write effective AI prompts for business tasks with copy-paste examples and the CRAFT framework.</p>
-            </li>
-            <li>
-                <div class="post-meta">March 2026 · 11 min read</div>
-                <h2><a href="/blog/ai-for-sales-small-business.html">AI for Sales: How Small Businesses Close More Deals</a></h2>
+            </div>
+            <div class="blog-card">
+                <div class="meta">March 2026 · 11 min read</div>
+                <h3><a href="/blog/ai-for-sales-small-business.html">AI for Sales: How Small Businesses Close More Deals</a></h3>
                 <p>How small businesses are using AI to generate leads, qualify prospects, write proposals, and close more deals.</p>
-            </li>
-            <li>
-                <div class="post-meta">March 2026 · 13 min read</div>
-                <h2><a href="/blog/best-ai-tools-for-small-business-2026.html">Best AI Tools for Small Business in 2026 (Free & Paid)</a></h2>
+            </div>
+            <div class="blog-card">
+                <div class="meta">March 2026 · 13 min read</div>
+                <h3><a href="/blog/best-ai-tools-for-small-business-2026.html">Best AI Tools for Small Business in 2026 (Free & Paid)</a></h3>
                 <p>The best AI tools for small business in 2026 : writing, marketing, customer service, operations, and finance.</p>
-            </li>
-            <li>
-                <div class="post-meta">March 2026 · 12 min read</div>
-                <h2><a href="/blog/ai-for-marketing-small-business.html">AI Marketing for Small Business: A Complete Guide</a></h2>
+            </div>
+            <div class="blog-card">
+                <div class="meta">March 2026 · 12 min read</div>
+                <h3><a href="/blog/ai-for-marketing-small-business.html">AI Marketing for Small Business: A Complete Guide</a></h3>
                 <p>How to use AI for marketing in your small business : content, email, social media, SEO, and analytics.</p>
-            </li>
-            <li>
-                <div class="post-meta">March 2026 · 10 min read</div>
-                <h2><a href="/blog/ai-data-analysis-small-business.html">AI Data Analysis for Small Business: Turn Your Spreadsheets Into Insights</a></h2>
+            </div>
+            <div class="blog-card">
+                <div class="meta">March 2026 · 10 min read</div>
+                <h3><a href="/blog/ai-data-analysis-small-business.html">AI Data Analysis for Small Business: Turn Your Spreadsheets Into Insights</a></h3>
                 <p>How to use AI to analyze your business data, spot trends, and make better decisions without hiring a data scientist.</p>
-            </li>
-            <li>
-                <div class="post-meta">March 2026 · 10 min read</div>
-                <h2><a href="/blog/ai-for-project-management-small-business.html">AI Project Management Tools: A Small Business Owner's Guide</a></h2>
+            </div>
+            <div class="blog-card">
+                <div class="meta">March 2026 · 10 min read</div>
+                <h3><a href="/blog/ai-for-project-management-small-business.html">AI Project Management Tools: A Small Business Owner's Guide</a></h3>
                 <p>The best AI project management tools for small teams, plus practical ways to use AI for planning, tracking, and collaboration.</p>
-            </li>
-            <li>
-                <div class="post-meta">March 2026 · 10 min read</div>
-                <h2><a href="/blog/ai-for-inventory-management-small-business.html">AI for Inventory Management: How Small Businesses Can Reduce Waste and Save Money</a></h2>
+            </div>
+            <div class="blog-card">
+                <div class="meta">March 2026 · 10 min read</div>
+                <h3><a href="/blog/ai-for-inventory-management-small-business.html">AI for Inventory Management: How Small Businesses Can Reduce Waste and Save Money</a></h3>
                 <p>Practical ways to use AI for inventory forecasting, demand planning, and stock optimization in your small business.</p>
-            </li>
-            <li>
-                <div class="post-meta">March 2026 · 12 min read</div>
-                <h2><a href="/blog/ai-strategy-small-business-guide.html">How to Create an AI Strategy for Your Small Business</a></h2>
+            </div>
+            <div class="blog-card">
+                <div class="meta">March 2026 · 12 min read</div>
+                <h3><a href="/blog/ai-strategy-small-business-guide.html">How to Create an AI Strategy for Your Small Business</a></h3>
                 <p>A practical guide to building an AI strategy that actually works for small businesses. No consultants needed, no jargon, just clear steps.</p>
-            </li>
-            <li>
-                <div class="post-meta">March 2026 · 11 min read</div>
-                <h2><a href="/blog/ai-email-marketing-small-business.html">AI Email Marketing for Small Business: Templates and Tips</a></h2>
+            </div>
+            <div class="blog-card">
+                <div class="meta">March 2026 · 11 min read</div>
+                <h3><a href="/blog/ai-email-marketing-small-business.html">AI Email Marketing for Small Business: Templates and Tips</a></h3>
                 <p>How to use AI for email marketing in your small business. Subject lines, segmentation, automation, and templates you can use today.</p>
-            </li>
-            <li>
-                <div class="post-meta">March 2026 · 10 min read</div>
-                <h2><a href="/blog/ai-for-sales-small-business.html">How AI Can Boost Small Business Sales</a></h2>
+            </div>
+            <div class="blog-card">
+                <div class="meta">March 2026 · 10 min read</div>
+                <h3><a href="/blog/ai-for-sales-small-business.html">How AI Can Boost Small Business Sales</a></h3>
                 <p>Practical ways small businesses are using AI to find leads, close deals faster, and grow revenue without hiring more salespeople.</p>
-            </li>
-            <li>
-                <div class="post-meta">March 2026 · 10 min read</div>
-                <h2><a href="/blog/best-ai-tools-small-business-2026.html">Best AI Tools for Small Business in 2026</a></h2>
+            </div>
+            <div class="blog-card">
+                <div class="meta">March 2026 · 10 min read</div>
+                <h3><a href="/blog/best-ai-tools-small-business-2026.html">Best AI Tools for Small Business in 2026</a></h3>
                 <p>The best AI tools for small businesses in 2026, organized by category. Free and paid options with honest recommendations.</p>
-            </li>
-            <li>
-                <div class="post-meta">March 2026 · 11 min read</div>
-                <h2><a href="/blog/ai-marketing-strategy-small-business.html">AI for Small Business Marketing: A Complete Strategy Guide</a></h2>
+            </div>
+            <div class="blog-card">
+                <div class="meta">March 2026 · 11 min read</div>
+                <h3><a href="/blog/ai-marketing-strategy-small-business.html">AI for Small Business Marketing: A Complete Strategy Guide</a></h3>
                 <p>How to build an AI powered marketing strategy for your small business. Content creation, social media, SEO, ads, and analytics.</p>
-            </li>
-            <li>
-                <div class="post-meta">March 2026 · 12 min read</div>
-                <h2><a href="/blog/ai-for-hr-small-business.html">AI for HR in Small Business: Recruiting, Onboarding & Performance</a></h2>
+            </div>
+            <div class="blog-card">
+                <div class="meta">March 2026 · 12 min read</div>
+                <h3><a href="/blog/ai-for-hr-small-business.html">AI for HR in Small Business: Recruiting, Onboarding & Performance</a></h3>
                 <p>How small businesses can use AI for HR, recruiting, onboarding, performance reviews, and employee engagement.</p>
-            </li>
-            <li>
-                <div class="post-meta">April 2026 · 8 min read</div>
-                <h2><a href="/blog/how-tradespeople-are-using-ai-to-save-time.html">How Plumbers, Electricians, and Tradespeople Are Using AI to Save 5 Hours a Week</a></h2>
+            </div>
+            <div class="blog-card">
+                <div class="meta">April 2026 · 8 min read</div>
+                <h3><a href="/blog/how-tradespeople-are-using-ai-to-save-time.html">How Plumbers, Electricians, and Tradespeople Are Using AI to Save 5 Hours a Week</a></h3>
                 <p>How plumbers, electricians, and tradespeople are using AI to save 5+ hours a week on quotes, job reports, reviews, and admin. Real prompts you can copy today.</p>
-            </li>
-            <li>
-                <div class="post-meta">April 2026 · 7 min read</div>
-                <h2><a href="/blog/why-restaurant-owners-are-underserved-in-ai.html">Why Restaurant Owners Are the Most Underserved Audience in the AI Revolution</a></h2>
+            </div>
+            <div class="blog-card">
+                <div class="meta">April 2026 · 7 min read</div>
+                <h3><a href="/blog/why-restaurant-owners-are-underserved-in-ai.html">Why Restaurant Owners Are the Most Underserved Audience in the AI Revolution</a></h3>
                 <p>How restaurant owners are using AI to save 3-5 hours a week on menus, reviews, social posts and staff messages. Real prompts you can use today.</p>
-            </li>
-            <li>
-                <div class="post-meta">March 2026 · 10 min read</div>
-                <h2><a href="/blog/chatgpt-prompts-for-small-business.html">15 ChatGPT Prompts for Small Business (That Actually Work)</a></h2>
+            </div>
+            <div class="blog-card">
+                <div class="meta">March 2026 · 10 min read</div>
+                <h3><a href="/blog/chatgpt-prompts-for-small-business.html">15 ChatGPT Prompts for Small Business (That Actually Work)</a></h3>
                 <p>Copy-paste ChatGPT prompts that save small business owners real time on marketing, operations, customer service, and strategy.</p>
-            </li>
-            <li>
-                <div class="post-meta">March 2026 · 10 min read</div>
-                <h2><a href="/blog/how-to-train-employees-on-ai.html">How to Train Employees on AI: A Step-by-Step Guide for Small Business</a></h2>
+            </div>
+            <div class="blog-card">
+                <div class="meta">March 2026 · 10 min read</div>
+                <h3><a href="/blog/how-to-train-employees-on-ai.html">How to Train Employees on AI: A Step-by-Step Guide for Small Business</a></h3>
                 <p>A practical, week-by-week plan for getting your team comfortable and productive with AI tools, no tech department needed.</p>
-            </li>
-            <li>
-                <div class="post-meta">March 2026 · 11 min read</div>
-                <h2><a href="/blog/ai-tools-for-customer-service-small-business.html">AI Tools for Customer Service: A Small Business Guide</a></h2>
+            </div>
+            <div class="blog-card">
+                <div class="meta">March 2026 · 11 min read</div>
+                <h3><a href="/blog/ai-tools-for-customer-service-small-business.html">AI Tools for Customer Service: A Small Business Guide</a></h3>
                 <p>The best AI customer service tools for small businesses, chatbots, email automation, voice AI, and knowledge bases with honest pros and cons.</p>
-            </li>
-            <li>
-                <div class="post-meta">March 2026 · 11 min read</div>
-                <h2><a href="/blog/automate-business-processes-with-ai.html">How to Automate Business Processes with AI: A Practical Guide</a></h2>
+            </div>
+            <div class="blog-card">
+                <div class="meta">March 2026 · 11 min read</div>
+                <h3><a href="/blog/automate-business-processes-with-ai.html">How to Automate Business Processes with AI: A Practical Guide</a></h3>
                 <p>Step-by-step guide to automating email, invoicing, scheduling, reporting, and social media with AI, even without technical skills.</p>
-            </li>
-            <li>
-                <div class="post-meta">March 2026 · 10 min read</div>
-                <h2><a href="/blog/ai-for-accounting-small-business.html">AI for Accounting in Small Business: A Practical Guide</a></h2>
+            </div>
+            <div class="blog-card">
+                <div class="meta">March 2026 · 10 min read</div>
+                <h3><a href="/blog/ai-for-accounting-small-business.html">AI for Accounting in Small Business: A Practical Guide</a></h3>
                 <p>How small businesses are using AI for bookkeeping, expense tracking, financial reporting, and tax prep, with real tool recommendations.</p>
-            </li>
-            <li>
-                <div class="post-meta">March 2026 · 8 min read</div>
-                <h2><a href="/blog/how-to-identify-ai-opportunities-small-business.html">How to Identify AI Opportunities in Your Small Business</a></h2>
+            </div>
+            <div class="blog-card">
+                <div class="meta">March 2026 · 8 min read</div>
+                <h3><a href="/blog/how-to-identify-ai-opportunities-small-business.html">How to Identify AI Opportunities in Your Small Business</a></h3>
                 <p>A practical framework for finding where AI can actually help your business, without the hype or the consultancy fees.</p>
-            </li>
-            <li>
-                <div class="post-meta">March 2026 · 8 min read</div>
-                <h2><a href="/blog/ai-readiness-checklist-business.html">AI Readiness Checklist: Is Your Business Ready for AI?</a></h2>
+            </div>
+            <div class="blog-card">
+                <div class="meta">March 2026 · 8 min read</div>
+                <h3><a href="/blog/ai-readiness-checklist-business.html">AI Readiness Checklist: Is Your Business Ready for AI?</a></h3>
                 <p>The honest signs your business is (or isn't) ready for AI, and exactly what to do about it either way.</p>
-            </li>
-            <li>
-                <div class="post-meta">March 2026 · 9 min read</div>
-                <h2><a href="/blog/ai-policy-template-company.html">How to Create an AI Policy for Your Company (Template Included)</a></h2>
+            </div>
+            <div class="blog-card">
+                <div class="meta">March 2026 · 9 min read</div>
+                <h3><a href="/blog/ai-policy-template-company.html">How to Create an AI Policy for Your Company (Template Included)</a></h3>
                 <p>Why every company needs an AI policy now, what it should cover, and how to create one that people actually follow.</p>
-            </li>
-            <li>
-                <div class="post-meta">March 2026 · 8 min read</div>
-                <h2><a href="/blog/ai-roi-calculator-business.html">AI ROI Calculator: How to Measure the Business Value of AI</a></h2>
+            </div>
+            <div class="blog-card">
+                <div class="meta">March 2026 · 8 min read</div>
+                <h3><a href="/blog/ai-roi-calculator-business.html">AI ROI Calculator: How to Measure the Business Value of AI</a></h3>
                 <p>How to calculate AI ROI without fooling yourself, a realistic framework for measuring what AI actually saves you.</p>
-            </li>
-            <li>
-                <div class="post-meta">March 2026 · 9 min read</div>
-                <h2><a href="/blog/ai-use-cases-small-business-2026.html">5 AI Use Cases Every Small Business Should Consider in 2026</a></h2>
+            </div>
+            <div class="blog-card">
+                <div class="meta">March 2026 · 9 min read</div>
+                <h3><a href="/blog/ai-use-cases-small-business-2026.html">5 AI Use Cases Every Small Business Should Consider in 2026</a></h3>
                 <p>Concrete, proven AI use cases that small businesses are using right now, with real examples and honest assessments.</p>
-            </li>
-        </ul>
+            </div>
+        </div>
     </div>
     <footer>
-  &copy; 2026 Beorns Co &middot; <a href="mailto:beornsco@proton.me">beornsco@proton.me</a> &middot; <a href="/terms/">Terms</a> &middot; <a href="/privacy/">Privacy</a> &middot; <a href="https://twitter.com/beornsco" target="_blank" rel="noopener">X/Twitter</a> &middot; <a href="https://medium.com/@beornsco" target="_blank" rel="noopener">Medium</a> · <a href="https://beornsco.lemonsqueezy.com" target="_blank" rel="noopener">Lemon Squeezy Store</a>
+  <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:8px 16px;color:#9ca3af;font-size:.875rem">
+    <span>© 2026 Beorns Co</span>
+    <a href="mailto:beornsco@proton.me" style="color:#9ca3af">beornsco@proton.me</a>
+    <a href="/terms/" style="color:#9ca3af">Terms</a>
+    <a href="/privacy/" style="color:#9ca3af">Privacy</a>
+    <a href="/about/" style="color:#9ca3af">About</a>
+    <a href="https://twitter.com/beornsco" target="_blank" rel="noopener" style="color:#9ca3af">X/Twitter</a>
+    <a href="https://medium.com/@beornsco" target="_blank" rel="noopener" style="color:#9ca3af">Medium</a>
+    <a href="https://beornsco.lemonsqueezy.com" target="_blank" rel="noopener" style="color:#9ca3af">Lemon Squeezy</a>
+  </div>
 </footer>
 </body>
 </html>

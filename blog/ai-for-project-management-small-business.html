@@ -68,8 +68,8 @@ nav{background:#fff;border-bottom:1px solid #e5e7eb;position:sticky;top:0;z-inde
 .nav-dd>button{padding-bottom:10px;margin-bottom:-4px}
 .nav-dd-menu a{display:block;padding:8px 16px;color:#374151;font-size:.875rem;text-decoration:none}
 .nav-dd-menu a:hover{background:#f9fafb;color:#2962ff}
-.nav-dd-label{padding:6px 16px 3px;font-size:.7rem;font-weight:700;color:#9ca3af;text-transform:uppercase;letter-spacing:.05em}
-.nav-dd-sep{border:none;border-top:1px solid #f3f4f6;margin:4px 0}
+.nav-dd-label{padding:8px 16px 3px;font-size:.68rem;font-weight:700;color:#9ca3af;text-transform:uppercase;letter-spacing:.07em}
+.nav-dd-sep{border:none;border-top:1px solid #f3f4f6;margin:6px 8px}
 /* Hamburger */
 .hamburger{display:none;background:none;border:none;cursor:pointer;padding:6px;flex-direction:column;gap:5px}
 .hamburger span{display:block;width:22px;height:2px;background:#374151;border-radius:2px;transition:transform .2s,opacity .2s}
@@ -88,6 +88,9 @@ nav{background:#fff;border-bottom:1px solid #e5e7eb;position:sticky;top:0;z-inde
   .nav-dd-menu a{padding:10px 16px;font-size:.9rem}
 }
 /* === END NAV === */
+pre, code { white-space: pre-wrap; word-break: break-word; overflow-x: auto; }
+pre { background: #f9fafb; border: 1px solid #e5e7eb; border-radius: 8px; padding: 16px; font-size: .88rem; }
+.post-content, article { max-width: 780px; margin: 0 auto; padding: 0 24px; }
 @media(prefers-reduced-motion:no-preference){
   .fade-in{opacity:0;transform:translateY(20px);transition:opacity .5s,transform .5s}
   .fade-in.visible{opacity:1;transform:none}
@@ -436,7 +439,16 @@ nav{background:#fff;border-bottom:1px solid #e5e7eb;position:sticky;top:0;z-inde
 </article>
     </div>
     <footer>
-  &copy; 2026 Beorns Co &middot; <a href="mailto:beornsco@proton.me">beornsco@proton.me</a> &middot; <a href="/terms/">Terms</a> &middot; <a href="/privacy/">Privacy</a> &middot; <a href="https://twitter.com/beornsco" target="_blank" rel="noopener">X/Twitter</a> &middot; <a href="https://medium.com/@beornsco" target="_blank" rel="noopener">Medium</a> · <a href="https://beornsco.lemonsqueezy.com" target="_blank" rel="noopener">Lemon Squeezy Store</a>
+  <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:8px 16px;color:#9ca3af;font-size:.875rem">
+    <span>© 2026 Beorns Co</span>
+    <a href="mailto:beornsco@proton.me" style="color:#9ca3af">beornsco@proton.me</a>
+    <a href="/terms/" style="color:#9ca3af">Terms</a>
+    <a href="/privacy/" style="color:#9ca3af">Privacy</a>
+    <a href="/about/" style="color:#9ca3af">About</a>
+    <a href="https://twitter.com/beornsco" target="_blank" rel="noopener" style="color:#9ca3af">X/Twitter</a>
+    <a href="https://medium.com/@beornsco" target="_blank" rel="noopener" style="color:#9ca3af">Medium</a>
+    <a href="https://beornsco.lemonsqueezy.com" target="_blank" rel="noopener" style="color:#9ca3af">Lemon Squeezy</a>
+  </div>
 </footer>
 
 <script>
