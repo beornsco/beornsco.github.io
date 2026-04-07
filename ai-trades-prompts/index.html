@@ -206,12 +206,13 @@ nav{background:#fff;border-bottom:1px solid #e5e7eb;position:sticky;top:0;z-inde
   ]
 }
 </script>
+<link rel="stylesheet" href="/shared.css">
 </head>
 <body>
 
 <nav>
 <div class="nav-inner">
-  <a href="/" class="brand">Beorns Co</a>
+  <a href="/" class="brand" style="display:flex;align-items:center;gap:10px"><img src="/downloads/logo.png" style="height:28px;width:28px;border-radius:6px" alt="Beorns Co logo"><span>Beorns Co</span></a>
   <button class="hamburger" id="hbg" aria-label="Menu" onclick="document.getElementById('hbg').classList.toggle('open');document.getElementById('nav-links').classList.toggle('open')">
     <span></span><span></span><span></span>
   </button>
@@ -259,11 +260,11 @@ nav{background:#fff;border-bottom:1px solid #e5e7eb;position:sticky;top:0;z-inde
   <h2>You're good at your trade.<br>The paperwork? Not so much.</h2>
   <p class="section-sub">You didn't start your business to spend evenings writing emails and chasing payments.</p>
   <div class="pain-grid">
-    <div class="pain-item">You spend an hour writing a quote that should take 10 minutes : and still aren't sure it sounds professional.</div>
-    <div class="pain-item">A customer left a bad review and you don't know what to say without making things worse.</div>
-    <div class="pain-item">You need to post something on Facebook but stare at a blank screen until you give up.</div>
-    <div class="pain-item">You've sent the same invoice three times and the customer still hasn't paid : and you hate chasing people.</div>
-    <div class="pain-item">You want to hire a part-time helper but have no idea how to write a job ad or what to ask in an interview.</div>
+    <div class="pain-card">You spend an hour writing a quote that should take 10 minutes : and still aren't sure it sounds professional.</div>
+    <div class="pain-card">A customer left a bad review and you don't know what to say without making things worse.</div>
+    <div class="pain-card">You need to post something on Facebook but stare at a blank screen until you give up.</div>
+    <div class="pain-card">You've sent the same invoice three times and the customer still hasn't paid : and you hate chasing people.</div>
+    <div class="pain-card">You want to hire a part-time helper but have no idea how to write a job ad or what to ask in an interview.</div>
   </div>
 </div>
 </section>
@@ -380,43 +381,32 @@ nav{background:#fff;border-bottom:1px solid #e5e7eb;position:sticky;top:0;z-inde
   <div class="section-label">Who It's For</div>
   <h2>Built for Owner-Run Service Businesses</h2>
   <p class="section-sub">If you have 1-10 staff and deal with customers, quotes, and admin : this is for you.</p>
-  <ul class="who-list">
-    <li>Plumbers &amp; Gas Engineers</li>
-    <li>Electricians</li>
-    <li>Cleaners &amp; Cleaning Companies</li>
-    <li>Landscapers &amp; Gardeners</li>
-    <li>Handymen &amp; General Builders</li>
-    <li>Painters &amp; Decorators</li>
-    <li>Hair &amp; Beauty Salons</li>
-    <li>Tilers &amp; Floor Fitters</li>
-    <li>Pest Control &amp; Security</li>
-    <li>Mobile Mechanics</li>
-    <li>Roofers &amp; Window Fitters</li>
-    <li>Any local service business</li>
-  </ul>
+  <div class="who-grid">
+    <div class="who-item">Plumbers &amp; Gas Engineers</div>
+    <div class="who-item">Electricians</div>
+    <div class="who-item">Cleaners &amp; Cleaning Companies</div>
+    <div class="who-item">Landscapers &amp; Gardeners</div>
+    <div class="who-item">Handymen &amp; General Builders</div>
+    <div class="who-item">Painters &amp; Decorators</div>
+    <div class="who-item">Hair &amp; Beauty Salons</div>
+    <div class="who-item">Tilers &amp; Floor Fitters</div>
+    <div class="who-item">Pest Control &amp; Security</div>
+    <div class="who-item">Mobile Mechanics</div>
+    <div class="who-item">Roofers &amp; Window Fitters</div>
+    <div class="who-item">Any local service business</div>
+  </div>
 </div>
 </section>
 
 <!-- PRICING -->
-<section class="alt">
-<div class="container fade-in" style="text-align:center">
-  <div class="section-label">Pricing</div>
-  <h2>One Price. Everything Included.</h2>
-  <p class="section-sub" style="margin-bottom:36px">Less than an hour of your time. Saves you dozens of hours a year.</p>
-  <div class="pricing-box">
-    <div class="price">€14</div>
-    <div class="price-period">one-time purchase · instant download</div>
-    <ul class="content-list">
-      <li>54 ready-to-use AI prompts</li>
-      <li>9 sections covering every part of your business</li>
-      <li>PDF + plain text file (easy to copy from)</li>
-      <li>Works with free ChatGPT, Claude, Gemini &amp; Copilot</li>
-      <li>EU/GDPR-aware compliance prompts included</li>
-      <li>No subscription. Keep it forever.</li>
-    </ul>
-    <a href="https://beornsco.gumroad.com/l/ecyiix" class="btn">Buy Now : €14</a>
-    <div style="margin-top:14px;color:var(--gray);font-size:.88rem">30-day money-back guarantee via Gumroad</div>
-  </div>
+<section style="padding:48px 0">
+<div class="container">
+<div class="buy-box">
+  <div class="buy-price">€14</div>
+  <div class="buy-sub">One-time purchase. Instant download. Use forever.</div>
+  <a href="https://beornsco.gumroad.com/l/ecyiix" class="btn-buy">Get the AI Prompts for Tradespeople: €14</a>
+  <div class="buy-guarantee">30-day money-back guarantee. Works with free ChatGPT, Claude and Gemini.</div>
+</div>
 </div>
 </section>
 

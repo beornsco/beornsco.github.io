@@ -186,11 +186,12 @@ nav{background:#fff;border-bottom:1px solid #e5e7eb;position:sticky;top:0;z-inde
   ]
 }
 </script>
+<link rel="stylesheet" href="/shared.css">
 </head>
 <body>
 <nav>
 <div class="nav-inner">
-  <a href="/" class="brand">Beorns Co</a>
+  <a href="/" class="brand" style="display:flex;align-items:center;gap:10px"><img src="/downloads/logo.png" style="height:28px;width:28px;border-radius:6px" alt="Beorns Co logo"><span>Beorns Co</span></a>
   <button class="hamburger" id="hbg" aria-label="Menu" onclick="document.getElementById('hbg').classList.toggle('open');document.getElementById('nav-links').classList.toggle('open')">
     <span></span><span></span><span></span>
   </button>
@@ -231,13 +232,13 @@ nav{background:#fff;border-bottom:1px solid #e5e7eb;position:sticky;top:0;z-inde
 <section class="alt">
 <div class="container fade-in">
   <h2 style="text-align:center">Sound familiar?</h2>
-  <ul class="pain-list">
-    <li>You spend hours writing client emails that should take 10 minutes</li>
-    <li>Pricing conversations are awkward and you're never sure what to say</li>
-    <li>Your Instagram sits dormant because captions are the hardest part</li>
-    <li>You've got unpaid invoices and don't know how to chase them professionally</li>
-    <li>GDPR compliance feels overwhelming and you're not sure if you're covered</li>
-  </ul>
+  <div class="pain-grid">
+    <div class="pain-card">You spend hours writing client emails that should take 10 minutes</div>
+    <div class="pain-card">Pricing conversations are awkward and you're never sure what to say</div>
+    <div class="pain-card">Your Instagram sits dormant because captions are the hardest part</div>
+    <div class="pain-card">You've got unpaid invoices and don't know how to chase them professionally</div>
+    <div class="pain-card">GDPR compliance feels overwhelming and you're not sure if you're covered</div>
+  </div>
 </div>
 </section>
 
@@ -291,12 +292,14 @@ nav{background:#fff;border-bottom:1px solid #e5e7eb;position:sticky;top:0;z-inde
 </div>
 </section>
 
-<section class="cta-section">
-<div class="container fade-in">
-  <div class="price">€12</div>
-  <div class="sub">One-time purchase. Instant download. Use forever.</div>
-  <a href="https://beornsco.gumroad.com/l/oaihbj" class="btn">Get the Photographer Prompt Pack : €12</a>
-  <p style="color:var(--gray);font-size:.9rem;margin-top:16px">30-day money-back guarantee. Works with free ChatGPT.</p>
+<section style="padding:48px 0">
+<div class="container">
+<div class="buy-box">
+  <div class="buy-price">€12</div>
+  <div class="buy-sub">One-time purchase. Instant download. Use forever.</div>
+  <a href="https://beornsco.gumroad.com/l/oaihbj" class="btn-buy">Get the AI Prompts for Photographers: €12</a>
+  <div class="buy-guarantee">30-day money-back guarantee. Works with free ChatGPT, Claude and Gemini.</div>
+</div>
 </div>
 </section>
 

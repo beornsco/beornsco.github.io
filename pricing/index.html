@@ -31,7 +31,7 @@ h2{font-size:1.6rem;margin-bottom:28px;text-align:center;letter-spacing:-.01em}
 .products{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
 @media(max-width:900px){.products{grid-template-columns:1fr 1fr}}
 @media(max-width:600px){.products{grid-template-columns:1fr}}
-.card{background:var(--white);border:2px solid #E5E7EB;border-radius:14px;padding:28px 22px;display:flex;flex-direction:column}
+.card{background:var(--white);border:2px solid #E5E7EB;border-radius:14px;padding:28px 22px;display:flex;flex-direction:column;text-align:center}
 .card h3{font-size:1.3rem;margin-bottom:4px}
 .card .price{font-size:2.2rem;font-weight:800;color:var(--blue);margin-bottom:2px}
 .card .tagline{color:var(--gray);font-size:.95rem;margin-bottom:16px}
@@ -129,12 +129,13 @@ nav{background:#fff;border-bottom:1px solid #e5e7eb;position:sticky;top:0;z-inde
  gtag('js', new Date());
  gtag('config', 'G-3S7D3JJ9JS');
 </script>
+<link rel="stylesheet" href="/shared.css">
 </head>
 <body>
 
 <nav>
 <div class="nav-inner">
-  <a href="/" class="brand">Beorns Co</a>
+  <a href="/" class="brand" style="display:flex;align-items:center;gap:10px"><img src="/downloads/logo.png" style="height:28px;width:28px;border-radius:6px" alt="Beorns Co logo"><span>Beorns Co</span></a>
   <button class="hamburger" id="hbg" aria-label="Menu" onclick="document.getElementById('hbg').classList.toggle('open');document.getElementById('nav-links').classList.toggle('open')">
     <span></span><span></span><span></span>
   </button>
@@ -180,7 +181,7 @@ nav{background:#fff;border-bottom:1px solid #e5e7eb;position:sticky;top:0;z-inde
     <p>Strategy, prompts, and automation : everything a small business needs to adopt AI confidently.</p>
   </div>
 
-  <div class="core-grid">
+  <div class="core-grid pricing-grid">
 
     <div class="card">
       <h3>AI Adoption Starter Kit</h3>
@@ -249,7 +250,7 @@ nav{background:#fff;border-bottom:1px solid #e5e7eb;position:sticky;top:0;z-inde
     <p>Industry-specific AI prompts built for your business type. From €12.</p>
   </div>
 
-  <div class="niche-grid">
+  <div class="niche-grid pricing-grid">
 
     <div class="card niche">
       <h3>54 AI Prompts for Tradespeople</h3>

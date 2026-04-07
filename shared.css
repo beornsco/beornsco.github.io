@@ -1,0 +1,63 @@
+/* ===== SHARED COMPONENTS: beornsco.github.io ===== */
+
+/* Stats bar */
+.stats-bar{display:flex;justify-content:center;gap:48px;flex-wrap:wrap;padding:40px 24px;text-align:center}
+.stat-item{display:flex;flex-direction:column;align-items:center;gap:4px}
+.stat-num{font-size:2.8rem;font-weight:800;color:#2962FF;line-height:1}
+.stat-label{font-size:.9rem;color:#6b7280;font-weight:500}
+
+/* What's Inside cards */
+.whats-inside{display:grid;grid-template-columns:1fr;gap:14px;margin:32px 0}
+@media(min-width:600px){.whats-inside{grid-template-columns:1fr 1fr}}
+.inside-card{display:flex;align-items:flex-start;gap:14px;background:#f9fafb;border:1px solid #e5e7eb;border-radius:10px;padding:18px 20px;transition:border-color .15s}
+.inside-card:hover{border-color:#2962FF}
+.inside-badge{flex-shrink:0;background:#2962FF;color:#fff;font-weight:700;font-size:.8rem;padding:3px 10px;border-radius:20px;white-space:nowrap}
+.inside-badge.bonus{background:#ea580c}
+.inside-body-title{font-weight:700;color:#111827;margin-bottom:3px;font-size:.95rem}
+.inside-body-desc{color:#6b7280;font-size:.875rem;line-height:1.5}
+
+/* Who It's For */
+.who-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:24px 0}
+@media(min-width:640px){.who-grid{grid-template-columns:repeat(3,1fr)}}
+@media(min-width:900px){.who-grid{grid-template-columns:repeat(4,1fr)}}
+.who-item{display:flex;align-items:center;gap:10px;padding:12px 16px;background:#f9fafb;border:1px solid #e5e7eb;border-radius:8px;font-size:.875rem;color:#374151;font-weight:500}
+.who-item::before{content:"✓";color:#2962FF;font-weight:800;flex-shrink:0}
+
+/* Sound Familiar / Pain points */
+.pain-grid{display:grid;grid-template-columns:1fr;gap:10px;margin:24px 0}
+@media(min-width:600px){.pain-grid{grid-template-columns:1fr 1fr}}
+.pain-card{display:flex;align-items:flex-start;gap:12px;padding:16px 18px;background:#fff7ed;border:1px solid #fed7aa;border-radius:8px;font-size:.9rem;color:#374151;line-height:1.5}
+.pain-card::before{content:"😔";flex-shrink:0;font-size:1.1rem}
+
+/* Buy / CTA box */
+.buy-box{background:linear-gradient(135deg,#1e3a8a,#2962FF);border-radius:16px;padding:40px 32px;text-align:center;margin:48px 0;color:#fff}
+.buy-box .buy-price{font-size:3rem;font-weight:800;color:#fff;line-height:1;margin-bottom:4px}
+.buy-box .buy-sub{color:rgba(255,255,255,.75);font-size:.9rem;margin-bottom:24px}
+.buy-box .btn-buy{display:inline-block;background:#fff;color:#2962FF;font-weight:700;font-size:1.05rem;padding:16px 40px;border-radius:8px;text-decoration:none;transition:transform .15s,box-shadow .15s}
+.buy-box .btn-buy:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,.2)}
+.buy-box .buy-guarantee{margin-top:14px;color:rgba(255,255,255,.65);font-size:.82rem}
+
+/* How It Works steps */
+.how-steps{display:flex;flex-direction:column;gap:0;margin:32px 0}
+.how-step{display:flex;align-items:flex-start;gap:20px;padding:24px 0;border-bottom:1px solid #f3f4f6}
+.how-step:last-child{border-bottom:none}
+.step-num{flex-shrink:0;width:40px;height:40px;background:#2962FF;color:#fff;font-weight:800;font-size:1.1rem;border-radius:50%;display:flex;align-items:center;justify-content:center}
+.step-title{font-weight:700;font-size:1rem;color:#111827;margin-bottom:4px}
+.step-desc{color:#6b7280;font-size:.9rem;line-height:1.6}
+@media(min-width:640px){.how-steps{flex-direction:row;gap:16px}.how-step{flex-direction:column;align-items:center;text-align:center;flex:1;border-bottom:none;padding:24px 16px;border-right:1px solid #f3f4f6}.how-step:last-child{border-right:none}}
+
+/* Feature checklist */
+.feature-checklist{display:grid;grid-template-columns:1fr;gap:10px;margin:24px 0}
+.check-item{display:flex;align-items:center;gap:12px;padding:14px 18px;background:#f0fdf4;border:1px solid #bbf7d0;border-radius:8px;font-size:.9rem;color:#111827}
+.check-icon{flex-shrink:0;width:24px;height:24px;background:#16a34a;color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.8rem}
+@media(min-width:640px){.feature-checklist{grid-template-columns:1fr 1fr}}
+
+/* Pricing page cards */
+.pricing-grid{display:grid;grid-template-columns:1fr;gap:24px;margin:32px 0}
+@media(min-width:640px){.pricing-grid{grid-template-columns:1fr 1fr}}
+@media(min-width:900px){.pricing-grid{grid-template-columns:repeat(3,1fr)}}
+.pricing-card{background:#fff;border:2px solid #e5e7eb;border-radius:14px;padding:28px 24px;display:flex;flex-direction:column;text-align:center}
+.pricing-card.featured{border-color:#2962FF;box-shadow:0 4px 24px rgba(41,98,255,.15)}
+.pricing-card .p-name{font-size:1.05rem;font-weight:700;color:#111827;margin-bottom:8px}
+.pricing-card .p-price{font-size:2.4rem;font-weight:800;color:#2962FF;margin-bottom:4px}
+.pricing-card .p-desc{color:#6b7280;font-size:.875rem;margin-bottom:20px;flex:1}
