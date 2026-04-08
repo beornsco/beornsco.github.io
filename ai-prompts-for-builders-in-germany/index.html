@@ -114,57 +114,43 @@ nav{background:#fff;border-bottom:1px solid #e5e7eb;position:sticky;top:0;z-inde
         "name": "Beorns Co"
       }
     },
-    {
+        {
       "@type": "FAQPage",
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "Do these prompts work for builders in Germany?",
+          "name": "How do I generate a formal Angebot (written quote) for German clients?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. The prompts cover the full project lifecycle for builders in Germany, from initial quotes to handover communications, and include GDPR-compliant admin templates."
+            "text": "Use the quote prompt with the instruction: 'Write a formal German Angebot for a construction job. Use Sie form. Structure it with: scope of work, materials, timeline, and total price with MwSt shown separately.' German clients expect a document-quality quote even for residential projects. Turning up with a verbal estimate is seen as unprofessional."
           }
         },
         {
           "@type": "Question",
-          "name": "What AI tool do I need?",
+          "name": "Should I mention VOB compliance in commercial building quotes?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "You only need the free version of ChatGPT at chat.openai.com. No paid plan, no plugins, no technical setup. The prompts also work with Claude, Google Gemini, and Microsoft Copilot."
+            "text": "Yes. Add to your commercial quote prompt: 'Include a sentence stating that this contract is offered in accordance with VOB standards.' German commercial property owners, architects, and project managers use VOB as the default framework. Quotes that reference it are taken more seriously than those that do not."
           }
         },
         {
           "@type": "Question",
-          "name": "How long does it take to get results?",
+          "name": "Can these prompts help me write about Baugenehmigung (planning permission) for clients?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Most tradespeople get a usable result within 2 to 3 minutes of using their first prompt. Copy the prompt, fill in your details where it says [brackets], paste into ChatGPT, and hit send. That is it."
+            "text": "Yes. Use the client communication prompt with the instruction: 'Explain to the client in formal German that this project requires a Baugenehmigung (building permit) from the local authority, and outline the timeline and their responsibilities.' German clients who understand planning requirements from the start cause fewer delays later."
           }
         },
         {
           "@type": "Question",
-          "name": "Is ChatGPT free for builders in Germany?",
+          "name": "How do I handle Kleinunternehmer invoicing in my prompt templates?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. The basic version of ChatGPT at chat.openai.com is completely free and works perfectly for all the prompts in our pack. You do not need a paid subscription. Claude by Anthropic also has a free tier that works equally well."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How do I use these AI prompts on my phone?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Open ChatGPT or Claude in your phone browser, copy a prompt from the pack, paste it in, fill in the brackets with your details, and send. Most builders use the prompts directly from their phone on site between jobs. No apps to install."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can I customise these prompts for my specific business?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes, that is the point of the [BRACKETS] in every prompt. Replace them with your business name, customer name, job details, and price. After a few uses you will have your own version of each prompt saved and ready to reuse."
+            "text": "Add the mandatory disclaimer to your invoice template prompt: 'Kein Ausweis von Umsatzsteuer, da Kleinunternehmer gemaess Paragraph 19 UStG.' Set it once and every invoice ChatGPT generates will include the correct legal phrase. Issuing a non-compliant invoice in Germany risks penalties from the Finanzamt."
           }
         }
+      ]
+    }
       ]
     }
   ]
@@ -277,19 +263,56 @@ nav{background:#fff;border-bottom:1px solid #e5e7eb;position:sticky;top:0;z-inde
   </div>
 </section>
 
-<!-- FAQ -->
 
 <section style="padding:48px 0;background:#f9fafb;border-top:1px solid #e5e7eb">
 <div class="container">
   <h2 style="font-size:1.3rem;font-weight:700;color:#111827;margin-bottom:20px">Local considerations in Germany</h2>
   <div style="display:flex;flex-direction:column;gap:14px">
-    <div style="background:#fff;border:1px solid #e5e7eb;border-radius:8px;padding:18px 20px"><div style="font-weight:700;color:#111827;margin-bottom:4px">Always use formal Sie form</div><div style="color:#6b7280;font-size:.9rem;line-height:1.6">Use Sie throughout all written communications. Never use du unless the client initiates it. The prompts in this pack are written in formal register for exactly this reason.</div></div>
-    <div style="background:#fff;border:1px solid #e5e7eb;border-radius:8px;padding:18px 20px"><div style="font-weight:700;color:#111827;margin-bottom:4px">Send a written confirmation after every verbal yes</div><div style="color:#6b7280;font-size:.9rem;line-height:1.6">After any verbal agreement, send a brief written confirmation the same day. This is standard professional practice in Germany and prevents all disputes. Use the order confirmation prompt immediately.</div></div>
-    <div style="background:#fff;border:1px solid #e5e7eb;border-radius:8px;padding:18px 20px"><div style="font-weight:700;color:#111827;margin-bottom:4px">Mention your Handwerkskammer registration</div><div style="color:#6b7280;font-size:.9rem;line-height:1.6">State your Handwerkskammer registration in your introduction message and quote. German clients actively look for this and it separates you from unlicensed operators competing on price alone.</div></div>
-    <div style="background:#fff;border:1px solid #e5e7eb;border-radius:8px;padding:18px 20px"><div style="font-weight:700;color:#111827;margin-bottom:4px">Respond within 4 hours in cities</div><div style="color:#6b7280;font-size:.9rem;line-height:1.6">In Munich, Berlin and Hamburg, clients who receive a professional response within 4 hours convert at significantly higher rates. Use the quick acknowledgement prompt the moment an enquiry arrives.</div></div>
+    <div style="background:#fff;border:1px solid #e5e7eb;border-radius:8px;padding:18px 20px">
+      <div style="font-weight:700;color:#111827;margin-bottom:4px">A formal written quote is expected before any site visit in Germany</div>
+      <div style="color:#6b7280;font-size:.9rem;line-height:1.6">German clients expect a written Angebot (formal quote) even before the first site visit for larger jobs. Use the quote prompt to generate a structured document in German with Sie form. Turning up without a written proposal signals unprofessionalism in this market.</div>
+    </div>
+    <div style="background:#fff;border:1px solid #e5e7eb;border-radius:8px;padding:18px 20px">
+      <div style="font-weight:700;color:#111827;margin-bottom:4px">VOB is the default contract standard for commercial work</div>
+      <div style="color:#6b7280;font-size:.9rem;line-height:1.6">German commercial clients use VOB (Vergabe- und Vertragsordnung fuer Bauleistungen) as the baseline contract for construction work. Reference VOB compliance in your commercial quote prompt. Clients who see it know you understand how German commercial construction works.</div>
+    </div>
+    <div style="background:#fff;border:1px solid #e5e7eb;border-radius:8px;padding:18px 20px">
+      <div style="font-weight:700;color:#111827;margin-bottom:4px">Bauordnungsrecht varies by Bundesland  -  name the state in your documents</div>
+      <div style="color:#6b7280;font-size:.9rem;line-height:1.6">Building regulations in Germany differ between Bundeslaender (states). When writing project documents or scope-of-work summaries, add the Bundesland name to your prompt so ChatGPT generates geographically accurate content. A quote that references Bayern building law lands better with a Munich client than a generic document.</div>
+    </div>
+    <div style="background:#fff;border:1px solid #e5e7eb;border-radius:8px;padding:18px 20px">
+      <div style="font-weight:700;color:#111827;margin-bottom:4px">Meisterbrief and Handwerkskammer membership are the top two trust signals</div>
+      <div style="color:#6b7280;font-size:.9rem;line-height:1.6">German residential clients weight the Meisterbrief above all other credentials. If you have it, open every quote and introduction message with it. Use the intro prompt and instruct ChatGPT to place it in the first sentence.</div>
+    </div>
   </div>
 </div>
 </section>
+<!-- FAQ -->
+<section>
+<div class="container fade-in">
+  <div class="section-label">FAQ</div>
+  <h2>Common Questions</h2>
+  <div class="faq">
+    <div class="faq-item">
+      <strong>How do I generate a formal Angebot (written quote) for German clients?</strong>
+      <p>Use the quote prompt with the instruction: 'Write a formal German Angebot for a construction job. Use Sie form. Structure it with: scope of work, materials, timeline, and total price with MwSt shown separately.' German clients expect a document-quality quote even for residential projects. Turning up with a verbal estimate is seen as unprofessional.</p>
+    </div>
+    <div class="faq-item">
+      <strong>Should I mention VOB compliance in commercial building quotes?</strong>
+      <p>Yes. Add to your commercial quote prompt: 'Include a sentence stating that this contract is offered in accordance with VOB standards.' German commercial property owners, architects, and project managers use VOB as the default framework. Quotes that reference it are taken more seriously than those that do not.</p>
+    </div>
+    <div class="faq-item">
+      <strong>Can these prompts help me write about Baugenehmigung (planning permission) for clients?</strong>
+      <p>Yes. Use the client communication prompt with the instruction: 'Explain to the client in formal German that this project requires a Baugenehmigung (building permit) from the local authority, and outline the timeline and their responsibilities.' German clients who understand planning requirements from the start cause fewer delays later.</p>
+    </div>
+    <div class="faq-item">
+      <strong>How do I handle Kleinunternehmer invoicing in my prompt templates?</strong>
+      <p>Add the mandatory disclaimer to your invoice template prompt: 'Kein Ausweis von Umsatzsteuer, da Kleinunternehmer gemaess Paragraph 19 UStG.' Set it once and every invoice ChatGPT generates will include the correct legal phrase. Issuing a non-compliant invoice in Germany risks penalties from the Finanzamt.</p>
+    </div>
+  </div>
+</div>
+</section>
+
 <section>
 <div class="container fade-in">
   <div class="section-label">FAQ</div>

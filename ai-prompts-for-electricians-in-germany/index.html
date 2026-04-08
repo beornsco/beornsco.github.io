@@ -114,57 +114,43 @@ nav{background:#fff;border-bottom:1px solid #e5e7eb;position:sticky;top:0;z-inde
         "name": "Beorns Co"
       }
     },
-    {
+        {
       "@type": "FAQPage",
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "Do these prompts work for electricians in Germany?",
+          "name": "How do I make sure the prompts generate formal German with Sie form?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. The prompts cover GDPR-aware admin templates and invoice language suited to EU regulations, making them a practical fit for electricians operating in Germany."
+            "text": "Always include the instruction 'Write in formal German using the Sie form throughout' at the top of your prompt. Without this instruction ChatGPT may default to informal du, which is inappropriate for German business communications. Copy this instruction into every prompt template once and it becomes automatic."
           }
         },
         {
           "@type": "Question",
-          "name": "What AI tool do I need?",
+          "name": "Can I use these prompts to write a proper Auftragsbestaetigung (order confirmation)?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "You only need the free version of ChatGPT at chat.openai.com. No paid plan, no plugins, no technical setup. The prompts also work with Claude, Google Gemini, and Microsoft Copilot."
+            "text": "Yes. Use the job confirmation prompt with the instruction: 'Write a formal German Auftragsbestaetigung for an electrical job. Use Sie form. Include job description, agreed price, start date, and payment terms.' Send this immediately after every verbal agreement to prevent scope disputes."
           }
         },
         {
           "@type": "Question",
-          "name": "How long does it take to get results?",
+          "name": "How should I reference VDE compliance in quotes for German commercial clients?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Most tradespeople get a usable result within 2 to 3 minutes of using their first prompt. Copy the prompt, fill in your details where it says [brackets], paste into ChatGPT, and hit send. That is it."
+            "text": "Add the instruction to your commercial quote prompt: 'Include a sentence stating that all work is carried out in accordance with DIN VDE standards.' German facility managers and commercial clients expect this reference. Quotes that omit it raise questions about your qualifications."
           }
         },
         {
           "@type": "Question",
-          "name": "Is ChatGPT free for electricians in Germany?",
+          "name": "Do these prompts help if I am a Kleinunternehmer not charging MwSt?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. The basic version of ChatGPT at chat.openai.com is completely free and works perfectly for all the prompts in our pack. You do not need a paid subscription. Claude by Anthropic also has a free tier that works equally well."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How do I use these AI prompts on my phone?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Open ChatGPT or Claude in your phone browser, copy a prompt from the pack, paste it in, fill in the brackets with your details, and send. Most electricians use the prompts directly from their phone on site between jobs. No apps to install."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can I customise these prompts for my specific business?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes, that is the point of the [BRACKETS] in every prompt. Replace them with your business name, customer name, job details, and price. After a few uses you will have your own version of each prompt saved and ready to reuse."
+            "text": "Yes. Add the Kleinunternehmer disclaimer to your invoice prompt template: 'Kein Ausweis von Umsatzsteuer, da Kleinunternehmer gemaess Paragraph 19 UStG.' Set it once in the template and every invoice ChatGPT generates will include the legally required phrase automatically."
           }
         }
+      ]
+    }
       ]
     }
   ]
@@ -277,19 +263,60 @@ nav{background:#fff;border-bottom:1px solid #e5e7eb;position:sticky;top:0;z-inde
   </div>
 </section>
 
-<!-- FAQ -->
 
 <section style="padding:48px 0;background:#f9fafb;border-top:1px solid #e5e7eb">
 <div class="container">
   <h2 style="font-size:1.3rem;font-weight:700;color:#111827;margin-bottom:20px">Local considerations in Germany</h2>
   <div style="display:flex;flex-direction:column;gap:14px">
-    <div style="background:#fff;border:1px solid #e5e7eb;border-radius:8px;padding:18px 20px"><div style="font-weight:700;color:#111827;margin-bottom:4px">Always use formal Sie form</div><div style="color:#6b7280;font-size:.9rem;line-height:1.6">Use Sie throughout all written communications. Never use du unless the client initiates it. The prompts in this pack are written in formal register for exactly this reason.</div></div>
-    <div style="background:#fff;border:1px solid #e5e7eb;border-radius:8px;padding:18px 20px"><div style="font-weight:700;color:#111827;margin-bottom:4px">Send a written confirmation after every verbal yes</div><div style="color:#6b7280;font-size:.9rem;line-height:1.6">After any verbal agreement, send a brief written confirmation the same day. This is standard professional practice in Germany and prevents all disputes. Use the order confirmation prompt immediately.</div></div>
-    <div style="background:#fff;border:1px solid #e5e7eb;border-radius:8px;padding:18px 20px"><div style="font-weight:700;color:#111827;margin-bottom:4px">Mention your Handwerkskammer registration</div><div style="color:#6b7280;font-size:.9rem;line-height:1.6">State your Handwerkskammer registration in your introduction message and quote. German clients actively look for this and it separates you from unlicensed operators competing on price alone.</div></div>
-    <div style="background:#fff;border:1px solid #e5e7eb;border-radius:8px;padding:18px 20px"><div style="font-weight:700;color:#111827;margin-bottom:4px">Respond within 4 hours in cities</div><div style="color:#6b7280;font-size:.9rem;line-height:1.6">In Munich, Berlin and Hamburg, clients who receive a professional response within 4 hours convert at significantly higher rates. Use the quick acknowledgement prompt the moment an enquiry arrives.</div></div>
+    <div style="background:#fff;border:1px solid #e5e7eb;border-radius:8px;padding:18px 20px">
+      <div style="font-weight:700;color:#111827;margin-bottom:4px">Always send a written Auftragsbestaetigung after a verbal agreement</div>
+      <div style="color:#6b7280;font-size:.9rem;line-height:1.6">German clients expect a formal order confirmation after any verbal yes. Use the job confirmation prompt to generate a brief Auftragsbestaetigung immediately after the call. Disputes almost never happen when you have this paper trail.</div>
+    </div>
+    <div style="background:#fff;border:1px solid #e5e7eb;border-radius:8px;padding:18px 20px">
+      <div style="font-weight:700;color:#111827;margin-bottom:4px">Use Sie form in every client message</div>
+      <div style="color:#6b7280;font-size:.9rem;line-height:1.6">All client communications in Germany must use the formal Sie form, not du. When using the prompts, include a note at the top: 'Write in formal German using Sie.' Without this instruction ChatGPT may default to informal.</div>
+    </div>
+    <div style="background:#fff;border:1px solid #e5e7eb;border-radius:8px;padding:18px 20px">
+      <div style="font-weight:700;color:#111827;margin-bottom:4px">Mention VDE compliance in your quotes for commercial clients</div>
+      <div style="color:#6b7280;font-size:.9rem;line-height:1.6">Commercial clients and facility managers in Germany expect VDE standard compliance to be stated explicitly in quotes. Add one sentence to your commercial quote prompt: 'All work carried out in accordance with DIN VDE standards.' This removes a common objection.</div>
+    </div>
+    <div style="background:#fff;border:1px solid #e5e7eb;border-radius:8px;padding:18px 20px">
+      <div style="font-weight:700;color:#111827;margin-bottom:4px">The Meisterbrief is your strongest trust signal  -  use it</div>
+      <div style="color:#6b7280;font-size:.9rem;line-height:1.6">If you hold a Meisterbrief, mention it in your introduction message and social posts. In Germany it is the gold standard qualification. Use the bio/intro prompt and ask ChatGPT to open with your Meisterbrief status.</div>
+    </div>
+    <div style="background:#fff;border:1px solid #e5e7eb;border-radius:8px;padding:18px 20px">
+      <div style="font-weight:700;color:#111827;margin-bottom:4px">Invoice correctly for Kleinunternehmer status</div>
+      <div style="color:#6b7280;font-size:.9rem;line-height:1.6">If your revenue is under EUR 22,000, you are likely a Kleinunternehmer and must not charge MwSt. Update your invoice prompt to include the required statement: 'Kein Ausweis von Umsatzsteuer, da Kleinunternehmer gemaess Paragraph 19 UStG.' Copy this into the prompt template.</div>
+    </div>
   </div>
 </div>
 </section>
+<!-- FAQ -->
+<section>
+<div class="container fade-in">
+  <div class="section-label">FAQ</div>
+  <h2>Common Questions</h2>
+  <div class="faq">
+    <div class="faq-item">
+      <strong>How do I make sure the prompts generate formal German with Sie form?</strong>
+      <p>Always include the instruction 'Write in formal German using the Sie form throughout' at the top of your prompt. Without this instruction ChatGPT may default to informal du, which is inappropriate for German business communications. Copy this instruction into every prompt template once and it becomes automatic.</p>
+    </div>
+    <div class="faq-item">
+      <strong>Can I use these prompts to write a proper Auftragsbestaetigung (order confirmation)?</strong>
+      <p>Yes. Use the job confirmation prompt with the instruction: 'Write a formal German Auftragsbestaetigung for an electrical job. Use Sie form. Include job description, agreed price, start date, and payment terms.' Send this immediately after every verbal agreement to prevent scope disputes.</p>
+    </div>
+    <div class="faq-item">
+      <strong>How should I reference VDE compliance in quotes for German commercial clients?</strong>
+      <p>Add the instruction to your commercial quote prompt: 'Include a sentence stating that all work is carried out in accordance with DIN VDE standards.' German facility managers and commercial clients expect this reference. Quotes that omit it raise questions about your qualifications.</p>
+    </div>
+    <div class="faq-item">
+      <strong>Do these prompts help if I am a Kleinunternehmer not charging MwSt?</strong>
+      <p>Yes. Add the Kleinunternehmer disclaimer to your invoice prompt template: 'Kein Ausweis von Umsatzsteuer, da Kleinunternehmer gemaess Paragraph 19 UStG.' Set it once in the template and every invoice ChatGPT generates will include the legally required phrase automatically.</p>
+    </div>
+  </div>
+</div>
+</section>
+
 <section>
 <div class="container fade-in">
   <div class="section-label">FAQ</div>

@@ -114,57 +114,43 @@ nav{background:#fff;border-bottom:1px solid #e5e7eb;position:sticky;top:0;z-inde
         "name": "Beorns Co"
       }
     },
-    {
+        {
       "@type": "FAQPage",
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "Do these prompts work for plumbers in Germany?",
+          "name": "How do I write a formal Auftragsbestaetigung for German plumbing clients?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. The prompts are written to suit how tradespeople in Germany communicate with customers, including GDPR-aware invoice and admin templates suitable for EU businesses."
+            "text": "Use the job confirmation prompt with the instruction: 'Write a formal German Auftragsbestaetigung for a plumbing job. Use Sie form. Include job description, materials, agreed price, and start date.' Send it within minutes of any verbal agreement. German plumbing clients expect written confirmation before work begins, and disputes almost never happen when you provide it."
           }
         },
         {
           "@type": "Question",
-          "name": "What AI tool do I need?",
+          "name": "Should I mention DVGW registration in quotes for gas and water work?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "You only need the free version of ChatGPT at chat.openai.com. No paid plan, no plugins, no technical setup. The prompts also work with Claude, Google Gemini, and Microsoft Copilot."
+            "text": "Yes. Add to your gas or water quote prompt: 'Include a sentence stating that all gas and water work is carried out by a DVGW-registered contractor.' German homeowners and commercial clients expect this registration for compliance. Without it, clients compare you unfavourably to competitors who do mention it."
           }
         },
         {
           "@type": "Question",
-          "name": "How long does it take to get results?",
+          "name": "How do I make sure prompts use the correct formal German throughout?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Most tradespeople get a usable result within 2 to 3 minutes of using their first prompt. Copy the prompt, fill in your details where it says [brackets], paste into ChatGPT, and hit send. That is it."
+            "text": "Add this instruction to every prompt template: 'Write in formal German using Sie throughout.' This takes 5 seconds and prevents ChatGPT from generating du (informal) communications, which are inappropriate for German business relationships and can damage professional credibility."
           }
         },
         {
           "@type": "Question",
-          "name": "Is ChatGPT free for plumbers in Germany?",
+          "name": "Can these prompts help if I am subject to Kleinunternehmerregelung?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. The basic version of ChatGPT at chat.openai.com is completely free and works perfectly for all the prompts in our pack. You do not need a paid subscription. Claude by Anthropic also has a free tier that works equally well."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How do I use these AI prompts on my phone?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Open ChatGPT or Claude in your phone browser, copy a prompt from the pack, paste it in, fill in the brackets with your details, and send. Most plumbers use the prompts directly from their phone on site between jobs. No apps to install."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can I customise these prompts for my specific business?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes, that is the point of the [BRACKETS] in every prompt. Replace them with your business name, customer name, job details, and price. After a few uses you will have your own version of each prompt saved and ready to reuse."
+            "text": "Yes. Add the mandatory disclaimer to your invoice prompt: 'Kein Ausweis von Umsatzsteuer, da Kleinunternehmer gemaess Paragraph 19 UStG.' Set it once in your invoice template and every document generated will include the correct legal phrase without you needing to remember it each time."
           }
         }
+      ]
+    }
       ]
     }
   ]
@@ -277,19 +263,56 @@ nav{background:#fff;border-bottom:1px solid #e5e7eb;position:sticky;top:0;z-inde
   </div>
 </section>
 
-<!-- FAQ -->
 
 <section style="padding:48px 0;background:#f9fafb;border-top:1px solid #e5e7eb">
 <div class="container">
   <h2 style="font-size:1.3rem;font-weight:700;color:#111827;margin-bottom:20px">Local considerations in Germany</h2>
   <div style="display:flex;flex-direction:column;gap:14px">
-    <div style="background:#fff;border:1px solid #e5e7eb;border-radius:8px;padding:18px 20px"><div style="font-weight:700;color:#111827;margin-bottom:4px">Always use formal Sie form</div><div style="color:#6b7280;font-size:.9rem;line-height:1.6">Use Sie throughout all written communications. Never use du unless the client initiates it. The prompts in this pack are written in formal register for exactly this reason.</div></div>
-    <div style="background:#fff;border:1px solid #e5e7eb;border-radius:8px;padding:18px 20px"><div style="font-weight:700;color:#111827;margin-bottom:4px">Send a written confirmation after every verbal yes</div><div style="color:#6b7280;font-size:.9rem;line-height:1.6">After any verbal agreement, send a brief written confirmation the same day. This is standard professional practice in Germany and prevents all disputes. Use the order confirmation prompt immediately.</div></div>
-    <div style="background:#fff;border:1px solid #e5e7eb;border-radius:8px;padding:18px 20px"><div style="font-weight:700;color:#111827;margin-bottom:4px">Mention your Handwerkskammer registration</div><div style="color:#6b7280;font-size:.9rem;line-height:1.6">State your Handwerkskammer registration in your introduction message and quote. German clients actively look for this and it separates you from unlicensed operators competing on price alone.</div></div>
-    <div style="background:#fff;border:1px solid #e5e7eb;border-radius:8px;padding:18px 20px"><div style="font-weight:700;color:#111827;margin-bottom:4px">Respond within 4 hours in cities</div><div style="color:#6b7280;font-size:.9rem;line-height:1.6">In Munich, Berlin and Hamburg, clients who receive a professional response within 4 hours convert at significantly higher rates. Use the quick acknowledgement prompt the moment an enquiry arrives.</div></div>
+    <div style="background:#fff;border:1px solid #e5e7eb;border-radius:8px;padding:18px 20px">
+      <div style="font-weight:700;color:#111827;margin-bottom:4px">Always send a written Auftragsbestaetigung before starting</div>
+      <div style="color:#6b7280;font-size:.9rem;line-height:1.6">German clients expect a formal written order confirmation after every verbal agreement. Use the job confirmation prompt immediately after the call and ask ChatGPT to write in formal German with Sie form. This one habit prevents almost all scope disputes.</div>
+    </div>
+    <div style="background:#fff;border:1px solid #e5e7eb;border-radius:8px;padding:18px 20px">
+      <div style="font-weight:700;color:#111827;margin-bottom:4px">Mention DVGW registration for any gas or water work</div>
+      <div style="color:#6b7280;font-size:.9rem;line-height:1.6">German homeowners and commercial clients expect DVGW registration for gas and water installations. Add your DVGW registration status to your quote and intro prompts. Without it, clients compare you unfavourably to competitors who mention it.</div>
+    </div>
+    <div style="background:#fff;border:1px solid #e5e7eb;border-radius:8px;padding:18px 20px">
+      <div style="font-weight:700;color:#111827;margin-bottom:4px">Use the Meisterbrief as your primary trust signal</div>
+      <div style="color:#6b7280;font-size:.9rem;line-height:1.6">If you hold a Meisterbrief, open every quote and introduction with it. German clients weight this credential heavily. Use the bio prompt to ask ChatGPT to place the Meisterbrief mention in the very first sentence.</div>
+    </div>
+    <div style="background:#fff;border:1px solid #e5e7eb;border-radius:8px;padding:18px 20px">
+      <div style="font-weight:700;color:#111827;margin-bottom:4px">Invoice as Kleinunternehmer if you are under EUR 22,000</div>
+      <div style="color:#6b7280;font-size:.9rem;line-height:1.6">If you are below the EUR 22,000 threshold, you must not charge MwSt and must add the Kleinunternehmer disclaimer to every invoice. Copy the exact legal phrase into your invoice prompt template once and never think about it again: 'Kein Ausweis von Umsatzsteuer, da Kleinunternehmer gemaess Paragraph 19 UStG.'</div>
+    </div>
   </div>
 </div>
 </section>
+<!-- FAQ -->
+<section>
+<div class="container fade-in">
+  <div class="section-label">FAQ</div>
+  <h2>Common Questions</h2>
+  <div class="faq">
+    <div class="faq-item">
+      <strong>How do I write a formal Auftragsbestaetigung for German plumbing clients?</strong>
+      <p>Use the job confirmation prompt with the instruction: 'Write a formal German Auftragsbestaetigung for a plumbing job. Use Sie form. Include job description, materials, agreed price, and start date.' Send it within minutes of any verbal agreement. German plumbing clients expect written confirmation before work begins, and disputes almost never happen when you provide it.</p>
+    </div>
+    <div class="faq-item">
+      <strong>Should I mention DVGW registration in quotes for gas and water work?</strong>
+      <p>Yes. Add to your gas or water quote prompt: 'Include a sentence stating that all gas and water work is carried out by a DVGW-registered contractor.' German homeowners and commercial clients expect this registration for compliance. Without it, clients compare you unfavourably to competitors who do mention it.</p>
+    </div>
+    <div class="faq-item">
+      <strong>How do I make sure prompts use the correct formal German throughout?</strong>
+      <p>Add this instruction to every prompt template: 'Write in formal German using Sie throughout.' This takes 5 seconds and prevents ChatGPT from generating du (informal) communications, which are inappropriate for German business relationships and can damage professional credibility.</p>
+    </div>
+    <div class="faq-item">
+      <strong>Can these prompts help if I am subject to Kleinunternehmerregelung?</strong>
+      <p>Yes. Add the mandatory disclaimer to your invoice prompt: 'Kein Ausweis von Umsatzsteuer, da Kleinunternehmer gemaess Paragraph 19 UStG.' Set it once in your invoice template and every document generated will include the correct legal phrase without you needing to remember it each time.</p>
+    </div>
+  </div>
+</div>
+</section>
+
 <section>
 <div class="container fade-in">
   <div class="section-label">FAQ</div>
