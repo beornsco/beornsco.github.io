@@ -196,74 +196,7 @@ nav{background:#fff;border-bottom:1px solid #e5e7eb;position:sticky;top:0;z-inde
 </nav>
 
 <!-- HERO -->
-<section class="hero">
-<div class="container">
-  <h1>Try 10 AI Prompts Free. See What They Produce Before You Buy Anything.</h1>
-  <p>No email required. Instant download. Works with free ChatGPT. A sample from our full prompt packs.</p>
-  <a href="/downloads/10-Best-AI-Prompts-for-Business-FREE.pdf" class="btn">Download Free: No Email Required</a>
-</div>
-</section>
-<section style="padding:56px 0;background:#f0fdf4;border-top:1px solid #bbf7d0;border-bottom:1px solid #bbf7d0">
-<div class="container" style="max-width:560px;text-align:center">
-  <p style="font-size:.8rem;font-weight:700;color:#16a34a;letter-spacing:.08em;text-transform:uppercase;margin-bottom:8px">Based on what you just downloaded</p>
-  <h2 style="font-size:1.4rem;font-weight:800;color:#111827;margin-bottom:8px">Get 10 more prompts tailored to your business (ready in 60 seconds)</h2>
-  <p style="color:#6b7280;margin-bottom:28px;font-size:.92rem">These are matched to your type of business. Enter your email and we will send them straight to your inbox.</p>
-  <form id="tailored-form" style="display:flex;flex-direction:column;gap:12px;max-width:400px;margin:0 auto" onsubmit="submitTailoredForm(event)">
-    <input type="email" id="tailored-email" placeholder="Your email address" required
-      style="padding:14px 16px;border:2px solid #e5e7eb;border-radius:8px;font-size:1rem;outline:none;font-family:inherit;transition:border-color .15s"
-      onfocus="this.style.borderColor='#2962FF'" onblur="this.style.borderColor='#e5e7eb'">
-    <select id="tailored-type" required
-      style="padding:14px 16px;border:2px solid #e5e7eb;border-radius:8px;font-size:1rem;outline:none;font-family:inherit;color:#374151;background:#fff;cursor:pointer">
-      <option value="" disabled selected>I am a...</option>
-      <option value="184132074130638396">Tradesperson (plumber, electrician, cleaner...)</option>
-      <option value="184132074461988813">Restaurant or food business owner</option>
-      <option value="184132074842621278">Photographer</option>
-      <option value="184132075173971678">Small business owner</option>
-      <option value="184132075473863700">Other</option>
-    </select>
-    <button type="submit" class="btn" style="background:#16a34a;font-size:1rem;padding:14px 24px">
-      Get my tailored prompts
-    </button>
-    <p style="font-size:.78rem;color:#9ca3af;margin:0">No spam. Unsubscribe any time.</p>
-  </form>
-  <div id="tailored-success" style="display:none;padding:20px;background:#fff;border:1px solid #bbf7d0;border-radius:10px;margin-top:16px">
-    <p style="font-weight:700;color:#15803d;margin-bottom:4px">Check your inbox.</p>
-    <p style="color:#6b7280;font-size:.9rem">Your tailored prompts are on the way. Check your spam folder if you do not see them within 2 minutes.</p>
-  </div>
-</div>
-</section>
 
-<script>
-async function submitTailoredForm(e) {
-  e.preventDefault();
-  var email = document.getElementById('tailored-email').value;
-  var groupId = document.getElementById('tailored-type').value;
-  var btn = e.target.querySelector('button');
-  btn.textContent = 'Sending...';
-  btn.disabled = true;
-  try {
-    var resp = await fetch('https://connect.mailerlite.com/api/subscribers', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI0IiwianRpIjoiZDUzNzI5MmQ4Njk4MDBmN2M3N2VkN2QxYWEwODdhMDhjMjAzNmMzZmIxYTMwYzU0OGVkYzhiZjA5MTNiMjNlOGExZTdhNDRhNTQyZDdmODciLCJpYXQiOjE3NzQwMTkwOTcuODY5Njc1LCJuYmYiOjE3NzQwMTkwOTcuODY5Njc4LCJleHAiOjQ5Mjk2OTI2OTcuODY1NzksInN1YiI6IjIyMjg1OTQiLCJzY29wZXMiOltdfQ.IcRHrxxBirLu2LJ_gBefMNFMJHaZoTVoaWZE95qUODja7ET9OXlvwFvZH1ih95qeD0I2rZ0iHGNTYsiXhRcQJ-3AvI4Uj9Wq3PrHDIzKBNGSsR580GqDdACwZ_kRXaB3vvNGBrrhErca0ovqF3razLcOdZQjt_SrgTrOnZoH0MVNrzcVPeCsic2g1DER_nHiIozvcXGF0GoZ9j7aNX_7701UHiuMNILHlU9ea_Cni8rsGp07Yl7bbLgMoxfPxxuM2TLeCbpxr5XmVuwKK8c5PHgl7o9csS-vi9hyG6AAhpI4AAmJ9R12lfQCGHdwGtS_bblHilgJlMkjTfK6wMkdZOjZ2qg82YIQv_GdiJa5SBTQRGRbhFnY7-K6Zy4NBKHkVZU4YS0czhqZmE7mO-ZfvZ0Rx6DAuDmNRSBRqsTl54iPex3kL5uoT-UOQ4rLDY1xOIPb0t0wvDWm4E13_kGR9ehiP0dqk5AhGkGKlrS2KQH9Q2yC8gclzVw1OVTZc9AMHCo9eA_Gi4NcNUXDkIFe5CEj5mgeRKvygwBbTUZtLqhjoEyfSZeam7wKMTN-cLBEr4O72Rsz8lPhcjySC2IoLhGgynNUXOSSsnZiFfQEWbxnex3DgL0SPFkYs49bRgjERbEUx0A6txhBJM7B8_R0_mbQX1DSO_QYYhnuTYzkjgk0'
-      },
-      body: JSON.stringify({email: email, groups: [groupId]})
-    });
-    if (resp.ok || resp.status === 201 || resp.status === 200) {
-      document.getElementById('tailored-form').style.display = 'none';
-      document.getElementById('tailored-success').style.display = 'block';
-    } else {
-      btn.textContent = 'Get my tailored prompts';
-      btn.disabled = false;
-      alert('Something went wrong. Please try again.');
-    }
-  } catch(err) {
-    btn.textContent = 'Get my tailored prompts';
-    btn.disabled = false;
-  }
-}
-</script>
 
 <section class="alt" style="padding:64px 0">
 <div class="container">
@@ -382,15 +315,41 @@ async function submitTailoredForm(e) {
 </div>
 </section>
 
-<section style="padding:48px 0;background:linear-gradient(135deg,#1e3a8a,#2962FF);text-align:center">
-<div class="container" style="max-width:640px">
-  <h2 style="color:#fff;font-size:1.5rem;font-weight:800;margin-bottom:12px">Ready for more?</h2>
-  <p style="color:rgba(255,255,255,.8);margin-bottom:28px">Choose the pack built for your business.</p>
-  <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap">
-    <a href="/ai-starter-kit/" style="background:#fff;color:#2962FF;padding:14px 28px;border-radius:8px;font-weight:700;text-decoration:none;font-size:.95rem">AI Adoption Starter Kit: EUR 27</a>
-    <a href="/ai-trades-prompts/" style="background:rgba(255,255,255,.15);color:#fff;padding:14px 28px;border-radius:8px;font-weight:700;text-decoration:none;font-size:.95rem;border:1px solid rgba(255,255,255,.3)">Tradespeople Pack: EUR 14</a>
+<section style="padding:64px 0;background:#f9fafb;border-top:1px solid #e5e7eb">
+<div class="container">
+  <div style="text-align:center;margin-bottom:12px">
+    <p style="font-size:.85rem;font-weight:700;color:#2962FF;letter-spacing:.08em;text-transform:uppercase;margin-bottom:6px">Want more prompts like this?</p>
+    <h2 style="font-size:1.4rem;font-weight:800;color:#111827;margin-bottom:8px">See the full packs below</h2>
+    <p style="color:#6b7280;max-width:480px;margin:0 auto;font-size:.9rem">Each pack has 50-100 prompts built for your specific business. One-time purchase, instant download.</p>
   </div>
-  <p style="margin-top:16px;color:rgba(255,255,255,.6);font-size:.82rem">Or <a href="/pricing/" style="color:rgba(255,255,255,.8)">browse all 10 products</a> from EUR 12.</p>
+  <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;max-width:720px;margin:40px auto 0">
+
+    <div style="background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:24px;display:flex;flex-direction:column">
+      <div style="font-weight:700;color:#111827;margin-bottom:6px;font-size:.95rem">Tradespeople Prompt Pack</div>
+      <p style="color:#6b7280;font-size:.85rem;line-height:1.5;flex:1;margin-bottom:16px">54 prompts for plumbers, electricians, cleaners and local service businesses.</p>
+      <a href="/ai-trades-prompts/" style="display:inline-block;background:#2962FF;color:#fff;padding:10px 18px;border-radius:8px;font-weight:600;font-size:.875rem;text-decoration:none;text-align:center">See prompts</a>
+    </div>
+
+    <div style="background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:24px;display:flex;flex-direction:column">
+      <div style="font-weight:700;color:#111827;margin-bottom:6px;font-size:.95rem">Restaurant Prompt Pack</div>
+      <p style="color:#6b7280;font-size:.85rem;line-height:1.5;flex:1;margin-bottom:16px">50 prompts for restaurant owners, cafes, bars and catering businesses.</p>
+      <a href="/ai-restaurant-prompts/" style="display:inline-block;background:#2962FF;color:#fff;padding:10px 18px;border-radius:8px;font-weight:600;font-size:.875rem;text-decoration:none;text-align:center">See prompts</a>
+    </div>
+
+    <div style="background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:24px;display:flex;flex-direction:column">
+      <div style="font-weight:700;color:#111827;margin-bottom:6px;font-size:.95rem">Photographer Prompt Pack</div>
+      <p style="color:#6b7280;font-size:.85rem;line-height:1.5;flex:1;margin-bottom:16px">60 prompts for photographers: client emails, captions, pricing and gallery delivery.</p>
+      <a href="/ai-photographer-prompts/" style="display:inline-block;background:#2962FF;color:#fff;padding:10px 18px;border-radius:8px;font-weight:600;font-size:.875rem;text-decoration:none;text-align:center">See prompts</a>
+    </div>
+
+    <div style="background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:24px;display:flex;flex-direction:column">
+      <div style="font-weight:700;color:#111827;margin-bottom:6px;font-size:.95rem">AI Adoption Starter Kit</div>
+      <p style="color:#6b7280;font-size:.85rem;line-height:1.5;flex:1;margin-bottom:16px">37-page guide to adopting AI in your business. Frameworks, templates and 90-day plan.</p>
+      <a href="/ai-starter-kit/" style="display:inline-block;background:#2962FF;color:#fff;padding:10px 18px;border-radius:8px;font-weight:600;font-size:.875rem;text-decoration:none;text-align:center">See prompts</a>
+    </div>
+
+  </div>
+  <p style="text-align:center;margin-top:20px;font-size:.82rem;color:#9ca3af">All packs from EUR 12. One-time purchase. Works with free ChatGPT.</p>
 </div>
 </section>
 
