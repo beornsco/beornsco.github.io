@@ -210,22 +210,19 @@ nav{background:#fff;border-bottom:1px solid #e5e7eb;position:sticky;top:0;z-inde
   </div>
   <div style="max-width:700px;margin:0 auto">
     <div style="background:#fff;border:1px solid #e5e7eb;border-radius:10px;overflow:hidden;margin-bottom:16px">
-      <div style="background:#f9fafb;padding:10px 18px;border-bottom:1px solid #e5e7eb">
-        <span style="font-size:.72rem;font-weight:700;color:#6b7280;letter-spacing:.05em;text-transform:uppercase">Prompt used</span>
-      </div>
-      <div style="padding:14px 18px;font-size:.88rem;color:#6b7280;font-style:italic;line-height:1.6">Write a quote follow-up for a rewiring job sent 4 days ago. Client: Dhr. Bakker, Utrecht. Amount: EUR 1,800. My business: local electrician.</div>
+      <div style="background:#f9fafb;padding:10px 18px;border-bottom:1px solid #e5e7eb"><span style="font-size:.72rem;font-weight:700;color:#6b7280;letter-spacing:.05em;text-transform:uppercase">Prompt used</span></div>
+      <div style="padding:14px 18px;font-size:.88rem;color:#6b7280;font-style:italic;line-height:1.6">Write a short quote for replacing a consumer unit. Client: Dhr. van der Berg, Amsterdam. Price: EUR 680 incl. BTW. My business: Elektra De Wit.</div>
       <div style="background:#f0fdf4;border-top:2px solid #16a34a;padding:14px 18px">
         <span style="font-size:.72rem;font-weight:700;color:#16a34a;letter-spacing:.05em;text-transform:uppercase;display:block;margin-bottom:6px">Output</span>
-        <div style="font-size:.9rem;color:#111827;line-height:1.65">Following up on the rewiring quote I sent earlier this week (EUR 1,800). Happy to answer questions or adjust the scope if needed. Quote valid for another 10 days. Call or message anytime. Best regards</div>
+        <div style="font-size:.9rem;color:#111827;line-height:1.65">Beste meneer Van der Berg, hierbij de offerte voor het vervangen van uw meterkast in Amsterdam. Inclusief arbeid, materiaal en BTW: EUR 680. Uitvoeringstijd: 1 dag. De nieuwe groepenkast voldoet aan de NEN 1010-norm. Geldig tot [datum]. Akkoord? Dan plan ik de werkzaamheden in. Met vriendelijke groet, Bas de Wit, Elektra De Wit, KVK 12345678</div>
       </div>
-    </div><div style="background:#fff;border:1px solid #e5e7eb;border-radius:10px;overflow:hidden;margin-bottom:16px">
-      <div style="background:#f9fafb;padding:10px 18px;border-bottom:1px solid #e5e7eb">
-        <span style="font-size:.72rem;font-weight:700;color:#6b7280;letter-spacing:.05em;text-transform:uppercase">Prompt used</span>
-      </div>
-      <div style="padding:14px 18px;font-size:.88rem;color:#6b7280;font-style:italic;line-height:1.6">Write a brief message confirming an EV charger installation is booked for next Thursday. Client: Mevr. Visser.</div>
+    </div>
+    <div style="background:#fff;border:1px solid #e5e7eb;border-radius:10px;overflow:hidden;margin-bottom:16px">
+      <div style="background:#f9fafb;padding:10px 18px;border-bottom:1px solid #e5e7eb"><span style="font-size:.72rem;font-weight:700;color:#6b7280;letter-spacing:.05em;text-transform:uppercase">Prompt used</span></div>
+      <div style="padding:14px 18px;font-size:.88rem;color:#6b7280;font-style:italic;line-height:1.6">Write a WhatsApp message to a client in Rotterdam asking for a Google review after installing EV charging at their home.</div>
       <div style="background:#f0fdf4;border-top:2px solid #16a34a;padding:14px 18px">
         <span style="font-size:.72rem;font-weight:700;color:#16a34a;letter-spacing:.05em;text-transform:uppercase;display:block;margin-bottom:6px">Output</span>
-        <div style="font-size:.9rem;color:#111827;line-height:1.65">Hi, just confirming your EV charger installation is booked for Thursday at 9am. The job takes around 3 hours. Please make sure there is clear access to the consumer unit. Any questions before then, just let me know.</div>
+        <div style="font-size:.9rem;color:#111827;line-height:1.65">Hoi Sanne, de laadpaal is goed bevallen hoop ik? Als je een moment hebt, zou je een Google review voor ons willen achterlaten? Dat helpt andere mensen ons te vinden. Hier is de directe link: [jouw Google link]. Super bedankt en tot een volgende keer. Bas</div>
       </div>
     </div>
   </div>
@@ -298,24 +295,12 @@ nav{background:#fff;border-bottom:1px solid #e5e7eb;position:sticky;top:0;z-inde
 
 <section style="padding:48px 0;background:#f9fafb;border-top:1px solid #e5e7eb">
 <div class="container">
-  <h2 style="font-size:1.3rem;font-weight:700;color:#111827;margin-bottom:20px">Local considerations in Netherlands</h2>
+  <h2 style="font-size:1.3rem;font-weight:700;color:#111827;margin-bottom:20px">Local considerations in the Netherlands</h2>
   <div style="display:flex;flex-direction:column;gap:14px">
-    <div style="background:#fff;border:1px solid #e5e7eb;border-radius:8px;padding:18px 20px">
-      <div style="font-weight:700;color:#111827;margin-bottom:4px">Dutch clients expect short, direct quotes  -  cut pleasantries</div>
-      <div style="color:#6b7280;font-size:.9rem;line-height:1.6">Dutch business culture values directness and efficiency. When using the quote prompt, add the instruction: 'Keep it brief and direct. No introductory pleasantries. Lead with price and scope.' A 4-line quote often gets a faster yes than a detailed one-pager.</div>
-    </div>
-    <div style="background:#fff;border:1px solid #e5e7eb;border-radius:8px;padding:18px 20px">
-      <div style="font-weight:700;color:#111827;margin-bottom:4px">Mention NEN 1010 compliance in commercial quotes</div>
-      <div style="color:#6b7280;font-size:.9rem;line-height:1.6">Commercial clients in the Netherlands expect NEN 1010 compliance to be stated explicitly. Add 'Alle werkzaamheden worden uitgevoerd conform NEN 1010' to your commercial quote prompt template. This removes the most common objection from facility managers.</div>
-    </div>
-    <div style="background:#fff;border:1px solid #e5e7eb;border-radius:8px;padding:18px 20px">
-      <div style="font-weight:700;color:#111827;margin-bottom:4px">Confirm appointments in writing  -  Dutch clients expect it</div>
-      <div style="color:#6b7280;font-size:.9rem;line-height:1.6">Dutch clients expect a written confirmation of every appointment. Use the job confirmation prompt for every booking, not just large jobs. A one-line WhatsApp confirmation is enough and prevents no-shows.</div>
-    </div>
-    <div style="background:#fff;border:1px solid #e5e7eb;border-radius:8px;padding:18px 20px">
-      <div style="font-weight:700;color:#111827;margin-bottom:4px">KVK number must appear on all invoices</div>
-      <div style="color:#6b7280;font-size:.9rem;line-height:1.6">Your KVK (Kamer van Koophandel) number is legally required on invoices. Add it permanently to your invoice prompt footer so ChatGPT includes it on every document without you having to remember.</div>
-    </div>
+    <div style="background:#fff;border:1px solid #e5e7eb;border-radius:8px;padding:18px 20px"><div style="font-weight:700;color:#111827;margin-bottom:4px">Short quotes convert better with Dutch clients</div><div style="color:#6b7280;font-size:.9rem;line-height:1.6">Dutch business culture values directness and efficiency. A clear 3-line quote : scope, price, start date : often converts better than a detailed 2-page proposal. Use the concise quote prompt for residential jobs and save the detailed version for commercial contracts.</div></div>
+    <div style="background:#fff;border:1px solid #e5e7eb;border-radius:8px;padding:18px 20px"><div style="font-weight:700;color:#111827;margin-bottom:4px">Your KVK number must be on every invoice</div><div style="color:#6b7280;font-size:.9rem;line-height:1.6">Dutch clients expect to see your KVK (Kamer van Koophandel) registration number on all invoices. Some business clients will not process payment without it. Add your KVK number to your invoice template now and include it in every formal document.</div></div>
+    <div style="background:#fff;border:1px solid #e5e7eb;border-radius:8px;padding:18px 20px"><div style="font-weight:700;color:#111827;margin-bottom:4px">Switch to informal Dutch for WhatsApp</div><div style="color:#6b7280;font-size:.9rem;line-height:1.6">Email communications with new clients should be professional and formal. WhatsApp messages after the job is done can switch to informal Dutch (je/jij instead of u). Dutch clients appreciate this distinction and it makes review requests feel more natural.</div></div>
+    <div style="background:#fff;border:1px solid #e5e7eb;border-radius:8px;padding:18px 20px"><div style="font-weight:700;color:#111827;margin-bottom:4px">ISDE subsidy for heat pump connections is a sales angle</div><div style="color:#6b7280;font-size:.9rem;line-height:1.6">Dutch homeowners installing heat pumps often need electrical upgrades to their consumer unit. The ISDE (Investeringssubsidie Duurzame Energie) subsidy scheme is popular. If your work connects to a heat pump installation, mentioning the subsidy context in your quote positions you as knowledgeable and often prompts a faster decision.</div></div>
   </div>
 </div>
 </section>

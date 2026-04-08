@@ -210,22 +210,19 @@ nav{background:#fff;border-bottom:1px solid #e5e7eb;position:sticky;top:0;z-inde
   </div>
   <div style="max-width:700px;margin:0 auto">
     <div style="background:#fff;border:1px solid #e5e7eb;border-radius:10px;overflow:hidden;margin-bottom:16px">
-      <div style="background:#f9fafb;padding:10px 18px;border-bottom:1px solid #e5e7eb">
-        <span style="font-size:.72rem;font-weight:700;color:#6b7280;letter-spacing:.05em;text-transform:uppercase">Prompt used</span>
-      </div>
-      <div style="padding:14px 18px;font-size:.88rem;color:#6b7280;font-style:italic;line-height:1.6">Write a quote follow-up for a rewiring job sent 4 days ago. Client: Herr Mueller, Hamburg. Amount: EUR 1,800. My business: local electrician.</div>
+      <div style="background:#f9fafb;padding:10px 18px;border-bottom:1px solid #e5e7eb"><span style="font-size:.72rem;font-weight:700;color:#6b7280;letter-spacing:.05em;text-transform:uppercase">Prompt used</span></div>
+      <div style="padding:14px 18px;font-size:.88rem;color:#6b7280;font-style:italic;line-height:1.6">Write a formal order confirmation after agreeing on a rewiring job. Client: Herr Hoffmann, Frankfurt. Price: EUR 2,800 incl. MwSt. My business: Koenig Elektrotechnik.</div>
       <div style="background:#f0fdf4;border-top:2px solid #16a34a;padding:14px 18px">
         <span style="font-size:.72rem;font-weight:700;color:#16a34a;letter-spacing:.05em;text-transform:uppercase;display:block;margin-bottom:6px">Output</span>
-        <div style="font-size:.9rem;color:#111827;line-height:1.65">Following up on the rewiring quote I sent earlier this week (EUR 1,800). Happy to answer questions or adjust the scope if needed. Quote valid for another 10 days. Call or message anytime. Best regards</div>
+        <div style="font-size:.9rem;color:#111827;line-height:1.65">Sehr geehrter Herr Hoffmann, hiermit bestaetigen wir Ihren Auftrag fuer die Neuverkabelung Ihrer Wohnung in Frankfurt. Vereinbarter Preis: EUR 2.800 inkl. 19% MwSt. Ausfuehrungszeitraum: voraussichtlich 3 Werktage, Beginn am [Datum]. Alle Arbeiten werden gemaess VDE-Vorschriften ausgefuehrt. Bei Rueckfragen stehen wir Ihnen gerne zur Verfuegung. Mit freundlichen Gruessen, Thomas Koenig, Koenig Elektrotechnik</div>
       </div>
-    </div><div style="background:#fff;border:1px solid #e5e7eb;border-radius:10px;overflow:hidden;margin-bottom:16px">
-      <div style="background:#f9fafb;padding:10px 18px;border-bottom:1px solid #e5e7eb">
-        <span style="font-size:.72rem;font-weight:700;color:#6b7280;letter-spacing:.05em;text-transform:uppercase">Prompt used</span>
-      </div>
-      <div style="padding:14px 18px;font-size:.88rem;color:#6b7280;font-style:italic;line-height:1.6">Write a brief message confirming an EV charger installation is booked for next Thursday. Client: Frau Fischer.</div>
+    </div>
+    <div style="background:#fff;border:1px solid #e5e7eb;border-radius:10px;overflow:hidden;margin-bottom:16px">
+      <div style="background:#f9fafb;padding:10px 18px;border-bottom:1px solid #e5e7eb"><span style="font-size:.72rem;font-weight:700;color:#6b7280;letter-spacing:.05em;text-transform:uppercase">Prompt used</span></div>
+      <div style="padding:14px 18px;font-size:.88rem;color:#6b7280;font-style:italic;line-height:1.6">Write a message to a client in Hamburg explaining a delay due to a parts backorder. Client: Frau Becker. Delay: approx. 5 working days.</div>
       <div style="background:#f0fdf4;border-top:2px solid #16a34a;padding:14px 18px">
         <span style="font-size:.72rem;font-weight:700;color:#16a34a;letter-spacing:.05em;text-transform:uppercase;display:block;margin-bottom:6px">Output</span>
-        <div style="font-size:.9rem;color:#111827;line-height:1.65">Hi, just confirming your EV charger installation is booked for Thursday at 9am. The job takes around 3 hours. Please make sure there is clear access to the consumer unit. Any questions before then, just let me know.</div>
+        <div style="font-size:.9rem;color:#111827;line-height:1.65">Sehr geehrte Frau Becker, ich moechte Sie darueber informieren, dass sich die Fertigstellung Ihres Auftrags aufgrund einer Lieferverzoegerung beim Hersteller um voraussichtlich 5 Werktage verzoegern wird. Ich bedauere die Unannehmlichkeiten und halte Sie selbstverstaendlich auf dem Laufenden, sobald die Materialien eingegangen sind. Fuer Rueckfragen stehe ich Ihnen unter 0171 234 5678 zur Verfuegung. Mit freundlichen Gruessen, Thomas Koenig</div>
       </div>
     </div>
   </div>
@@ -300,26 +297,10 @@ nav{background:#fff;border-bottom:1px solid #e5e7eb;position:sticky;top:0;z-inde
 <div class="container">
   <h2 style="font-size:1.3rem;font-weight:700;color:#111827;margin-bottom:20px">Local considerations in Germany</h2>
   <div style="display:flex;flex-direction:column;gap:14px">
-    <div style="background:#fff;border:1px solid #e5e7eb;border-radius:8px;padding:18px 20px">
-      <div style="font-weight:700;color:#111827;margin-bottom:4px">Always send a written Auftragsbestaetigung after a verbal agreement</div>
-      <div style="color:#6b7280;font-size:.9rem;line-height:1.6">German clients expect a formal order confirmation after any verbal yes. Use the job confirmation prompt to generate a brief Auftragsbestaetigung immediately after the call. Disputes almost never happen when you have this paper trail.</div>
-    </div>
-    <div style="background:#fff;border:1px solid #e5e7eb;border-radius:8px;padding:18px 20px">
-      <div style="font-weight:700;color:#111827;margin-bottom:4px">Use Sie form in every client message</div>
-      <div style="color:#6b7280;font-size:.9rem;line-height:1.6">All client communications in Germany must use the formal Sie form, not du. When using the prompts, include a note at the top: 'Write in formal German using Sie.' Without this instruction ChatGPT may default to informal.</div>
-    </div>
-    <div style="background:#fff;border:1px solid #e5e7eb;border-radius:8px;padding:18px 20px">
-      <div style="font-weight:700;color:#111827;margin-bottom:4px">Mention VDE compliance in your quotes for commercial clients</div>
-      <div style="color:#6b7280;font-size:.9rem;line-height:1.6">Commercial clients and facility managers in Germany expect VDE standard compliance to be stated explicitly in quotes. Add one sentence to your commercial quote prompt: 'All work carried out in accordance with DIN VDE standards.' This removes a common objection.</div>
-    </div>
-    <div style="background:#fff;border:1px solid #e5e7eb;border-radius:8px;padding:18px 20px">
-      <div style="font-weight:700;color:#111827;margin-bottom:4px">The Meisterbrief is your strongest trust signal  -  use it</div>
-      <div style="color:#6b7280;font-size:.9rem;line-height:1.6">If you hold a Meisterbrief, mention it in your introduction message and social posts. In Germany it is the gold standard qualification. Use the bio/intro prompt and ask ChatGPT to open with your Meisterbrief status.</div>
-    </div>
-    <div style="background:#fff;border:1px solid #e5e7eb;border-radius:8px;padding:18px 20px">
-      <div style="font-weight:700;color:#111827;margin-bottom:4px">Invoice correctly for Kleinunternehmer status</div>
-      <div style="color:#6b7280;font-size:.9rem;line-height:1.6">If your revenue is under EUR 22,000, you are likely a Kleinunternehmer and must not charge MwSt. Update your invoice prompt to include the required statement: 'Kein Ausweis von Umsatzsteuer, da Kleinunternehmer gemaess Paragraph 19 UStG.' Copy this into the prompt template.</div>
-    </div>
+    <div style="background:#fff;border:1px solid #e5e7eb;border-radius:8px;padding:18px 20px"><div style="font-weight:700;color:#111827;margin-bottom:4px">Formal Sie form is non-negotiable in client messages</div><div style="color:#6b7280;font-size:.9rem;line-height:1.6">All written communication with German clients must use formal Sie throughout. Never switch to du unless the client initiates it. The prompt templates in this pack are written in formal German register for exactly this reason.</div></div>
+    <div style="background:#fff;border:1px solid #e5e7eb;border-radius:8px;padding:18px 20px"><div style="font-weight:700;color:#111827;margin-bottom:4px">Send an Auftragsbestaetigung after every verbal yes</div><div style="color:#6b7280;font-size:.9rem;line-height:1.6">After any verbal agreement, send a written order confirmation (Auftragsbestaetigung) the same day. This is standard professional practice in Germany and the single most effective way to prevent disputes about scope or price. Use the order confirmation prompt immediately.</div></div>
+    <div style="background:#fff;border:1px solid #e5e7eb;border-radius:8px;padding:18px 20px"><div style="font-weight:700;color:#111827;margin-bottom:4px">Your Handwerkskammer registration builds instant trust</div><div style="color:#6b7280;font-size:.9rem;line-height:1.6">State your Handwerkskammer registration number in your introduction message and at the bottom of your quotes. German clients actively look for this. It signals legal compliance and separates professional operators from unlicensed competitors working cash-in-hand.</div></div>
+    <div style="background:#fff;border:1px solid #e5e7eb;border-radius:8px;padding:18px 20px"><div style="font-weight:700;color:#111827;margin-bottom:4px">Respond within 4 hours in major cities</div><div style="color:#6b7280;font-size:.9rem;line-height:1.6">In Frankfurt, Munich, Berlin, and Hamburg, electricians who respond professionally within 4 hours win significantly more jobs. Keep notifications on and use the quick acknowledgement prompt the moment an enquiry arrives, even if the full quote takes until tomorrow.</div></div>
   </div>
 </div>
 </section>
