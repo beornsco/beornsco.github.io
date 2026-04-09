@@ -145,8 +145,16 @@ pre { background: #f9fafb; border: 1px solid #e5e7eb; border-radius: 8px; paddin
     <span></span><span></span><span></span>
   </button>
   <div class="nav-links" id="nav-links">
-    <a href="/free-prompts/">Free Prompts</a>
-      <a href="/free-prompts-trades/">5-Day System</a>
+    <div class="nav-dd" id="nav-dd-free">
+      <button onclick="document.getElementById('nav-dd-free').classList.toggle('open')">Free AI Prompts</button>
+      <div class="nav-dd-menu" style="min-width:200px">
+        <div class="nav-dd-label">5-Day Workflows</div>
+        <a href="/free-prompts-trades/">Tradespeople</a>
+        <hr class="nav-dd-sep">
+        <div class="nav-dd-label">Starter Pack</div>
+        <a href="/free-prompts/">10 Free Prompts</a>
+      </div>
+    </div>
     <div class="nav-dd" id="nav-dd">
       <button onclick="document.getElementById('nav-dd').classList.toggle('open')">Products</button>
       <div class="nav-dd-menu">
