@@ -150,12 +150,12 @@ nav{background:#fff;border-bottom:1px solid #e5e7eb;position:sticky;top:0;z-inde
       </div>
       <div style="padding:20px">
         <p style="color:#6b7280;font-size:.82rem;margin-bottom:10px;font-style:italic">Use this when: A customer received your quote 5-7 days ago and has not responded.</p>
-        <div style="background:#f9fafb;border-left:3px solid #2962FF;border-radius:0 8px 8px 0;padding:14px 16px;font-size:.875rem;color:#374151;line-height:1.7;margin-bottom:16px">Write a friendly follow-up message for a customer who received a quote [X] days ago. Job: [describe, e.g. bathroom renovation, boiler installation]. Business: [your name]. Quote amount: [amount]. Keep it under 80 words. Warm but professional. End with an open question.</div>
+        <div style="background:#f9fafb;border-left:3px solid #2962FF;border-radius:0 8px 8px 0;padding:14px 16px;font-size:.875rem;color:#374151;line-height:1.7;margin-bottom:16px">Write a friendly follow-up message for a bathroom renovation quote sent 6 days ago. Customer: Paul Byrne. Amount: EUR 2,800. Business: Walsh Plumbing, Cork. Keep it under 80 words. Warm but professional. End with a question he can answer in one line.</div>
         <div style="background:#f0fdf4;border-top:2px solid #16a34a;border-radius:8px;padding:14px 16px">
           <span style="font-size:.72rem;font-weight:700;color:#16a34a;letter-spacing:.05em;text-transform:uppercase;display:block;margin-bottom:6px">Example output</span>
-          <p style="font-size:.9rem;color:#111827;line-height:1.65;margin:0">Hi Paul, just following up on the quote I sent last week for the bathroom renovation (EUR 2,800). Happy to answer any questions or talk through the work involved. Quote is valid for another 10 days. Worth a quick call to chat it through? Cheers, Tom at Walsh Plumbing.</p>
+          <p style="font-size:.9rem;color:#111827;line-height:1.65;margin:0">Hi Paul, just following up on the bathroom quote from last week (EUR 2,800). Happy to go through any of the detail or adjust the scope if needed. The quote is valid for another 10 days. Worth a quick call to chat it through? Cheers, Tom, Walsh Plumbing, 087 123 4567</p>
         </div>
-        <p style="font-size:.82rem;color:#6b7280;margin-top:10px;font-style:italic"><strong>Why it works:</strong> Asking an open question at the end gives Paul a reason to respond without committing. It is less pressure than "let me know if you want to proceed" — which often gets ignored.</p>
+        <p style="font-size:.82rem;color:#6b7280;margin-top:10px;font-style:italic"><strong>Why it works:</strong> Asking an open question at the end gives Paul a reason to respond without committing. It is less pressure than "let me know if you want to proceed" which often gets ignored.</p>
       </div>
     </div>
     <div style="background:#fff;border:1px solid #e5e7eb;border-radius:12px;overflow:hidden">
@@ -165,12 +165,12 @@ nav{background:#fff;border-bottom:1px solid #e5e7eb;position:sticky;top:0;z-inde
       </div>
       <div style="padding:20px">
         <p style="color:#6b7280;font-size:.82rem;margin-bottom:10px;font-style:italic">Use this when: You have received a Google review — positive, negative, or somewhere in between — and need to respond professionally.</p>
-        <div style="background:#f9fafb;border-left:3px solid #2962FF;border-radius:0 8px 8px 0;padding:14px 16px;font-size:.875rem;color:#374151;line-height:1.7;margin-bottom:16px">Write a professional response to this Google review for my trade business. Review: [paste the review text]. Business name: [name]. Keep it under 80 words. Acknowledge what they said specifically, thank them or address the concern calmly. Do not be defensive.</div>
+        <div style="background:#f9fafb;border-left:3px solid #2962FF;border-radius:0 8px 8px 0;padding:14px 16px;font-size:.875rem;color:#374151;line-height:1.7;margin-bottom:16px">Write a professional response to this Google review for my plumbing business: 'Showed up on time, fixed the leak in under an hour, and left the place spotless. Would not hesitate to call again.' Business: Walsh Plumbing. Keep it under 60 words. Warm, genuine, not corporate.</div>
         <div style="background:#f0fdf4;border-top:2px solid #16a34a;border-radius:8px;padding:14px 16px">
           <span style="font-size:.72rem;font-weight:700;color:#16a34a;letter-spacing:.05em;text-transform:uppercase;display:block;margin-bottom:6px">Example output</span>
-          <p style="font-size:.9rem;color:#111827;line-height:1.65;margin:0">Thank you for the honest feedback, Mrs Davies. You are right that communication could have been better during the second week and I apologise for that. The work itself was completed to standard and I am glad you acknowledged that. I have since put a weekly update system in place for all jobs. I hope we can work together again. Mark, Williams Plumbing.</p>
+          <p style="font-size:.9rem;color:#111827;line-height:1.65;margin:0">Thank you so much. Really glad we could help. We always aim to get in, sort the problem, and leave things tidy. That is the standard every time. If you ever need us again or want to recommend us to a neighbour, we would love to hear from you. Tom, Walsh Plumbing</p>
         </div>
-        <p style="font-size:.82rem;color:#6b7280;margin-top:10px;font-style:italic"><strong>Why it works:</strong> Responding to every review — including negative ones — signals to future customers that you take your work seriously. The response is read by potential clients, not just the reviewer.</p>
+        <p style="font-size:.82rem;color:#6b7280;margin-top:10px;font-style:italic"><strong>Why it works:</strong> Responding to every review signals to future customers that you take your work seriously. The response is read by potential clients, not just the reviewer.</p>
       </div>
     </div>
   </div>
@@ -180,11 +180,22 @@ nav{background:#fff;border-bottom:1px solid #e5e7eb;position:sticky;top:0;z-inde
 <section style="padding:56px 0;background:#f9fafb;border-top:1px solid #e5e7eb;border-bottom:1px solid #e5e7eb">
 <div class="container" style="max-width:680px">
   <h2 style="font-size:1.2rem;font-weight:800;color:#111827;margin-bottom:12px">The system behind these two prompts</h2>
-  <p style="color:#6b7280;font-size:.92rem;line-height:1.7">Both prompts share a structure: context first (what happened), then tone calibration (how to come across), then constraint (length limit). The length limit is critical. Without it, ChatGPT writes long, formal emails that tradespeople would never actually send. The 80-word limit forces it to match how you actually communicate. Once you have a prompt that works, save it. You will use the same one every week.</p>
+  <p style="color:#6b7280;font-size:.92rem;line-height:1.7">Both prompts follow the same logic: give ChatGPT the context it needs (who, what, how much, when), add a tone instruction (friendly, professional, not pushy), and set a word limit. The word limit is the most important part. Without it, the output will be too long and too formal to actually send. Once you find a prompt that produces the right tone for your business, save it and reuse the same one every time. The only thing that changes is the brackets.</p>
 </div>
 </section>
 
 
+
+<section style="padding:40px 0;background:#fffbeb;border-top:1px solid #fde68a;border-bottom:1px solid #fde68a">
+<div class="container" style="max-width:680px">
+  <p style="font-size:.82rem;font-weight:700;color:#92400e;letter-spacing:.05em;text-transform:uppercase;margin-bottom:6px">Working in Belgium, Germany, Netherlands or Ireland?</p>
+  <p style="color:#374151;font-size:.9rem;line-height:1.6;margin-bottom:12px">All prompts are written in English, but you can get the output in Dutch, German, French, or any language by adding one line to the end of any prompt: <strong>"Write the response in [language]."</strong></p>
+  <div style="background:#fff;border:1px solid #fde68a;border-radius:8px;padding:14px 16px;font-size:.875rem;color:#374151;line-height:1.7">
+    <strong>Example:</strong> "Write a polite follow-up for a bathroom renovation quote sent 5 days ago. Customer: Meneer De Vries. Amount: EUR 2,400. My business: Bakker Loodgieters. Keep it under 80 words. Write the response in Dutch."
+  </div>
+  <p style="margin-top:8px;color:#6b7280;font-size:.8rem">ChatGPT handles Dutch, German, French, and most other languages fluently. The prompt logic stays the same. Only the output language changes.</p>
+</div>
+</section>
 
 <section style="padding:40px 0">
 <div class="container">
