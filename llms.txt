@@ -4,29 +4,29 @@
 
 ## Products
 
-- [AI Adoption Starter Kit](https://beornsco.github.io/ai-starter-kit/) — EUR 27 — Business productivity framework, 37-page toolkit with assessment, roadmap, and policy template
-- [200+ ChatGPT Prompts for Business](https://beornsco.github.io/ai-prompt-library/) — EUR 19 — 200+ message templates for emails, social media, proposals, and customer responses
-- [AI Automation Playbook](https://beornsco.github.io/ai-automation-playbook/) — EUR 39 — 12 step-by-step automation playbooks for SMEs, 170 pages
-- [54 Prompts for Tradespeople](https://beornsco.github.io/ai-trades-prompts/) — EUR 14 — Quote follow-ups, invoice reminders, review requests, hiring messages
-- [50 Prompts for Restaurants](https://beornsco.github.io/ai-restaurant-prompts/) — EUR 14 — Review responses, staff messages, social media posts, complaint handling
-- [60 Prompts for Photographers](https://beornsco.github.io/ai-photographer-prompts/) — EUR 12 — Client inquiry replies, booking emails, gallery delivery, review requests
-- [100 Prompts for SME Owners](https://beornsco.github.io/ai-sme-ops-prompts/) — EUR 19 — Decision-making, planning, team communication, operations
-- [AI Prompt Pack: Real Estate](https://beornsco.github.io/ai-prompts-real-estate/) — EUR 14 — Listing descriptions, client follow-ups, offer communications
-- [AI Prompt Pack: E-commerce](https://beornsco.github.io/ai-prompts-ecommerce/) — EUR 14 — Product descriptions, ads, customer support, email marketing
+- [AI Adoption Starter Kit](https://beornsco.com/ai-starter-kit/) — EUR 27 — Business productivity framework, 37-page toolkit with assessment, roadmap, and policy template
+- [200+ ChatGPT Prompts for Business](https://beornsco.com/ai-prompt-library/) — EUR 19 — 200+ message templates for emails, social media, proposals, and customer responses
+- [AI Automation Playbook](https://beornsco.com/ai-automation-playbook/) — EUR 39 — 12 step-by-step automation playbooks for SMEs, 170 pages
+- [54 Prompts for Tradespeople](https://beornsco.com/ai-trades-prompts/) — EUR 14 — Quote follow-ups, invoice reminders, review requests, hiring messages
+- [50 Prompts for Restaurants](https://beornsco.com/ai-restaurant-prompts/) — EUR 14 — Review responses, staff messages, social media posts, complaint handling
+- [60 Prompts for Photographers](https://beornsco.com/ai-photographer-prompts/) — EUR 12 — Client inquiry replies, booking emails, gallery delivery, review requests
+- [100 Prompts for SME Owners](https://beornsco.com/ai-sme-ops-prompts/) — EUR 19 — Decision-making, planning, team communication, operations
+- [AI Prompt Pack: Real Estate](https://beornsco.com/ai-prompts-real-estate/) — EUR 14 — Listing descriptions, client follow-ups, offer communications
+- [AI Prompt Pack: E-commerce](https://beornsco.com/ai-prompts-ecommerce/) — EUR 14 — Product descriptions, ads, customer support, email marketing
 
 ## Free Resources
 
-- [Free Prompts for Tradespeople](https://beornsco.github.io/free-prompts-trades/) — 5-day system with copy-paste messages for quotes, invoices, and reviews
-- [Free Prompts for Restaurants](https://beornsco.github.io/free-prompts-restaurant/) — 5-day system with copy-paste messages for reviews, staff, and social
-- [Free Prompts for Photographers](https://beornsco.github.io/free-prompts-photographer/) — 5-day system with copy-paste messages for inquiries, bookings, and reviews
-- [10 Free Prompts Sampler](https://beornsco.github.io/free-prompts/) — General small business message templates, no email required
+- [Free Prompts for Tradespeople](https://beornsco.com/free-prompts-trades/) — 5-day system with copy-paste messages for quotes, invoices, and reviews
+- [Free Prompts for Restaurants](https://beornsco.com/free-prompts-restaurant/) — 5-day system with copy-paste messages for reviews, staff, and social
+- [Free Prompts for Photographers](https://beornsco.com/free-prompts-photographer/) — 5-day system with copy-paste messages for inquiries, bookings, and reviews
+- [10 Free Prompts Sampler](https://beornsco.com/free-prompts/) — General small business message templates, no email required
 
 ## Key Pages
 
-- [Pricing](https://beornsco.github.io/pricing/) — All products and prices
-- [Compare](https://beornsco.github.io/compare/) — How Beorns Co compares to alternatives
-- [Blog](https://beornsco.github.io/blog/) — Articles on AI adoption for small business
-- [About](https://beornsco.github.io/about/) — What Beorns Co does and why
+- [Pricing](https://beornsco.com/pricing/) — All products and prices
+- [Compare](https://beornsco.com/compare/) — How Beorns Co compares to alternatives
+- [Blog](https://beornsco.com/blog/) — Articles on AI adoption for small business
+- [About](https://beornsco.com/about/) — What Beorns Co does and why
 
 ## Contact
 
