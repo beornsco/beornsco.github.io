@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About Beorns Co | AI Prompt Packs for Business</title>
-<meta name="description" content="Beorns Co creates practical AI adoption resources for small and medium businesses. No jargon, no consultants, just guides that work.">
-<meta property="og:title" content="About Beorns Co | AI Prompt Packs for Business">
-<meta property="og:description" content="Beorns Co creates practical AI adoption resources for small and medium businesses. No jargon, no consultants, just guides that work.">
+<title>About Beorns Co | Practical Tools for Small Business Owners</title>
+<meta name="description" content="Beorns Co makes copy-paste message templates for small business owners who are tired of rewriting the same emails, quotes, and invoices from scratch.">
+<meta property="og:title" content="About Beorns Co | Practical Tools for Small Business Owners">
+<meta property="og:description" content="Beorns Co makes copy-paste message templates for small business owners who are tired of rewriting the same emails, quotes, and invoices from scratch.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://beornsco.github.io/about/">
 <meta name="twitter:card" content="summary">
@@ -16,41 +16,45 @@
 :root{--blue:#2962FF;--dark:#23232D;--light:#F7F8FA;--white:#FFFFFF;--gray:#6B7280;--blue-light:#E8EEFF}
 body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--dark);line-height:1.6}
 a{color:var(--blue);text-decoration:none}
-.container{max-width:900px;margin:0 auto;padding:0 24px}
-.btn{display:inline-block;background:var(--blue);color:#fff;padding:16px 36px;border-radius:8px;font-size:1.05rem;font-weight:600;transition:transform .15s,box-shadow .15s;cursor:pointer;border:none}
+.container{max-width:720px;margin:0 auto;padding:0 24px}
+.btn{display:inline-block;background:var(--blue);color:#fff;padding:14px 32px;border-radius:8px;font-size:1rem;font-weight:600;transition:transform .15s,box-shadow .15s}
 .btn:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(41,98,255,.35)}
 
-.hero{padding:80px 0 50px;text-align:center;background:linear-gradient(170deg,var(--blue-light) 0%,var(--white) 100%)}
-.hero h1{font-size:clamp(2rem,5vw,2.8rem);line-height:1.2;margin-bottom:16px;letter-spacing:-.02em}
-.hero p{font-size:1.1rem;color:var(--gray);max-width:560px;margin:0 auto}
+.hero{padding:72px 0 48px;background:linear-gradient(170deg,var(--blue-light) 0%,var(--white) 100%)}
+.hero h1{font-size:clamp(1.8rem,4vw,2.6rem);line-height:1.2;margin-bottom:16px;letter-spacing:-.02em}
+.hero p{font-size:1.1rem;color:var(--gray)}
 
-section{padding:64px 0}
-section.alt{background:var(--light)}
-h2{font-size:1.6rem;margin-bottom:28px;text-align:center;letter-spacing:-.01em}
+.content-section{padding:56px 0}
+.content-section.alt{background:var(--light)}
+.content-section h2{font-size:1.4rem;font-weight:700;margin-bottom:12px;letter-spacing:-.01em}
+.content-section p{color:#374151;margin-bottom:16px;font-size:1rem}
+.content-section p:last-child{margin-bottom:0}
 
-.products{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
-@media(max-width:900px){.products{grid-template-columns:1fr 1fr}}
-@media(max-width:600px){.products{grid-template-columns:1fr}}
-.card{background:var(--white);border:2px solid #E5E7EB;border-radius:14px;padding:28px 22px;display:flex;flex-direction:column}
-.card h3{font-size:1.3rem;margin-bottom:4px}
-.card .price{font-size:2.2rem;font-weight:800;color:var(--blue);margin-bottom:2px}
-.card .tagline{color:var(--gray);font-size:.95rem;margin-bottom:16px}
-.card ul{list-style:none;margin-bottom:24px;flex:1}
-.card ul li{padding:5px 0;font-size:.95rem}
-.card ul li::before{content:"✓ ";color:var(--blue);font-weight:700}
-.card .btn{text-align:center;width:100%;margin-bottom:12px}
-.card .learn{text-align:center;font-size:.95rem;font-weight:500}
+.insight-box{background:var(--blue-light);border-left:4px solid var(--blue);border-radius:0 8px 8px 0;padding:20px 24px;margin:24px 0}
+.insight-box p{margin:0;color:var(--dark);font-style:italic}
 
-.free-section{text-align:center;max-width:600px;margin:0 auto}
-.free-section h2{font-size:1.4rem;margin-bottom:8px}
-.free-section p{color:var(--gray);margin-bottom:24px}
+.what-you-get{list-style:none;margin:16px 0 24px}
+.what-you-get li{padding:8px 0;border-bottom:1px solid #f3f4f6;display:flex;gap:12px;align-items:flex-start}
+.what-you-get li:last-child{border-bottom:none}
+.what-you-get li::before{content:"✓";color:var(--blue);font-weight:700;flex-shrink:0;margin-top:2px}
 
-.blog-section{text-align:center;padding:48px 0}
-.blog-section a{font-size:1.1rem;font-weight:600}
+.products-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:24px 0}
+@media(max-width:600px){.products-grid{grid-template-columns:1fr}}
+.product-row{display:flex;justify-content:space-between;align-items:center;padding:12px 16px;background:var(--white);border:1px solid #e5e7eb;border-radius:8px;gap:12px}
+.product-row strong{font-size:.95rem;color:var(--dark)}
+.product-row span{font-size:.85rem;color:var(--gray)}
+.product-row a{font-size:.85rem;font-weight:600;white-space:nowrap}
+
+.cta-block{text-align:center;padding:48px 0}
+.cta-block h2{font-size:1.6rem;margin-bottom:12px}
+.cta-block p{color:var(--gray);margin-bottom:28px}
+
+.contact-row{display:flex;gap:24px;flex-wrap:wrap;margin-top:16px}
+.contact-row a{color:var(--gray);font-size:.95rem}
+.contact-row a:hover{color:var(--blue)}
 
 footer{padding:36px 0;text-align:center;color:#aaa;font-size:.9rem;background:var(--dark)}
 footer a{color:#ccc}
-
 
 /* === NAV === */
 nav{background:#fff;border-bottom:1px solid #e5e7eb;position:sticky;top:0;z-index:1000}
@@ -59,7 +63,6 @@ nav{background:#fff;border-bottom:1px solid #e5e7eb;position:sticky;top:0;z-inde
 .nav-links{display:flex;align-items:center;gap:2px}
 .nav-links>a,.nav-dd>button{background:none;border:none;cursor:pointer;color:#6b7280;font-size:.875rem;font-weight:500;padding:6px 10px;border-radius:6px;text-decoration:none;white-space:nowrap;font-family:inherit}
 .nav-links>a:hover,.nav-dd>button:hover{color:#2962ff;background:#eef2ff}
-/* Dropdown */
 .nav-dd{position:relative}
 .nav-dd>button{display:flex;align-items:center;gap:4px}
 .nav-dd>button::after{content:"";display:inline-block;width:0;height:0;border-left:4px solid transparent;border-right:4px solid transparent;border-top:5px solid currentColor;margin-top:1px}
@@ -70,7 +73,6 @@ nav{background:#fff;border-bottom:1px solid #e5e7eb;position:sticky;top:0;z-inde
 .nav-dd-menu a:hover{background:#f9fafb;color:#2962ff}
 .nav-dd-label{padding:8px 16px 3px;font-size:.68rem;font-weight:700;color:#9ca3af;text-transform:uppercase;letter-spacing:.07em}
 .nav-dd-sep{border:none;border-top:1px solid #f3f4f6;margin:6px 8px}
-/* Hamburger */
 .hamburger{display:none;background:none;border:none;cursor:pointer;padding:6px;flex-direction:column;gap:5px}
 .hamburger span{display:block;width:22px;height:2px;background:#374151;border-radius:2px;transition:transform .2s,opacity .2s}
 .hamburger.open span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}
@@ -88,10 +90,6 @@ nav{background:#fff;border-bottom:1px solid #e5e7eb;position:sticky;top:0;z-inde
   .nav-dd-menu a{padding:10px 16px;font-size:.9rem}
 }
 /* === END NAV === */
-@media(prefers-reduced-motion:no-preference){
-  .fade-in{opacity:0;transform:translateY(20px);transition:opacity .5s,transform .5s}
-  .fade-in.visible{opacity:1;transform:none}
-}
 </style>
 <script type="application/ld+json">
 {
@@ -102,22 +100,12 @@ nav{background:#fff;border-bottom:1px solid #e5e7eb;position:sticky;top:0;z-inde
   "logo": "https://beornsco.github.io/downloads/logo-200x200.png",
   "email": "beornsco@proton.me",
   "foundingDate": "2026",
-  "description": "Beorns Co creates practical AI adoption resources for small and medium businesses. Step-by-step guides, ready-to-use templates, and copy-paste prompts that work with any AI tool.",
+  "description": "Beorns Co makes copy-paste message templates for small business owners, tradespeople, restaurant owners, and photographers.",
   "sameAs": [
     "https://twitter.com/beornsco",
-    "https://medium.com/@beornsco",
-    "https://www.producthunt.com/products/ai-business-toolkit-2",
-    "https://beornsco.gumroad.com"
+    "https://medium.com/@beornsco"
   ]
 }
-</script>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-3S7D3JJ9JS"></script>
-<script>
- window.dataLayer = window.dataLayer || [];
- function gtag(){dataLayer.push(arguments);}
- gtag('js', new Date());
- gtag('config', 'G-3S7D3JJ9JS');
 </script>
 <script type="application/ld+json">
 {
@@ -129,15 +117,15 @@ nav{background:#fff;border-bottom:1px solid #e5e7eb;position:sticky;top:0;z-inde
       "name": "What is Beorns Co?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Beorns Co is a digital product business that creates practical AI prompt packs and adoption guides for small and medium businesses. Products include trade-specific prompt packs (54 prompts, EUR 14), an AI Starter Kit (200+ prompts, EUR 27) and an AI Automation Playbook. All products are one-time purchases with no subscription."
+        "text": "Beorns Co makes copy-paste message templates for small business owners. Products cover tradespeople, restaurant owners, photographers, and general SME communication. All are one-time purchase PDFs with instant download."
       }
     },
     {
       "@type": "Question",
-      "name": "Who are Beorns Co products designed for?",
+      "name": "Who are Beorns Co products for?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Beorns Co products are designed for small business owners and tradespeople who want to save time using AI but do not have a technical background. Prompt packs are ready to copy and use with the free ChatGPT plan. No prompt engineering knowledge is required."
+        "text": "Small business owners who spend too much time writing the same messages: quotes, invoice reminders, review responses, client emails. No technical background needed. Works with free ChatGPT."
       }
     },
     {
@@ -145,11 +133,19 @@ nav{background:#fff;border-bottom:1px solid #e5e7eb;position:sticky;top:0;z-inde
       "name": "How do I contact Beorns Co?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "You can reach Beorns Co by email at beornsco@proton.me. All products are available at beornsco.github.io with instant download after purchase."
+        "text": "Email beornsco@proton.me. Products are at beornsco.github.io with instant download after purchase."
       }
     }
   ]
 }
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3S7D3JJ9JS"></script>
+<script>
+ window.dataLayer = window.dataLayer || [];
+ function gtag(){dataLayer.push(arguments);}
+ gtag('js', new Date());
+ gtag('config', 'G-3S7D3JJ9JS');
 </script>
 <link rel="stylesheet" href="/shared.css">
 </head>
@@ -199,166 +195,123 @@ nav{background:#fff;border-bottom:1px solid #e5e7eb;position:sticky;top:0;z-inde
 </div>
 </nav>
 
-
 <section class="hero">
 <div class="container">
-  <h1>About Beorns Co</h1>
-  <p>Practical AI adoption resources for small and medium businesses. No jargon, no consultants, just guides that work.</p>
+  <h1>Most small business owners spend hours a week writing things that should take minutes.</h1>
+  <p>Quotes. Invoice reminders. Review responses. Client emails. The same messages, rewritten from scratch, over and over.</p>
 </div>
 </section>
 
-<section>
+<section class="content-section">
 <div class="container">
-  <div class="content">
 
-    <p>Beorns Co creates practical AI adoption resources for small and medium businesses. Founded in 2026, we focus on one thing: helping SME owners (10 to 200 employees) start using AI without hiring consultants or learning to code. Our main site is beornsco.github.io, with products sold on both Gumroad and Lemon Squeezy.</p>
+  <h2>The problem is not the writing. It is the starting.</h2>
+  <p>Staring at a blank screen trying to find the right tone for an overdue invoice. Rewriting the same quote follow-up for the third time this month. Spending 20 minutes on a review response that should take 2.</p>
+  <p>This is not a skills problem. It is a friction problem. And friction compounds.</p>
 
-    <h2>The Problem</h2>
-    <p>Most AI advice is built for enterprises with big tech teams and six-figure budgets. Small businesses get left behind, stuck between generic chatbot tutorials and expensive consulting engagements.</p>
-    <p>The result? Business owners know AI matters, but they do not know where to start. They waste hours watching YouTube videos, testing random prompts, and wondering if they are falling behind.</p>
+  <div class="insight-box">
+    <p>"I had a template saved in Notes. I kept editing it because something felt off. I was spending more time on the template than on the actual message." That is what most people do. They half-solve the problem and live with the rest.</p>
+  </div>
 
-    <h2>Our Approach</h2>
-    <p>We create step-by-step guides, ready-to-use templates, and copy-paste prompts that work with any AI tool. Everything is written in plain language. No jargon. No prerequisites. If you can use email, you can use our guides.</p>
-    <p>Every product follows the same principle: open the PDF, follow the steps, get results. We include the exact prompts to copy, the exact tools to use, and the exact sequence to follow.</p>
+  <h2>What we noticed</h2>
+  <p>Small business owners do not need writing lessons. They need the first draft already written. Something they can read in 10 seconds, fill in the blanks, and send.</p>
+  <p>That is what Beorns Co makes: message templates built for the specific situations that keep coming up. Quote follow-ups that do not sound pushy. Invoice reminders that do not feel awkward. Review responses that de-escalate instead of inflame.</p>
 
-    <h2>What We Offer</h2>
-    <p>We currently offer 10 products priced from €12. This includes our core AI adoption toolkit plus niche prompt packs for tradespeople, restaurant owners, photographers, SME owners, real estate professionals, and e-commerce teams. All products are available through both Gumroad and Lemon Squeezy.</p>
-    <div class="product-list">
-      <div class="product-item">
-        <div class="info">
-          <strong>AI Prompt Library</strong>
-          <span>127 pages, 200+ prompts for 10 departments</span>
-        </div>
-        <div class="price-link">
-          <span class="price-tag">€19</span>
-          <a href="/ai-prompt-library/">Learn more &#8594;</a>
-        </div>
-      </div>
-      <div class="product-item">
-        <div class="info">
-          <strong>AI Adoption Starter Kit</strong>
-          <span>37 pages, assessment framework, policy template, 90-day roadmap</span>
-        </div>
-        <div class="price-link">
-          <span class="price-tag">€27</span>
-          <a href="/ai-starter-kit/">Learn more &#8594;</a>
-        </div>
-      </div>
-      <div class="product-item">
-        <div class="info">
-          <strong>AI Automation Playbook</strong>
-          <span>170 pages, 12 playbooks, 50 prompt templates, tool comparison</span>
-        </div>
-        <div class="price-link">
-          <span class="price-tag">€39</span>
-          <a href="/ai-automation-playbook/">Learn more &#8594;</a>
-        </div>
-      </div>
-      <div class="product-item">
-        <div class="info">
-          <strong>54 AI Prompts for Tradespeople</strong>
-          <span>54 practical prompts for plumbers, electricians, cleaners, and other trade businesses</span>
-        </div>
-        <div class="price-link">
-          <span class="price-tag">€14</span>
-          <a href="/ai-trades-prompts/">Learn more &#8594;</a>
-        </div>
-      </div>
-      <div class="product-item">
-        <div class="info">
-          <strong>50 AI Prompts for Restaurant Owners</strong>
-          <span>50 prompts for menus, marketing, customer communication, and operations</span>
-        </div>
-        <div class="price-link">
-          <span class="price-tag">€14</span>
-          <a href="/ai-restaurant-prompts/">Learn more &#8594;</a>
-        </div>
-      </div>
-      <div class="product-item">
-        <div class="info">
-          <strong>60 AI Prompts for Photographers</strong>
-          <span>60 prompts for client inquiries, shoots, edits, marketing, and follow-up</span>
-        </div>
-        <div class="price-link">
-          <span class="price-tag">€12</span>
-          <a href="/ai-photographer-prompts/">Learn more &#8594;</a>
-        </div>
-      </div>
-      <div class="product-item">
-        <div class="info">
-          <strong>100 AI Prompts for SME Owners</strong>
-          <span>100 prompts for decision-making, planning, communication, and team productivity</span>
-        </div>
-        <div class="price-link">
-          <span class="price-tag">€19</span>
-          <a href="/ai-sme-ops-prompts/">Learn more &#8594;</a>
-        </div>
-      </div>
-      <div class="product-item">
-        <div class="info">
-          <strong>AI Prompt Pack: Real Estate</strong>
-          <span>38 pages, 50+ prompts for agents, brokers, and property managers</span>
-        </div>
-        <div class="price-link">
-          <span class="price-tag">€14</span>
-          <a href="/ai-prompts-real-estate/">Learn more &#8594;</a>
-        </div>
-      </div>
-      <div class="product-item">
-        <div class="info">
-          <strong>AI Prompt Pack: E-commerce and Retail</strong>
-          <span>50+ prompts for product descriptions, ads, emails, support, and operations</span>
-        </div>
-        <div class="price-link">
-          <span class="price-tag">€14</span>
-          <a href="/ai-prompts-ecommerce/">Learn more &#8594;</a>
-        </div>
-      </div>
-      <div class="product-item">
-        <div class="info">
-          <strong>Core Bundle</strong>
-          <span>Starter Kit + Prompt Library + Automation Playbook. Save €16.</span>
-        </div>
-        <div class="price-link">
-          <span class="price-tag">€69</span>
-          <a href="/pricing/">See pricing &#8594;</a>
-        </div>
-      </div>
+  <h2>What you get</h2>
+  <ul class="what-you-get">
+    <li>Complete written messages, not instructions for generating them</li>
+    <li>Fill-in-the-bracket format: replace the details, send</li>
+    <li>Organised by situation so you find the right one in under 30 seconds</li>
+    <li>Works without any tool or subscription</li>
+    <li>Instant download PDF, yours to keep</li>
+  </ul>
+
+  <h2>The products</h2>
+  <div class="products-grid">
+    <div class="product-row">
+      <div><strong>54 Templates for Tradespeople</strong><br><span>Quotes, invoices, reviews, hiring</span></div>
+      <a href="/ai-trades-prompts/">EUR 14 &rarr;</a>
     </div>
+    <div class="product-row">
+      <div><strong>50 Templates for Restaurants</strong><br><span>Reviews, staff, social, complaints</span></div>
+      <a href="/ai-restaurant-prompts/">EUR 14 &rarr;</a>
+    </div>
+    <div class="product-row">
+      <div><strong>60 Templates for Photographers</strong><br><span>Inquiries, bookings, gallery, reviews</span></div>
+      <a href="/ai-photographer-prompts/">EUR 12 &rarr;</a>
+    </div>
+    <div class="product-row">
+      <div><strong>200+ Templates for Small Business</strong><br><span>Emails, social, proposals, HR</span></div>
+      <a href="/ai-prompt-library/">EUR 19 &rarr;</a>
+    </div>
+    <div class="product-row">
+      <div><strong>100 Templates for SME Owners</strong><br><span>Decisions, planning, team, ops</span></div>
+      <a href="/ai-sme-ops-prompts/">EUR 19 &rarr;</a>
+    </div>
+    <div class="product-row">
+      <div><strong>Business Productivity Kit</strong><br><span>Framework, roadmap, policy template</span></div>
+      <a href="/ai-starter-kit/">EUR 27 &rarr;</a>
+    </div>
+    <div class="product-row">
+      <div><strong>Automation Playbook</strong><br><span>12 step-by-step workflows for SMEs</span></div>
+      <a href="/ai-automation-playbook/">EUR 39 &rarr;</a>
+    </div>
+    <div class="product-row">
+      <div><strong>Real Estate Pack</strong><br><span>Agents, brokers, property managers</span></div>
+      <a href="/ai-prompts-real-estate/">EUR 14 &rarr;</a>
+    </div>
+    <div class="product-row">
+      <div><strong>E-commerce Pack</strong><br><span>Product descriptions, ads, support</span></div>
+      <a href="/ai-prompts-ecommerce/">EUR 14 &rarr;</a>
+    </div>
+  </div>
 
-    <h2>Our Content</h2>
-    <p>We publish free resources alongside our paid products: 22+ blog articles covering AI adoption, automation, and use cases for specific industries including tradespeople, photographers, and restaurant owners. We also offer a free 10-prompt sampler at <a href="/free-prompts/">beornsco.github.io/free-prompts/</a> and a free 5-day practical system for tradespeople at <a href="/free-prompts-trades/">beornsco.github.io/free-prompts-trades/</a>.</p>
-    <p>We believe the best marketing is genuinely useful content. Every article is written to help you make a real decision or take a real action, not to sell you something.</p>
+</div>
+</section>
 
-    <h2>Contact</h2>
-    <ul class="contact-list">
-      <li>📧 Email: <a href="mailto:beornsco@proton.me">beornsco@proton.me</a></li>
-      <li>🐦 X/Twitter: <a href="https://twitter.com/beornsco" target="_blank" rel="noopener">@beornsco</a></li>
-      <li>📝 Medium: <a href="https://medium.com/@beornsco" target="_blank" rel="noopener">@beornsco</a></li>
-    </ul>
-
+<section class="content-section alt">
+<div class="container">
+  <div class="cta-block" style="padding:0">
+    <h2>Not sure where to start?</h2>
+    <p>Try the free versions first. No account, no email, instant access.</p>
+    <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:8px">
+      <a href="/free-prompts-trades/" class="btn">Free trades templates</a>
+      <a href="/free-prompts/" class="btn" style="background:#374151">Free 10-prompt sampler</a>
+    </div>
   </div>
 </div>
 </section>
 
+<section class="content-section">
+<div class="container">
+  <h2>Contact</h2>
+  <p>Questions, feedback, or just want to say what you wish existed: get in touch.</p>
+  <div class="contact-row">
+    <a href="mailto:beornsco@proton.me">beornsco@proton.me</a>
+    <a href="https://twitter.com/beornsco" target="_blank" rel="noopener">@beornsco on X</a>
+    <a href="https://medium.com/@beornsco" target="_blank" rel="noopener">Medium</a>
+  </div>
+</div>
+</section>
 
-<!-- FAQ Section -->
-<section id="faq" style="margin:3rem 0;max-width:700px;margin-left:auto;margin-right:auto">
-  <h2>Frequently Asked Questions</h2>
+<section id="faq" style="padding:48px 0;background:var(--light)">
+<div class="container">
+  <h2 style="font-size:1.4rem;margin-bottom:24px">FAQ</h2>
   <div itemscope itemtype="https://schema.org/FAQPage">
-    <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" style="margin-bottom:20px">
       <strong itemprop="name">What is Beorns Co?</strong>
-      <p itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><span itemprop="text">Beorns Co is a digital product business that creates practical AI prompt packs and adoption guides for small and medium businesses. Products include trade-specific prompt packs (54 prompts, EUR 14), an AI Starter Kit (200+ prompts, EUR 27) and an AI Automation Playbook. All products are one-time purchases with no subscription.</span></p>
+      <p itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" style="margin-top:6px;color:#374151"><span itemprop="text">Beorns Co makes copy-paste message templates for small business owners. Products cover tradespeople, restaurant owners, photographers, and general SME communication. All are one-time purchase PDFs with instant download.</span></p>
     </div>
-    <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-      <strong itemprop="name">Who are Beorns Co products designed for?</strong>
-      <p itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><span itemprop="text">Beorns Co products are designed for small business owners and tradespeople who want to save time using AI but do not have a technical background. Prompt packs are ready to copy and use with the free ChatGPT plan. No prompt engineering knowledge is required.</span></p>
+    <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" style="margin-bottom:20px">
+      <strong itemprop="name">Who are Beorns Co products for?</strong>
+      <p itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" style="margin-top:6px;color:#374151"><span itemprop="text">Small business owners who spend too much time writing the same messages: quotes, invoice reminders, review responses, client emails. No technical background needed. Works with free ChatGPT.</span></p>
     </div>
     <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
       <strong itemprop="name">How do I contact Beorns Co?</strong>
-      <p itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><span itemprop="text">You can reach Beorns Co by email at beornsco@proton.me. All products are available at beornsco.github.io with instant download after purchase.</span></p>
+      <p itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" style="margin-top:6px;color:#374151"><span itemprop="text">Email beornsco@proton.me. Products are at beornsco.github.io with instant download after purchase.</span></p>
     </div>
   </div>
+</div>
 </section>
 
 <footer>
@@ -371,7 +324,7 @@ nav{background:#fff;border-bottom:1px solid #e5e7eb;position:sticky;top:0;z-inde
     <a href="https://twitter.com/beornsco" target="_blank" rel="noopener" style="color:#9ca3af">X/Twitter</a>
     <a href="https://medium.com/@beornsco" target="_blank" rel="noopener" style="color:#9ca3af">Medium</a>
     <a href="https://beornsco.lemonsqueezy.com" target="_blank" rel="noopener" style="color:#9ca3af">Lemon Squeezy</a>
-      <a href="/free-prompts-trades/" style="color:#9ca3af">Free AI prompts for trades</a>
+    <a href="/free-prompts-trades/" style="color:#9ca3af">Free trades templates</a>
   </div>
 </footer>
 
