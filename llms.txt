@@ -1,6 +1,6 @@
 # Beorns Co
 
-> Copy-paste message templates and business toolkits for small business owners, tradespeople, restaurant owners, and photographers. All products are one-time purchase PDFs, instant download.
+> Beorns Co makes copy-paste message templates and ChatGPT prompt packs for small business owners, tradespeople, restaurant owners, and photographers. Products help business owners save time on emails, quotes, invoices, reviews, and client communication using AI tools like ChatGPT. All products are one-time purchase PDFs, instant download, no subscription.
 
 ## Products
 
@@ -25,8 +25,34 @@
 
 - [Pricing](https://beornsco.com/pricing/) — All products and prices
 - [Compare](https://beornsco.com/compare/) — How Beorns Co compares to alternatives
-- [Blog](https://beornsco.com/blog/) — Articles on AI adoption for small business
 - [About](https://beornsco.com/about/) — What Beorns Co does and why
+
+## Blog
+
+- [How Plumbers Can Use ChatGPT to Follow Up on Silent Quotes](https://beornsco.com/blog/chatgpt-prompts-plumbers-quote-followup.html) — A step-by-step guide for plumbers and tradespeople on writing quote follow-up messages using ChatGPT
+- [How Photographers Can Write Client Inquiry Responses Fast](https://beornsco.com/blog/chatgpt-prompts-photographers-client-inquiry.html) — A practical guide for photographers on responding to client inquiries quickly using ChatGPT
+- [AI for Tradespeople: Save 5 Hours a Week](https://beornsco.com/blog/how-tradespeople-are-using-ai-to-save-time.html) — Plumbers, electricians and builders saving time with AI on quotes, invoices, reviews and admin
+- [AI for Restaurant Owners: Time-Saving Guide](https://beornsco.com/blog/why-restaurant-owners-are-underserved-in-ai.html) — Restaurant owners save 3-5 hours/week using AI for menus, reviews, social posts and staff schedules
+- [15 ChatGPT Prompts for Small Business (2026)](https://beornsco.com/blog/chatgpt-prompts-for-small-business.html) — 15 tested ChatGPT prompts for small business owners covering marketing, customer service and admin
+- [AI Strategy for Small Business: Step-by-Step](https://beornsco.com/blog/ai-strategy-small-business-guide.html) — Practical framework for small businesses to assess, plan, and implement AI tools
+- [Automate Business Processes with AI](https://beornsco.com/blog/automate-business-processes-with-ai.html) — How to automate invoicing, reporting, emails and operations with AI step by step
+- [5 AI Use Cases for Small Business in 2026](https://beornsco.com/blog/ai-use-cases-small-business-2026.html) — 5 proven AI use cases for marketing, customer service, operations, HR and finance
+- [Best AI Tools for Small Business 2026](https://beornsco.com/blog/best-ai-tools-for-small-business-2026.html) — Free and paid AI tools for marketing, operations, customer service and content creation
+- [How to Write AI Prompts for Business](https://beornsco.com/blog/how-to-write-ai-prompts-for-business.html) — Practical prompt writing guide with examples for common business tasks
+- [AI Readiness Checklist for Business 2026](https://beornsco.com/blog/ai-readiness-checklist-business.html) — Checklist covering data, processes, team skills and tools before adopting AI
+- [AI Policy Template for Companies 2026](https://beornsco.com/blog/ai-policy-template-company.html) — Step-by-step guide and free template for creating a company AI usage policy
+- [Find AI Opportunities in Your Small Business](https://beornsco.com/blog/how-to-identify-ai-opportunities-small-business.html) — Framework to identify where AI saves the most time and money in your business
+- [AI Marketing for Small Business: Complete Guide](https://beornsco.com/blog/ai-for-marketing-small-business.html) — How to use AI for content, social media, email, SEO and ads
+- [AI for Sales: Small Business Guide 2026](https://beornsco.com/blog/ai-for-sales-small-business.html) — Use AI for lead emails, follow-ups, CRM notes and proposals
+- [AI Customer Service Tools for Small Business](https://beornsco.com/blog/ai-tools-for-customer-service-small-business.html) — Best AI tools for chatbots, email templates, and review responses
+- [How to Train Employees on AI: Small Business Guide](https://beornsco.com/blog/how-to-train-employees-on-ai.html) — Planning, tool selection and rollout guide for small business teams
+- [AI for HR in Small Business: Practical Guide](https://beornsco.com/blog/ai-for-hr-small-business.html) — Use AI for job ads, interview questions, onboarding docs and performance reviews
+- [AI Email Marketing for Small Business](https://beornsco.com/blog/ai-email-marketing-small-business.html) — Use AI to write email sequences, welcome emails and campaigns
+- [AI Project Management for Small Business](https://beornsco.com/blog/ai-for-project-management-small-business.html) — Automate task tracking, status updates and meeting notes with AI
+- [AI Data Analysis for Small Business](https://beornsco.com/blog/ai-data-analysis-small-business.html) — Turn spreadsheets into insights without a data scientist using AI
+- [AI for Inventory Management: Small Business Guide](https://beornsco.com/blog/ai-for-inventory-management-small-business.html) — Use AI for demand forecasting, reorder alerts and supplier emails
+- [AI ROI Calculator for Business: Measure Value](https://beornsco.com/blog/ai-roi-calculator-business.html) — Framework for measuring time savings, cost reduction and ROI from AI tools
+- [AI Marketing Strategy for Small Business](https://beornsco.com/blog/ai-marketing-strategy-small-business.html) — Practical AI marketing strategy for content creation, social media and email
 
 ## Contact
 
