@@ -1,5 +1,7 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://beornsco.github.io/sitemap.xml
-Sitemap: https://beornsco.github.io/sitemap2.xml
+Sitemap: https://beornsco.com/sitemap.xml
+
+# AI/LLM crawler discoverability
+# llms.txt: https://beornsco.com/llms.txt
